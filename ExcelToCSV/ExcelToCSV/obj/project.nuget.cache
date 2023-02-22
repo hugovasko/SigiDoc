@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UCNRmfI1lFdUuGob5pvr+BATXKOr54f/ZyS7xFp9eg/fqo0sCDX43Akdo2cqPAqPYC+06VYXRsSaNmNl5/3hYg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hugov\\source\\repos\\SigiDoc\\ExcelToCSV\\ExcelToCSV\\ExcelToCSV.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hugov\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
+    "C:\\Users\\hugov\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
+    "C:\\Users\\hugov\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\system.text.encoding.codepages.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
