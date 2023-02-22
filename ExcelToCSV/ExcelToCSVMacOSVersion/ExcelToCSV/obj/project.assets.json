@@ -150,11 +150,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hugovasko/repos/SigiDoc/ExcelToCSV/ExcelToCSV/ExcelToCSV.csproj",
+      "projectUniqueName": "/Users/hugovasko/repos/SigiDoc/ExcelToCSV/ExcelToCSVMacOSVersion/ExcelToCSV/ExcelToCSV.csproj",
       "projectName": "ExcelToCSV",
-      "projectPath": "/Users/hugovasko/repos/SigiDoc/ExcelToCSV/ExcelToCSV/ExcelToCSV.csproj",
+      "projectPath": "/Users/hugovasko/repos/SigiDoc/ExcelToCSV/ExcelToCSVMacOSVersion/ExcelToCSV/ExcelToCSV.csproj",
       "packagesPath": "/Users/hugovasko/.nuget/packages/",
-      "outputPath": "/Users/hugovasko/repos/SigiDoc/ExcelToCSV/ExcelToCSV/obj/",
+      "outputPath": "/Users/hugovasko/repos/SigiDoc/ExcelToCSV/ExcelToCSVMacOSVersion/ExcelToCSV/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/hugovasko/.nuget/NuGet/NuGet.Config"
