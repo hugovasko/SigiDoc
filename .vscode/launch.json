@@ -10,10 +10,10 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            // "bin" is ingored by git, so you have to re-create it in ExcelToCSV folder running "dotnet restore" command
-            "program": "${workspaceFolder}/ExcelToCSV/bin/Debug/net7.0/ExcelToCSV.dll",
+            // "bin" is ingored by git, so you have to re-create it in ExcelToXMLConverter folder by running "dotnet restore" command
+            "program": "${workspaceFolder}/ExcelToXMLConverter/bin/Debug/net7.0/ExcelToXMLConverter.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/ExcelToCSV",
+            "cwd": "${workspaceFolder}/ExcelToXMLConverter",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "integratedTerminal",
             "stopAtEntry": false
