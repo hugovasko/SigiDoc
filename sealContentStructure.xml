@@ -7,12 +7,11 @@
         <fileDesc>
             <titleStmt>
                 <title>
-                    <seg xml:lang="en"></seg>
-                    <seg xml:lang="fr"></seg>
+                    <seg xml:lang="en">{TITLE_EN}</seg>
+                    <seg xml:lang="bg">{TITLE_BG}</seg>
                 </title>
                 <editor>
-                    <persName xml:lang="it"><forename></forename> <surname></surname></persName>
-                    <persName xml:lang="fr"><forename></forename> <surname></surname></persName>
+                    <persName xml:lang="en"><forename>{FN}</forename> <surname>{SN}</surname></persName>
                 </editor>
             </titleStmt>
             <editionStmt>
@@ -313,5 +312,4 @@
               </div>
           </body>
       </text>
-    </teiHeader>
  </TEI>
