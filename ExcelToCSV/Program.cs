@@ -12,10 +12,6 @@ class Program
         Console.WriteLine("Enter the path where the csv file to be saved: ");
         string destinationCsvFilePath = Console.ReadLine();
 
-        // string excelFilePath = @"./resources/sigidoc.xlsx";
-        // string destinationCsvFilePath = @"./resources/sigidoc.csv";
-        // #endregion
-
         // #region convert excel to csv
         Console.WriteLine("Exporting file to CSV...." + "\n");
         ExcelFileHelper.SaveAsCsv(excelFilePath, destinationCsvFilePath);
