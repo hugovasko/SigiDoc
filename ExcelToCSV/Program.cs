@@ -7,8 +7,13 @@ class Program
     static void Main(string[] args)
     {
         // #region get file path
-        string excelFilePath = @"C:\Users\hugov\source\repos\SigiDoc\ExcelToCSV\resources\sigidoc.xlsx";
-        string destinationCsvFilePath = @"C:\Users\hugov\source\repos\SigiDoc\ExcelToCSV\resources\sigidoc.csv";
+        Console.WriteLine("Enter the path of the excel file: ");
+        string excelFilePath = Console.ReadLine();
+        Console.WriteLine("Enter the path where the csv file to be saved: ");
+        string destinationCsvFilePath = Console.ReadLine();
+
+        // string excelFilePath = @"./resources/sigidoc.xlsx";
+        // string destinationCsvFilePath = @"./resources/sigidoc.csv";
         // #endregion
 
         // #region convert excel to csv
