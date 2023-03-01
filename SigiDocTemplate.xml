@@ -256,8 +256,10 @@
                                     <decoDesc>
                                         <decoNote>
                                             <figure>
-                                                <figDesc n="r" xml:lang=""/>
-                                                <figDesc n="decoR" xml:lang=""/>
+                                                <figDesc n="r" xml:lang="en">{FIGURE_R_EN}</figDesc>
+                                                <figDesc n="r" xml:lang="bg">{FIGURE_R_BG}</figDesc>
+                                                <figDesc n="decoR" xml:lang="en">{FIGURE_DECOR_EN}</figDesc>
+                                                <figDesc n="decoR" xml:lang="bg">{FIGURE_DECOR_BG}</figDesc>
                                             </figure>
                                         </decoNote>
                                     </decoDesc>
@@ -365,12 +367,6 @@
                 <body>
                     <div type="edition" subtype="editorial" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[Greek or Latin... text here]</ab>
-                        </div>
-                        <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[Greek or Latin... text here]</ab>
-                        </div>
-                        <div type="textpart" subtype="" n="rev" rend="">
                             <ab>[Greek or Latin... text here]</ab>
                         </div>
                         <div type="textpart" subtype="" n="rev" rend="">
