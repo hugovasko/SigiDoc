@@ -16,6 +16,9 @@ namespace ExcelToXMLConverter
                     doc = XDocument.Load(stream);
                 }
 
+                // Set EPPlus license context to NonCommercial
+                ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
                 // Load the Excel file into memory
                 ExcelPackage package;
                 using (var stream = new FileStream(@"./resources/SIGIDOC CELLS ENG.xlsx", FileMode.Open, FileAccess.Read))
