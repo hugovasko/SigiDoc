@@ -9,15 +9,15 @@ namespace ExcelToXMLConverter
         {
             try
             {
+                // Set EPPlus license context to NonCommercial
+                ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
                 // Load the XML document into memory
                 XDocument doc;
                 using (var stream = new StreamReader(@"./resources/SigiDocTemplate.xml"))
                 {
                     doc = XDocument.Load(stream);
                 }
-
-                // Set EPPlus license context to NonCommercial
-                ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
                 // Load the Excel file into memory
                 ExcelPackage package;
@@ -33,39 +33,66 @@ namespace ExcelToXMLConverter
                     return;
                 }
 
-                string title_EN = worksheet.Cells["B57"].Value?.ToString();
-                string editorFN_EN = worksheet.Cells["B58"].Value?.ToString();
-                string editorSN_EN = worksheet.Cells["B59"].Value?.ToString();
-                string edition = worksheet.Cells["B45"].Value?.ToString();
-                string filename = worksheet.Cells["B60"].Value?.ToString();
-                string sequence = worksheet.Cells["B61"].Value?.ToString();
-                string id = worksheet.Cells["B1"].Value?.ToString();
-                string type = worksheet.Cells["B2"].Value?.ToString();
+                // Get worksheet dimensions
+                var dimensions = worksheet.Dimension;
 
-                // define the dictionary that maps the keys to the corresponding editor values
-                var allValues = new Dictionary<string, string>
-                {
-                    {"{TITLE_EN}", title_EN},
-                    {"{FORENAME_EN}", editorFN_EN},
-                    {"{SURNAME_EN}", editorSN_EN},
-                    {"{EDITION}", edition},
-                    {"{FILENAME}", filename},
-                    {"{SIGIDOC_ID}", id},
-                    {"{SEQUENCE}", sequence},
-                    {"{TYPE}", type}
-                };
+                // Get rows headers from the first column (column A)
+                var rowHeaders = worksheet.Cells[1, 1, dimensions.End.Row, 1]
+                    .Select(c => c.Value?.ToString().Trim()).ToArray();
 
-                // replace the keys with the corresponding values
-                foreach (var element in doc.Descendants())
+                // Find the rows containing the headers we need
+                int title_EN_row = Array.IndexOf(rowHeaders, "Title") + 1;
+                int editorFN_EN_row = Array.IndexOf(rowHeaders, "Editor forename") + 1;
+                int editorSN_EN_row = Array.IndexOf(rowHeaders, "Editor surname") + 1;
+                int editionEN_row = Array.IndexOf(rowHeaders, "EDITION(S)") + 1;
+                int filename_row = Array.IndexOf(rowHeaders, "Filename") + 1;
+                int sealID_row = Array.IndexOf(rowHeaders, "SEAL ID") + 1;
+                int sequence_row = Array.IndexOf(rowHeaders, "Sequence") + 1;
+                int type_row = Array.IndexOf(rowHeaders, "TYPE") + 1;
+
+                // Loop through all subsequent columns and retrieve the data for each header
+                for (int col = 2; col <= dimensions.End.Column; col++)
                 {
-                    if (allValues.TryGetValue(element.Value, out string replacement))
+                    string title_EN = worksheet.Cells[title_EN_row, col].Value?.ToString();
+                    string editorFN_EN = worksheet.Cells[editorFN_EN_row, col].Value?.ToString();
+                    string editorSN_EN = worksheet.Cells[editorSN_EN_row, col].Value?.ToString();
+                    string editionEN = worksheet.Cells[editionEN_row, col].Value?.ToString();
+                    string filename = worksheet.Cells[filename_row, col].Value?.ToString();
+                    string sealID = worksheet.Cells[sealID_row, col].Value?.ToString();
+                    string sequence = worksheet.Cells[sequence_row, col].Value?.ToString();
+                    string type = worksheet.Cells[type_row, col].Value?.ToString();
+
+                    // define a dictionary that maps the keys to the corresponding values
+                    var allValues = new Dictionary<string, string>
                     {
-                        element.Value = replacement;
-                    }
-                }
+                        {"{TITLE_EN}", title_EN},
+                        {"{FORENAME_EN}", editorFN_EN},
+                        {"{SURNAME_EN}", editorSN_EN},
+                        {"{EDITION_EN}", editionEN},
+                        {"{FILENAME}", filename},
+                        {"{SIGIDOC_ID}", sealID},
+                        {"{SEQUENCE}", sequence},
+                        {"{TYPE}", type}
+                    };
 
-                // Save the updated XML file to disk
-                doc.Save($"./resources/{filename}.xml");
+                    // replace the XML keys with the corresponding values
+                    foreach (var element in doc.Descendants())
+                    {
+                        if (allValues.TryGetValue(element.Value, out string replacement))
+                        {
+                            element.Value = replacement;
+                        }
+                    }
+
+                    // Save the updated XML file to disk
+                    doc.Save($"./resources/{filename}.xml");
+
+                    // Reset the dictionary
+                    allValues.Clear();
+
+                    // Reset the XML document
+                    doc = XDocument.Load(@"./resources/SigiDocTemplate.xml");
+                }
 
                 // Close the Excel file
                 package.Dispose();
