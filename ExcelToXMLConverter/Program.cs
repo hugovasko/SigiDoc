@@ -3,9 +3,9 @@ using OfficeOpenXml;
 
 namespace ExcelToXMLConverter
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             try
             {
@@ -25,7 +25,7 @@ namespace ExcelToXMLConverter
                 {
                     package = new ExcelPackage(stream);
                 }
-                ExcelWorksheet worksheet = package.Workbook.Worksheets[0];
+                var worksheet = package.Workbook.Worksheets[0];
 
                 if (worksheet == null)
                 {
@@ -38,47 +38,50 @@ namespace ExcelToXMLConverter
 
                 // Get rows headers from the first column (column A)
                 var rowHeaders = worksheet.Cells[1, 1, dimensions.End.Row, 1]
-                    .Select(c => c.Value?.ToString().Trim()).ToArray();
+                    .Select(c => c.Value?.ToString()?.Trim()).ToArray();
 
                 // Find the rows containing the headers we need
-                int title_EN_row = Array.IndexOf(rowHeaders, "Title") + 1;
-                int editorFN_EN_row = Array.IndexOf(rowHeaders, "Editor forename") + 1;
-                int editorSN_EN_row = Array.IndexOf(rowHeaders, "Editor surname") + 1;
-                int editionEN_row = Array.IndexOf(rowHeaders, "EDITION(S)") + 1;
-                int filename_row = Array.IndexOf(rowHeaders, "Filename") + 1;
-                int sealID_row = Array.IndexOf(rowHeaders, "SEAL ID") + 1;
-                int sequence_row = Array.IndexOf(rowHeaders, "Sequence") + 1;
-                int type_row = Array.IndexOf(rowHeaders, "TYPE") + 1;
+                var titleEnRow = Array.IndexOf(rowHeaders, "Title") + 1;
+                var editorFnEnRow = Array.IndexOf(rowHeaders, "Editor forename") + 1;
+                var editorSnEnRow = Array.IndexOf(rowHeaders, "Editor surname") + 1;
+                var editionEnRow = Array.IndexOf(rowHeaders, "EDITION(S)") + 1;
+                var sealIdRow = Array.IndexOf(rowHeaders, "SEAL ID") + 1;
+                var typeRow = Array.IndexOf(rowHeaders, "TYPE") + 1;
 
                 // Loop through all subsequent columns and retrieve the data for each header
-                for (int col = 2; col <= dimensions.End.Column; col++)
+                for (var col = 2; col <= dimensions.End.Column; col++)
                 {
-                    string title_EN = worksheet.Cells[title_EN_row, col].Value?.ToString();
-                    string editorFN_EN = worksheet.Cells[editorFN_EN_row, col].Value?.ToString();
-                    string editorSN_EN = worksheet.Cells[editorSN_EN_row, col].Value?.ToString();
-                    string editionEN = worksheet.Cells[editionEN_row, col].Value?.ToString();
-                    string filename = worksheet.Cells[filename_row, col].Value?.ToString();
-                    string sealID = worksheet.Cells[sealID_row, col].Value?.ToString();
-                    string sequence = worksheet.Cells[sequence_row, col].Value?.ToString();
-                    string type = worksheet.Cells[type_row, col].Value?.ToString();
+                    // Get the values for each header
+                    var titleEn = worksheet.Cells[titleEnRow, col].Value?.ToString() ?? "No data";
+                    var editorFnEn = worksheet.Cells[editorFnEnRow, col].Value?.ToString() ?? "No data";
+                    var editorSnEn = worksheet.Cells[editorSnEnRow, col].Value?.ToString() ?? "No data";
+                    var editionEn = worksheet.Cells[editionEnRow, col].Value?.ToString() ?? "No data";
+                    var sealId = worksheet.Cells[sealIdRow, col].Value?.ToString() ?? "No data";
+                    var type = worksheet.Cells[typeRow, col].Value?.ToString() ?? "No data";
 
-                    // define a dictionary that maps the keys to the corresponding values
+                    // Generate filename
+                    var filename = $"TM_{sealId}";
+
+                    // Generate sequence
+                    var sequence = sealId.PadLeft(4, '0');
+
+                    // Define a dictionary that maps the keys to the corresponding values
                     var allValues = new Dictionary<string, string>
                     {
-                        {"{TITLE_EN}", title_EN},
-                        {"{FORENAME_EN}", editorFN_EN},
-                        {"{SURNAME_EN}", editorSN_EN},
-                        {"{EDITION_EN}", editionEN},
+                        {"{TITLE_EN}", titleEn},
+                        {"{FORENAME_EN}", editorFnEn},
+                        {"{SURNAME_EN}", editorSnEn},
+                        {"{EDITION_EN}", editionEn},
                         {"{FILENAME}", filename},
-                        {"{SIGIDOC_ID}", sealID},
+                        {"{SIGIDOC_ID}", sealId},
                         {"{SEQUENCE}", sequence},
                         {"{TYPE}", type}
                     };
 
-                    // replace the XML keys with the corresponding values
+                    // Replace the XML keys with the corresponding values
                     foreach (var element in doc.Descendants())
                     {
-                        if (allValues.TryGetValue(element.Value, out string replacement))
+                        if (allValues.TryGetValue(element.Value, out var replacement))
                         {
                             element.Value = replacement;
                         }
