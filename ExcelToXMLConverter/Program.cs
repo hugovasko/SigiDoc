@@ -41,12 +41,22 @@ namespace ExcelToXMLConverter
                     .Select(c => c.Value?.ToString()?.Trim()).ToArray();
 
                 // Find the rows containing the headers we need
-                var titleEnRow = Array.IndexOf(rowHeaders, "Title") + 1;
-                var editorFnEnRow = Array.IndexOf(rowHeaders, "Editor forename") + 1;
-                var editorSnEnRow = Array.IndexOf(rowHeaders, "Editor surname") + 1;
+                var titleEnRow = Array.IndexOf(rowHeaders, "TITLE") + 1;
+                var editorFnEnRow = Array.IndexOf(rowHeaders, "EDITOR FORENAME") + 1;
+                var editorSnEnRow = Array.IndexOf(rowHeaders, "EDITOR SURNAME") + 1;
                 var editionEnRow = Array.IndexOf(rowHeaders, "EDITION(S)") + 1;
                 var sealIdRow = Array.IndexOf(rowHeaders, "SEAL ID") + 1;
-                var typeRow = Array.IndexOf(rowHeaders, "TYPE") + 1;
+                var typeEnRow = Array.IndexOf(rowHeaders, "TYPE") + 1;
+                var findPlaceEnRow = Array.IndexOf(rowHeaders, "FIND PLACE") + 1;
+                var dateRow = Array.IndexOf(rowHeaders, "DATE") + 1;
+                var internalDateRow = Array.IndexOf(rowHeaders, "INTERNAL DATE") + 1;
+                var generalLayoutEnRow = Array.IndexOf(rowHeaders, "GENERAL LAYOUT") + 1;
+                var typeOfImpressionEnRow = Array.IndexOf(rowHeaders, "TYPE OF IMPRESSION") + 1;
+                var materialEnRow = Array.IndexOf(rowHeaders, "MATERIAL") + 1;
+                var shapeEnRow = Array.IndexOf(rowHeaders, "SHAPE") + 1;
+                var diameterRow = Array.IndexOf(rowHeaders, "DIMENSIONS (mm)") + 1;
+                var datingCriteriaEnRow = Array.IndexOf(rowHeaders, "DATING CRITERIA") + 1;
+                var alternativeDatingRow = Array.IndexOf(rowHeaders, "ALTERNATIVE DATING") + 1;
 
                 // Loop through all subsequent columns and retrieve the data for each header
                 for (var col = 2; col <= dimensions.End.Column; col++)
@@ -57,7 +67,17 @@ namespace ExcelToXMLConverter
                     var editorSnEn = worksheet.Cells[editorSnEnRow, col].Value?.ToString() ?? "No data";
                     var editionEn = worksheet.Cells[editionEnRow, col].Value?.ToString() ?? "No data";
                     var sealId = worksheet.Cells[sealIdRow, col].Value?.ToString() ?? "No data";
-                    var type = worksheet.Cells[typeRow, col].Value?.ToString() ?? "No data";
+                    var typeEn = worksheet.Cells[typeEnRow, col].Value?.ToString() ?? "No data";
+                    var findPlaceEn = worksheet.Cells[findPlaceEnRow, col].Value?.ToString() ?? "No data";
+                    var date = worksheet.Cells[dateRow, col].Value?.ToString() ?? "No data";
+                    var internalDate = worksheet.Cells[internalDateRow, col].Value?.ToString() ?? "No data";
+                    var generalLayoutEn = worksheet.Cells[generalLayoutEnRow, col].Value?.ToString() ?? "No data";
+                    var typeOfImpressionEn = worksheet.Cells[typeOfImpressionEnRow, col].Value?.ToString() ?? "No data";
+                    var materialEn = worksheet.Cells[materialEnRow, col].Value?.ToString() ?? "No data";
+                    var shapeEn = worksheet.Cells[shapeEnRow, col].Value?.ToString() ?? "No data";
+                    var diameter = worksheet.Cells[diameterRow, col].Value?.ToString() ?? "No data";
+                    var datingCriteriaEn = worksheet.Cells[datingCriteriaEnRow, col].Value?.ToString() ?? "No data";
+                    var alternativeDating = worksheet.Cells[alternativeDatingRow, col].Value?.ToString() ?? "No data";
 
                     // Generate filename
                     var filename = $"TM_{sealId}";
@@ -69,13 +89,23 @@ namespace ExcelToXMLConverter
                     var allValues = new Dictionary<string, string>
                     {
                         {"{TITLE_EN}", titleEn},
-                        {"{FORENAME_EN}", editorFnEn},
-                        {"{SURNAME_EN}", editorSnEn},
+                        {"{EDITOR_FORENAME_EN}", editorFnEn},
+                        {"{EDITOR_SURNAME_EN}", editorSnEn},
                         {"{EDITION_EN}", editionEn},
                         {"{FILENAME}", filename},
                         {"{SIGIDOC_ID}", sealId},
                         {"{SEQUENCE}", sequence},
-                        {"{TYPE}", type}
+                        {"{TYPE_EN}", typeEn},
+                        {"{FIND_PLACE_EN}", findPlaceEn},
+                        {"{DATE}", date},
+                        {"{INTERNAL_DATE}", internalDate},
+                        {"{GENERAL_LAYOUT_EN}", generalLayoutEn},
+                        {"{TYPE_OF_IMPRESSION_EN}", typeOfImpressionEn},
+                        {"{MATERIAL_EN}", materialEn},
+                        {"{SHAPE_EN}", shapeEn},
+                        {"{DIAMETER}", diameter},
+                        {"{DATING_CRITERIA_EN}", datingCriteriaEn},
+                        {"{ALTERNATIVE_DATING}", alternativeDating}
                     };
 
                     // Replace the XML keys with the corresponding values

@@ -12,12 +12,12 @@
                         </title>
                         <editor>
                             <persName xml:lang="en">
-                                <forename>{FORENAME_EN}</forename> 
-                                <surname>{SURNAME_EN}</surname>
+                                <forename>{EDITOR_FORENAME_EN}</forename> 
+                                <surname>{EDITOR_SURNAME_EN}</surname>
                             </persName>
                             <persName xml:lang="bg">
-                                <forename>{FORENAME_BG}</forename> 
-                                <surname>{SURNAME_BG}</surname>
+                                <forename>{EDITOR_FORENAME_BG}</forename> 
+                                <surname>{EDITOR_SURNAME_BG}</surname>
                             </persName>
                         </editor>
                     </titleStmt>
@@ -37,7 +37,7 @@
                         <idno type="filename">{FILENAME}</idno>
                         <idno type="SigiDocID">{SIGIDOC_ID}</idno>
                         <idno type="sequence">{SEQUENCE}</idno>
-                        <date when="">{DATE}</date>
+                        <date when="123">{DATE}</date>
                         <availability>
                             <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
                         Commons Attributions-NonCommercial-ShareAlike 4.0 International
@@ -95,11 +95,11 @@
                                         <support>
                                             <objectType>
                                                 <term>
-                                                    <seg xml:lang="en">{OBJECT_TYPE_TERM_EN}</seg>
-                                                    <seg xml:lang="bg">{OBJECT_TYPE_TERM_BG}</seg>
+                                                    <seg xml:lang="en">{TYPE_EN}</seg>
+                                                    <seg xml:lang="bg">{TYPE_BG}</seg>
                                                 </term>
-                                                <interp type="workType" xml:lang="en">{OBJECT_TYPE_INTERP_EN}</interp>
-                                                <interp type="workType" xml:lang="bg">{OBJECT_TYPE_INTERP_BG}</interp>
+                                                <interp type="workType" xml:lang="en">{TYPE_OF_IMPRESSION_EN}</interp>
+                                                <interp type="workType" xml:lang="bg">{TYPE_OF_IMPRESSION_BG}</interp>
                                             </objectType>
                                             <material>
                                                 <seg xml:lang="en">{MATERIAL_EN}</seg>
@@ -124,8 +124,8 @@
                                     <layoutDesc>
                                         <layout n="whole">
                                             <rs type="layout">
-                                                <seg xml:lang="en">{LAYOUT_EN}</seg>
-                                                <seg xml:lang="bg">{LAYOUT_BG}</seg>
+                                                <seg xml:lang="en">{GENERAL_LAYOUT_EN}</seg>
+                                                <seg xml:lang="bg">{GENERAL_LAYOUT_BG}</seg>
                                             </rs>
                                             <rs type="execution">
                                                 <seg xml:lang="en">{EXECUTION_EN}</seg>
@@ -161,35 +161,33 @@
                                 <origin>
                                     <origPlace>
                                         <seg xml:lang="en">
-                                            <placeName ref="URI">{ORIG_PLACE_EN}</placeName>
+                                            <placeName ref="URI">{FIND_PLACE_EN}</placeName>
                                         </seg>
                                         <seg xml:lang="bg">
-                                            <placeName ref="URI">{ORIG_PLACE_BG}</placeName>
+                                            <placeName ref="URI">{FIND_PLACE_BG}</placeName>
                                         </seg>
                                     </origPlace>
-                                    <origDate/>
-                                    <origDate type="analysis" when="" evidence="" cert="" resp="">
-                                        <seg>{ORIG_DATE_ANALYSIS}</seg>
+                                    <origDate type="analysis" when="1111" evidence="" cert="" resp="">
+                                        <seg>{DATE}</seg>
                                         <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
                                         <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
                                     </origDate>
-                                    <origDate type="analysis" notBefore="" notAfter="" evidence="" cert="" resp="">
-                                        <seg>{ORIG_DATE_ANALYSIS}</seg>
+                                    <origDate type="analysis" notBefore="2222" notAfter="3333" evidence="" cert="" resp="">
+                                        <seg>{DATE}</seg>
                                         <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
                                         <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
                                     </origDate>
-                                    <origDate type="internal" when="" when-custom="" datingMethod="">
-                                        <seg xml:lang="en">{ORIG_DATE_INTERNAL_EN}</seg>
-                                        <seg xml:lang="bg">{ORIG_DATE_INTERNAL_BG}</seg>
-                                        <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                        <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
+                                    <origDate type="internal" when="4444" when-custom="" datingMethod="">
+                                        <seg>{INTERNAL_DATE}</seg>
+                                        <interp type="datingCriteria" xml:lang="en"></interp>
+                                        <interp type="datingCriteria" xml:lang="bg"></interp>
                                     </origDate>
                                     <date>
                                         <choice>
-                                            <sic resp=""/>
-                                            <corr resp="" evidence="" cert=""/>
+                                            <sic resp=""></sic>
+                                            <corr resp="" evidence="" cert="">{ALTERNATIVE_DATING}</corr>
                                         </choice>
-                                        <interp type="datingCriteria" xml:lang=""/>
+                                        <interp type="datingCriteria" xml:lang=""></interp>
                                     </date>
                                 </origin>
                                 <provenance type="found" subtype="" when="" xml:lang="en" source="" cert="">
@@ -273,8 +271,9 @@
                                 <history>
                                     <origin>
                                         <origDate>
-                                            <seg/>
-                                            <interp type="datingCriteria"/>
+                                            <seg>{DATE}</seg>
+                                            <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
+                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
                                         </origDate>
                                         <date/>
                                     </origin>
@@ -297,7 +296,7 @@
                                                     <dim type="diameter"/>
                                                 </dimensions>
                                                 <rs type="matrix" subtype="">
-                                                    <idno type="SigiDoc"></idno>
+                                                    <idno type="SigiDoc">{MATRIX}</idno>
                                                 </rs>
                                                 <rs type="layout">
                                                     <seg xml:lang=""/>
@@ -323,8 +322,9 @@
                                 <history>
                                     <origin>
                                         <origDate>
-                                            <seg/>
-                                            <interp type="datingCriteria"/>
+                                            <seg>{DATE}</seg>
+                                            <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
+                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
                                         </origDate>
                                         <date/>
                                     </origin>
