@@ -19,6 +19,8 @@ namespace ExcelToXMLConverter
                     doc = XDocument.Load(stream);
                 }
 
+                XNamespace ns = "http://www.tei-c.org/ns/1.0";
+
                 // Load the Excel file into memory
                 ExcelPackage package;
                 using (var stream = new FileStream(@"./resources/SIGIDOC CELLS ENG.xlsx", FileMode.Open, FileAccess.Read))
@@ -62,28 +64,32 @@ namespace ExcelToXMLConverter
                 for (var col = 2; col <= dimensions.End.Column; col++)
                 {
                     // Get the values for each header
-                    var titleEn = worksheet.Cells[titleEnRow, col].Value?.ToString() ?? "No data";
-                    var editorFnEn = worksheet.Cells[editorFnEnRow, col].Value?.ToString() ?? "No data";
-                    var editorSnEn = worksheet.Cells[editorSnEnRow, col].Value?.ToString() ?? "No data";
-                    var editionEn = worksheet.Cells[editionEnRow, col].Value?.ToString() ?? "No data";
-                    var sealId = worksheet.Cells[sealIdRow, col].Value?.ToString() ?? "No data";
-                    var typeEn = worksheet.Cells[typeEnRow, col].Value?.ToString() ?? "No data";
-                    var findPlaceEn = worksheet.Cells[findPlaceEnRow, col].Value?.ToString() ?? "No data";
-                    var date = worksheet.Cells[dateRow, col].Value?.ToString() ?? "No data";
-                    var internalDate = worksheet.Cells[internalDateRow, col].Value?.ToString() ?? "No data";
-                    var generalLayoutEn = worksheet.Cells[generalLayoutEnRow, col].Value?.ToString() ?? "No data";
-                    var typeOfImpressionEn = worksheet.Cells[typeOfImpressionEnRow, col].Value?.ToString() ?? "No data";
-                    var materialEn = worksheet.Cells[materialEnRow, col].Value?.ToString() ?? "No data";
-                    var shapeEn = worksheet.Cells[shapeEnRow, col].Value?.ToString() ?? "No data";
-                    var diameter = worksheet.Cells[diameterRow, col].Value?.ToString() ?? "No data";
-                    var datingCriteriaEn = worksheet.Cells[datingCriteriaEnRow, col].Value?.ToString() ?? "No data";
-                    var alternativeDating = worksheet.Cells[alternativeDatingRow, col].Value?.ToString() ?? "No data";
+                    var titleEn = worksheet.Cells[titleEnRow, col].Value?.ToString() ?? "-";
+                    var editorFnEn = worksheet.Cells[editorFnEnRow, col].Value?.ToString() ?? "-";
+                    var editorSnEn = worksheet.Cells[editorSnEnRow, col].Value?.ToString() ?? "-";
+                    var editionEn = worksheet.Cells[editionEnRow, col].Value?.ToString() ?? "-";
+                    var sealId = worksheet.Cells[sealIdRow, col].Value?.ToString() ?? "-";
+                    var typeEn = worksheet.Cells[typeEnRow, col].Value?.ToString() ?? "-";
+                    var findPlaceEn = worksheet.Cells[findPlaceEnRow, col].Value?.ToString() ?? "-";
+                    var date = worksheet.Cells[dateRow, col].Value?.ToString() ?? "-";
+                    var internalDate = worksheet.Cells[internalDateRow, col].Value?.ToString() ?? "-";
+                    var generalLayoutEn = worksheet.Cells[generalLayoutEnRow, col].Value?.ToString() ?? "-";
+                    var typeOfImpressionEn = worksheet.Cells[typeOfImpressionEnRow, col].Value?.ToString() ?? "-";
+                    var materialEn = worksheet.Cells[materialEnRow, col].Value?.ToString() ?? "-";
+                    var shapeEn = worksheet.Cells[shapeEnRow, col].Value?.ToString() ?? "-";
+                    var diameter = worksheet.Cells[diameterRow, col].Value?.ToString() ?? "-";
+                    var datingCriteriaEn = worksheet.Cells[datingCriteriaEnRow, col].Value?.ToString() ?? "-";
+                    var alternativeDating = worksheet.Cells[alternativeDatingRow, col].Value?.ToString() ?? "-";
 
                     // Generate filename
                     var filename = $"TM_{sealId}";
 
                     // Generate sequence
                     var sequence = sealId.PadLeft(4, '0');
+
+                    // Get not before and not after dates from internal date
+                    var notBefore = internalDate.Split('-')[0].PadLeft(4, '0');
+                    var notAfter = internalDate.Split('-')[1].PadLeft(4, '0');
 
                     // Define a dictionary that maps the keys to the corresponding values
                     var allValues = new Dictionary<string, string>
@@ -105,20 +111,31 @@ namespace ExcelToXMLConverter
                         {"{SHAPE_EN}", shapeEn},
                         {"{DIAMETER}", diameter},
                         {"{DATING_CRITERIA_EN}", datingCriteriaEn},
-                        {"{ALTERNATIVE_DATING}", alternativeDating}
+                        {"{ALTERNATIVE_DATING}", alternativeDating},
+                        {"{NOT_BEFORE}", notBefore},
+                        {"{NOT_AFTER}", notAfter},
+                        {"{}", "-"}
                     };
 
                     // Replace the XML keys with the corresponding values
                     foreach (var element in doc.Descendants())
                     {
-                        if (allValues.TryGetValue(element.Value, out var replacement))
+                        if (allValues.TryGetValue(element.Value, out var elementReplacement))
                         {
-                            element.Value = replacement;
+                            element.Value = elementReplacement;
+                        }
+                        foreach (var attribute in element.Attributes())
+                        {
+                            if (allValues.TryGetValue(attribute.Value, out var attributeReplacement))
+                            {
+                                attribute.Value = attributeReplacement;
+                            }
                         }
                     }
 
                     // Save the updated XML file to disk
                     doc.Save($"./resources/{filename}.xml");
+
 
                     // Reset the dictionary
                     allValues.Clear();

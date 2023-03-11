@@ -37,7 +37,7 @@
                         <idno type="filename">{FILENAME}</idno>
                         <idno type="SigiDocID">{SIGIDOC_ID}</idno>
                         <idno type="sequence">{SEQUENCE}</idno>
-                        <date when="123">{DATE}</date>
+                        <date when="{NOT_BEFORE}">{DATE}</date>
                         <availability>
                             <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
                         Commons Attributions-NonCommercial-ShareAlike 4.0 International
@@ -167,27 +167,27 @@
                                             <placeName ref="URI">{FIND_PLACE_BG}</placeName>
                                         </seg>
                                     </origPlace>
-                                    <origDate type="analysis" when="1111" evidence="" cert="" resp="">
+                                    <!-- <origDate type="analysis" when="{DATE}" evidence="" cert="" resp="">
+                                        <seg>{DATE}</seg>
+                                        <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
+                                        <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
+                                    </origDate> -->
+                                    <origDate type="analysis" notBefore="{NOT_BEFORE}" notAfter="{NOT_AFTER}" evidence="" cert="" resp="">
                                         <seg>{DATE}</seg>
                                         <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
                                         <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
                                     </origDate>
-                                    <origDate type="analysis" notBefore="2222" notAfter="3333" evidence="" cert="" resp="">
-                                        <seg>{DATE}</seg>
-                                        <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                        <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
-                                    </origDate>
-                                    <origDate type="internal" when="4444" when-custom="" datingMethod="">
+                                    <origDate type="internal" when="{NOT_BEFORE}" when-custom="" datingMethod="">
                                         <seg>{INTERNAL_DATE}</seg>
-                                        <interp type="datingCriteria" xml:lang="en"></interp>
-                                        <interp type="datingCriteria" xml:lang="bg"></interp>
+                                        <interp type="datingCriteria" xml:lang="en">{}</interp>
+                                        <interp type="datingCriteria" xml:lang="bg">{}</interp>
                                     </origDate>
                                     <date>
                                         <choice>
-                                            <sic resp=""></sic>
+                                            <sic resp="">{}</sic>
                                             <corr resp="" evidence="" cert="">{ALTERNATIVE_DATING}</corr>
                                         </choice>
-                                        <interp type="datingCriteria" xml:lang=""></interp>
+                                        <interp type="datingCriteria" xml:lang="">{}</interp>
                                     </date>
                                 </origin>
                                 <provenance type="found" subtype="" when="" xml:lang="en" source="" cert="">
