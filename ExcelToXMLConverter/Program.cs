@@ -12,11 +12,18 @@ namespace ExcelToXMLConverter
                 // Set EPPlus license context to NonCommercial
                 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
-                // Load the XML document into memory
-                XDocument doc;
+                // Load the XML template file into memory
+                XDocument xmlTemplate;
                 using (var stream = new StreamReader(@"./resources/SigiDocTemplate.xml"))
                 {
-                    doc = XDocument.Load(stream);
+                    xmlTemplate = XDocument.Load(stream);
+                }
+
+                // Load the XML seals list file into memory
+                XDocument sealsList;
+                using (var stream = new StreamReader(@"../all_seals.xml"))
+                {
+                    sealsList = XDocument.Load(stream);
                 }
 
                 XNamespace ns = "http://www.tei-c.org/ns/1.0";
@@ -118,7 +125,7 @@ namespace ExcelToXMLConverter
                     };
 
                     // Replace the XML keys with the corresponding values
-                    foreach (var element in doc.Descendants())
+                    foreach (var element in xmlTemplate.Descendants())
                     {
                         if (allValues.TryGetValue(element.Value, out var elementReplacement))
                         {
@@ -134,14 +141,32 @@ namespace ExcelToXMLConverter
                     }
 
                     // Save the updated XML file to disk
-                    doc.Save($"./resources/{filename}.xml");
+                    xmlTemplate.Save($"./resources/{filename}.xml");
 
 
                     // Reset the dictionary
                     allValues.Clear();
 
                     // Reset the XML document
-                    doc = XDocument.Load(@"./resources/SigiDocTemplate.xml");
+                    xmlTemplate = XDocument.Load(@"./resources/SigiDocTemplate.xml");
+
+                    // Get the <list> element from the seals list xml file
+                    var listElement = sealsList.Descendants(ns + "list").FirstOrDefault();
+
+                    if (listElement != null)
+                    {
+                        // Create a new list item
+                        var newListItem = new XElement(ns + "item");
+                        newListItem.SetAttributeValue("n", filename);
+                        newListItem.SetAttributeValue("sortKey", sequence);
+                        listElement.Add(newListItem);
+
+                        // Save the updated seals list xml file to disk
+                        sealsList.Save(@"../all_seals.xml");
+
+                        // Reset the seals list xml document
+                        sealsList = XDocument.Load(@"../all_seals.xml");
+                    }
                 }
 
                 // Close the Excel file
