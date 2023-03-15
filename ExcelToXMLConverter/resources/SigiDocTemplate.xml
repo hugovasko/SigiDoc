@@ -23,19 +23,20 @@
                     </titleStmt>
                     <editionStmt>
                         <edition>
-                            <seg xml:lang="en">{EDITION_EN}</seg>
-                            <seg xml:lang="bg">{EDITION_BG}</seg>
+                            <!-- <seg xml:lang="en">{EDITION_EN}</seg>
+                            <seg xml:lang="bg">{EDITION_BG}</seg> -->
+                            <seg>{EDITION}</seg>
                         </edition>
                         <editor>
-                            <persName xml:lang="en" xml:id=""><forename>{FORENAME_EN}</forename><surname>{SURNAME_EN}</surname></persName>
-                            <persName xml:lang="bg" xml:id=""><forename>{FORENAME_BG}</forename><surname>{SURNAME_BG}</surname></persName>
+                            <persName xml:lang="en" xml:id=""><forename>{EDITOR_FORENAME_EN}</forename><surname>{EDITOR_SURNAME_EN}</surname></persName>
+                            <persName xml:lang="bg" xml:id=""><forename>{EDITOR_FORENAME_BG}</forename><surname>{EDITOR_SURNAME_BG}</surname></persName>
                         </editor>
                     </editionStmt>
                     <publicationStmt>
                         <authority xml:lang="en">{AUTHORITY_EN}</authority>
                         <authority xml:lang="bg">{AUTHORITY_BG}</authority>
                         <idno type="filename">{FILENAME}</idno>
-                        <idno type="SigiDocID">{SIGIDOC_ID}</idno>
+                        <idno type="SigiDocID">{SEAL_ID}</idno>
                         <idno type="sequence">{SEQUENCE}</idno>
                         <date when="{NOT_BEFORE}">{DATE}</date>
                         <availability>
@@ -48,17 +49,18 @@
                         <msDesc>
                             <msIdentifier>
                                 <country>
-                                    <seg xml:lang="en">{COUNTRY_EN}</seg>
-                                    <seg xml:lang="bg">{COUNTRY_BG}</seg>
+                                    <seg xml:lang="en">{MODERN_LOCATION_EN}</seg>
+                                    <seg xml:lang="bg">{MODERN_LOCATION_BG}</seg>
                                 </country>
                                 <settlement>
-                                    <seg xml:lang="en">{SETTLEMENT_EN}</seg>
-                                    <seg xml:lang="bg">{SETTLEMENT_BG}</seg>
+                                    <seg xml:lang="en">{FIND_PLACE_EN}</seg>
+                                    <seg xml:lang="bg">{FIND_PLACE_BG}</seg>
                                 </settlement>
                                 <institution>{INSTITUTION}</institution>
                                 <repository>{REPOSITORY}</repository>
-                                <collection xml:lang="en" ref="URI">{COLLECTION_EN}</collection>
-                                <collection xml:lang="bg" ref="URI">{COLLECTION_BG}</collection>
+                                <!-- <collection xml:lang="en" ref="URI">{COLLECTION_AND_INVENTORY_EN}</collection>
+                                <collection xml:lang="bg" ref="URI">{COLLECTION_AND_INVENTORY_BG}</collection> -->
+                                <collection ref="URI">{COLLECTION_AND_INVENTORY}</collection>
                                 <idno>{IDNO}</idno>
                                 <altIdentifier xml:lang="en">
                                     <repository>{REPOSITORY_EN}</repository>
