@@ -98,7 +98,7 @@ namespace ExcelToXMLConverter
                 var modernLocationEnRow = Array.IndexOf(rowHeaders, "MODERN LOCATION") + 1;
                 var modernLocationBgRow = Array.IndexOf(rowHeaders, "СЪВРЕМЕННО СЕЛИЩЕ, ДО КОЕТО Е ОТКРИТ ПЕЧАТЪТ") + 1;
                 var institutionAndRepositoryEnRow = Array.IndexOf(rowHeaders, "INSTITUTION AND REPOSITORY") + 1;
-                var institutionAndRepositoryBgRow = Array.IndexOf(rowHeaders, "МЯСТО НА СЪХРАНЕНИЕ ") + 1;
+                var institutionAndRepositoryBgRow = Array.IndexOf(rowHeaders, "МЯСТО НА СЪХРАНЕНИЕ") + 1;
                 var collectionAndInventoryRow = Array.IndexOf(rowHeaders, "COLLECTION AND INVENTORY") + 1;
                 var acquisitionEnRow = Array.IndexOf(rowHeaders, "ACQUISITION") + 1;
                 var acquisitionBgRow = Array.IndexOf(rowHeaders, "СПОСОБ НА ПРИДОБИВАНЕ") + 1;
@@ -106,18 +106,18 @@ namespace ExcelToXMLConverter
                 var previousLocationsBgRow = Array.IndexOf(rowHeaders, "ПРЕДИШНО МЕСТОСЪХРАНЕНИЕ") + 1;
                 var modernObservationsEnRow = Array.IndexOf(rowHeaders, "MODERN OBSERVATIONS") + 1;
                 var modernObservationsBgRow = Array.IndexOf(rowHeaders, "СЪВРЕМЕННИ НАБЛЮДЕНИЯ") + 1;
-                var observeLayoutOfFieldEnRow = Array.IndexOf(rowHeaders, "OBSERVE LAYOUT OF FIELD") + 1;
-                var observeLayoutOfFieldBgRow = Array.IndexOf(rowHeaders, "ОФОРМЛЕНИЕ НА ЛИЦЕВАТА СТРАНА") + 1;
-                var observeFieldsDimensionsRow = Array.IndexOf(rowHeaders, "OBSERVE FIELD'S DIMENSIONS (mm)") + 1;
-                var observeMatrixEnRow = Array.IndexOf(rowHeaders, "OBSERVE MATRIX") + 1;
-                var observeMatrixBgRow = Array.IndexOf(rowHeaders, "ЛИЦЕВ ПЕЧАТ / ЛИЦЕВА МАТРИЦА") + 1;
-                var observeIconographyEnRow = Array.IndexOf(rowHeaders, "OBSERVE ICONOGRAPHY") + 1;
-                var observeIconographyBgRow = Array.IndexOf(rowHeaders, "ИКОНОГРАФИЯ НА АВЕРСА") + 1;
-                var observeDecorationEnRow = Array.IndexOf(rowHeaders, "OBSERVE DECORATION") + 1;
-                var observeDecorationBgRow = Array.IndexOf(rowHeaders, "ДЕКОРАТИВНИ ЕЛЕМЕНТИ НА АВЕРСА") + 1;
+                var obverseLayoutOfFieldEnRow = Array.IndexOf(rowHeaders, "OBVERSE LAYOUT OF FIELD") + 1;
+                var obverseLayoutOfFieldBgRow = Array.IndexOf(rowHeaders, "ОФОРМЛЕНИЕ НА ЛИЦЕВАТА СТРАНА") + 1;
+                var obverseFieldsDimensionsRow = Array.IndexOf(rowHeaders, "OBVERSE FIELD’S DIMENSIONS (mm)") + 1;
+                var obverseMatrixEnRow = Array.IndexOf(rowHeaders, "OBVERSE MATRIX") + 1;
+                var obverseMatrixBgRow = Array.IndexOf(rowHeaders, "ЛИЦЕВ ПЕЧАТ / ЛИЦЕВА МАТРИЦА") + 1;
+                var obverseIconographyEnRow = Array.IndexOf(rowHeaders, "OBVERSE ICONOGRAPHY") + 1;
+                var obverseIconographyBgRow = Array.IndexOf(rowHeaders, "ИКОНОГРАФИЯ НА АВЕРСА") + 1;
+                var obverseDecorationEnRow = Array.IndexOf(rowHeaders, "OBVERSE DECORATION") + 1;
+                var obverseDecorationBgRow = Array.IndexOf(rowHeaders, "ДЕКОРАТИВНИ ЕЛЕМЕНТИ НА АВЕРСА") + 1;
                 var reverseLayoutFieldEnRow = Array.IndexOf(rowHeaders, "REVERSE LAYOUT FIELD") + 1;
                 var reverseLayoutFieldBgRow = Array.IndexOf(rowHeaders, "ОФОРМЛЕНИЕ НА ОБРАТНАТА СТРАНА") + 1;
-                var reverseFieldsDimensionsRow = Array.IndexOf(rowHeaders, "REVERSE FIELD'S DIMENSIONS (mm)") + 1;
+                var reverseFieldsDimensionsRow = Array.IndexOf(rowHeaders, "REVERSE FIELD’S DIMENSIONS (mm)") + 1;
                 var reverseMatrixEnRow = Array.IndexOf(rowHeaders, "REVERSE MATRIX") + 1;
                 var reverseMatrixBgRow = Array.IndexOf(rowHeaders, "РЕВЕРСЕН ПЕЧАТ / РЕВЕРС НА МАТРИЦА") + 1;
                 var reverseIconographyEnRow = Array.IndexOf(rowHeaders, "REVERSE ICONOGRAPHY") + 1;
@@ -216,15 +216,15 @@ namespace ExcelToXMLConverter
                     var previousLocationsBg = worksheet.Cells[previousLocationsBgRow, col].Value?.ToString() ?? "-";
                     var modernObservationsEn = worksheet.Cells[modernObservationsEnRow, col].Value?.ToString() ?? "-";
                     var modernObservationsBg = worksheet.Cells[modernObservationsBgRow, col].Value?.ToString() ?? "-";
-                    var observeLayoutOfFieldEn = worksheet.Cells[observeLayoutOfFieldEnRow, col].Value?.ToString() ?? "-";
-                    var observeLayoutOfFieldBg = worksheet.Cells[observeLayoutOfFieldBgRow, col].Value?.ToString() ?? "-";
-                    var observeFieldsDimensions = worksheet.Cells[observeFieldsDimensionsRow, col].Value?.ToString() ?? "-";
-                    var observeMatrixEn = worksheet.Cells[observeMatrixEnRow, col].Value?.ToString() ?? "-";
-                    var observeMatrixBg = worksheet.Cells[observeMatrixBgRow, col].Value?.ToString() ?? "-";
-                    var observeIconographyEn = worksheet.Cells[observeIconographyEnRow, col].Value?.ToString() ?? "-";
-                    var observeIconographyBg = worksheet.Cells[observeIconographyBgRow, col].Value?.ToString() ?? "-";
-                    var observeDecorationEn = worksheet.Cells[observeDecorationEnRow, col].Value?.ToString() ?? "-";
-                    var observeDecorationBg = worksheet.Cells[observeDecorationBgRow, col].Value?.ToString() ?? "-";
+                    var obverseLayoutOfFieldEn = worksheet.Cells[obverseLayoutOfFieldEnRow, col].Value?.ToString() ?? "-";
+                    var obverseLayoutOfFieldBg = worksheet.Cells[obverseLayoutOfFieldBgRow, col].Value?.ToString() ?? "-";
+                    var obverseFieldsDimensions = worksheet.Cells[obverseFieldsDimensionsRow, col].Value?.ToString() ?? "-";
+                    var obverseMatrixEn = worksheet.Cells[obverseMatrixEnRow, col].Value?.ToString() ?? "-";
+                    var obverseMatrixBg = worksheet.Cells[obverseMatrixBgRow, col].Value?.ToString() ?? "-";
+                    var obverseIconographyEn = worksheet.Cells[obverseIconographyEnRow, col].Value?.ToString() ?? "-";
+                    var obverseIconographyBg = worksheet.Cells[obverseIconographyBgRow, col].Value?.ToString() ?? "-";
+                    var obverseDecorationEn = worksheet.Cells[obverseDecorationEnRow, col].Value?.ToString() ?? "-";
+                    var obverseDecorationBg = worksheet.Cells[obverseDecorationBgRow, col].Value?.ToString() ?? "-";
                     var reverseLayoutFieldEn = worksheet.Cells[reverseLayoutFieldEnRow, col].Value?.ToString() ?? "-";
                     var reverseLayoutFieldBg = worksheet.Cells[reverseLayoutFieldBgRow, col].Value?.ToString() ?? "-";
                     var reverseFieldsDimensions = worksheet.Cells[reverseFieldsDimensionsRow, col].Value?.ToString() ?? "-";
@@ -322,8 +322,8 @@ namespace ExcelToXMLConverter
                         {"{FIND_PLACE_EN}", findPlaceEn},
                         {"{FIND_PLACE_BG}", findPlaceBg},
                         {"{FIND_DATE}", findDate},
-                        {"FIND_CIRCUMSTANCES_EN", findCircumstancesEn},
-                        {"FIND_CIRCUMSTANCES_BG", findCircumstancesBg},
+                        {"{FIND_CIRCUMSTANCES_EN}", findCircumstancesEn},
+                        {"{FIND_CIRCUMSTANCES_BG}", findCircumstancesBg},
                         {"{MODERN_LOCATION_EN}", modernLocationEn},
                         {"{MODERN_LOCATION_BG}", modernLocationBg},
                         {"{INSTITUTION_AND_REPOSITORY_EN}", institutionAndRepositoryEn},
@@ -335,15 +335,15 @@ namespace ExcelToXMLConverter
                         {"{PREVIOUS_LOCATIONS_BG}", previousLocationsBg},
                         {"{MODERN_OBSERVATIONS_EN}", modernObservationsEn},
                         {"{MODERN_OBSERVATIONS_BG}", modernObservationsBg},
-                        {"{OBSERVE_LAYOUT_OF_FIELD_EN}", observeLayoutOfFieldEn},
-                        {"{OBSERVE_LAYOUT_OF_FIELD_BG}", observeLayoutOfFieldBg},
-                        {"{OBSERVE_FIELDS_DIMENSIONS}", observeFieldsDimensions},
-                        {"{OBSERVE_MATRIX_EN}", observeMatrixEn},
-                        {"{OBSERVE_MATRIX_BG}", observeMatrixBg},
-                        {"{OBSERVE_ICONOGRAPHY_EN}", observeIconographyEn},
-                        {"{OBSERVE_ICONOGRAPHY_BG}", observeIconographyBg},
-                        {"{OBSERVE_DECORATION_EN}", observeDecorationEn},
-                        {"{OBSERVE_DECORATION_BG}", observeDecorationBg},
+                        {"{OBVERSE_LAYOUT_OF_FIELD_EN}", obverseLayoutOfFieldEn},
+                        {"{OBVERSE_LAYOUT_OF_FIELD_BG}", obverseLayoutOfFieldBg},
+                        {"{OBVERSE_FIELDS_DIMENSIONS}", obverseFieldsDimensions},
+                        {"{OBVERSE_MATRIX_EN}", obverseMatrixEn},
+                        {"{OBVERSE_MATRIX_BG}", obverseMatrixBg},
+                        {"{OBVERSE_ICONOGRAPHY_EN}", obverseIconographyEn},
+                        {"{OBVERSE_ICONOGRAPHY_BG}", obverseIconographyBg},
+                        {"{OBVERSE_DECORATION_EN}", obverseDecorationEn},
+                        {"{OBVERSE_DECORATION_BG}", obverseDecorationBg},
                         {"{REVERSE_LAYOUT_FIELD_EN}", reverseLayoutFieldEn},
                         {"{REVERSE_LAYOUT_FIELD_BG}", reverseLayoutFieldBg},
                         {"{REVERSE_FIELDS_DIMENSIONS}", reverseFieldsDimensions},
@@ -408,8 +408,7 @@ namespace ExcelToXMLConverter
                     }
 
                     // Save the updated XML file to disk
-                    xmlTemplate.Save($"./resources/{filename}.xml");
-
+                    xmlTemplate.Save($"../webapps/ROOT/content/xml/epidoc/{filename}.xml");
 
                     // Reset the dictionary
                     allValues.Clear();

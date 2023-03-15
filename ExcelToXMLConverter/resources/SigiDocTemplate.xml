@@ -56,20 +56,22 @@
                                     <seg xml:lang="en">{FIND_PLACE_EN}</seg>
                                     <seg xml:lang="bg">{FIND_PLACE_BG}</seg>
                                 </settlement>
-                                <institution>{INSTITUTION}</institution>
-                                <repository>{REPOSITORY}</repository>
+                                <institution xml:lang="en">{INSTITUTION_AND_REPOSITORY_EN}</institution>
+                                <institution xml:lang="bg">{INSTITUTION_AND_REPOSITORY_BG}</institution>
+                                <repository xml:lang="en">{INSTITUTION_AND_REPOSITORY_EN}</repository>
+                                <repository xml:lang="bg">{INSTITUTION_AND_REPOSITORY_BG}</repository>
                                 <!-- <collection xml:lang="en" ref="URI">{COLLECTION_AND_INVENTORY_EN}</collection>
                                 <collection xml:lang="bg" ref="URI">{COLLECTION_AND_INVENTORY_BG}</collection> -->
                                 <collection ref="URI">{COLLECTION_AND_INVENTORY}</collection>
                                 <idno>{IDNO}</idno>
-                                <altIdentifier xml:lang="en">
+                                <!-- <altIdentifier xml:lang="en">
                                     <repository>{REPOSITORY_EN}</repository>
                                     <idno>{IDNO_EN}</idno>
                                 </altIdentifier>
                                 <altIdentifier xml:lang="bg">
                                     <repository>{REPOSITORY_BG}</repository>
                                     <idno>{IDNO_BG}</idno>
-                                </altIdentifier>
+                                </altIdentifier> -->
                             </msIdentifier>
                             <msContents>
                                 <summary n="whole">
@@ -115,12 +117,14 @@
                                             </dimensions>
                                             <measure type="weight" unit="g">{WEIGHT}</measure>
                                             <measure type="axis" unit="clock">{AXIS}</measure>
-                                            <measure type="overstrikeOrient" unit="clock">{OVERSTRIKE_ORIENT}</measure>
-                                            <measure type="channelOrient" unit="clock">{CHANNEL_ORIENT}</measure>
-                                            <measure type="countermark" unit="clock">{COUNTERMARK}</measure>
+                                            <measure type="overstrikeOrient" unit="clock">{OVERSTRIKE_ORIENTATION}</measure>
+                                            <measure type="channelOrient" unit="clock">{CHANNEL_ORIENTATION}</measure>
+                                            <measure type="countermark" unit="clock" xml:lang="en">{COUNTERMARK_EN}</measure>
+                                            <measure type="countermark" unit="clock" xml:lang="bg">{COUNTERMARK_BG}</measure>
                                         </support>
                                         <condition rend="">
-                                            <p>{CONDITION}</p>
+                                            <p xml:lang="en">{CONDITION_EN}</p>
+                                            <p xml:lang="bg">{CONDITION_BG}</p>
                                         </condition>
                                     </supportDesc>
                                     <layoutDesc>
@@ -138,7 +142,7 @@
                                                 <seg xml:lang="bg">{SHAPE_BG}</seg>
                                             </rs>
                                             <rs type="matrix" subtype="">
-                                                <idno type="SigiDoc">{SIGIDOC}</idno>
+                                                <idno type="SigiDoc">{SEAL_ID}</idno>
                                                 <idno type="PBW" corresp="URI">{PBW}</idno>
                                             </rs>                                     
                                         </layout>
@@ -187,38 +191,38 @@
                                     <date>
                                         <choice>
                                             <sic resp="">{}</sic>
-                                            <corr resp="" evidence="" cert="">{ALTERNATIVE_DATING}</corr>
+                                            <corr resp="" evidence="" cert="">{ALTERNATIVE_DATING_EN}</corr>
                                         </choice>
                                         <interp type="datingCriteria" xml:lang="">{}</interp>
                                     </date>
                                 </origin>
                                 <provenance type="found" subtype="" when="" xml:lang="en" source="" cert="">
-                                    <placeName type="ancientFindspot" ref="URI">{ANCIENT_FINDSPOT_EN}</placeName>
-                                    <placeName type="modernFindspot" ref="URI">{MODERN_FINDSPOT_EN}</placeName>
-                                    <rs type="circumstances">{CIRCUMSTANCES_EN}</rs>
+                                    <placeName type="ancientFindspot" ref="URI">{FIND_PLACE_EN}</placeName>
+                                    <placeName type="modernFindspot" ref="URI">{MODERN_LOCATION_EN}</placeName>
+                                    <rs type="circumstances">{FIND_CIRCUMSTANCES_EN}</rs>
                                 </provenance>
                                 <provenance type="found" subtype="" when="" xml:lang="bg" source="" cert="">
-                                    <placeName type="ancientFindspot" ref="URI">{ANCIENT_FINDSPOT_BG}</placeName>
-                                    <placeName type="modernFindspot" ref="URI">{MODERN_FINDSPOT_BG}</placeName>
-                                    <rs type="circumstances">{CIRCUMSTANCES_BG}</rs>
+                                    <placeName type="ancientFindspot" ref="URI">{FIND_PLACE_BG}</placeName>
+                                    <placeName type="modernFindspot" ref="URI">{MODERN_LOCATION_BG}</placeName>
+                                    <rs type="circumstances">{FIND_CIRCUMSTANCES_BG}</rs>
                                 </provenance>
                                 <provenance type="observed" subtype="" xml:lang="en">
-                                    <p>{PROVENANCE_OBSERVED_EN}</p>
+                                    <p>{OBVERSE_LAYOUT_OF_FIELD_EN}</p>
                                 </provenance>
                                 <provenance type="observed" subtype="" xml:lang="bg">
-                                    <p>{PROVENANCE_OBSERVED_BG}</p>
+                                    <p>{OBVERSE_LAYOUT_OF_FIELD_BG}</p>
                                 </provenance>
                                 <provenance type="not-observed" subtype="" xml:lang="en">
-                                    <p>{PROVENANCE_NOT_OBSERVED_EN}</p>
+                                    <p>{OBVERSE_MATRIX_EN}</p>
                                 </provenance>
                                 <provenance type="not-observed" subtype="" xml:lang="bg">
-                                    <p>{PROVENANCE_NOT_OBSERVED_BG}</p>
+                                    <p>{OBVERSE_MATRIX_BG}</p>
                                 </provenance>
                                 <provenance type="transferred" subtype="" xml:lang="en">
-                                    <p>{PROVENANCE_TRANSFERRED_EN}</p>
+                                    <p>{OBVERSE_DECORATION_EN}</p>
                                 </provenance>
                                 <provenance type="transferred" subtype="" xml:lang="bg">
-                                    <p>{PROVENANCE_TRANSFERRED_BG}</p>
+                                    <p>{OBVERSE_DECORATION_BG}</p>
                                 </provenance>
                                 <acquisition>
                                     <p xml:lang="en">{ACQUISITION_EN}</p>
@@ -243,7 +247,8 @@
                                                     <dim type="diameter">{DIAMETER}</dim>
                                                 </dimensions>
                                                 <rs type="matrix" subtype="">
-                                                    <idno type="SigiDoc">{SIGIDOC}</idno>
+                                                    <idno type="SigiDoc" xml:lang="en">{MATRIX_EN}</idno>
+                                                    <idno type="SigiDoc" xml:lang="bg">{MATRIX_BG}</idno>
                                                 </rs>
                                                 <rs type="layout">
                                                     <seg xml:lang="en">{LAYOUT_EN}</seg>
