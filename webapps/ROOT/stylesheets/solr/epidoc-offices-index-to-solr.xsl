@@ -10,12 +10,12 @@
 
   <xsl:param name="index_type"/>
   <xsl:param name="subdirectory"/>
-  <xsl:variable name="appellatives" select="doc('../../content/xml/authority/appellatives.xml')"/>
+  <xsl:variable name="offices" select="doc('../../content/xml/authority/offices.xml')"/>
 
   <xsl:template match="/">
     <add>
       <xsl:for-each-group
-        select="//tei:rs[@type = 'christTerms'][@subtype][@ref][ancestor::tei:div/@type = 'textpart']"
+        select="//tei:rs[@type = 'office'][@subtype][@ref][ancestor::tei:div/@type = 'textpart']"
         group-by="@ref">
         <doc>
           <field name="document_type">
@@ -28,19 +28,19 @@
           <field name="index_item_name">
             <xsl:variable name="ref-id" select="substring-after(@ref, '#')"/>
             <xsl:value-of
-              select="$appellatives//tei:list[@type = 'christTerms']//tei:item[@xml:id = $ref-id]//tei:term[@xml:lang = 'grc' or @xml:lang = 'la']"
+              select="$offices//tei:list[@type = 'civil' and 'military' and 'ecclesiastical']//tei:item[@xml:lang = 'grc' or @xml:lang = 'la']//tei:term[@xml:id = $ref-id]"
             />
           </field>
           <field name="index_entry_type">
             <xsl:choose>
-              <xsl:when test="@subtype = 'appellative'">
-                <xsl:text>Appellative</xsl:text>
+              <xsl:when test="@subtype = 'civil'">
+                <xsl:text>civil</xsl:text>
               </xsl:when>
-              <xsl:when test="@subtype = 'label'">
-                <xsl:text>Label</xsl:text>
+              <xsl:when test="@subtype = 'military'">
+                <xsl:text>military</xsl:text>
               </xsl:when>
-              <xsl:when test="@subtype = 'sigla'">
-                <xsl:text>Sigla</xsl:text>
+              <xsl:when test="@subtype = 'ecclesiastical'">
+                <xsl:text>ecclesiastical</xsl:text>
               </xsl:when>
               <xsl:otherwise/>
             </xsl:choose>
