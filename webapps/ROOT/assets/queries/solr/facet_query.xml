@@ -4,14 +4,15 @@
   <q default="true">*</q>
   <document_type>(tei or epidoc)</document_type>
   <facet>true</facet>
-  <!-- <facet.field>found_provenance</facet.field>
-  <facet.field>origin_place</facet.field>
-  <facet.field>source_repository</facet.field>
-  <facet.field>support_material</facet.field>
+   <!--<facet.field>found_provenance</facet.field>
+  <facet.field>origin_place</facet.field>-->
+  <facet.field>repository</facet.field>
+  <facet.field>collection</facet.field>
+<!--  <facet.field>support_material</facet.field>
   <facet.field>support_object_type</facet.field>
-  <facet.field>origin_date_evidence</facet.field> -->
-  <!--<facet.field>sigidoc_id_number</facet.field>-->
-  <facet.field>personal_names</facet.field>
+  <facet.field>origin_date_evidence</facet.field> 
+  <facet.field>sigidoc_id_number</facet.field>-->
+  <facet.field>persons</facet.field>
   <facet.field>place_names</facet.field>
   <facet.field>dignities</facet.field>
   <facet.field>civil_offices</facet.field>
@@ -22,6 +23,7 @@
   <facet.field>christ-related_terms</facet.field>
   <facet.field>saints-related_terms</facet.field>
   <facet.field>iconography</facet.field>
+  <facet.field>legend_case</facet.field>
   <facet.limit>-1</facet.limit>
   <facet.mincount>1</facet.mincount>
   <!-- facet.sort's value may be either "index" (alphabetic order of
@@ -29,5 +31,6 @@
   <facet.sort>index</facet.sort>
   <!-- The number of rows returned by Solr at once (that is the number
        displayed per page of results). -->
-  <rows default="true">50</rows>
+  <rows default="true">15</rows>
+  <start default="true">0</start>
 </query>
