@@ -113,7 +113,7 @@
     <message key="search-filters">Филтри</message>
     <message key="in">в</message>
     <message key="ed"> (ред.),</message>
-    <message key="not-before"Не преди></message>
+    <message key="not-before">Не преди</message>
     <message key="not-after">Не след</message>
     <message key="arrow-left">&#x021D0; предишен</message>
     <message key="arrow-right">следващ &#x021D2;</message>
