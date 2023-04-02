@@ -1,5 +1,7 @@
-﻿using System.Xml.Linq;
-using OfficeOpenXml;
+﻿using OfficeOpenXml;
+using System.Xml.Linq;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace ExcelToXMLConverter
 {
@@ -155,6 +157,10 @@ namespace ExcelToXMLConverter
                 var editorForenameBgRow = Array.IndexOf(rowHeaders, "СОБСТВЕНО ИМЕ НА РЕДАКТОРА") + 1;
                 var editorSurnameEnRow = Array.IndexOf(rowHeaders, "EDITOR SURNAME") + 1;
                 var editorSurnameBgRow = Array.IndexOf(rowHeaders, "ФАМИЛНО ИМЕ НА РЕДАКТОРА") + 1;
+                var latitudeRow = Array.IndexOf(rowHeaders, "latitude") + 1;
+                var longitudeRow = Array.IndexOf(rowHeaders, "longitude") + 1;
+
+                List<Coordinates> coordinates = LoadCoordinatesFromFile($@"./resources/coordinates.json");
 
                 // Loop through all subsequent columns and retrieve the data for each header
                 for (var col = 2; col <= dimensions.End.Column; col++)
@@ -265,6 +271,14 @@ namespace ExcelToXMLConverter
                     var editorForenameBg = worksheet.Cells[editorForenameBgRow, col].Value?.ToString() ?? "-";
                     var editorSurnameEn = worksheet.Cells[editorSurnameEnRow, col].Value?.ToString() ?? "-";
                     var editorSurnameBg = worksheet.Cells[editorSurnameBgRow, col].Value?.ToString() ?? "-";
+                    var latitude = worksheet.Cells[latitudeRow, col].Value?.ToString() ?? "-";
+                    var longitude = worksheet.Cells[longitudeRow, col].Value?.ToString() ?? "-";
+
+                    // Create a new Coordinate object
+                    Coordinates location = new Coordinates { latitude = latitude, longitude = longitude };
+
+                    // Add the new coordinate to the list
+                    coordinates.Add(location);
 
                     // Generate filename
                     var filename = $"TM_{sealId}";
@@ -435,6 +449,19 @@ namespace ExcelToXMLConverter
                     }
                 }
 
+                // Create serialization options with custom settings
+                JsonSerializerOptions options = new JsonSerializerOptions
+                {
+                    WriteIndented = true, // Enable indented formatting
+                    IgnoreNullValues = true // Ignore null values
+                };
+
+                // Serialize the list of Coordinate objects to JSON
+                string json = JsonSerializer.Serialize(coordinates, options);
+
+                // Write the JSON to the file
+                File.WriteAllText($@"./resources/coordinates.json", json);
+
                 // Close the Excel file
                 package.Dispose();
 
@@ -445,5 +472,24 @@ namespace ExcelToXMLConverter
                 Console.WriteLine($"An error occurred: {ex.Message}");
             }
         }
+
+        static List<Coordinates> LoadCoordinatesFromFile(string filePath)
+        {
+            // Read the entire file contents as a string
+            string fileContents = File.ReadAllText(filePath);
+
+            // Deserialize the JSON string into a list of Coordinate objects
+            List<Coordinates> coordinates = JsonSerializer.Deserialize<List<Coordinates>>(fileContents);
+
+            return coordinates;
+        }
+    }
+
+    class Coordinates
+    {
+        [JsonPropertyName("latitude")]
+        public string latitude { get; set; }
+        [JsonPropertyName("longitude")]
+        public string longitude { get; set; }
     }
 }
