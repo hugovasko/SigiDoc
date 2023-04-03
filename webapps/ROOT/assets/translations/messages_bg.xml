@@ -98,7 +98,7 @@
     <message key="menu-index-legendsCases">Случай с легенди</message>
     <message key="menu-index-metrical">Метрични легенди</message>
     <message key="menu-index-invocation">Призиви</message>
-    <message key="home-title">SigiDoc 1.1</message>
+    <message key="home-title">SigiDoc 1.1<i>(в разработка)</i></message>
     <message key="bibliographic-concordance">Библиография</message>
     <message key="inscription-index-zip">XML файловете на SigiDoc на изданията на печат, представени в следния списък, са налични в </message>
     <message key="indices-type-prosopography-geography">Хора и места</message>
@@ -118,4 +118,28 @@
     <message key="arrow-left">&#x021D0; предишен</message>
     <message key="arrow-right">следващ &#x021D2;</message>
     <message key="inscription-index-seals">Печати</message>
+    <message key="error">Възникна грешка</message>
+    <message key="home-first-paragraph">Печатите са единствените останки от писмените документи, 
+        използвани за ежедневна администрация и частна кореспонденция от 4-ти до 15-ти век във 
+        Византийската империя – т.е. християнската източна средновековна империя, съсредоточена върху Константинопол – 
+        чиито публични и частни архиви са почти изцяло изгубени. Тъй като такива печати не допълват архивния материал, а 
+        трябва да го заместят, което обяснява уникалното значение на сигилографията за византинистиката.
+    </message>
+    <message key="home-second-paragraph">
+        SigiDoc предоставя базирани на XML и TEI-съвместими стандарти за кодиране за описание и издаване на византийски печати: като такъв, 
+        той има за цел да установи набор от правила и насоки за публикуване на византийски печати в цифрова форма. 
+        SigiDoc е предназначен както за създаване на дигитални издания, така и за цифрово преобразуване на хартиени 
+        публикации и е замислен да предостави на потребителите обща основа за разработване на техните проекти и да им даде 
+        свободата да персонализират своя подход.
+    </message>
+    <message key="home-third-paragraph">
+        SigiDoc до голяма степен се основава на текущия опит на EpiDoc и има за цел да се превърне в стандартен инструмент 
+        за разпространение на цифрова сигилография, като същевременно предоставя стандарт за цифрово кодиране на византийски печати.
+    </message>
+    <message key="home-fourth-paragraph">
+        Хранилището в GitHub е налично <a href="https://github.com/SigiDoc/SigiDoc" target="_blank">тук</a>.
+    </message>
+    <message key="base-footer-first-paragraph">
+        Създаден на <a href="https://epidoc.stoa.org/">EpiDoc</a> и доставен от <a href="https://github.com/EpiDoc/EFES">EFES</a>.
+    </message>
 </catalogue>

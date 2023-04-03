@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<kiln:root xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+<kiln:root xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
   xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- Imports the default variables. -->
@@ -93,8 +93,12 @@
           </kiln:block>
           <kiln:block name="footer">
             <footer>
-              <p id="efes">Built on <a href="https://epidoc.stoa.org/">EpiDoc</a> and delivered by
-                  <a href="https://github.com/EpiDoc/EFES">EFES</a>.</p>
+              <p id="efes">
+                <i18n:text i18n:key="base-footer-first-paragraph">
+                  Built on <a href="https://epidoc.stoa.org/">EpiDoc</a> and delivered by
+                  <a href="https://github.com/EpiDoc/EFES">EFES</a>.
+                </i18n:text>
+              </p>
               <p id="logos">
                 <a href="https://anr.fr/">
                   <img style="height:3.0em; padding-right:1em" alt="ANR"
