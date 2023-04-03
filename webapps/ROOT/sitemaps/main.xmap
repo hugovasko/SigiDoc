@@ -109,7 +109,6 @@
           <map:parameter name="language" value="{1}" />
           <map:parameter name="rdf-facet-lookup-fields"
                          value="{global:rdf-facet-lookup-fields}" />
-          <map:parameter name="search-lemma" value="{global:search-lemma}" />
           <map:parameter name="query-string" value="{request:queryString}" />
         </map:transform>
         <map:transform type="i18n">
