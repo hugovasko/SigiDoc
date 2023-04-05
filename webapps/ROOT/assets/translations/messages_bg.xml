@@ -2,9 +2,14 @@
 
 <!-- LAST MODIFIED: 2023-03-08 -->
 
-<catalogue xml:lang="fr" xml:space="preserve">
+<catalogue xml:lang="bg" xml:space="preserve">
     <message key="artifact">Aртефакт</message>
     <message key="type">Тип</message>
+    <message key="types">Типове</message>
+    <message key="term">Термин</message>
+    <message key="metre">Метър</message>
+    <message key="cases">Случаи</message>
+    <message key="subject">Обект</message>
     <message key="not-specified">Неуточнен(и)</message>
     <message key="not-available">Неналичен</message>
     <message key="undetermined">Неопределен(и)</message>
@@ -78,24 +83,30 @@
     <message key="menu-bibliography">Библиография</message>
     <message key="menu-admin">Админ</message>
     <message key="menu-language">Езици</message>
+    <message key="language-code">Езиков код</message>
     <message key="grc">Византийски гръцки</message>
     <message key="en">Английски</message>
     <message key="fr">Френски</message>
     <message key="menu-index-prosopography">Просопографски индекс</message>
     <message key="menu-index-geography">Географски индекс</message>
     <message key="menu-index-dignities">Достойнства</message>
+    <message key="dignity">Достойнство</message>
     <message key="menu-index-offices">Функции</message>
+    <message key="office">Функция</message>
     <message key="menu-index-officeCivil">Граждански функции</message>
     <message key="menu-index-officeMilitary">Военни функции</message>
     <message key="menu-index-officeEcclesiastical">Църковни функции</message>
     <message key="menu-index-titles">Заглавия</message>
+    <message key="title">Заглавие</message>
     <message key="menu-index-marianTerms">Термини, свързани с Богородица</message>
     <message key="menu-index-christTerms">Термини, свързани с Христос</message>
     <message key="menu-index-saintsTerms">Термини, свързани със светци</message>
     <message key="menu-index-iconography">Иконография</message>
     <message key="menu-index-monogram">Монограми</message>
+    <message key="monogram">Монограма</message>
     <message key="menu-index-lemma">Леми</message>
-    <message key="menu-index-legendsCases">Случай с легенди</message>
+    <message key="lemma">Лема</message>
+    <message key="menu-index-legendsCases">Случаи с легенди</message>
     <message key="menu-index-metrical">Метрични легенди</message>
     <message key="menu-index-invocation">Призиви</message>
     <message key="home-title">SigiDoc 1.1<i>(в разработка)</i></message>
@@ -142,4 +153,19 @@
     <message key="base-footer-first-paragraph">
         Създаден на <a href="https://epidoc.stoa.org/">EpiDoc</a> и доставен от <a href="https://github.com/EpiDoc/EFES">EFES</a>.
     </message>
+    <message key="persons">Хора</message>
+    <message key="name">Име</message>
+    <message key="external-prosopography">Външна хорография</message>
+    <message key="square-brackets-info">Квадратните скоби [ ] показват, че името е частично или напълно възстановено. Латинските имена се показват първи.</message>
+    <message key="place-names">Имена на места</message>
+    <message key="iconography-note">Този индекс е ограничен до темите на иконографията, без допълнителни подробности. В момента се предлага само на английски и френски.</message>
+    <message key="monogram-note">Този индекс съдържа интерпретациите на монограмите, а не самите монограми. Квадратните скоби [ ] `указват, че монограмът е 
+        частично или напълно възстановен. Латинските имена се показват първи.
+    </message>
+    <message key="lemma-note">Всички думи, които не са включени в другите заглавия, са групирани заедно в този индекс. Квадратните скоби [ ] показват, че терминът е частично или напълно възстановен. Латинските имена се показват първи.</message>
+    <message key="legendsCases-note">Понастоящем този индекс е наличен само на английски и френски. Квадратните скоби [ ] показват, че легендата е частично или напълно възстановена.</message>
+    <message key="metrical-note">Понастоящем този индекс е наличен само на английски и френски. Квадратните скоби [ ] показват, че легендата е частично или напълно възстановена.</message>
+    <message key="invocation-note">Квадратните скоби [ ] показват, че извикването е частично или напълно възстановено. Латинските имена се показват първи.</message>
+    
+
 </catalogue>
