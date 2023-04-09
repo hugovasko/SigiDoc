@@ -99,7 +99,6 @@
       <map:match id="local-map" pattern="*/map/">
         <map:aggregate element="aggregation" label="content">
           <map:part src="cocoon://_internal/menu/{1}/main.xml?url={1}/map/" />
-          <map:part src="cocoon://internal/search/facet_query.xml" />
           <map:part src="cocoon://_internal/request.xml" />
           <map:part element="facet_names" src="cocoon://admin/rdf/query/graph/facet_item_names.xml" />
         </map:aggregate>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" >
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -26,72 +27,72 @@
       <!--Prosopography and geography-->
 
       <div xml:id="prosopography">
-        <head n="1">Persons</head>
+        <head n="1"><i18n:text i18n:key="persons">Persons</i18n:text></head>
 
         <div type="headings">
           <list>
-            <item>Name</item>
-            <item>External Prosopography</item>
-            <item>References</item>
+            <item><i18n:text i18n:key="name">Name</i18n:text></item>
+            <item><i18n:text i18n:key="external-prosopography">External Prosopography</i18n:text></item>
+            <item><i18n:text i18n:key="references">References</i18n:text></item>
           </list>
         </div>
 
         <div type="notes">
-          <p>Square brackets [ ]
-            indicate that the name is partially or completely restored. Latin names are displayed first.</p>
+          <p><i18n:text i18n:key="square-brackets-info">Square brackets [ ]
+            indicate that the name is partially or completely restored. Latin names are displayed first.</i18n:text></p>
         </div>
       </div>
 
       <div xml:id="placenames">
-        <head n="1">Place names</head>
+        <head n="1"><i18n:text i18n:key="place-names">Place names</i18n:text></head>
 
         <div type="headings">
           <list>
-            <item>Name</item>
+            <item><i18n:text i18n:key="name">Name</i18n:text></item>
             <item>Pleiades ID</item>
-            <item>References</item>
+            <item><i18n:text i18n:key="references">References</i18n:text></item>
           </list>
         </div>
 
         <div type="notes">
-          <p>Square brackets [ ]
-            indicate that the place name is partially or completely restored. Latin names are displayed first.</p>
+          <p><i18n:text i18n:key="square-brackets-info">Square brackets [ ]
+            indicate that the name is partially or completely restored. Latin names are displayed first.</i18n:text></p>
         </div>
       </div>
 
       <!--Dignities and offices-->
 
       <div xml:id="dignities">
-        <head n="2">Dignities</head>
+        <head n="2"><i18n:text i18n:key="menu-index-dignities">Dignities</i18n:text></head>
 
         <div type="headings">
           <list>
-            <item>Dignity</item>
-            <item>References</item>
+            <item><i18n:text i18n:key="dignity">Dignity</i18n:text></item>
+            <item><i18n:text i18n:key="references">References</i18n:text></item>
           </list>
         </div>
         
         <div type="notes">
-          <p>Square brackets [ ]
-            indicate that the term is partially or completely restored. Latin names are displayed first.</p>
+          <p><i18n:text i18n:key="square-brackets-info">Square brackets [ ]
+            indicate that the name is partially or completely restored. Latin names are displayed first.</i18n:text></p>
         </div>
 
       </div>
       
       <div xml:id="offices">
-        <head n="2">Offices</head>
+        <head n="2"><i18n:text i18n:key="menu-index-offices">Offices</i18n:text></head>
         
         <div type="headings">
           <list>
-            <item>Office</item>
-            <item>Type</item>
-            <item>References</item>
+            <item><i18n:text i18n:key="office">Office</i18n:text></item>
+            <item><i18n:text i18n:key="type">Type</i18n:text></item>
+            <item><i18n:text i18n:key="references">References</i18n:text></item>
           </list>
         </div>
         
         <div type="notes">
-          <p>Square brackets [ ]
-            indicate that the term is partially or completely restored. Latin names are displayed first.</p>
+          <p><i18n:text i18n:key="square-brackets-info">Square brackets [ ]
+            indicate that the name is partially or completely restored. Latin names are displayed first.</i18n:text></p>
         </div>
         
       </div>
@@ -148,105 +149,105 @@
       </div>-->
 
       <div xml:id="titles">
-        <head n="2">Titles</head>
+        <head n="2"><i18n:text i18n:key="menu-index-titles">Titles</i18n:text></head>
 
         <div type="headings">
           <list>
-            <item>Title</item>
-            <item>References</item>
+            <item><i18n:text i18n:key="title">Title</i18n:text></item>
+            <item><i18n:text i18n:key="references">References</i18n:text></item>
           </list>
         </div>
 
         <div type="notes">
-          <p>Square brackets [ ]
-            indicate that the term is partially or completely restored. Latin names are displayed first.</p>
+          <p><i18n:text i18n:key="square-brackets-info">Square brackets [ ]
+            indicate that the name is partially or completely restored. Latin names are displayed first.</i18n:text></p>
         </div>
       </div>
 
       <!--Religious appellatives-->
 
       <div xml:id="marianTerms">
-        <head n="3">Marian terms</head>
+        <head n="3"><i18n:text i18n:key="menu-index-marianTerms">Marian terms</i18n:text></head>
 
         <div type="headings">
           <list>
-            <item>Term</item>
-            <item>Type</item>
-            <item>References</item>
+            <item><i18n:text i18n:key="term">Term</i18n:text></item>
+            <item><i18n:text i18n:key="type">Type</i18n:text></item>
+            <item><i18n:text i18n:key="references">References</i18n:text></item>
           </list>
         </div>
 
         <div type="notes">
-          <p>Square brackets [ ]
-            indicate that the term is partially or completely restored. Latin names are displayed first.</p>
+          <p><i18n:text i18n:key="square-brackets-info">Square brackets [ ]
+            indicate that the name is partially or completely restored. Latin names are displayed first.</i18n:text></p>
         </div>
       </div>
 
       <div xml:id="christTerms">
-        <head n="3">Christ-related terms</head>
+        <head n="3"><i18n:text i18n:key="menu-index-christTerms">Christ-related terms</i18n:text></head>
 
         <div type="headings">
           <list>
-            <item>Term</item>
-            <item>Type</item>
-            <item>References</item>
+            <item><i18n:text i18n:key="term">Term</i18n:text></item>
+            <item><i18n:text i18n:key="type">Type</i18n:text></item>
+            <item><i18n:text i18n:key="references">References</i18n:text></item>
           </list>
         </div>
 
         <div type="notes">
-          <p>Square brackets [ ]
-            indicate that the term is partially or completely restored. Latin names are displayed first.</p>
+          <p><i18n:text i18n:key="square-brackets-info">Square brackets [ ]
+            indicate that the name is partially or completely restored. Latin names are displayed first.</i18n:text></p>
         </div>
       </div>
 
       <div xml:id="saintsTerms">
-        <head n="3">Saints-related terms</head>
+        <head n="3"><i18n:text i18n:key="menu-index-saintsTerms">Saints-related terms</i18n:text></head>
 
         <div type="headings">
           <list>
-            <item>Term</item>
-            <item>Type</item>
-            <item>References</item>
+            <item><i18n:text i18n:key="term">Term</i18n:text></item>
+            <item><i18n:text i18n:key="type">Type</i18n:text></item>
+            <item><i18n:text i18n:key="references">References</i18n:text></item>
           </list>
         </div>
 
         <div type="notes">
-          <p>Square brackets [ ]
-            indicate that the term is partially or completely restored. Latin names are displayed first.</p>
+          <p><i18n:text i18n:key="square-brackets-info">Square brackets [ ]
+            indicate that the name is partially or completely restored. Latin names are displayed first.</i18n:text></p>
         </div>
       </div>
 
       <!--Iconography and monograms-->
 
       <div xml:id="iconography">
-        <head n="4">Iconography</head>
+        <head n="4"><i18n:text i18n:key="iconography">Iconography</i18n:text></head>
 
         <div type="headings">
           <list>
-            <item>Subject</item>
-            <item>References</item>
+            <item><i18n:text i18n:key="subject">Subject</i18n:text></item>
+            <item><i18n:text i18n:key="references">References</i18n:text></item>
           </list>
         </div>
 
         <div type="notes">
-          <p>This index is limited to the subjects of the iconography, without any further detail.
-            It is currently available in English and French only.</p>
+          <p><i18n:text i18n:key="iconography-note">This index is limited to the subjects of the iconography, without any further detail.
+            It is currently available in English and French only.</i18n:text></p>
         </div>
       </div>
 
       <div xml:id="monogram">
-        <head n="4">Monograms</head>
+        <head n="4"><i18n:text i18n:key="menu-index-monogram">Monograms</i18n:text></head>
 
         <div type="headings">
           <list>
-            <item>Monogram</item>
-            <item>References</item>
+            <item><i18n:text i18n:key="monogram">Monogram</i18n:text></item>
+            <item><i18n:text i18n:key="references">References</i18n:text></item>
           </list>
         </div>
 
         <div type="notes">
-          <p>This index contains the interpretations of monograms, not the monograms themselves. Square brackets [ ]
-            indicate that the monogram is partially or completely restored. Latin names are displayed first.</p>
+          <p><item><i18n:text i18n:key="monogram-note">This index contains the interpretations of monograms, not the monograms themselves. Square brackets [ ]
+            indicate that the monogram is partially or completely restored. Latin names are displayed first.</i18n:text></item></p>
         </div>
       </div>
 
@@ -293,67 +294,67 @@
       </div>-->
 
       <div xml:id="lemma">
-        <head n="5">Lemmata</head>
+        <head n="5"><i18n:text i18n:key="menu-index-lemma">Lemmata</i18n:text></head>
 
         <div type="headings">
           <list>
-            <item>Lemma</item>
-            <item>Language code</item>
-            <item>References</item>
+            <item><i18n:text i18n:key="lemma">Lemma</i18n:text></item>
+            <item><i18n:text i18n:key="language-code">Language code</i18n:text></item>
+            <item><i18n:text i18n:key="references">References</i18n:text></item>
           </list>
         </div>
 
         <div type="notes">
-          <p>All words not included in the other headings are grouped together in this index. Square brackets [ ]
-            indicate that the term is partially or completely restored. Latin names are displayed first.</p>
+          <p><i18n:text i18n:key="lemma-note">All words not included in the other headings are grouped together in this index. Square brackets [ ]
+            indicate that the term is partially or completely restored. Latin names are displayed first.</i18n:text></p>
         </div>
       </div>
 
       <div xml:id="legendsCases">
-        <head n="5">Legends’ cases</head>
+        <head n="5"><i18n:text i18n:key="menu-index-legendsCases">Legends’ cases</i18n:text></head>
 
         <div type="headings">
           <list>
-            <item>Cases</item>
-            <item>References</item>
+            <item><i18n:text i18n:key="cases">Cases</i18n:text></item>
+            <item><i18n:text i18n:key="references">References</i18n:text></item>
           </list>
         </div>
 
         <div type="notes">
-          <p>This index is currently available in English and French only. Square brackets [ ]
-            indicate that the legend is partially or completely restored.</p>
+          <p><i18n:text i18n:key="legendsCases-note">This index is currently available in English and French only. Square brackets [ ]
+            indicate that the legend is partially or completely restored.</i18n:text></p>
         </div>
       </div>
 
       <div xml:id="metrical">
-        <head n="5">Metrical legends</head>
+        <head n="5"><i18n:text i18n:key="menu-index-metrical">Metrical legends</i18n:text></head>
 
         <div type="headings">
           <list>
-            <item>Metre</item>
-            <item>References</item>
+            <item><i18n:text i18n:key="metre">Metre</i18n:text></item>
+            <item><i18n:text i18n:key="references">References</i18n:text></item>
           </list>
         </div>
 
         <div type="notes">
-          <p>This index is currently available in English and French only. Square brackets [ ]
-            indicate that the legend is partially or completely restored.</p>
+          <p><i18n:text i18n:key="metrical-note">This index is currently available in English and French only. Square brackets [ ]
+            indicate that the legend is partially or completely restored.</i18n:text></p>
         </div>
       </div>
 
       <div xml:id="invocation">
-        <head n="5">Invocations</head>
+        <head n="5"><i18n:text i18n:key="menu-index-invocation">Invocations</i18n:text></head>
 
         <div type="headings">
           <list>
-            <item>Types</item>
-            <item>References</item>
+            <item><i18n:text i18n:key="types">Types</i18n:text></item>
+            <item><i18n:text i18n:key="references">References</i18n:text></item>
           </list>
         </div>
 
         <div type="notes">
-          <p>Square brackets [ ]
-            indicate that the invocation is partially or completely restored. Latin names are displayed first.</p>
+          <p><i18n:text i18n:key="invocation-note">Square brackets [ ]
+            indicate that the invocation is partially or completely restored. Latin names are displayed first.</i18n:text></p>
         </div>
       </div>
 
