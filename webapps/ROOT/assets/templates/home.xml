@@ -28,27 +28,43 @@
         <div class="row">
           <div class="large-12 columns">
             <div class="panel radius">
-              <p>Seals are the only remnants of the written documents used for daily administration
-                and private correspondence from the 4th to the 15th C. in the Byzantine Empire – i.e.
-                the Christian eastern medieval empire centred upon Constantinople – whose public and
-                private archives are nearly entirely lost. As such seals do not supplement archival
-                material but have to substitute it, which explains the unique importance of
-                sigillography for Byzantine studies.</p>
+              <p>
+                <i18n:text i18n:key="home-first-paragraph">
+                  Seals are the only remnants of the written documents used for daily administration
+                  and private correspondence from the 4th to the 15th C. in the Byzantine Empire – i.e.
+                  the Christian eastern medieval empire centred upon Constantinople – whose public and
+                  private archives are nearly entirely lost. As such seals do not supplement archival
+                  material but have to substitute it, which explains the unique importance of
+                  sigillography for Byzantine studies.
+                </i18n:text>
+              </p>
             </div>
           </div>
           <div class="large-12 columns">
             <div class="panel radius">
-              <p>SigiDoc provides XML-based and TEI-compliant encoding standards for the description
-                and edition of Byzantine seals: as such, it aims to establish a set of rules and
-                guidelines to publish Byzantine seals in digital form. SigiDoc is intended for both
-                the creation of digital-born editions as well as digital conversion of paper
-                publications and has been conceived to provide the users with a common basis for
-                developing their projects and to give them the freedom to customise their
-                approach.</p>
-              <p>SigiDoc is largely based on the ongoing experience of EpiDoc and aims at becoming
-                the standard tool for the spreading of digital sigillography while delivering a
-                standard for the digital encoding of Byzantine seals. </p>
-              <p>GitHub repository available <a href="https://github.com/SigiDoc/SigiDoc" target="_blank">here</a>.</p>
+              <p>
+                <i18n:text i18n:key="home-second-paragraph">
+                  SigiDoc provides XML-based and TEI-compliant encoding standards for the description
+                  and edition of Byzantine seals: as such, it aims to establish a set of rules and
+                  guidelines to publish Byzantine seals in digital form. SigiDoc is intended for both
+                  the creation of digital-born editions as well as digital conversion of paper
+                  publications and has been conceived to provide the users with a common basis for
+                  developing their projects and to give them the freedom to customise their
+                  approach.
+                </i18n:text>
+              </p>
+              <p>
+                <i18n:text i18n:key="home-third-paragraph">
+                  SigiDoc is largely based on the ongoing experience of EpiDoc and aims at becoming
+                  the standard tool for the spreading of digital sigillography while delivering a
+                  standard for the digital encoding of Byzantine seals. 
+                </i18n:text>
+              </p>
+              <p>
+                <i18n:text i18n:key="home-fourth-paragraph">
+                  GitHub repository available <a href="https://github.com/SigiDoc/SigiDoc" target="_blank">here</a>.
+                </i18n:text>
+              </p>
             </div>
           </div>
         </div>
