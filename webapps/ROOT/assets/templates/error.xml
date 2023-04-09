@@ -13,11 +13,11 @@
   <kiln:child>
     <kiln:block name="title">
       <kiln:super />
-        <xsl:text>An error occurred</xsl:text>
+      <xsl:text>An error occurred</xsl:text>
     </kiln:block>
 
     <kiln:block name="page-heading">
-        <xsl:text>An error occurred</xsl:text>
+      <xsl:text>An error occurred</xsl:text>
     </kiln:block>
 
     <kiln:block name="content">
