@@ -160,7 +160,7 @@ namespace ExcelToXMLConverter
                 var latitudeRow = Array.IndexOf(rowHeaders, "latitude") + 1;
                 var longitudeRow = Array.IndexOf(rowHeaders, "longitude") + 1;
 
-                List<Coordinates> coordinates = LoadCoordinatesFromFile($@"./resources/coordinates.json");
+                List<Coordinates>? coordinates = LoadCoordinatesFromFile($@"./resources/coordinates.json");
 
                 // Loop through all subsequent columns and retrieve the data for each header
                 for (var col = 2; col <= dimensions.End.Column; col++)
@@ -275,10 +275,10 @@ namespace ExcelToXMLConverter
                     var longitude = worksheet.Cells[longitudeRow, col].Value?.ToString() ?? "-";
 
                     // Create a new Coordinate object
-                    Coordinates location = new Coordinates { latitude = latitude, longitude = longitude };
+                    var location = new Coordinates(latitude, longitude);
 
                     // Add the new coordinate to the list
-                    coordinates.Add(location);
+                    coordinates?.Add(location);
 
                     // Generate filename
                     var filename = $"TM_{sealId}";
@@ -450,10 +450,9 @@ namespace ExcelToXMLConverter
                 }
 
                 // Create serialization options with custom settings
-                JsonSerializerOptions options = new JsonSerializerOptions
+                JsonSerializerOptions? options = new JsonSerializerOptions
                 {
                     WriteIndented = true, // Enable indented formatting
-                    IgnoreNullValues = true // Ignore null values
                 };
 
                 // Serialize the list of Coordinate objects to JSON
@@ -473,23 +472,29 @@ namespace ExcelToXMLConverter
             }
         }
 
-        static List<Coordinates> LoadCoordinatesFromFile(string filePath)
+        private static List<Coordinates>? LoadCoordinatesFromFile(string filePath)
         {
             // Read the entire file contents as a string
-            string fileContents = File.ReadAllText(filePath);
+            var fileContents = File.ReadAllText(filePath);
 
             // Deserialize the JSON string into a list of Coordinate objects
-            List<Coordinates> coordinates = JsonSerializer.Deserialize<List<Coordinates>>(fileContents);
+            var coordinates = JsonSerializer.Deserialize<List<Coordinates>>(fileContents);
 
             return coordinates;
         }
     }
 
-    class Coordinates
+    internal class Coordinates
     {
+        public Coordinates(string latitude, string longitude)
+        {
+            this.Latitude = latitude;
+            this.Longitude = longitude;
+        }
+
         [JsonPropertyName("latitude")]
-        public string latitude { get; set; }
+        public string Latitude { get; set; }
         [JsonPropertyName("longitude")]
-        public string longitude { get; set; }
+        public string Longitude { get; set; }
     }
 }
