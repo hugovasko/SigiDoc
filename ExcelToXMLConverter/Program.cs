@@ -103,7 +103,7 @@ namespace ExcelToXMLConverter
                     coordinates?.Add(location);
 
                     // Add empty curly braces to the dictionary
-                    allValues.Add("{}", "-");
+                    allValues.Add("{}", "―");
 
 
 
