@@ -14,6 +14,9 @@
                         <surname>Prigent</surname></persName>
                 </editor>
             </titleStmt>
+            <place xml:id="Test1" n="1">
+                <location><geo>34.734564431148705, 32.48443089411125</geo></location>
+            </place>
             <editionStmt>
                 <edition>
                     <seg>Digital conversion</seg>
