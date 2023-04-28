@@ -1,45 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
-<TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../SigiDoc-Epidoc_schema/tei-epidoc.xsd"
-    xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../../SigiDoc-Epidoc_schema/tei-epidoc.xsd" xmlns="http://www.tei-c.org/ns/1.0">
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
                         <title>
-                            <seg xml:lang="en">{TITLE_EN}</seg>
-                            <seg xml:lang="bg">{TITLE_BG}</seg>
+                            <seg xml:lang="en">Seal of Synesios</seg>
+                            <seg xml:lang="bg">Печат на Синезиос</seg>
                         </title>
                         <editor>
                             <persName xml:lang="en">
-                                <forename>{EDITOR_FORENAME_EN}</forename> 
-                                <surname>{EDITOR_SURNAME_EN}</surname>
+                                <forename>Ivan</forename> 
+                                <surname>Petrov</surname>
                             </persName>
                             <persName xml:lang="bg">
-                                <forename>{EDITOR_FORENAME_BG}</forename> 
-                                <surname>{EDITOR_SURNAME_BG}</surname>
+                                <forename>Иван</forename> 
+                                <surname>Петров</surname>
                             </persName>
                         </editor>
                     </titleStmt>
                     <location>
-                        <geo>{COORDINATES}</geo>
+                        <geo>42.136097, 24.742168</geo>
                     </location>
                     <editionStmt>
                         <edition>
-                            <seg>{EDITION}</seg>
+                            <seg>Jordanov, 2011, 54, p. 26</seg>
                         </edition>
                         <editor>
-                            <persName xml:lang="en" xml:id=""><forename>{EDITOR_FORENAME_EN}</forename><surname>{EDITOR_SURNAME_EN}</surname></persName>
-                            <persName xml:lang="bg" xml:id=""><forename>{EDITOR_FORENAME_BG}</forename><surname>{EDITOR_SURNAME_BG}</surname></persName>
+                            <persName xml:lang="en" xml:id=""><forename>Ivan</forename><surname>Petrov</surname></persName>
+                            <persName xml:lang="bg" xml:id=""><forename>Иван</forename><surname>Петров</surname></persName>
                         </editor>
                     </editionStmt>
                     <publicationStmt>
                         <authority xml:lang="en">{AUTHORITY_EN}</authority>
                         <authority xml:lang="bg">{AUTHORITY_BG}</authority>
-                        <idno type="filename">{FILENAME}</idno>
-                        <idno type="SigiDocID">{SEAL_ID}</idno>
-                        <idno type="sequence">{SEQUENCE}</idno>
-                        <date when="{NOT_BEFORE}">{DATE}</date>
+                        <idno type="filename">TM_99</idno>
+                        <idno type="SigiDocID">99</idno>
+                        <idno type="sequence">0099</idno>
+                        <date when="0668">8th-9th C.</date>
                         <availability>
                             <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
                         Commons Attributions-NonCommercial-ShareAlike 4.0 International
@@ -50,20 +48,20 @@
                         <msDesc>
                             <msIdentifier>
                                 <country>
-                                    <seg xml:lang="en">{MODERN_LOCATION_EN}</seg>
-                                    <seg xml:lang="bg">{MODERN_LOCATION_BG}</seg>
+                                    <seg xml:lang="en">Bulgaria</seg>
+                                    <seg xml:lang="bg">България</seg>
                                 </country>
                                 <settlement>
-                                    <seg xml:lang="en">{FIND_PLACE_EN}</seg>
-                                    <seg xml:lang="bg">{FIND_PLACE_BG}</seg>
+                                    <seg xml:lang="en">Varna</seg>
+                                    <seg xml:lang="bg">Варна</seg>
                                 </settlement>
-                                <institution xml:lang="en">{INSTITUTION_AND_REPOSITORY_EN}</institution>
-                                <institution xml:lang="bg">{INSTITUTION_AND_REPOSITORY_BG}</institution>
-                                <repository xml:lang="en">{INSTITUTION_AND_REPOSITORY_EN}</repository>
-                                <repository xml:lang="bg">{INSTITUTION_AND_REPOSITORY_BG}</repository>
+                                <institution xml:lang="en">BAN</institution>
+                                <institution xml:lang="bg">БАН</institution>
+                                <repository xml:lang="en">BAN</repository>
+                                <repository xml:lang="bg">БАН</repository>
                                 <!-- <collection xml:lang="en" ref="URI">{COLLECTION_AND_INVENTORY_EN}</collection>
                                 <collection xml:lang="bg" ref="URI">{COLLECTION_AND_INVENTORY_BG}</collection> -->
-                                <collection ref="URI">{COLLECTION_AND_INVENTORY}</collection>
+                                <collection ref="URI">NAIM-BAN 36</collection>
                                 <idno>{IDNO}</idno>
                                 <!-- <altIdentifier xml:lang="en">
                                     <repository>{REPOSITORY_EN}</repository>
@@ -100,50 +98,50 @@
                                         <support>
                                             <objectType>
                                                 <term>
-                                                    <seg xml:lang="en">{TYPE_EN}</seg>
-                                                    <seg xml:lang="bg">{TYPE_BG}</seg>
+                                                    <seg xml:lang="en">Seal</seg>
+                                                    <seg xml:lang="bg">Печат</seg>
                                                 </term>
-                                                <interp type="workType" xml:lang="en">{TYPE_OF_IMPRESSION_EN}</interp>
-                                                <interp type="workType" xml:lang="bg">{TYPE_OF_IMPRESSION_BG}</interp>
+                                                <interp type="workType" xml:lang="en">Original impression</interp>
+                                                <interp type="workType" xml:lang="bg">Оригинален</interp>
                                             </objectType>
                                             <material>
-                                                <seg xml:lang="en">{MATERIAL_EN}</seg>
-                                                <seg xml:lang="bg">{MATERIAL_BG}</seg>
+                                                <seg xml:lang="en">Lead</seg>
+                                                <seg xml:lang="bg">Олово</seg>
                                             </material>
                                             <dimensions type="support" unit="mm">
-                                                <dim type="diameter">{DIAMETER}</dim>
+                                                <dim type="diameter">30</dim>
                                                 <height>{HEIGHT}</height>
                                                 <width>{WIDTH}</width>
                                                 <depth>{DEPTH}</depth>
                                             </dimensions>
-                                            <measure type="weight" unit="g">{WEIGHT}</measure>
-                                            <measure type="axis" unit="clock">{AXIS}</measure>
-                                            <measure type="overstrikeOrient" unit="clock">{OVERSTRIKE_ORIENTATION}</measure>
-                                            <measure type="channelOrient" unit="clock">{CHANNEL_ORIENTATION}</measure>
-                                            <measure type="countermark" unit="clock" xml:lang="en">{COUNTERMARK_EN}</measure>
-                                            <measure type="countermark" unit="clock" xml:lang="bg">{COUNTERMARK_BG}</measure>
+                                            <measure type="weight" unit="g">17,56</measure>
+                                            <measure type="axis" unit="clock">―</measure>
+                                            <measure type="overstrikeOrient" unit="clock">―</measure>
+                                            <measure type="channelOrient" unit="clock">―</measure>
+                                            <measure type="countermark" unit="clock" xml:lang="en">None</measure>
+                                            <measure type="countermark" unit="clock" xml:lang="bg">Няма</measure>
                                         </support>
                                         <condition rend="">
-                                            <p xml:lang="en">{CONDITION_EN}</p>
-                                            <p xml:lang="bg">{CONDITION_BG}</p>
+                                            <p xml:lang="en">Broken; corroded</p>
+                                            <p xml:lang="bg">Счупен; корозирал</p>
                                         </condition>
                                     </supportDesc>
                                     <layoutDesc>
                                         <layout n="whole">
                                             <rs type="layout">
-                                                <seg xml:lang="en">{GENERAL_LAYOUT_EN}</seg>
-                                                <seg xml:lang="bg">{GENERAL_LAYOUT_BG}</seg>
+                                                <seg xml:lang="en">Bilateral legend</seg>
+                                                <seg xml:lang="bg">Двустранна легенда</seg>
                                             </rs>
                                             <rs type="execution">
-                                                <seg xml:lang="en">{EXECUTION_EN}</seg>
-                                                <seg xml:lang="bg">{EXECUTION_BG}</seg>
+                                                <seg xml:lang="en">Struck</seg>
+                                                <seg xml:lang="bg">Струг</seg>
                                             </rs>
                                             <rs type="shape">
-                                                <seg xml:lang="en">{SHAPE_EN}</seg>
-                                                <seg xml:lang="bg">{SHAPE_BG}</seg>
+                                                <seg xml:lang="en">Round</seg>
+                                                <seg xml:lang="bg">Кръгъл</seg>
                                             </rs>
                                             <rs type="matrix" subtype="">
-                                                <idno type="SigiDoc">{SEAL_ID}</idno>
+                                                <idno type="SigiDoc">99</idno>
                                                 <idno type="PBW" corresp="URI">{PBW}</idno>
                                             </rs>                                     
                                         </layout>
@@ -168,10 +166,10 @@
                                 <origin>
                                     <origPlace>
                                         <seg xml:lang="en">
-                                            <placeName ref="URI">{FIND_PLACE_EN}</placeName>
+                                            <placeName ref="URI">Varna</placeName>
                                         </seg>
                                         <seg xml:lang="bg">
-                                            <placeName ref="URI">{FIND_PLACE_BG}</placeName>
+                                            <placeName ref="URI">Варна</placeName>
                                         </seg>
                                     </origPlace>
                                     <!-- <origDate type="analysis" when="{DATE}" evidence="" cert="" resp="">
@@ -179,55 +177,55 @@
                                         <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
                                         <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
                                     </origDate> -->
-                                    <origDate type="analysis" notBefore="{NOT_BEFORE}" notAfter="{NOT_AFTER}" evidence="" cert="" resp="">
-                                        <seg>{DATE}</seg>
-                                        <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                        <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
+                                    <origDate type="analysis" notBefore="0668" notAfter="0685" evidence="" cert="" resp="">
+                                        <seg>8th-9th C.</seg>
+                                        <interp type="datingCriteria" xml:lang="en">Lettering</interp>
+                                        <interp type="datingCriteria" xml:lang="bg">Буквено означение</interp>
                                     </origDate>
-                                    <origDate type="internal" when="{NOT_BEFORE}" when-custom="" datingMethod="">
-                                        <seg>{INTERNAL_DATE}</seg>
-                                        <interp type="datingCriteria" xml:lang="en">{}</interp>
-                                        <interp type="datingCriteria" xml:lang="bg">{}</interp>
+                                    <origDate type="internal" when="0668" when-custom="" datingMethod="">
+                                        <seg>668-685</seg>
+                                        <interp type="datingCriteria" xml:lang="en">―</interp>
+                                        <interp type="datingCriteria" xml:lang="bg">―</interp>
                                     </origDate>
                                     <date>
                                         <choice>
-                                            <sic resp="">{}</sic>
-                                            <corr resp="" evidence="" cert="">{ALTERNATIVE_DATING_EN}</corr>
+                                            <sic resp="">―</sic>
+                                            <corr resp="" evidence="" cert="">―</corr>
                                         </choice>
-                                        <interp type="datingCriteria" xml:lang="">{}</interp>
+                                        <interp type="datingCriteria" xml:lang="">―</interp>
                                     </date>
                                 </origin>
                                 <provenance type="found" subtype="" when="" xml:lang="en" source="" cert="">
-                                    <placeName type="ancientFindspot" ref="URI">{FIND_PLACE_EN}</placeName>
-                                    <placeName type="modernFindspot" ref="URI">{MODERN_LOCATION_EN}</placeName>
-                                    <rs type="circumstances">{FIND_CIRCUMSTANCES_EN}</rs>
+                                    <placeName type="ancientFindspot" ref="URI">Varna</placeName>
+                                    <placeName type="modernFindspot" ref="URI">Bulgaria</placeName>
+                                    <rs type="circumstances">Unknown</rs>
                                 </provenance>
                                 <provenance type="found" subtype="" when="" xml:lang="bg" source="" cert="">
-                                    <placeName type="ancientFindspot" ref="URI">{FIND_PLACE_BG}</placeName>
-                                    <placeName type="modernFindspot" ref="URI">{MODERN_LOCATION_BG}</placeName>
-                                    <rs type="circumstances">{FIND_CIRCUMSTANCES_BG}</rs>
+                                    <placeName type="ancientFindspot" ref="URI">Варна</placeName>
+                                    <placeName type="modernFindspot" ref="URI">България</placeName>
+                                    <rs type="circumstances">Неизвестни</rs>
                                 </provenance>
                                 <provenance type="observed" subtype="" xml:lang="en">
-                                    <p>{OBVERSE_LAYOUT_OF_FIELD_EN}</p>
+                                    <p>Legend of 4 lines</p>
                                 </provenance>
                                 <provenance type="observed" subtype="" xml:lang="bg">
-                                    <p>{OBVERSE_LAYOUT_OF_FIELD_BG}</p>
+                                    <p>―</p>
                                 </provenance>
                                 <provenance type="not-observed" subtype="" xml:lang="en">
-                                    <p>{OBVERSE_MATRIX_EN}</p>
+                                    <p>―</p>
                                 </provenance>
                                 <provenance type="not-observed" subtype="" xml:lang="bg">
-                                    <p>{OBVERSE_MATRIX_BG}</p>
+                                    <p>―</p>
                                 </provenance>
                                 <provenance type="transferred" subtype="" xml:lang="en">
-                                    <p>{OBVERSE_DECORATION_EN}</p>
+                                    <p>―</p>
                                 </provenance>
                                 <provenance type="transferred" subtype="" xml:lang="bg">
-                                    <p>{OBVERSE_DECORATION_BG}</p>
+                                    <p>―</p>
                                 </provenance>
                                 <acquisition>
-                                    <p xml:lang="en">{ACQUISITION_EN}</p>
-                                    <p xml:lang="bg">{ACQUISITION_BG}</p>
+                                    <p xml:lang="en">―</p>
+                                    <p xml:lang="bg">―</p>
                                 </acquisition>
                             </history>
                             <msPart n="r"> 
@@ -245,17 +243,17 @@
                                         <layoutDesc>
                                             <layout n="r">
                                                 <dimensions type="written" unit="mm">
-                                                    <dim type="diameter">{DIAMETER}</dim>
+                                                    <dim type="diameter">30</dim>
                                                 </dimensions>
                                                 <rs type="matrix" subtype="">
-                                                    <idno type="SigiDoc" xml:lang="en">{MATRIX_EN}</idno>
-                                                    <idno type="SigiDoc" xml:lang="bg">{MATRIX_BG}</idno>
+                                                    <idno type="SigiDoc" xml:lang="en">SigiDoc ID: 13</idno>
+                                                    <idno type="SigiDoc" xml:lang="bg">СигиДок ИД: 13</idno>
                                                 </rs>
                                                 <rs type="layout">
                                                     <seg xml:lang="en">{LAYOUT_EN}</seg>
                                                     <seg xml:lang="bg">{LAYOUT_BG}</seg>
                                                 </rs>
-                                                <p/>
+                                                <p />
                                             </layout>
                                         </layoutDesc>
                                     </objectDesc>
@@ -279,17 +277,17 @@
                                 <history>
                                     <origin>
                                         <origDate>
-                                            <seg>{DATE}</seg>
-                                            <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
+                                            <seg>8th-9th C.</seg>
+                                            <interp type="datingCriteria" xml:lang="en">Lettering</interp>
+                                            <interp type="datingCriteria" xml:lang="bg">Буквено означение</interp>
                                         </origDate>
-                                        <date/>
+                                        <date />
                                     </origin>
                                 </history>
                             </msPart>
                             <msPart n="v">
                                 <msIdentifier>
-                                    <idno/>
+                                    <idno />
                                 </msIdentifier>
                                 <msContents>
                                     <summary n="v">
@@ -301,28 +299,28 @@
                                         <layoutDesc>
                                             <layout n="v">
                                                 <dimensions type="written" unit="mm">
-                                                    <dim type="diameter"/>
+                                                    <dim type="diameter" />
                                                 </dimensions>
                                                 <rs type="matrix" subtype="">
                                                     <idno type="SigiDoc">{MATRIX}</idno>
                                                 </rs>
                                                 <rs type="layout">
-                                                    <seg xml:lang=""/>
+                                                    <seg xml:lang="" />
                                                 </rs>
-                                                <p/>
+                                                <p />
                                             </layout>
                                         </layoutDesc>
                                     </objectDesc>
                                     <handDesc>
                                         <handNote n="v">
-                                            <seg xml:lang=""/>
+                                            <seg xml:lang="" />
                                         </handNote>
                                     </handDesc>
                                     <decoDesc>
                                         <decoNote>
                                             <figure>
-                                                <figDesc n="v"/>
-                                                <figDesc n="decoV"/>
+                                                <figDesc n="v" />
+                                                <figDesc n="decoV" />
                                             </figure>
                                         </decoNote>
                                     </decoDesc>
@@ -330,11 +328,11 @@
                                 <history>
                                     <origin>
                                         <origDate>
-                                            <seg>{DATE}</seg>
-                                            <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
+                                            <seg>8th-9th C.</seg>
+                                            <interp type="datingCriteria" xml:lang="en">Lettering</interp>
+                                            <interp type="datingCriteria" xml:lang="bg">Буквено означение</interp>
                                         </origDate>
-                                        <date/>
+                                        <date />
                                     </origin>
                                 </history>
                             </msPart>
@@ -342,38 +340,38 @@
                     </sourceDesc>
                 </fileDesc>
                 <encodingDesc>
-                    <editorialDecl><p/></editorialDecl>
+                    <editorialDecl><p /></editorialDecl>
                     <listPrefixDef>
-                        <prefixDef matchPattern="" ident="" replacementPattern=""/>
+                        <prefixDef matchPattern="" ident="" replacementPattern="" />
                     </listPrefixDef>
                     <charDecl>
                         <glyph xml:id="">
                             <charProp>
                                 <localName>glyph-display</localName>
-                                <value/>
+                                <value />
                             </charProp>
                             <charProp>
                                 <localName>text-display</localName>
-                                <value/>
+                                <value />
                             </charProp>
                         </glyph>
                     </charDecl>
                 </encodingDesc>
                 <revisionDesc>
-                    <change when="" who=""/>
+                    <change when="" who="" />
                 </revisionDesc>
             </teiHeader>
             <facsimile>
                 <surface type="obverse">
                     <desc>Obverse</desc>
                     <graphic url="" scale="">
-                        <desc xml:lang=""/>
+                        <desc xml:lang="" />
                     </graphic>
                 </surface>
                 <surface type="reverse">
                     <desc>Reverse</desc>
                     <graphic url="" scale="">
-                        <desc xml:lang=""/>
+                        <desc xml:lang="" />
                     </graphic>
                 </surface>
             </facsimile>
@@ -387,10 +385,10 @@
                             <ab>[Greek or Latin... text here]</ab>
                         </div>
                     </div>
-                    <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang=""/>
+                    <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="" />
                     <div type="apparatus">
                         <listApp>
-                            <app xml:lang=""/>
+                            <app xml:lang="" />
                          </listApp>
                     </div>
                     <div type="translation">
@@ -398,15 +396,15 @@
                         <p xml:lang="">[Modern language text here]</p>
                      </div>
                      <div type="commentary" subtype="text">
-                        <p xml:lang=""/>
+                        <p xml:lang="" />
                      </div>
                     <div type="commentary" subtype="footnotes">
-                        <p xml:lang=""/>
+                        <p xml:lang="" />
                     </div>
                     <div type="bibliography" subtype="">
                         <p>
                             <bibl>
-                                <ptr target=""/>, <citedRange unit=""/>
+                                <ptr target="" />, <citedRange unit="" />
                             </bibl>
                         </p>
                     </div>

@@ -73,4 +73,6 @@
     <item label="Ελληνικά" i18n:key="el" language_switch="el"/>
     <item label="Български" i18n:key="bg" language_switch="bg"/>
   </menu>
+
+  <menu label="Map" match="local-map" i18n:key="map"/>
 </root>

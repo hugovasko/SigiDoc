@@ -85,6 +85,7 @@
     <message key="menu-admin">Админ</message>
     <message key="menu-language">Езици</message>
     <message key="language-code">Езиков код</message>
+    <message key="map">Карта</message>
     <message key="grc">Византийски гръцки</message>
     <message key="en">Английски</message>
     <message key="fr">Френски</message>

@@ -95,6 +95,27 @@
         <map:serialize />
       </map:match>
 
+      <!-- Map. -->
+      <map:match id="local-map" pattern="*/map/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part src="cocoon://_internal/menu/{1}/main.xml?url={1}/map/" />
+          <map:part src="cocoon://_internal/request.xml" />
+          <map:part element="facet_names" src="cocoon://admin/rdf/query/graph/facet_item_names.xml" />
+        </map:aggregate>
+
+        <map:transform src="cocoon://_internal/template/map.xsl">
+          <map:parameter name="base-uri" value="{global:rdf-base-uri}" />
+          <map:parameter name="language" value="{1}" />
+          <map:parameter name="rdf-facet-lookup-fields"
+                         value="{global:rdf-facet-lookup-fields}" />
+          <map:parameter name="query-string" value="{request:queryString}" />
+        </map:transform>
+        <map:transform type="i18n">
+          <map:parameter name="locale" value="{1}" />
+        </map:transform>
+        <map:serialize />
+      </map:match>
+
       <!-- TEI texts. -->
       <map:match id="local-tei-index-display" pattern="*/texts/">
         <map:aggregate element="aggregation" label="content">
