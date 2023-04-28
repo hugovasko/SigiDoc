@@ -13,16 +13,6 @@
       <i18n:text>Map</i18n:text>
     </kiln:block>
 
-    <!-- <kiln:block name="page-header">
-      <div class="row">
-        <div class="large-12 columns text-center">
-          <h1>
-            <i18n:text i18n:key="map">Map page</i18n:text>
-          </h1>
-        </div>
-      </div>
-    </kiln:block> -->
-
     <kiln:block name="content">
       <div class="row">
         <div class="large-12 columns">

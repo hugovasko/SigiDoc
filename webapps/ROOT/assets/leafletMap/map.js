@@ -9,13 +9,15 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 (async function () {
   try {
     const response = await fetch("map_points.json");
-    const coordinates = await response.json();
+    const seals = await response.json();
 
     const markers = [];
-    for (const [key, value] of Object.entries(coordinates)) {
-      const [lat, lng] = value.split(", ");
-      markers.push(L.marker([lat, lng]).bindPopup(key));
-    }
+    seals.forEach((seal) => {
+      const [lat, lng] = seal.coordinates.split(", ");
+      const title = seal.title || "No title";
+      const date = seal.date || "No date";
+      markers.push(L.marker([lat, lng]).bindPopup(title + "<br>" + date));
+    });
 
     markers.forEach((marker) => marker.addTo(map));
   } catch (error) {

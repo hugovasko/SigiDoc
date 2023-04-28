@@ -1,4 +1,13 @@
-{
-  "Seal of Justinian I": "34.734564431148705, 32.48443089411125",
-  "Seal of Constantine IV and Anastasia, basileis of the Romans Sceau de Constantin IV et Anastasie, basileis des Romains": "35.067463372392375, 33.43608826042591"
-}
+[
+  { "title": "", "coordinates": "42.562880, 23.766844", "date": "527-565" },
+  {
+    "title": "Seal of Constantine IV and Anastasia, basileis of the Romans",
+    "coordinates": "42.530504, 24.212087",
+    "date": "668-685"
+  },
+  {
+    "title": "Seal of Georgios, patrikios, krites of the Velon and megas oikonomos of the charitable foundations",
+    "coordinates": "43.106686, 27.766711",
+    "date": "11th C., third quarter"
+  }
+]

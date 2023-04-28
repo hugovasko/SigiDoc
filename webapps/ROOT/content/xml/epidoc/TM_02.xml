@@ -19,9 +19,7 @@
                         <surname>Prigent</surname></persName>
                 </editor>
             </titleStmt>
-            <place xml:id="Sozomenos" n="2">
-                <location><geo>35.067463372392375, 33.43608826042591</geo></location>
-            </place>
+            <location><geo>42.530504, 24.212087</geo></location>
             <editionStmt>
                 <edition>
                     <seg>Digital conversion</seg>
