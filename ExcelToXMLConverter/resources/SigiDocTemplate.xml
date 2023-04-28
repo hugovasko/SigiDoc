@@ -21,11 +21,11 @@
                             </persName>
                         </editor>
                     </titleStmt>
-                    <location>
+                    <location  xml:space="preserve">
                         <geo>{COORDINATES}</geo>
                     </location>
                     <editionStmt>
-                        <edition>
+                        <edition xml:space="preserve">
                             <seg>{EDITION}</seg>
                         </edition>
                         <editor>
