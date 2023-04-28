@@ -1,7 +1,5 @@
 ﻿using OfficeOpenXml;
 using System.Xml.Linq;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace ExcelToXMLConverter
 {
@@ -18,7 +16,7 @@ namespace ExcelToXMLConverter
                 XDocument xmlTemplate;
                 using (var stream = new StreamReader(@"./resources/SigiDocTemplate.xml"))
                 {
-                    xmlTemplate = XDocument.Load(stream);
+                    xmlTemplate = XDocument.Load(stream, LoadOptions.PreserveWhitespace);
                 }
 
                 // Load the XML seals list file into memory
@@ -122,24 +120,39 @@ namespace ExcelToXMLConverter
                     allValues.Clear();
 
                     // Reset the XML document
-                    xmlTemplate = XDocument.Load(@"./resources/SigiDocTemplate.xml");
+                    using (var stream = new StreamReader(@"./resources/SigiDocTemplate.xml"))
+                    {
+                        xmlTemplate = XDocument.Load(stream, LoadOptions.PreserveWhitespace);
+                    }
 
                     // Get the <list> element from the seals list xml file
                     var listElement = sealsList.Descendants(ns + "list").FirstOrDefault();
 
                     if (listElement != null)
                     {
-                        // Create a new list item
-                        var newListItem = new XElement(ns + "item");
-                        newListItem.SetAttributeValue("n", filename);
-                        newListItem.SetAttributeValue("sortKey", sequence);
-                        listElement.Add(newListItem);
+                        // Check if an item with the same "n" attribute value already exists in the seals list
+                        bool isItemInList = listElement.Descendants(ns + "item").Any(i => i.Attribute("n")?.Value == filename);
 
-                        // Save the updated seals list xml file to disk
-                        sealsList.Save(@"../all_seals.xml");
+                        if (!isItemInList)
+                        {
+                            // Create a new list item
+                            var newListItem = new XElement(ns + "item");
+                            newListItem.SetAttributeValue("n", filename);
+                            newListItem.SetAttributeValue("sortKey", sequence);
+                            listElement.Add(newListItem);
 
-                        // Reset the seals list xml document
-                        sealsList = XDocument.Load(@"../all_seals.xml");
+                            // Sort the list items by their "sortKey" attribute value
+                            var sortedListItems = listElement.Descendants(ns + "item").OrderBy(i => i.Attribute("sortKey")?.Value).ToList();
+
+                            // Replace the list items with the sorted ones
+                            listElement.ReplaceNodes(sortedListItems);
+
+                            // Save the updated seals list xml file to disk
+                            sealsList.Save(@"../all_seals.xml");
+
+                            // Reset the seals list xml document
+                            sealsList = XDocument.Load(@"../all_seals.xml");
+                        }
                     }
                 }
 
