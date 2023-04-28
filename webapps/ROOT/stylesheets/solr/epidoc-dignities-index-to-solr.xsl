@@ -17,12 +17,8 @@
 
   <xsl:variable name="map_points">
     <xsl:text>{</xsl:text>
-    <xsl:for-each select="collection('../../content/xml/epidoc/?select=*.xml;recurse=yes')//tei:place[matches(normalize-space(descendant::tei:geo), '\d{1,2}(\.\d+){0,1},\s+?\d{1,2}(\.\d+){0,1}')]">
-      <xsl:variable name="id" select="@xml:id"/>
-      <xsl:variable name="counter" select="count(collection('../../content/xml/epidoc/?select=*.xml;recurse=yes')//tei:origPlace[substring-after(@ref, '#')=$id])"/>
-      <xsl:text>"</xsl:text><xsl:value-of select="normalize-space(translate(tei:placeName[1], ',', '; '))"/>
-      <xsl:text>#</xsl:text><xsl:value-of select="$counter"/>
-      <xsl:text>@</xsl:text><xsl:value-of select="$id"/>
+    <xsl:for-each select="collection('../../content/xml/epidoc/?select=*.xml;recurse=yes')//tei:teiHeader[matches(normalize-space(descendant::tei:geo), '\d{1,2}(\.\d+){0,1},\s+?\d{1,2}(\.\d+){0,1}')]">
+      <xsl:text>"</xsl:text><xsl:value-of select="normalize-space(descendant::tei:title[1])"/>
       <xsl:text>": "</xsl:text><xsl:value-of select="normalize-space(descendant::tei:geo[1])"/>
       <xsl:text>"</xsl:text>
       <xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
