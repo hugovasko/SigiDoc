@@ -115,6 +115,7 @@ namespace ExcelToXMLConverter
             ("{SEQUENCE}", "SEQUENCE"),
             ("{NOT_BEFORE}", "NOT BEFORE"),
             ("{NOT_AFTER}", "NOT AFTER"),
+            ("{COORDINATES}", "COORDINATES"),
             ("{}", "{}")
         };
     }

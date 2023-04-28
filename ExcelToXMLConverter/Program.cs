@@ -58,8 +58,6 @@ namespace ExcelToXMLConverter
                     headers.Add(header, row);
                 }
 
-                List<Coordinates>? coordinates = LoadCoordinatesFromFile($@"./resources/coordinates.json");
-
                 // Loop through all subsequent columns and retrieve the data for each header
                 for (var col = 2; col <= dimensions.End.Column; col++)
                 {
@@ -91,16 +89,6 @@ namespace ExcelToXMLConverter
                     // Add the not before and not after dates to the dictionary
                     allValues.Add("NOT BEFORE", notBefore);
                     allValues.Add("NOT AFTER", notAfter);
-
-                    // Get coordinates for the current seal
-                    var latitude = allValues["LATITUDE"];
-                    var longitude = allValues["LONGITUDE"];
-
-                    // Create new Coordinates object
-                    var location = new Coordinates(sealId, latitude, longitude);
-
-                    // Add coordinates to the list
-                    coordinates?.Add(location);
 
                     // Add empty curly braces to the dictionary
                     allValues.Add("{}", "―");
@@ -155,18 +143,6 @@ namespace ExcelToXMLConverter
                     }
                 }
 
-                // Create serialization options with custom settings
-                JsonSerializerOptions? options = new JsonSerializerOptions
-                {
-                    WriteIndented = true // Enable indented formatting
-                };
-
-                // Serialize the coordinates list to JSON
-                var json = JsonSerializer.Serialize(coordinates, options);
-
-                // Save the JSON to the file
-                File.WriteAllText($@"./resources/coordinates.json", json);
-
                 // Close the Excel file
                 package.Dispose();
 
@@ -176,42 +152,6 @@ namespace ExcelToXMLConverter
             {
                 Console.WriteLine($"An error occurred: {ex.Message}");
             }
-        }
-
-        private static List<Coordinates>? LoadCoordinatesFromFile(string path)
-        {
-            try
-            {
-                var json = File.ReadAllText(path);
-                return JsonSerializer.Deserialize<List<Coordinates>>(json);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"An error occurred: {ex.Message}");
-                return null;
-            }
-        }
-    }
-
-    internal class Coordinates
-    {
-        public Coordinates(string sealId, string latitude, string longitude)
-        {
-            SealId = sealId;
-            Latitude = latitude;
-            Longitude = longitude;
-        }
-
-        [JsonPropertyName("sealId")]
-        public string SealId { get; set; }
-
-        [JsonPropertyName("latitude")]
-        public string Latitude { get; set; }
-
-        [JsonPropertyName("longitude")]
-        public string Longitude
-        {
-            get; set;
         }
     }
 }

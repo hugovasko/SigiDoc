@@ -21,10 +21,11 @@
                             </persName>
                         </editor>
                     </titleStmt>
+                    <location>
+                        <geo>{COORDINATES}</geo>
+                    </location>
                     <editionStmt>
                         <edition>
-                            <!-- <seg xml:lang="en">{EDITION_EN}</seg>
-                            <seg xml:lang="bg">{EDITION_BG}</seg> -->
                             <seg>{EDITION}</seg>
                         </edition>
                         <editor>
