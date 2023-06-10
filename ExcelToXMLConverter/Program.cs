@@ -30,7 +30,7 @@ namespace ExcelToXMLConverter
 
                 // Load the Excel file into memory
                 ExcelPackage package;
-                using (var stream = new FileStream(@"./resources/SIGIDOC CELLS ENG.xlsx", FileMode.Open, FileAccess.Read))
+                using (var stream = new FileStream(@"./resources/test.xlsx", FileMode.Open, FileAccess.Read))
                 {
                     package = new ExcelPackage(stream);
                 }
@@ -70,9 +70,9 @@ namespace ExcelToXMLConverter
                         allValues.Add(header.Key, value);
                     }
 
-                    // Generate a filename and sequence
-                    var sealId = allValues["SEAL ID"];
-                    var filename = $"TM_{sealId}";
+                    // // Generate a filename and sequence
+                    var sealId = allValues["SEAL ID (IDNO – SIGIDOC ID)"];
+                    var filename = $"BG_{sealId}";
                     var sequence = sealId.PadLeft(4, '0');
 
                     // Add the filename and sequence to the dictionary
@@ -80,13 +80,13 @@ namespace ExcelToXMLConverter
                     allValues.Add("SEQUENCE", sequence);
 
                     // Get not before and not after dates from internal date
-                    var internalDate = allValues["INTERNAL DATE"];
-                    var notBefore = internalDate.Split('-')[0].PadLeft(4, '0');
-                    var notAfter = internalDate.Split('-')[1].PadLeft(4, '0');
+                    // var internalDate = allValues["INTERNAL DATE"];
+                    // var notBefore = internalDate.Split('-')[0].PadLeft(4, '0');
+                    // var notAfter = internalDate.Split('-')[1].PadLeft(4, '0');
 
                     // Add the not before and not after dates to the dictionary
-                    allValues.Add("NOT BEFORE", notBefore);
-                    allValues.Add("NOT AFTER", notAfter);
+                    // allValues.Add("NOT BEFORE", notBefore);
+                    // allValues.Add("NOT AFTER", notAfter);
 
                     // Add empty curly braces to the dictionary
                     allValues.Add("{}", "―");
