@@ -12,12 +12,12 @@
                         </title>
                         <editor>
                             <persName xml:lang="en">
-                                <forename>{EDITOR_FORENAME_EN}</forename> 
-                                <surname>{EDITOR_SURNAME_EN}</surname>
+                                <forename>{TITLE_EDITOR_FORENAME_EN}</forename> 
+                                <surname>{TITLE_EDITOR_SURNAME_EN}</surname>
                             </persName>
                             <persName xml:lang="bg">
-                                <forename>{EDITOR_FORENAME_BG}</forename> 
-                                <surname>{EDITOR_SURNAME_BG}</surname>
+                                <forename>{TITLE_EDITOR_FORENAME_BG}</forename> 
+                                <surname>{TITLE_EDITOR_SURNAME_BG}</surname>
                             </persName>
                         </editor>
                     </titleStmt>
@@ -26,11 +26,12 @@
                     </location>
                     <editionStmt>
                         <edition>
-                            <seg>{EDITION}</seg>
+                            <seg xml:lang="en">{EDITION(S)_EN}</seg>
+                            <seg xml:lang="bg">{EDITION(S)_BG}</seg>
                         </edition>
                         <editor>
-                            <persName xml:lang="en" xml:id=""><forename>{EDITOR_FORENAME_EN}</forename><surname>{EDITOR_SURNAME_EN}</surname></persName>
-                            <persName xml:lang="bg" xml:id=""><forename>{EDITOR_FORENAME_BG}</forename><surname>{EDITOR_SURNAME_BG}</surname></persName>
+                            <persName xml:lang="en" xml:id=""><forename>{EDITION_EDITOR_FORENAME_EN}</forename><surname>{EDITION_EDITOR_SURNAME_EN}</surname></persName>
+                            <persName xml:lang="bg" xml:id=""><forename>{EDITION_EDITOR_FORENAME_BG}</forename><surname>{EDITION_EDITOR_SURNAME_BG}</surname></persName>
                         </editor>
                     </editionStmt>
                     <publicationStmt>
@@ -57,13 +58,12 @@
                                     <seg xml:lang="en">{FIND_PLACE_EN}</seg>
                                     <seg xml:lang="bg">{FIND_PLACE_BG}</seg>
                                 </settlement>
-                                <institution xml:lang="en">{INSTITUTION_AND_REPOSITORY_EN}</institution>
-                                <institution xml:lang="bg">{INSTITUTION_AND_REPOSITORY_BG}</institution>
-                                <repository xml:lang="en">{INSTITUTION_AND_REPOSITORY_EN}</repository>
-                                <repository xml:lang="bg">{INSTITUTION_AND_REPOSITORY_BG}</repository>
-                                <!-- <collection xml:lang="en" ref="URI">{COLLECTION_AND_INVENTORY_EN}</collection>
-                                <collection xml:lang="bg" ref="URI">{COLLECTION_AND_INVENTORY_BG}</collection> -->
-                                <collection ref="URI">{COLLECTION_AND_INVENTORY}</collection>
+                                <institution xml:lang="en">{INSTITUTION_EN}</institution>
+                                <institution xml:lang="bg">{INSTITUTION_BG}</institution>
+                                <repository xml:lang="en">{REPOSITORY_EN}</repository>
+                                <repository xml:lang="bg">{REPOSITORY_BG}</repository>
+                                <collection xml:lang="en" ref="URI">{COLLECTION_EN}</collection>
+                                <collection xml:lang="bg" ref="URI">{COLLECTION_BG}</collection>
                                 <idno>{IDNO}</idno>
                                 <!-- <altIdentifier xml:lang="en">
                                     <repository>{REPOSITORY_EN}</repository>
@@ -181,8 +181,8 @@
                                     </origDate> -->
                                     <origDate type="analysis" notBefore="{NOT_BEFORE}" notAfter="{NOT_AFTER}" evidence="" cert="" resp="">
                                         <seg>{DATE}</seg>
-                                        <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                        <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
+                                        <interp type="datingCriteria" xml:lang="en">{ANALYSIS_DATE_CRITERIA_EN}</interp>
+                                        <interp type="datingCriteria" xml:lang="bg">{ANALYSIS_DATE_CRITERIA_BG}</interp>
                                     </origDate>
                                     <origDate type="internal" when="{NOT_BEFORE}" when-custom="" datingMethod="">
                                         <seg>{INTERNAL_DATE}</seg>
@@ -366,14 +366,14 @@
             <facsimile>
                 <surface type="obverse">
                     <desc>Obverse</desc>
-                    <graphic url="" scale="">
-                        <desc xml:lang=""/>
+                    <graphic url="{FACSIMILE_OBVERSE_GRAPHIC}" scale="1.5">
+                        <desc xml:lang="">{FACSIMILE_OBVERSE_DESCRIPTION}</desc>
                     </graphic>
                 </surface>
                 <surface type="reverse">
                     <desc>Reverse</desc>
-                    <graphic url="" scale="">
-                        <desc xml:lang=""/>
+                    <graphic url="{FACSIMILE_REVERSE_GRAPHIC}" scale="1.5">
+                        <desc xml:lang="">{FACSIMILE_REVERSE_DESCRIPTION}</desc>
                     </graphic>
                 </surface>
             </facsimile>
