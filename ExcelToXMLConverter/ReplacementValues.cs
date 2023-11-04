@@ -6,7 +6,7 @@ namespace ExcelToXMLConverter
     {
         public static List<(string key, string value)> Replacements { get; } = new List<(string key, string value)>
         {
-            ("{SEAL_ID}", "SEAL ID (IDNO – SIGIDOC ID)"),
+            ("{SEAL_ID}", "SIGIDOC ID"),
             ("{TYPE_EN}", "TYPE"),
             ("{TYPE_BG}", "ТИП"),
             ("{GENERAL_LAYOUT_EN}", "GENERAL LAYOUT"),
@@ -32,7 +32,7 @@ namespace ExcelToXMLConverter
             ("{SHAPE_BG}", "ФОРМА НА ЯДРОТО"),
             ("{CONDITION_EN}", "CONDITION"),
             ("{CONDITION_BG}", "СЪВРЕМЕННО СЪСТОЯНИЕ"),
-            ("{DATE}", "DATE OF ENTRY CREATION"),
+            ("{DATE}", "ANALYSIS DATE"),
             ("{INTERNAL_DATE}", "INTERNAL DATE"),
             ("{ANALYSIS_DATE_CRITERIA_EN}", "ANALYSIS DATE CRITERIA"),
             ("{ANALYSIS_DATE_CRITERIA_BG}", "АНАЛИЗ НА ДАТИРОВКА – КРИТЕРИИ"),

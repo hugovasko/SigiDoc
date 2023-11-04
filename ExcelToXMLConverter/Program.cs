@@ -26,7 +26,7 @@ namespace ExcelToXMLConverter
                 XNamespace ns = "http://www.tei-c.org/ns/1.0";
 
                 ExcelPackage package;
-                using (var stream = new FileStream(@"./resources/test.xlsx", FileMode.Open, FileAccess.Read))
+                using (var stream = new FileStream(@"./resources/seals.xlsx", FileMode.Open, FileAccess.Read))
                 {
                     package = new ExcelPackage(stream);
                 }
@@ -55,15 +55,56 @@ namespace ExcelToXMLConverter
                     foreach (var header in headers)
                     {
                         var value = worksheet.Cells[header.Value, col].Value?.ToString()?.Trim() ?? "―";
+                        if ((header.Key == "ANALYSIS DATE NOT BEFORE" || header.Key == "ANALYSIS DATE NOT AFTER") && value.Length < 4)
+                        {
+                            value = value.PadLeft(4, '0');
+                        }
                         allValues.Add(header.Key, value);
                     }
 
-                    var sealId = allValues["SEAL ID (IDNO – SIGIDOC ID)"];
-                    var filename = $"BG_{sealId}";
+                    var sealId = allValues["SIGIDOC ID"];
+                    var filename = allValues["FILENAME"];
                     var sequence = sealId.PadLeft(4, '0');
-                    allValues.Add("FILENAME", filename);
                     allValues.Add("SEQUENCE", sequence);
                     allValues.Add("{}", "―");
+
+                    var interpretiveText = allValues.ContainsKey("EDITION INTERPRETIVE") ? allValues["EDITION INTERPRETIVE"] : null;
+
+                    if (string.IsNullOrEmpty(interpretiveText))
+                    {
+                        Console.WriteLine("Interpretive text is missing or empty.");
+                        continue;
+                    }
+
+                    var lines = interpretiveText.Split('/');
+                    var editionElement = xmlTemplate.Descendants(ns + "div").FirstOrDefault(e => (string)e.Attribute("type") == "edition" && (string)e.Attribute("subtype") == "editorial");
+
+                    if (editionElement == null)
+                    {
+                        Console.WriteLine("Could not find the expected 'edition' div in the XML template.");
+                        continue;
+                    }
+
+                    var textPartElement = editionElement.Descendants().FirstOrDefault(e => e.Name == ns + "div" && (string)e.Attribute("type") == "textpart" && (string)e.Attribute("n") == "obv");
+
+                    if (textPartElement == null)
+                    {
+                        Console.WriteLine("Could not find the expected 'textpart' div with n='obv' in the XML template.");
+                        continue;
+                    }
+
+                    textPartElement.Elements(ns + "ab").Remove();
+                    string primaryIndentation = "    ";
+                    string secondaryIndentation = primaryIndentation + "    ";
+
+                    foreach (var line in lines)
+                    {
+                        var abElement = new XElement(ns + "ab", line.Trim());
+
+                        textPartElement.Add(Environment.NewLine + secondaryIndentation);
+                        textPartElement.Add(abElement);
+                    }
+                    textPartElement.Add(Environment.NewLine + primaryIndentation);
 
                     foreach (var element in xmlTemplate.Descendants())
                     {
