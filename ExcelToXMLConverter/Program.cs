@@ -55,6 +55,10 @@ namespace ExcelToXMLConverter
                     foreach (var header in headers)
                     {
                         var value = worksheet.Cells[header.Value, col].Value?.ToString()?.Trim() ?? "―";
+                        if ((header.Key == "ANALYSIS DATE NOT BEFORE" || header.Key == "ANALYSIS DATE NOT AFTER") && value.Length < 4)
+                        {
+                            value = value.PadLeft(4, '0');
+                        }
                         allValues.Add(header.Key, value);
                     }
 
