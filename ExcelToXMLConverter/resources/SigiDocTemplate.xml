@@ -381,13 +381,20 @@
                 <body>
                     <div type="edition" subtype="editorial" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[Greek or Latin... text here]</ab>
+                            <ab>[obv text here]</ab>
                         </div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[Greek or Latin... text here]</ab>
+                            <ab>[rev text here]</ab>
                         </div>
                     </div>
-                    <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang=""/>
+                    <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
+                        <div type="textpart" subtype="" n="obv" rend="">
+                            <ab>[obv text here]</ab>
+                        </div>
+                        <div type="textpart" subtype="" n="rev" rend="">
+                            <ab>[rev text here]</ab>
+                        </div>
+                    </div>
                     <div type="apparatus">
                         <listApp>
                             <app xml:lang=""/>
