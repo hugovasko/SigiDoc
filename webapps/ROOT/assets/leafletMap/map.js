@@ -16,7 +16,23 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       const [lat, lng] = seal.coordinates.split(", ");
       const title = seal.title || "No title";
       const date = seal.date || "No date";
-      markers.push(L.marker([lat, lng]).bindPopup(title + "<br>" + date));
+      const filenameXml = seal.filename || null;
+      const filenameHtml = filenameXml
+        ? filenameXml.replace(".xml", ".html")
+        : null;
+
+      const pathToTheSeal = filenameHtml
+        ? `http://127.0.0.1:9999/en/seals/${filenameHtml}`
+        : null;
+      markers.push(
+        L.marker([lat, lng]).bindPopup(
+          `${title}<br>${date}${
+            filenameHtml
+              ? `<br><a href="${pathToTheSeal}" target="_blank">See more</a>`
+              : ""
+          }`
+        )
+      );
     });
 
     markers.forEach((marker) => marker.addTo(map));

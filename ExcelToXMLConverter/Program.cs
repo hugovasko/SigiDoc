@@ -26,7 +26,7 @@ namespace ExcelToXMLConverter
                 XNamespace ns = "http://www.tei-c.org/ns/1.0";
 
                 ExcelPackage package;
-                using (var stream = new FileStream(@"./resources/seals.xlsx", FileMode.Open, FileAccess.Read))
+                using (var stream = new FileStream(@"./resources/test.xlsx", FileMode.Open, FileAccess.Read))
                 {
                     package = new ExcelPackage(stream);
                 }
@@ -68,43 +68,8 @@ namespace ExcelToXMLConverter
                     allValues.Add("SEQUENCE", sequence);
                     allValues.Add("{}", "―");
 
-                    var interpretiveText = allValues.ContainsKey("EDITION INTERPRETIVE") ? allValues["EDITION INTERPRETIVE"] : null;
-
-                    if (string.IsNullOrEmpty(interpretiveText))
-                    {
-                        Console.WriteLine("Interpretive text is missing or empty.");
-                        continue;
-                    }
-
-                    var lines = interpretiveText.Split('/');
-                    var editionElement = xmlTemplate.Descendants(ns + "div").FirstOrDefault(e => (string)e.Attribute("type") == "edition" && (string)e.Attribute("subtype") == "editorial");
-
-                    if (editionElement == null)
-                    {
-                        Console.WriteLine("Could not find the expected 'edition' div in the XML template.");
-                        continue;
-                    }
-
-                    var textPartElement = editionElement.Descendants().FirstOrDefault(e => e.Name == ns + "div" && (string)e.Attribute("type") == "textpart" && (string)e.Attribute("n") == "obv");
-
-                    if (textPartElement == null)
-                    {
-                        Console.WriteLine("Could not find the expected 'textpart' div with n='obv' in the XML template.");
-                        continue;
-                    }
-
-                    textPartElement.Elements(ns + "ab").Remove();
-                    string primaryIndentation = "    ";
-                    string secondaryIndentation = primaryIndentation + "    ";
-
-                    foreach (var line in lines)
-                    {
-                        var abElement = new XElement(ns + "ab", line.Trim());
-
-                        textPartElement.Add(Environment.NewLine + secondaryIndentation);
-                        textPartElement.Add(abElement);
-                    }
-                    textPartElement.Add(Environment.NewLine + primaryIndentation);
+                    XmlUtils.ProcessInterpretiveOrDiplomaticText(xmlTemplate, ns, allValues, "EDITION INTERPRETIVE", "edition", "editorial", "obv");
+                    XmlUtils.ProcessInterpretiveOrDiplomaticText(xmlTemplate, ns, allValues, "EDITION DIPLOMATIC", "edition", "diplomatic", "obv");
 
                     foreach (var element in xmlTemplate.Descendants())
                     {
@@ -125,7 +90,8 @@ namespace ExcelToXMLConverter
                         }
                     }
 
-                    xmlTemplate.Save($"../webapps/ROOT/content/xml/epidoc/{filename}.xml");
+                    var prettyXml = XmlUtils.Prettify(xmlTemplate.ToString());
+                    File.WriteAllText($"../webapps/ROOT/content/xml/epidoc/{filename}.xml", prettyXml);
                     allValues.Clear();
 
                     using (var stream = new StreamReader(@"./resources/SigiDocTemplate.xml"))
@@ -133,28 +99,7 @@ namespace ExcelToXMLConverter
                         xmlTemplate = XDocument.Load(stream, LoadOptions.PreserveWhitespace);
                     }
 
-                    var listElement = sealsList.Descendants(ns + "list").FirstOrDefault();
-
-                    if (listElement != null)
-                    {
-                        bool isItemInList = listElement.Descendants(ns + "item").Any(i => i.Attribute("n")?.Value == filename);
-
-                        if (!isItemInList)
-                        {
-                            var newListItem = new XElement(ns + "item");
-                            newListItem.SetAttributeValue("n", filename);
-                            newListItem.SetAttributeValue("sortKey", sequence);
-                            listElement.Add(newListItem);
-
-                            var sortedListItems = listElement.Descendants(ns + "item").OrderBy(i => i.Attribute("sortKey")?.Value).ToList();
-
-                            listElement.ReplaceNodes(sortedListItems);
-
-                            sealsList.Save(@"../all_seals.xml");
-
-                            sealsList = XDocument.Load(@"../all_seals.xml");
-                        }
-                    }
+                    XmlUtils.UpdateSealsList(ns, filename, sequence, sealsList);
                 }
                 package.Dispose();
                 Console.WriteLine("Success!");
