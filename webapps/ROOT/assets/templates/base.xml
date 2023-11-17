@@ -95,31 +95,13 @@
             <footer>
               <p id="efes">
                 <i18n:text i18n:key="base-footer-first-paragraph">
-                  Built on <a href="https://epidoc.stoa.org/">EpiDoc</a> and delivered by
-                  <a href="https://github.com/EpiDoc/EFES">EFES</a>.
+                  Designed and Coded by CodeCrew team.
                 </i18n:text>
               </p>
               <p id="logos">
-                <a href="https://anr.fr/">
-                  <img style="height:3.0em; padding-right:1em" alt="ANR"
-                    src="{$kiln:assets-path}/images/anr.jpg"/>
-                </a>
-                <a href="https://www.dfg.de/">
-                  <img style="height:3.5em; padding-right:0.7em; padding-left:0.5em" alt="DFG"
-                    src="{$kiln:assets-path}/images/dfg.jpg"/>
-                </a>
-                <a href="https://cceh.uni-koeln.de/">
-                  <img style="height:3.5em; padding-right:1em; padding-left:0.5em"
-                    alt="CCeH - Cologne Center for eHumanities"
-                    src="{$kiln:assets-path}/images/cceh.png"/>
-                </a>
-                <a href="https://www.uni-koeln.de/">
-                  <img style="height:4.0em; padding-right:1.3em; padding-left:0.5em"
-                    alt="Universität zu Köln" src="{$kiln:assets-path}/images/uzk.png"/>
-                </a>
-                <a href="https://www.orient-mediterranee.com/">
-                  <img style="height:3.5em; padding-right:1.3em; padding-left:0.5em" alt="Orient et Méditerranée UMR 8167 CNRS"
-                    src="https://www.orient-mediterranee.com/wp-content/uploads/2023/02/logo-om_2.svg"/>
+                <a>
+                  <img style="height:6.0em; padding-right:1em" alt="CodeCrewLogo"
+                    src="{$kiln:assets-path}/images/CodeCrewLogo.png"/>
                 </a>
               </p>
               <p id="licence">
