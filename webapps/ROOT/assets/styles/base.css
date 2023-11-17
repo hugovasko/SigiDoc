@@ -19,126 +19,126 @@ footer {
 }
 */
 
-/*Keyboard*/ 
+/*Keyboard*/
 
 #keyboard_box {
-    display: none;
-    margin-top: 1em;
-    margin-right: 1em;
-    margin-bottom: 4em;
-    float: none;
-    width: 300px;
-    height: 300px;
+  display: none;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 4em;
+  float: none;
+  width: 300px;
+  height: 300px;
 }
 #keyboard li {
-    font-size: 18px;
-    list-style: none;
-    float: left;
-    margin: 0 5px 5px 0;
-    width: 22px;
-    height: 22px;
-    line-height: 25px;
-    text-align: center;
-    background: #f0f0f0;
-    border-radius: 5px;
+  font-size: 18px;
+  list-style: none;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 22px;
+  height: 22px;
+  line-height: 25px;
+  text-align: center;
+  background: #f0f0f0;
+  border-radius: 5px;
 }
 
 /* for AR keyboard, see also search.xml */
 
 @font-face {
-    font-family: athenaruby;
-    src: url('../fonts/AthenaRuby_b021.ttf') format('truetype')
-}  /* for Athena Ruby in keyboard! */
+  font-family: athenaruby;
+  src: url("../fonts/AthenaRuby_b021.ttf") format("truetype");
+} /* for Athena Ruby in keyboard! */
 
 #keyboard_box-ar {
-    display: none;
-    margin-top: 1em;
-    margin-right: 1em;
-    margin-bottom: 4em;
-    float: none;
-    width: 300px;
-    height: 300px;
+  display: none;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 4em;
+  float: none;
+  width: 300px;
+  height: 300px;
 }
 #keyboard-ar li {
-    font-family: athenaruby;
-    font-size: 18px;
-    list-style: none;
-    float: left;
-    margin: 0 5px 5px 0;
-    width: 22px;
-    height: 22px;
-    line-height: 25px;
-    text-align: center;
-    background: #f0f0f0;
-    border-radius: 5px;
+  font-family: athenaruby;
+  font-size: 18px;
+  list-style: none;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 22px;
+  height: 22px;
+  line-height: 25px;
+  text-align: center;
+  background: #f0f0f0;
+  border-radius: 5px;
 }
 
 #keyboard-ar li:hover {
-    border: none;
-    background-color: #e5e5e5;
-    cursor: pointer;
+  border: none;
+  background-color: #e5e5e5;
+  cursor: pointer;
 }
 
 #keyboard li:hover {
-    border: none;
-    background-color: #e5e5e5;
-    cursor: pointer;
+  border: none;
+  background-color: #e5e5e5;
+  cursor: pointer;
 }
 
 ul.index-instances {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .index-instance-file {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .index-instance-text-parts {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .index-instance-line {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 #site-title {
-    overflow: hidden;
-    background: url("../images/seal.jpg") no-repeat;
-    position: inherit;
-    background-size: 1440px 300px;
-    font-size: 45px;
-    color: #562c2c;
-    height: 120px;
-    text-align: right;
-    margin-top: -1px;
-    margin-bottom: -1px;
-    padding-right: 10px;
-    padding-left: 10px;
-    width: 100%;
+  overflow: hidden;
+  background-color: rgb(109, 151, 229);
+  position: inherit;
+  background-size: 1440px 300px;
+  font-size: 45px;
+  color: #2c3b56;
+  height: 120px;
+  text-align: right;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
 }
 
 nav.top-bar,
 nav.top-bar ul.right li,
 nav.top-bar ul.left * {
-    background-color: #562c2c;
-    font-size: 18px;
-    font-weight:normal;
+  background-color: #2c3b56;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 nav.top-bar {
-    margin: 0 0px 40px 0px;
+  margin: 0 0px 40px 0px;
 }
 
 .top-bar-section {
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 
 p {
-    text-align: justify;
+  text-align: justify;
 }
 
 li {
-    text-align: left;
+  text-align: left;
 }
 
 p,
@@ -150,33 +150,33 @@ h5,
 h6,
 li,
 ul {
-    font-family: "calibri";
+  font-family: "calibri";
 }
 
 h1 {
-    font-size: 45px;
-    color: #562c2c;
-    padding-bottom: 10px;
-    margin-top: auto;
+  font-size: 45px;
+  color: #2c3b56;
+  padding-bottom: 10px;
+  margin-top: auto;
 }
 
 a:link,
 a:visited,
 a:active {
-    color: #637893;
+  color: #637893;
 }
 a:hover {
-    color: #45658b;
+  color: #45658b;
 }
 
 body {
-    background: -7px top repeat-y;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: white;
-    display: block;
-    border: 1px solid #efefef;
-    padding: 3px 1px 3px 3px;
+  background: -7px top repeat-y;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: white;
+  display: block;
+  border: 1px solid #efefef;
+  padding: 3px 1px 3px 3px;
 }
