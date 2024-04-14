@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM hugovasko/java8:linux-64
 
 COPY . /sigidoc
 WORKDIR /sigidoc
