@@ -3,8 +3,8 @@
     <fileDesc>
       <titleStmt>
         <title>
-          <seg xml:lang="en">Seal of Arsenios Tzamplakon</seg>
-          <seg xml:lang="bg">Печат на Арсений Цамблак</seg>
+          <seg xml:lang="en">Seal of Sisinnios, imperial strator</seg>
+          <seg xml:lang="bg">Печат на Сисини, императорски стратор</seg>
         </title>
         <editor>
           <persName xml:lang="en">
@@ -18,31 +18,31 @@
         </editor>
       </titleStmt>
       <location>
-        <geo>42.697334, 23.325941</geo>
+        <geo>42.840833, 23.371181</geo>
       </location>
       <editionStmt>
         <edition>
-          <seg xml:lang="en">Jordanov, 2011, 138, p. 70; Jordanov, Corpus, 3, 1780; Jordanov, Corpus, 2, 710</seg>
-          <seg xml:lang="bg">Jordanov, 2011,138, стр. 70; Jordanov, Corpus, 3, 1780; Jordanov, Corpus, 2, 710</seg>
+          <seg xml:lang="en">Jordanov, 2011, 79, p. 36-37; Jordanov, Corpus, 3, 710, p. 259-260; Mushmov, 1934, 30, p. 343</seg>
+          <seg xml:lang="bg">Jordanov, 2011, 79, p. 36-37; Jordanov, Corpus, 3, 710, p. 259-260; Mushmov, 1934, 30, p. 343</seg>
         </edition>
         <editor>
           <persName xml:lang="en" xml:id="">
-            <forename>Pantelis</forename>
-            <surname>Charalampakis</surname>
+            <forename>Metodi</forename>
+            <surname>Zlatkov</surname>
           </persName>
           <persName xml:lang="bg" xml:id="">
-            <forename>Пантелис</forename>
-            <surname>Харалампакис</surname>
+            <forename>Методи</forename>
+            <surname>Златков</surname>
           </persName>
         </editor>
       </editionStmt>
       <publicationStmt>
         <authority xml:lang="en">{AUTHORITY_EN}</authority>
         <authority xml:lang="bg">{AUTHORITY_BG}</authority>
-        <idno type="filename">BG_Sofia_NAIM_183</idno>
-        <idno type="SigiDocID">183</idno>
-        <idno type="sequence">0183</idno>
-        <date when="1301">1301-1350</date>
+        <idno type="filename">BG_Sofia_NAIM_30</idno>
+        <idno type="SigiDocID">30</idno>
+        <idno type="sequence">0030</idno>
+        <date when="0701">0701-0800</date>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
                         Commons Attributions-NonCommercial-ShareAlike 4.0 International
@@ -53,8 +53,8 @@
         <msDesc>
           <msIdentifier>
             <country>
-              <seg xml:lang="en">―</seg>
-              <seg xml:lang="bg">―</seg>
+              <seg xml:lang="en">uncertain</seg>
+              <seg xml:lang="bg">неизвестно</seg>
             </country>
             <settlement>
               <seg xml:lang="en">―</seg>
@@ -113,12 +113,12 @@
                     <seg xml:lang="bg">Олово</seg>
                   </material>
                   <dimensions type="support" unit="mm">
-                    <dim type="diameter">33.5</dim>
+                    <dim type="diameter">28</dim>
                     <height>{HEIGHT}</height>
                     <width>{WIDTH}</width>
                     <depth>{DEPTH}</depth>
                   </dimensions>
-                  <measure type="weight" unit="g">22.82</measure>
+                  <measure type="weight" unit="g">15.24</measure>
                   <measure type="axis" unit="clock">―</measure>
                   <measure type="overstrikeOrient" unit="clock">―</measure>
                   <measure type="channelOrient" unit="clock">―</measure>
@@ -126,15 +126,15 @@
                   <measure type="countermark" unit="clock" xml:lang="bg">―</measure>
                 </support>
                 <condition rend="">
-                  <p xml:lang="en">―</p>
-                  <p xml:lang="bg">―</p>
+                  <p xml:lang="en">Complete imprint but in a poor state of preservation.</p>
+                  <p xml:lang="bg">Пълен отпечатък, но запазен в лошо състояние.</p>
                 </condition>
               </supportDesc>
               <layoutDesc>
                 <layout n="whole">
                   <rs type="layout">
-                    <seg xml:lang="en">Iconography and legend</seg>
-                    <seg xml:lang="bg">Иконография и надпис</seg>
+                    <seg xml:lang="en">Monogram and legend</seg>
+                    <seg xml:lang="bg">Монограм и надпис</seg>
                   </rs>
                   <rs type="execution">
                     <seg xml:lang="en">Struck</seg>
@@ -145,7 +145,7 @@
                     <seg xml:lang="bg">Кръгъл</seg>
                   </rs>
                   <rs type="matrix" subtype="">
-                    <idno type="SigiDoc">183</idno>
+                    <idno type="SigiDoc">30</idno>
                     <idno type="PBW" corresp="URI">{PBW}</idno>
                   </rs>
                 </layout>
@@ -181,12 +181,12 @@
                                         <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
                                         <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
                                     </origDate> -->
-              <origDate type="analysis" notBefore="1301" notAfter="1350" evidence="" cert="" resp="">
-                <seg>1301-1350</seg>
+              <origDate type="analysis" notBefore="0701" notAfter="0800" evidence="" cert="" resp="">
+                <seg>0701-0800</seg>
                 <interp type="datingCriteria" xml:lang="en">Epigraphy</interp>
                 <interp type="datingCriteria" xml:lang="bg">Епиграфика</interp>
               </origDate>
-              <origDate type="internal" when="1301" when-custom="" datingMethod="">
+              <origDate type="internal" when="0701" when-custom="" datingMethod="">
                 <seg>―</seg>
                 <interp type="datingCriteria" xml:lang="en">―</interp>
                 <interp type="datingCriteria" xml:lang="bg">―</interp>
@@ -201,19 +201,19 @@
             </origin>
             <provenance type="found" subtype="" when="" xml:lang="en" source="" cert="">
               <placeName type="ancientFindspot" ref="URI">―</placeName>
-              <placeName type="modernFindspot" ref="URI">―</placeName>
+              <placeName type="modernFindspot" ref="URI">uncertain</placeName>
               <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="found" subtype="" when="" xml:lang="bg" source="" cert="">
               <placeName type="ancientFindspot" ref="URI">―</placeName>
-              <placeName type="modernFindspot" ref="URI">―</placeName>
+              <placeName type="modernFindspot" ref="URI">неизвестно</placeName>
               <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>Iconography</p>
+              <p>Monogram</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
-              <p>Иконография</p>
+              <p>Монограм</p>
             </provenance>
             <provenance type="not-observed" subtype="" xml:lang="en">
               <p>―</p>
@@ -228,8 +228,8 @@
               <p>―</p>
             </provenance>
             <acquisition>
-              <p xml:lang="en">Donation by Asen Nikolov (Silistra) in 1976</p>
-              <p xml:lang="bg">Дарение от Асен Николов (Силистра) през 1976 г.</p>
+              <p xml:lang="en">―</p>
+              <p xml:lang="bg">―</p>
             </acquisition>
           </history>
           <msPart n="r">
@@ -247,7 +247,7 @@
                 <layoutDesc>
                   <layout n="r">
                     <dimensions type="written" unit="mm">
-                      <dim type="diameter">33.5</dim>
+                      <dim type="diameter">28</dim>
                     </dimensions>
                     <rs type="matrix" subtype="">
                       <idno type="SigiDoc" xml:lang="en">―</idno>
@@ -281,7 +281,7 @@
             <history>
               <origin>
                 <origDate>
-                  <seg>1301-1350</seg>
+                  <seg>0701-0800</seg>
                   <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
                   <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
                 </origDate>
@@ -332,7 +332,7 @@
             <history>
               <origin>
                 <origDate>
-                  <seg>1301-1350</seg>
+                  <seg>0701-0800</seg>
                   <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
                   <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
                 </origDate>
@@ -370,14 +370,14 @@
   <facsimile>
     <surface type="obverse">
       <desc>Obverse</desc>
-      <graphic url="Sofia_NAIM_183_O.jpg" scale="1.5">
-        <desc xml:lang="">Seal of Arsenios Tzamplakon</desc>
+      <graphic url="Sofia_NAIM_30_O.jpg" scale="1.5">
+        <desc xml:lang="">Seal of Sisinnios, imperial strator</desc>
       </graphic>
     </surface>
     <surface type="reverse">
       <desc>Reverse</desc>
-      <graphic url="Sofia_NAIM_183_R.jpg" scale="1.5">
-        <desc xml:lang="">Seal of Arsenios Tzamplakon</desc>
+      <graphic url="Sofia_NAIM_30_R.jpg" scale="1.5">
+        <desc xml:lang="">Seal of Sisinnios, imperial strator</desc>
       </graphic>
     </surface>
   </facsimile>
