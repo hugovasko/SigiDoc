@@ -385,11 +385,18 @@
     <body>
       <div type="edition" subtype="editorial" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+<ab>(Θεοτόκε βοήθει)</ab>
+</div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+<ab>1 Φωτινῷ</ab>
+<ab>2 [ἐ]πισκόπῳ</ab>
+<ab>3 Τραπε-</ab>
+<ab>4 ζοῦ(ντος)</ab>
+</div>
                     </div>
       <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">

@@ -385,19 +385,33 @@
     <body>
       <div type="edition" subtype="editorial" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+<ab>[Μή(τη)ρ] Θ[(εο)ῦ]</ab>
+</div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+<ab>1 Στε-</ab>
+<ab>2 [φ]αν(...) [.]α</ab>
+<ab>3 [.]τας</ab>
+</div>
                     </div>
       <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+<ab>.. Θ.</ab>
+</div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+<ab>1 </ab>
+<ab>2̣ΣΤΕ</ab>
+<ab>3.Α͂, .̄ Α̣</ab>
+<ab>4.Τ̣Α̣Σ</ab>
+<ab>5</ab>
+</div>
                     </div>
       <div type="apparatus">
         <listApp>

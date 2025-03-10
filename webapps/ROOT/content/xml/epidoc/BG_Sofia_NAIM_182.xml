@@ -385,19 +385,53 @@
     <body>
       <div type="edition" subtype="editorial" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+<ab>1 [Κο]μνηνὸ[ς]</ab>
+<ab>2 [Ἀν]δρόνικος</ab>
+<ab>3 [ἐξ Ε]ὐδοκίας</ab>
+<ab>4 [πορ]φυροφυοῦς</ab>
+<ab>5 [ἐκ] φυεὶς ῥίζης</ab>
+<ab>6 [κλ]ἀδος ἀνεψι&lt;ὸ-&gt;</ab>
+<ab>7 [ς δ]ἐ Μανουὴλ</ab>
+<ab>8 [βα]σιλέως</ab>
+</div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+<ab>1 [υἱ]ὸς Βατ&lt;ά-&gt;</ab>
+<ab>2 τζου δεσπ[ό-]</ab>
+<ab>3 του Θεοδώρου</ab>
+<ab>4 ἐμὲ προΐστ[η]</ab>
+<ab>5 κ(αὶ) λόγων</ab>
+<ab>6 καὶ πραγ-</ab>
+<ab>7 μάτων</ab>
+</div>
                     </div>
       <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+<ab>1..μνηνο.</ab>
+<ab>2.ΔΡΟΝΙΚΟΣ</ab>
+<ab>3..υδοκιας</ab>
+<ab>4..ρΦΥΡΟΦΥς</ab>
+<ab>5.ΦυιςριΖΗΣ</ab>
+<ab>6.ΛΑΔΟΣΑΝΕΨΙ</ab>
+<ab>7..ΕΜΑΝΗΛ</ab>
+<ab>8..ΣΙΛΕΟΣ</ab>
+</div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+<ab>1..ΟΣRΑΤ</ab>
+<ab>2ΤΖΔΕΣΠ.</ab>
+<ab>3ΤΘΕΟΔΩΡ</ab>
+<ab>4ΕΜΕΠΡΟΙΣΤ.</ab>
+<ab>5ΚΕΛΟΓΩΝ</ab>
+<ab>6ΚΑΙΠΡΑΓ</ab>
+<ab>7ΜΑΤΩΝ</ab>
+</div>
                     </div>
       <div type="apparatus">
         <listApp>

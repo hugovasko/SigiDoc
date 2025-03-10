@@ -385,19 +385,36 @@
     <body>
       <div type="edition" subtype="editorial" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+<ab>a ῾Ο ἅγιος - b Εὐστράτ(ιος)</ab>
+</div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+<ab>1 Σόν Εὐ-</ab>
+<ab>2 στράτιε</ab>
+<ab>3 Μιχαὴλ</ab>
+<ab>4 δοῦλον</ab>
+<ab>5 σκέποι[ς]</ab>
+</div>
                     </div>
       <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+<ab>a Ο|Α|ΓΙ|ΟΣ - b Ε|Υ|ΣΤ|ΡΑ̣|Τ̣</ab>
+</div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+<ab>1</ab>
+<ab>2ΣΟΕ</ab>
+<ab>3ΣΤΡΑΤΙΕ̣</ab>
+<ab>4ΙΧΑΗΛ̣</ab>
+<ab>5ΔΟΥΛΟ̣</ab>
+<ab>6Σ̣ΚΕΠΟ.</ab>
+</div>
                     </div>
       <div type="apparatus">
         <listApp>

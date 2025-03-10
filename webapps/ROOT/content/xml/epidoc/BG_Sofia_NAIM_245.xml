@@ -385,19 +385,37 @@
     <body>
       <div type="edition" subtype="editorial" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+<ab>1 Θε[οτ]όκε βοήθει</ab>
+</div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+<ab>1 Θεοφυ-</ab>
+<ab>2 [λ]άκτῳ ἀρ-</ab>
+<ab>3 χιεπισκό-</ab>
+<ab>4 π(ῳ) Κωνσταν-</ab>
+<ab>5 τ(ινου)πόλ(εως) Νέα(ς)</ab>
+<ab>6  Ῥώμης</ab>
+</div>
                     </div>
       <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+<ab>1ΘΕ.Ο̣Ε̣ΟΗΘΕΙ</ab>
+</div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+<ab>1ΘΕΟΥ</ab>
+<ab>2.ΑΤ,ΑΡ̣</ab>
+<ab>3ΧΙΕΠΙΣΟ̣</ab>
+<ab>4Π,ΝΣΤΑΝ</ab>
+<ab>5Τ,ΠΟΛ,ΕΑ⸊</ab>
+<ab>6ΜΗΣ</ab>
+</div>
                     </div>
       <div type="apparatus">
         <listApp>

@@ -385,19 +385,39 @@
     <body>
       <div type="edition" subtype="editorial" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+<ab>1 Μ(ήτη)ρ Θ(εο)ῦ</ab>
+</div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+<ab>1 Ἐκ σοῦ</ab>
+<ab>2 μοναχὸς Ἀρ-</ab>
+<ab>3 σένιος Τζαμ-</ab>
+<ab>4 πλάκων Π[άνα-]</ab>
+<ab>5 γνε κυροῖ καὶ</ab>
+<ab>6 γραφὰς και π-</ab>
+<ab>7 ρακτέα</ab>
+</div>
                     </div>
       <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+<ab>1̅ΘΥ̅</ab>
+</div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+<ab>1ΕΚ̣ΣΟ̣Υ̣</ab>
+<ab>2ΜΟΑΧΟΣΑ̣Ρ̣</ab>
+<ab>3ΣΕΝΙΟΣΤΑ̣Μ̣</ab>
+<ab>4ΠΛ̣ΑΚΠ̣..</ab>
+<ab>5ΓΕΚΥ̣ΡΟΙΚ̣Α̣Ι</ab>
+<ab>6ΓΡΑΦΑ̣ΣΚΑΙΠ</ab>
+<ab>7ΡΑΚΤ̣ΕΑ</ab>
+</div>
                     </div>
       <div type="apparatus">
         <listApp>

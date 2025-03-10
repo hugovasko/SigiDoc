@@ -385,19 +385,37 @@
     <body>
       <div type="edition" subtype="editorial" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+<ab>Μ(ήτη)ρ Θ(εο)ῦ</ab>
+</div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+<ab>1 Σκέποις μ(υσ-)</ab>
+<ab>2 τικοῦ [π]οιμνήου</ab>
+<ab>3 [σ]ὺ Παρθένε Βε-</ab>
+<ab>4 λεβουσδίου ποι-</ab>
+<ab>5 μένα Ἰωά-</ab>
+<ab>6 ννην</ab>
+</div>
                     </div>
       <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+<ab>Μ̅Ρ Θ̅Υ</ab>
+</div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+<ab>1 .ΣΚΕΠΟ̣ΙΣΜ</ab>
+<ab>2ΤΙΚ.Ο̣ΙΜ</ab>
+<ab>3.ΥΠΑΡΘ̣ΕΝΕΕ</ab>
+<ab>4Λ̣ΕΟΥΣΔΙΠΟΙ</ab>
+<ab>5ΜΕΝΑΙΑ</ab>
+<ab>6ΝΝΗΝ</ab>
+</div>
                     </div>
       <div type="apparatus">
         <listApp>
