@@ -26,7 +26,7 @@ namespace ExcelToXMLConverter
                 XNamespace ns = "http://www.tei-c.org/ns/1.0";
 
                 ExcelPackage package;
-                using (var stream = new FileStream(@"./resources/test.xlsx", FileMode.Open, FileAccess.Read))
+                using (var stream = new FileStream(@"./resources/seals.xlsx", FileMode.Open, FileAccess.Read))
                 {
                     package = new ExcelPackage(stream);
                 }
