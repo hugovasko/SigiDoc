@@ -23,6 +23,7 @@
                     </titleStmt>
                     <location>
                         <geo>{COORDINATES}</geo>
+                        <findspotAccuracy>{FINDSPOT_ACCURACY}</findspotAccuracy>
                     </location>
                     <editionStmt>
                         <edition>
@@ -280,8 +281,8 @@
                                     <origin>
                                         <origDate>
                                             <seg>{DATE}</seg>
-                                            <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
+                                            <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
+                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                                         </origDate>
                                         <date/>
                                     </origin>
@@ -331,8 +332,8 @@
                                     <origin>
                                         <origDate>
                                             <seg>{DATE}</seg>
-                                            <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
+                                            <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
+                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                                         </origDate>
                                         <date/>
                                     </origin>

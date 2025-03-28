@@ -3,28 +3,28 @@
     <fileDesc>
       <titleStmt>
         <title>
-          <seg xml:lang="en">Seal of the Laura of kyr Antonios</seg>
-          <seg xml:lang="bg">Печат на лаврата на господина Антоний</seg>
+          <seg xml:lang="en">Seal of Theodosius I</seg>
+          <seg xml:lang="bg">Печат на Теодосий I</seg>
         </title>
         <editor>
           <persName xml:lang="en">
-            <forename>Ivan</forename>
-            <surname>Jordanov</surname>
+            <forename>Marina</forename>
+            <surname>Doychinova</surname>
           </persName>
           <persName xml:lang="bg">
-            <forename>Иван</forename>
-            <surname>Йорданов</surname>
+            <forename>Марина</forename>
+            <surname>Дойчинова</surname>
           </persName>
         </editor>
       </titleStmt>
       <location>
-        <geo>43.387, 27.132</geo>
+        <geo>42.705304, 23.324304</geo>
         <findspotAccuracy>1</findspotAccuracy>
       </location>
       <editionStmt>
         <edition>
-          <seg xml:lang="en">Jordanov, 2011, 137, p. 70; Jordanov, Corpus, 3, 1652, p. 544-545; Jordanov, Corpus, 1, 9.1, p. 39; Jordanov, 1992, 25, p. 291; Laurent, Corpus, 5.2, 1139, p. 66-67; Gerasimov, 1940-1942, 5, p. 176-177</seg>
-          <seg xml:lang="bg">Jordanov, 2011, 137, p. 70; Jordanov, Corpus, 3, 1652, p. 544-545; Jordanov, Corpus, 1, 9.1, p. 39; Jordanov, 1992, 25, p. 291; Laurent, Corpus, 5.2, 1139, p. 66-67; Gerasimov, 1940-1942, 5, p. 176-177</seg>
+          <seg xml:lang="en">Stanev 2019, 003/I(2015), p. 20; Marinova et al. 2018, p. 29</seg>
+          <seg xml:lang="bg">Stanev 2019, 003/I(2015), p. 20; Marinova et al. 2018, p. 29</seg>
         </edition>
         <editor>
           <persName xml:lang="en" xml:id="">
@@ -40,10 +40,10 @@
       <publicationStmt>
         <authority xml:lang="en">{AUTHORITY_EN}</authority>
         <authority xml:lang="bg">{AUTHORITY_BG}</authority>
-        <idno type="filename">BG_Sofia_NAIM_90</idno>
-        <idno type="SigiDocID">BG_Sofia_NAIM_90</idno>
-        <idno type="sequence">BG_Sofia_NAIM_90</idno>
-        <date when="1026">1026-1075</date>
+        <idno type="filename">BG_Sofia_RIM_MIS-A-7375</idno>
+        <idno type="SigiDocID">BG_Sofia_RIM_MIS-A-7375</idno>
+        <idno type="sequence">BG_Sofia_RIM_MIS-A-7375</idno>
+        <date when="0384">0384-0395</date>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
                         Commons Attributions-NonCommercial-ShareAlike 4.0 International
@@ -54,17 +54,17 @@
         <msDesc>
           <msIdentifier>
             <country>
-              <seg xml:lang="en">Pliska</seg>
-              <seg xml:lang="bg">Плиска</seg>
+              <seg xml:lang="en">Sofia</seg>
+              <seg xml:lang="bg">София</seg>
             </country>
             <settlement>
-              <seg xml:lang="en">Pliska</seg>
-              <seg xml:lang="bg">Плиска</seg>
+              <seg xml:lang="en">Serdica</seg>
+              <seg xml:lang="bg">Сердика</seg>
             </settlement>
-            <institution xml:lang="en">National Archaeological Institute with Museum – Bulgarian Academy of Sciences</institution>
-            <institution xml:lang="bg">Национален Археологически Институт с Музей – Българската Академия на Науките</institution>
-            <repository xml:lang="en">Exhibition</repository>
-            <repository xml:lang="bg">Експозиция</repository>
+            <institution xml:lang="en">Regional Historical Museum – Sofia</institution>
+            <institution xml:lang="bg">Регионален Исторически Музей – София</institution>
+            <repository xml:lang="en">―</repository>
+            <repository xml:lang="bg">―</repository>
             <collection xml:lang="en" ref="URI">―</collection>
             <collection xml:lang="bg" ref="URI">―</collection>
             <idno>{IDNO}</idno>
@@ -114,12 +114,12 @@
                     <seg xml:lang="bg">Олово</seg>
                   </material>
                   <dimensions type="support" unit="mm">
-                    <dim type="diameter">25</dim>
+                    <dim type="diameter">18.6x12.6</dim>
                     <height>{HEIGHT}</height>
                     <width>{WIDTH}</width>
                     <depth>{DEPTH}</depth>
                   </dimensions>
-                  <measure type="weight" unit="g">7.75</measure>
+                  <measure type="weight" unit="g">2.3</measure>
                   <measure type="axis" unit="clock">―</measure>
                   <measure type="overstrikeOrient" unit="clock">―</measure>
                   <measure type="channelOrient" unit="clock">―</measure>
@@ -134,19 +134,19 @@
               <layoutDesc>
                 <layout n="whole">
                   <rs type="layout">
-                    <seg xml:lang="en">Iconography and legend</seg>
-                    <seg xml:lang="bg">Иконография и надпис</seg>
+                    <seg xml:lang="en">Iconography</seg>
+                    <seg xml:lang="bg">Иконография</seg>
                   </rs>
                   <rs type="execution">
                     <seg xml:lang="en">Struck</seg>
                     <seg xml:lang="bg">Отсечен</seg>
                   </rs>
                   <rs type="shape">
-                    <seg xml:lang="en">Round</seg>
-                    <seg xml:lang="bg">Кръгъл</seg>
+                    <seg xml:lang="en">Rectangular</seg>
+                    <seg xml:lang="bg">Правоъгълен</seg>
                   </rs>
                   <rs type="matrix" subtype="">
-                    <idno type="SigiDoc">BG_Sofia_NAIM_90</idno>
+                    <idno type="SigiDoc">BG_Sofia_RIM_MIS-A-7375</idno>
                     <idno type="PBW" corresp="URI">{PBW}</idno>
                   </rs>
                 </layout>
@@ -171,10 +171,10 @@
             <origin>
               <origPlace>
                 <seg xml:lang="en">
-                  <placeName ref="URI">Pliska</placeName>
+                  <placeName ref="URI">Serdica</placeName>
                 </seg>
                 <seg xml:lang="bg">
-                  <placeName ref="URI">Плиска</placeName>
+                  <placeName ref="URI">Сердика</placeName>
                 </seg>
               </origPlace>
               <!-- <origDate type="analysis" when="{DATE}" evidence="" cert="" resp="">
@@ -182,12 +182,12 @@
                                         <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
                                         <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
                                     </origDate> -->
-              <origDate type="analysis" notBefore="1026" notAfter="1075" evidence="" cert="" resp="">
-                <seg>1026-1075</seg>
-                <interp type="datingCriteria" xml:lang="en">Epigraphy</interp>
-                <interp type="datingCriteria" xml:lang="bg">Епиграфика</interp>
+              <origDate type="analysis" notBefore="0384" notAfter="0395" evidence="" cert="" resp="">
+                <seg>0384-0395</seg>
+                <interp type="datingCriteria" xml:lang="en">Iconography</interp>
+                <interp type="datingCriteria" xml:lang="bg">Иконография</interp>
               </origDate>
-              <origDate type="internal" when="1026" when-custom="" datingMethod="">
+              <origDate type="internal" when="0384" when-custom="" datingMethod="">
                 <seg>―</seg>
                 <interp type="datingCriteria" xml:lang="en">―</interp>
                 <interp type="datingCriteria" xml:lang="bg">―</interp>
@@ -201,13 +201,13 @@
               </date>
             </origin>
             <provenance type="found" subtype="" when="" xml:lang="en" source="" cert="">
-              <placeName type="ancientFindspot" ref="URI">Pliska</placeName>
-              <placeName type="modernFindspot" ref="URI">Pliska</placeName>
+              <placeName type="ancientFindspot" ref="URI">Serdica</placeName>
+              <placeName type="modernFindspot" ref="URI">Sofia</placeName>
               <rs type="circumstances">Excavations</rs>
             </provenance>
             <provenance type="found" subtype="" when="" xml:lang="bg" source="" cert="">
-              <placeName type="ancientFindspot" ref="URI">Плиска</placeName>
-              <placeName type="modernFindspot" ref="URI">Плиска</placeName>
+              <placeName type="ancientFindspot" ref="URI">Сердика</placeName>
+              <placeName type="modernFindspot" ref="URI">София</placeName>
               <rs type="circumstances">Разкопки</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
@@ -248,7 +248,7 @@
                 <layoutDesc>
                   <layout n="r">
                     <dimensions type="written" unit="mm">
-                      <dim type="diameter">25</dim>
+                      <dim type="diameter">18.6x12.6</dim>
                     </dimensions>
                     <rs type="matrix" subtype="">
                       <idno type="SigiDoc" xml:lang="en">―</idno>
@@ -282,7 +282,7 @@
             <history>
               <origin>
                 <origDate>
-                  <seg>1026-1075</seg>
+                  <seg>0384-0395</seg>
                   <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
                                             <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
@@ -333,7 +333,7 @@
             <history>
               <origin>
                 <origDate>
-                  <seg>1026-1075</seg>
+                  <seg>0384-0395</seg>
                   <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
                                             <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
@@ -371,14 +371,14 @@
   <facsimile>
     <surface type="obverse">
       <desc>Obverse</desc>
-      <graphic url="Sofia_NAIM_90_O.jpg" scale="1.5">
-        <desc xml:lang="">Seal of the Laura of kyr Antonios</desc>
+      <graphic url="Sofia_RIM_7375_O.jpg" scale="1.5">
+        <desc xml:lang="">Seal of Theodosius I</desc>
       </graphic>
     </surface>
     <surface type="reverse">
       <desc>Reverse</desc>
-      <graphic url="Sofia_NAIM_90_R.jpg" scale="1.5">
-        <desc xml:lang="">Seal of the Laura of kyr Antonios</desc>
+      <graphic url="Sofia_RIM_7375_R.jpg" scale="1.5">
+        <desc xml:lang="">Seal of Theodosius I</desc>
       </graphic>
     </surface>
   </facsimile>
@@ -386,35 +386,19 @@
     <body>
       <div type="edition" subtype="editorial" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            
-                        
-<ab>1 Μ(ήτη)ρ Θ(εο)ῦ</ab>
-</div>
+                            <ab>[obv text here]</ab>
+                        </div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            
-                        
-<ab>1 Τῆς</ab>
-<ab>2 λαύρας</ab>
-<ab>3 τοῦ κ(υρίο)υ Ἀν-</ab>
-<ab>4 [τ]ωνί[ου]</ab>
-</div>
+                            <ab>[rev text here]</ab>
+                        </div>
                     </div>
       <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            
-                        
-<ab>1̅ Θ̅Υ</ab>
-</div>
+                            <ab>[obv text here]</ab>
+                        </div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            
-                        
-<ab>1</ab>
-<ab>2ΤΗΣ</ab>
-<ab>3ΛΑΥΑΣ</ab>
-<ab>4Τ͵ΥΑΝ</ab>
-<ab>5.Ι.</ab>
-<ab>6</ab>
-</div>
+                            <ab>[rev text here]</ab>
+                        </div>
                     </div>
       <div type="apparatus">
         <listApp>

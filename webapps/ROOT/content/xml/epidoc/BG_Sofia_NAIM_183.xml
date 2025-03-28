@@ -18,7 +18,8 @@
         </editor>
       </titleStmt>
       <location>
-        <geo>42.697334, 23.325941</geo>
+        <geo>44.120922, 27.259052</geo>
+        <findspotAccuracy>3</findspotAccuracy>
       </location>
       <editionStmt>
         <edition>
@@ -40,8 +41,8 @@
         <authority xml:lang="en">{AUTHORITY_EN}</authority>
         <authority xml:lang="bg">{AUTHORITY_BG}</authority>
         <idno type="filename">BG_Sofia_NAIM_183</idno>
-        <idno type="SigiDocID">183</idno>
-        <idno type="sequence">0183</idno>
+        <idno type="SigiDocID">BG_Sofia_NAIM_183</idno>
+        <idno type="sequence">BG_Sofia_NAIM_183</idno>
         <date when="1301">1301-1350</date>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
@@ -53,12 +54,12 @@
         <msDesc>
           <msIdentifier>
             <country>
-              <seg xml:lang="en">―</seg>
-              <seg xml:lang="bg">―</seg>
+              <seg xml:lang="en">Silistra</seg>
+              <seg xml:lang="bg">Силистра</seg>
             </country>
             <settlement>
-              <seg xml:lang="en">―</seg>
-              <seg xml:lang="bg">―</seg>
+              <seg xml:lang="en">Dorostolon / Dristra</seg>
+              <seg xml:lang="bg">Доростол / Дръстър</seg>
             </settlement>
             <institution xml:lang="en">National Archaeological Institute with Museum – Bulgarian Academy of Sciences</institution>
             <institution xml:lang="bg">Национален Археологически Институт с Музей – Българската Академия на Науките</institution>
@@ -145,7 +146,7 @@
                     <seg xml:lang="bg">Кръгъл</seg>
                   </rs>
                   <rs type="matrix" subtype="">
-                    <idno type="SigiDoc">183</idno>
+                    <idno type="SigiDoc">BG_Sofia_NAIM_183</idno>
                     <idno type="PBW" corresp="URI">{PBW}</idno>
                   </rs>
                 </layout>
@@ -170,10 +171,10 @@
             <origin>
               <origPlace>
                 <seg xml:lang="en">
-                  <placeName ref="URI">―</placeName>
+                  <placeName ref="URI">Dorostolon / Dristra</placeName>
                 </seg>
                 <seg xml:lang="bg">
-                  <placeName ref="URI">―</placeName>
+                  <placeName ref="URI">Доростол / Дръстър</placeName>
                 </seg>
               </origPlace>
               <!-- <origDate type="analysis" when="{DATE}" evidence="" cert="" resp="">
@@ -200,13 +201,13 @@
               </date>
             </origin>
             <provenance type="found" subtype="" when="" xml:lang="en" source="" cert="">
-              <placeName type="ancientFindspot" ref="URI">―</placeName>
-              <placeName type="modernFindspot" ref="URI">―</placeName>
+              <placeName type="ancientFindspot" ref="URI">Dorostolon / Dristra</placeName>
+              <placeName type="modernFindspot" ref="URI">Silistra</placeName>
               <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="found" subtype="" when="" xml:lang="bg" source="" cert="">
-              <placeName type="ancientFindspot" ref="URI">―</placeName>
-              <placeName type="modernFindspot" ref="URI">―</placeName>
+              <placeName type="ancientFindspot" ref="URI">Доростол / Дръстър</placeName>
+              <placeName type="modernFindspot" ref="URI">Силистра</placeName>
               <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
@@ -282,8 +283,8 @@
               <origin>
                 <origDate>
                   <seg>1301-1350</seg>
-                  <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                  <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
+                  <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
+                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
                 <date />
               </origin>
@@ -333,8 +334,8 @@
               <origin>
                 <origDate>
                   <seg>1301-1350</seg>
-                  <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                  <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
+                  <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
+                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
                 <date />
               </origin>

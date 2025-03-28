@@ -31,7 +31,7 @@ namespace ExcelToXMLConverter
         {
             var listElement = sealsList.Descendants(ns + "list").FirstOrDefault();
 
-            if (listElement != null)
+            if (listElement != null && filename != "―")
             {
                 bool isItemInList = listElement.Descendants(ns + "item").Any(i => i.Attribute("n")?.Value == filename);
 
@@ -39,7 +39,7 @@ namespace ExcelToXMLConverter
                 {
                     var newListItem = new XElement(ns + "item");
                     newListItem.SetAttributeValue("n", filename);
-                    newListItem.SetAttributeValue("sortKey", sequence);
+                    newListItem.SetAttributeValue("sortKey", filename);
                     listElement.Add(newListItem);
 
                     var sortedListItems = listElement.Descendants(ns + "item").OrderBy(i => i.Attribute("sortKey")?.Value).ToList();
@@ -63,12 +63,12 @@ namespace ExcelToXMLConverter
                 return;
             }
 
-            var separator = "--";
+            var separator = "@";
             var splitParts = text.Split(new[] { separator }, StringSplitOptions.None);
 
             if (splitParts.Length != 2)
             {
-                Console.WriteLine($"Invalid {type} text format. Could not find separator '--'.");
+                Console.WriteLine($"Invalid {type} text format. Could not find separator '@'.");
                 return;
             }
 

@@ -19,6 +19,7 @@
       </titleStmt>
       <location>
         <geo>42.5569, 27.6405</geo>
+        <findspotAccuracy>2</findspotAccuracy>
       </location>
       <editionStmt>
         <edition>
@@ -40,8 +41,8 @@
         <authority xml:lang="en">{AUTHORITY_EN}</authority>
         <authority xml:lang="bg">{AUTHORITY_BG}</authority>
         <idno type="filename">BG_Sofia_NAIM_238</idno>
-        <idno type="SigiDocID">238</idno>
-        <idno type="sequence">0238</idno>
+        <idno type="SigiDocID">BG_Sofia_NAIM_238</idno>
+        <idno type="sequence">BG_Sofia_NAIM_238</idno>
         <date when="0501">0501-0600</date>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
@@ -145,7 +146,7 @@
                     <seg xml:lang="bg">Кръгъл</seg>
                   </rs>
                   <rs type="matrix" subtype="">
-                    <idno type="SigiDoc">238</idno>
+                    <idno type="SigiDoc">BG_Sofia_NAIM_238</idno>
                     <idno type="PBW" corresp="URI">{PBW}</idno>
                   </rs>
                 </layout>
@@ -282,8 +283,8 @@
               <origin>
                 <origDate>
                   <seg>0501-0600</seg>
-                  <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                  <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
+                  <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
+                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
                 <date />
               </origin>
@@ -333,8 +334,8 @@
               <origin>
                 <origDate>
                   <seg>0501-0600</seg>
-                  <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                  <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
+                  <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
+                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
                 <date />
               </origin>
@@ -397,11 +398,15 @@
                     </div>
       <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+<ab>. - Σ</ab>
+</div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+<ab>Μ -  - Υ – Ρ – Ι – Α – Ν – Ο – Υ</ab>
+</div>
                     </div>
       <div type="apparatus">
         <listApp>

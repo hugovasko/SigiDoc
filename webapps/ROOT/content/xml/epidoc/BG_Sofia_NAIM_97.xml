@@ -3,47 +3,47 @@
     <fileDesc>
       <titleStmt>
         <title>
-          <seg xml:lang="en">Seal of the Laura of kyr Antonios</seg>
-          <seg xml:lang="bg">Печат на лаврата на господина Антоний</seg>
+          <seg xml:lang="en">Seal of Constantine Assen</seg>
+          <seg xml:lang="bg">Печат на Константин Асен</seg>
         </title>
         <editor>
           <persName xml:lang="en">
-            <forename>Ivan</forename>
-            <surname>Jordanov</surname>
+            <forename>Nikolay</forename>
+            <surname>Mushmov</surname>
           </persName>
           <persName xml:lang="bg">
-            <forename>Иван</forename>
-            <surname>Йорданов</surname>
+            <forename>Николай</forename>
+            <surname>Мушмов</surname>
           </persName>
         </editor>
       </titleStmt>
       <location>
-        <geo>43.387, 27.132</geo>
-        <findspotAccuracy>1</findspotAccuracy>
+        <geo>―</geo>
+        <findspotAccuracy>―</findspotAccuracy>
       </location>
       <editionStmt>
         <edition>
-          <seg xml:lang="en">Jordanov, 2011, 137, p. 70; Jordanov, Corpus, 3, 1652, p. 544-545; Jordanov, Corpus, 1, 9.1, p. 39; Jordanov, 1992, 25, p. 291; Laurent, Corpus, 5.2, 1139, p. 66-67; Gerasimov, 1940-1942, 5, p. 176-177</seg>
-          <seg xml:lang="bg">Jordanov, 2011, 137, p. 70; Jordanov, Corpus, 3, 1652, p. 544-545; Jordanov, Corpus, 1, 9.1, p. 39; Jordanov, 1992, 25, p. 291; Laurent, Corpus, 5.2, 1139, p. 66-67; Gerasimov, 1940-1942, 5, p. 176-177</seg>
+          <seg xml:lang="en">Jordanov 2011, 19; Jordanov 2001, 159; Gerasimov 1970, 4; Mushmov 1925, 247</seg>
+          <seg xml:lang="bg">Jordanov 2011, 19; Jordanov 2001, 159; Gerasimov 1970, 4; Mushmov 1925, 247</seg>
         </edition>
         <editor>
           <persName xml:lang="en" xml:id="">
-            <forename>Pantelis</forename>
-            <surname>Charalampakis</surname>
+            <forename>Georgi</forename>
+            <surname>Sengalevich</surname>
           </persName>
           <persName xml:lang="bg" xml:id="">
-            <forename>Пантелис</forename>
-            <surname>Харалампакис</surname>
+            <forename>Георги</forename>
+            <surname>Сенгалевич</surname>
           </persName>
         </editor>
       </editionStmt>
       <publicationStmt>
         <authority xml:lang="en">{AUTHORITY_EN}</authority>
         <authority xml:lang="bg">{AUTHORITY_BG}</authority>
-        <idno type="filename">BG_Sofia_NAIM_90</idno>
-        <idno type="SigiDocID">BG_Sofia_NAIM_90</idno>
-        <idno type="sequence">BG_Sofia_NAIM_90</idno>
-        <date when="1026">1026-1075</date>
+        <idno type="filename">BG_Sofia_NAIM_97</idno>
+        <idno type="SigiDocID">BG_Sofia_NAIM_97</idno>
+        <idno type="sequence">BG_Sofia_NAIM_97</idno>
+        <date when="1257">1257-1277</date>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
                         Commons Attributions-NonCommercial-ShareAlike 4.0 International
@@ -54,17 +54,17 @@
         <msDesc>
           <msIdentifier>
             <country>
-              <seg xml:lang="en">Pliska</seg>
-              <seg xml:lang="bg">Плиска</seg>
+              <seg xml:lang="en">―</seg>
+              <seg xml:lang="bg">―</seg>
             </country>
             <settlement>
-              <seg xml:lang="en">Pliska</seg>
-              <seg xml:lang="bg">Плиска</seg>
+              <seg xml:lang="en">―</seg>
+              <seg xml:lang="bg">―</seg>
             </settlement>
             <institution xml:lang="en">National Archaeological Institute with Museum – Bulgarian Academy of Sciences</institution>
             <institution xml:lang="bg">Национален Археологически Институт с Музей – Българската Академия на Науките</institution>
-            <repository xml:lang="en">Exhibition</repository>
-            <repository xml:lang="bg">Експозиция</repository>
+            <repository xml:lang="en">―</repository>
+            <repository xml:lang="bg">Нумизматичен фонд</repository>
             <collection xml:lang="en" ref="URI">―</collection>
             <collection xml:lang="bg" ref="URI">―</collection>
             <idno>{IDNO}</idno>
@@ -110,16 +110,16 @@
                     <interp type="workType" xml:lang="bg">Оригинален отпечатък</interp>
                   </objectType>
                   <material>
-                    <seg xml:lang="en">Lead</seg>
-                    <seg xml:lang="bg">Олово</seg>
+                    <seg xml:lang="en">Gold</seg>
+                    <seg xml:lang="bg">Злато</seg>
                   </material>
                   <dimensions type="support" unit="mm">
-                    <dim type="diameter">25</dim>
+                    <dim type="diameter">38</dim>
                     <height>{HEIGHT}</height>
                     <width>{WIDTH}</width>
                     <depth>{DEPTH}</depth>
                   </dimensions>
-                  <measure type="weight" unit="g">7.75</measure>
+                  <measure type="weight" unit="g">7.57</measure>
                   <measure type="axis" unit="clock">―</measure>
                   <measure type="overstrikeOrient" unit="clock">―</measure>
                   <measure type="channelOrient" unit="clock">―</measure>
@@ -138,15 +138,15 @@
                     <seg xml:lang="bg">Иконография и надпис</seg>
                   </rs>
                   <rs type="execution">
-                    <seg xml:lang="en">Struck</seg>
-                    <seg xml:lang="bg">Отсечен</seg>
+                    <seg xml:lang="en">―</seg>
+                    <seg xml:lang="bg">―</seg>
                   </rs>
                   <rs type="shape">
                     <seg xml:lang="en">Round</seg>
                     <seg xml:lang="bg">Кръгъл</seg>
                   </rs>
                   <rs type="matrix" subtype="">
-                    <idno type="SigiDoc">BG_Sofia_NAIM_90</idno>
+                    <idno type="SigiDoc">BG_Sofia_NAIM_97</idno>
                     <idno type="PBW" corresp="URI">{PBW}</idno>
                   </rs>
                 </layout>
@@ -171,10 +171,10 @@
             <origin>
               <origPlace>
                 <seg xml:lang="en">
-                  <placeName ref="URI">Pliska</placeName>
+                  <placeName ref="URI">―</placeName>
                 </seg>
                 <seg xml:lang="bg">
-                  <placeName ref="URI">Плиска</placeName>
+                  <placeName ref="URI">―</placeName>
                 </seg>
               </origPlace>
               <!-- <origDate type="analysis" when="{DATE}" evidence="" cert="" resp="">
@@ -182,12 +182,12 @@
                                         <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
                                         <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
                                     </origDate> -->
-              <origDate type="analysis" notBefore="1026" notAfter="1075" evidence="" cert="" resp="">
-                <seg>1026-1075</seg>
-                <interp type="datingCriteria" xml:lang="en">Epigraphy</interp>
-                <interp type="datingCriteria" xml:lang="bg">Епиграфика</interp>
+              <origDate type="analysis" notBefore="1257" notAfter="1277" evidence="" cert="" resp="">
+                <seg>1257-1277</seg>
+                <interp type="datingCriteria" xml:lang="en">Iconography, Onomastics</interp>
+                <interp type="datingCriteria" xml:lang="bg">Иконография, Ономастика</interp>
               </origDate>
-              <origDate type="internal" when="1026" when-custom="" datingMethod="">
+              <origDate type="internal" when="1257" when-custom="" datingMethod="">
                 <seg>―</seg>
                 <interp type="datingCriteria" xml:lang="en">―</interp>
                 <interp type="datingCriteria" xml:lang="bg">―</interp>
@@ -201,20 +201,20 @@
               </date>
             </origin>
             <provenance type="found" subtype="" when="" xml:lang="en" source="" cert="">
-              <placeName type="ancientFindspot" ref="URI">Pliska</placeName>
-              <placeName type="modernFindspot" ref="URI">Pliska</placeName>
-              <rs type="circumstances">Excavations</rs>
+              <placeName type="ancientFindspot" ref="URI">―</placeName>
+              <placeName type="modernFindspot" ref="URI">―</placeName>
+              <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="found" subtype="" when="" xml:lang="bg" source="" cert="">
-              <placeName type="ancientFindspot" ref="URI">Плиска</placeName>
-              <placeName type="modernFindspot" ref="URI">Плиска</placeName>
-              <rs type="circumstances">Разкопки</rs>
+              <placeName type="ancientFindspot" ref="URI">―</placeName>
+              <placeName type="modernFindspot" ref="URI">―</placeName>
+              <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>Iconography</p>
+              <p>Iconography and vertical legend</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
-              <p>Иконография</p>
+              <p>Иконография и вертикален надпис</p>
             </provenance>
             <provenance type="not-observed" subtype="" xml:lang="en">
               <p>―</p>
@@ -229,8 +229,8 @@
               <p>―</p>
             </provenance>
             <acquisition>
-              <p xml:lang="en">―</p>
-              <p xml:lang="bg">―</p>
+              <p xml:lang="en">Purchased in Istanbul, through M. Radoslavov, in 1941 (protocol of 05.12.1941)</p>
+              <p xml:lang="bg">Закупен от Истанбул с помощта на М. Радославов, през 1941 г. (протокол на 05.12.1941)</p>
             </acquisition>
           </history>
           <msPart n="r">
@@ -248,7 +248,7 @@
                 <layoutDesc>
                   <layout n="r">
                     <dimensions type="written" unit="mm">
-                      <dim type="diameter">25</dim>
+                      <dim type="diameter">38</dim>
                     </dimensions>
                     <rs type="matrix" subtype="">
                       <idno type="SigiDoc" xml:lang="en">―</idno>
@@ -282,7 +282,7 @@
             <history>
               <origin>
                 <origDate>
-                  <seg>1026-1075</seg>
+                  <seg>1257-1277</seg>
                   <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
                                             <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
@@ -333,7 +333,7 @@
             <history>
               <origin>
                 <origDate>
-                  <seg>1026-1075</seg>
+                  <seg>1257-1277</seg>
                   <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
                                             <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
@@ -371,14 +371,14 @@
   <facsimile>
     <surface type="obverse">
       <desc>Obverse</desc>
-      <graphic url="Sofia_NAIM_90_O.jpg" scale="1.5">
-        <desc xml:lang="">Seal of the Laura of kyr Antonios</desc>
+      <graphic url="Sofia_NAIM_97_O.jpg" scale="1.5">
+        <desc xml:lang="">Seal of Constantine Assen</desc>
       </graphic>
     </surface>
     <surface type="reverse">
       <desc>Reverse</desc>
-      <graphic url="Sofia_NAIM_90_R.jpg" scale="1.5">
-        <desc xml:lang="">Seal of the Laura of kyr Antonios</desc>
+      <graphic url="Sofia_NAIM_97_R.jpg" scale="1.5">
+        <desc xml:lang="">Seal of Constantine Assen</desc>
       </graphic>
     </surface>
   </facsimile>
@@ -388,32 +388,24 @@
                         <div type="textpart" subtype="" n="obv" rend="">
                             
                         
-<ab>1 Μ(ήτη)ρ Θ(εο)ῦ</ab>
+<ab>Ἀρχ(άγγελος) Μ(ι)χ(αήλ)</ab>
 </div>
                         <div type="textpart" subtype="" n="rev" rend="">
                             
                         
-<ab>1 Τῆς</ab>
-<ab>2 λαύρας</ab>
-<ab>3 τοῦ κ(υρίο)υ Ἀν-</ab>
-<ab>4 [τ]ωνί[ου]</ab>
+<ab>Кѡ(н)стандін(ь) вь х(рист)а б(ог)а вѣрен(ь) ц(а)р(ь) и самодрьжец(ь) бл(ь)гарѡм(ь) асѣн(ь)</ab>
 </div>
                     </div>
       <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
                             
                         
-<ab>1̅ Θ̅Υ</ab>
+<ab>ΡΧ  Χ</ab>
 </div>
                         <div type="textpart" subtype="" n="rev" rend="">
                             
                         
-<ab>1</ab>
-<ab>2ΤΗΣ</ab>
-<ab>3ΛΑΥΑΣ</ab>
-<ab>4Τ͵ΥΑΝ</ab>
-<ab>5.Ι.</ab>
-<ab>6</ab>
+<ab>КѠСТАНДІН ВЬ ХА БА ВѢРЕН ЦР И САМОДРЬЖЕЦ БАРѠМ АСѢН</ab>
 </div>
                     </div>
       <div type="apparatus">
