@@ -89,10 +89,10 @@
             <msItem>
               <author>
                 <roleName role="issuer" type="">
-                  <seg xml:lang="en">{ROlENAME_EN}</seg>
-                  <seg xml:lang="bg">{ROlENAME_BG}</seg>
-                  <interp type="milieu" xml:lang="en">{INTERP_EN}</interp>
-                  <interp type="milieu" xml:lang="bg">{INTERP_BG}</interp>
+                  <seg xml:lang="en">Kosmas</seg>
+                  <seg xml:lang="bg">Козма</seg>
+                  <interp type="milieu" xml:lang="en">Secular Church</interp>
+                  <interp type="milieu" xml:lang="bg">Църковна светска (сфера на дейност)</interp>
                 </roleName>
               </author>
             </msItem>
@@ -211,10 +211,10 @@
               <rs type="circumstances">Разкопки</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>Legend of 4 lines</p>
+              <p>Discovered during excavations at the Palace Square (NW sector, square 2) in Pliska, in August 2005.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
-              <p>Линеен надпис в 4 редове</p>
+              <p>―</p>
             </provenance>
             <provenance type="not-observed" subtype="" xml:lang="en">
               <p>―</p>

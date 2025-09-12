@@ -89,10 +89,10 @@
             <msItem>
               <author>
                 <roleName role="issuer" type="">
-                  <seg xml:lang="en">{ROlENAME_EN}</seg>
-                  <seg xml:lang="bg">{ROlENAME_BG}</seg>
-                  <interp type="milieu" xml:lang="en">{INTERP_EN}</interp>
-                  <interp type="milieu" xml:lang="bg">{INTERP_BG}</interp>
+                  <seg xml:lang="en">Andronikos Komnenos</seg>
+                  <seg xml:lang="bg">Андроник Комнин</seg>
+                  <interp type="milieu" xml:lang="en">Aristocracy</interp>
+                  <interp type="milieu" xml:lang="bg">Аристокрация (сфера на дейност)</interp>
                 </roleName>
               </author>
             </msItem>
@@ -211,10 +211,10 @@
               <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>Legend of 8 lines</p>
+              <p>It is not known whether G. Panayotov discovered the seal or he was simply the one who presented it to the museum.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
-              <p>Линеен надпис в 8 редове</p>
+              <p>Не е ясно дали Г. Панайотов е откривателят на печата, или само го е дарил на музея.</p>
             </provenance>
             <provenance type="not-observed" subtype="" xml:lang="en">
               <p>―</p>

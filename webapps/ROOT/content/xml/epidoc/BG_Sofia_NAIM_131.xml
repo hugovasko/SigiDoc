@@ -89,10 +89,10 @@
             <msItem>
               <author>
                 <roleName role="issuer" type="">
-                  <seg xml:lang="en">{ROlENAME_EN}</seg>
-                  <seg xml:lang="bg">{ROlENAME_BG}</seg>
-                  <interp type="milieu" xml:lang="en">{INTERP_EN}</interp>
-                  <interp type="milieu" xml:lang="bg">{INTERP_BG}</interp>
+                  <seg xml:lang="en">Michael</seg>
+                  <seg xml:lang="bg">Михаил</seg>
+                  <interp type="milieu" xml:lang="en">Private</interp>
+                  <interp type="milieu" xml:lang="bg">Частна (сфера на дейност)</interp>
                 </roleName>
               </author>
             </msItem>
@@ -211,10 +211,10 @@
               <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>Iconography with legend</p>
+              <p>It is not clear whether T. Kunev discovered the seal in 1912 and it was again him who donated it in 1953.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
-              <p>Иконография и надпис</p>
+              <p>―</p>
             </provenance>
             <provenance type="not-observed" subtype="" xml:lang="en">
               <p>―</p>

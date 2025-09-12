@@ -89,10 +89,10 @@
             <msItem>
               <author>
                 <roleName role="issuer" type="">
-                  <seg xml:lang="en">{ROlENAME_EN}</seg>
-                  <seg xml:lang="bg">{ROlENAME_BG}</seg>
-                  <interp type="milieu" xml:lang="en">{INTERP_EN}</interp>
-                  <interp type="milieu" xml:lang="bg">{INTERP_BG}</interp>
+                  <seg xml:lang="en">Ioannes</seg>
+                  <seg xml:lang="bg">Иван</seg>
+                  <interp type="milieu" xml:lang="en">Secular Church</interp>
+                  <interp type="milieu" xml:lang="bg">Църковна светска (сфера на дейност)</interp>
                 </roleName>
               </author>
             </msItem>
@@ -211,10 +211,10 @@
               <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>Iconography with circular legend</p>
+              <p>It is not known whether E. Kosev discovered the seal or he was simply the one who presented it to the museum. In the Corpus of 2009 and the Museum Catalogue of 2011, Jordanov writes that the seal “was passed on to the Archaeological Museum by E. Kosev in 1984”, but in Jordanov, 2006, 353, the author says that the seal with inventory number 251 was purchased by that person in 1994.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
-              <p>Иконография с кръгов надпис</p>
+              <p>―</p>
             </provenance>
             <provenance type="not-observed" subtype="" xml:lang="en">
               <p>―</p>

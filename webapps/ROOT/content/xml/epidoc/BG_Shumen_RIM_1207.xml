@@ -89,10 +89,10 @@
             <msItem>
               <author>
                 <roleName role="issuer" type="">
-                  <seg xml:lang="en">{ROlENAME_EN}</seg>
-                  <seg xml:lang="bg">{ROlENAME_BG}</seg>
-                  <interp type="milieu" xml:lang="en">{INTERP_EN}</interp>
-                  <interp type="milieu" xml:lang="bg">{INTERP_BG}</interp>
+                  <seg xml:lang="en">Peter I</seg>
+                  <seg xml:lang="bg">Петър I</seg>
+                  <interp type="milieu" xml:lang="en">Imperial</interp>
+                  <interp type="milieu" xml:lang="bg">Императорска (сфера на дейност)</interp>
                 </roleName>
               </author>
             </msItem>
@@ -211,10 +211,10 @@
               <rs type="circumstances">Случайна находка</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>Iconography and vertical legend</p>
+              <p>Discovered accidentally by T. Botev, the site’s guard, by the western wall of the Small Palace of Pliska, on 05.05.1926.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
-              <p>Иконография и вертикален надпис</p>
+              <p>Открита случайно от Т. Ботев, пазач на обекта, до западната стена на Малкия Дворец в Плиска, на 05.05.1926 г.</p>
             </provenance>
             <provenance type="not-observed" subtype="" xml:lang="en">
               <p>―</p>

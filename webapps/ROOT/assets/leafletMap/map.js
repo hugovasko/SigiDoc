@@ -40,16 +40,50 @@ var redIcon = new L.Icon({
   shadowSize: [41, 41],
 });
 
-// var grayIcon = new L.Icon({
-//   iconUrl:
-//     "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-grey.png",
-//   shadowUrl:
-//     "https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png",
-//   iconSize: [25, 41],
-//   iconAnchor: [12, 41],
-//   popupAnchor: [1, -34],
-//   shadowSize: [41, 41],
-// });
+// Add custom CSS for better popup styling with more specific selectors to override Leaflet defaults
+const customPopupStyle = `
+  <style>
+    .custom-popup {
+      font-family: Arial, sans-serif;
+      line-height: 1.4;
+    }
+    .popup-title {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    .popup-date {
+      color: #666;
+      margin-bottom: 5px;
+    }
+    .popup-findspot {
+      color: #666;
+      margin-bottom: 8px;
+    }
+    /* More specific selector to override Leaflet styles */
+    .leaflet-popup-content .popup-button,
+    .leaflet-container a.popup-button {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #2c6eb2;
+      color: white !important; /* Use !important to ensure this style takes precedence */
+      text-decoration: none;
+      border-radius: 3px;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 5px;
+    }
+    .leaflet-popup-content .popup-button:hover,
+    .leaflet-container a.popup-button:hover {
+      background-color: #1c5293;
+      color: white !important;
+    }
+  </style>
+`;
+
+// Insert custom CSS into document head
+document.head.insertAdjacentHTML("beforeend", customPopupStyle);
 
 (async function () {
   try {
@@ -67,9 +101,11 @@ var redIcon = new L.Icon({
         ? filenameXml.replace(".xml", ".html")
         : null;
 
-      const pathToTheSeal = filenameHtml
-        ? `http://127.0.0.1:9999/en/seals/${filenameHtml}`
-        : null;
+      let pathToTheSeal = null;
+      if (filenameHtml) {
+        const urlObj = new URL(window.location.href);
+        pathToTheSeal = `${urlObj.origin}/en/seals/${filenameHtml}`;
+      }
 
       let markerIcon;
       if (findspot === "1") {
@@ -84,14 +120,36 @@ var redIcon = new L.Icon({
         markerIcon = redIcon;
       }
 
-      markers.push(
-        L.marker([lat, lng], { icon: markerIcon }).bindPopup(
-          `${title}<br>${date}${
+      // Get findspot accuracy text
+      let findspotText = "";
+      if (findspot === "1") {
+        findspotText = "High accuracy";
+      } else if (findspot === "2") {
+        findspotText = "Medium accuracy";
+      } else if (findspot === "3") {
+        findspotText = "Low accuracy";
+      } else if (findspot === "―") {
+        findspotText = "Unknown accuracy";
+      } else {
+        findspotText = "Accuracy not specified";
+      }
+
+      // Create improved popup content with better styling and organization
+      const popupContent = `
+        <div class="custom-popup">
+          <div class="popup-title">${title}</div>
+          <div class="popup-date">Date: ${date}</div>
+          <div class="popup-findspot">Findspot: ${findspotText}</div>
+          ${
             filenameHtml
-              ? `<br><a href="${pathToTheSeal}" target="_blank">See more</a>`
+              ? `<a href="${pathToTheSeal}" class="popup-button" target="_blank">View Details</a>`
               : ""
-          }`
-        )
+          }
+        </div>
+      `;
+
+      markers.push(
+        L.marker([lat, lng], { icon: markerIcon }).bindPopup(popupContent)
       );
     });
 

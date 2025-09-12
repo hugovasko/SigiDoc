@@ -89,10 +89,10 @@
             <msItem>
               <author>
                 <roleName role="issuer" type="">
-                  <seg xml:lang="en">{ROlENAME_EN}</seg>
-                  <seg xml:lang="bg">{ROlENAME_BG}</seg>
-                  <interp type="milieu" xml:lang="en">{INTERP_EN}</interp>
-                  <interp type="milieu" xml:lang="bg">{INTERP_BG}</interp>
+                  <seg xml:lang="en">Arsenios Tzamplakon</seg>
+                  <seg xml:lang="bg">Арсений Цамблак</seg>
+                  <interp type="milieu" xml:lang="en">Monastic</interp>
+                  <interp type="milieu" xml:lang="bg">Монашеска (сфера на дейност)</interp>
                 </roleName>
               </author>
             </msItem>
@@ -211,10 +211,10 @@
               <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>Iconography</p>
+              <p>Although it has been assumed that because A. Nikolov was from Silistra, therefore the seal must have originated from the same place, this cannot be verified.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
-              <p>Иконография</p>
+              <p>Счита се, че понеже А. Николов е от Силистра, то и печатът произхожда от същото място, но това не може да се потвърди.</p>
             </provenance>
             <provenance type="not-observed" subtype="" xml:lang="en">
               <p>―</p>

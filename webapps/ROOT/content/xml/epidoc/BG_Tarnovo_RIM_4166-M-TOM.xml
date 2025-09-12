@@ -89,10 +89,10 @@
             <msItem>
               <author>
                 <roleName role="issuer" type="">
-                  <seg xml:lang="en">{ROlENAME_EN}</seg>
-                  <seg xml:lang="bg">{ROlENAME_BG}</seg>
-                  <interp type="milieu" xml:lang="en">{INTERP_EN}</interp>
-                  <interp type="milieu" xml:lang="bg">{INTERP_BG}</interp>
+                  <seg xml:lang="en">Theodoros I Laskaris</seg>
+                  <seg xml:lang="bg">―</seg>
+                  <interp type="milieu" xml:lang="en">Imperial</interp>
+                  <interp type="milieu" xml:lang="bg">―</interp>
                 </roleName>
               </author>
             </msItem>
@@ -211,7 +211,7 @@
               <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>―</p>
+              <p>According to the museum’s inventory book, the seal was found in the area to the west of V. Tarnovo. Jordanov 1999, p. 109, writes that it came from the area of “the present-day Cholakovtsi Housing Estate, to the west of Veliko Turnovo”, an information which cannot be verified. The Cholakovtsi neighbourhood is south-southwest of Tarnovo. The object has been missing from the museum (stolen) since 2006, something not mentioned by Jordanov.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
               <p>―</p>

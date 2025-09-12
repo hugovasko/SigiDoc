@@ -89,10 +89,10 @@
             <msItem>
               <author>
                 <roleName role="issuer" type="">
-                  <seg xml:lang="en">{ROlENAME_EN}</seg>
-                  <seg xml:lang="bg">{ROlENAME_BG}</seg>
-                  <interp type="milieu" xml:lang="en">{INTERP_EN}</interp>
-                  <interp type="milieu" xml:lang="bg">{INTERP_BG}</interp>
+                  <seg xml:lang="en">Georgios Glabas</seg>
+                  <seg xml:lang="bg">Георги Глава</seg>
+                  <interp type="milieu" xml:lang="en">Aristocracy</interp>
+                  <interp type="milieu" xml:lang="bg">Аристокрация (сфера на дейност)</interp>
                 </roleName>
               </author>
             </msItem>
@@ -211,10 +211,10 @@
               <rs type="circumstances">Разкопки</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>Iconography</p>
+              <p>Discovered during excavations led by J. Aleksiev at Tsarevets, site 13, near the Eastern fortress wall, in 1978.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
-              <p>Иконография</p>
+              <p>―</p>
             </provenance>
             <provenance type="not-observed" subtype="" xml:lang="en">
               <p>―</p>

@@ -573,8 +573,8 @@
             <!-- comment the previous div out if you do not want to display the Greek keyboard -->
 
             <h4>Date <span id="date-slider-label"/></h4>
-            <div id="date-slider-widget" data-range-min="400" data-range-max="1500"
-              data-value-min="400" data-value-max="1500" data-step="20" data-label-prefix=""
+            <div id="date-slider-widget" data-range-min="200" data-range-max="1500"
+              data-value-min="200" data-value-max="1500" data-step="20" data-label-prefix=""
               data-label-suffix="A.D." data-field-name="origin_date"/>
           </form>
           <!-- List of currently applied facets. -->

@@ -89,10 +89,10 @@
             <msItem>
               <author>
                 <roleName role="issuer" type="">
-                  <seg xml:lang="en">{ROlENAME_EN}</seg>
-                  <seg xml:lang="bg">{ROlENAME_BG}</seg>
-                  <interp type="milieu" xml:lang="en">{INTERP_EN}</interp>
-                  <interp type="milieu" xml:lang="bg">{INTERP_BG}</interp>
+                  <seg xml:lang="en">Theodoros Komnenos Doukas Angelos</seg>
+                  <seg xml:lang="bg">Теодор Комнин Дука Ангел</seg>
+                  <interp type="milieu" xml:lang="en">Imperial</interp>
+                  <interp type="milieu" xml:lang="bg">―</interp>
                 </roleName>
               </author>
             </msItem>
@@ -211,7 +211,7 @@
               <rs type="circumstances">Разкопки</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>Iconography with vertical legend</p>
+              <p>Discovered during excavations led by D. Rabovyanov at Veliko Tarnovo, Trapezitsa, South sector, square CLVII-12, in September 2010. The layer where the seal was found is later though, from the middle and second half of the 14th c.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
               <p>―</p>

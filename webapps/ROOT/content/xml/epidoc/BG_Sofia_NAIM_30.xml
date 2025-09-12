@@ -89,10 +89,10 @@
             <msItem>
               <author>
                 <roleName role="issuer" type="">
-                  <seg xml:lang="en">{ROlENAME_EN}</seg>
-                  <seg xml:lang="bg">{ROlENAME_BG}</seg>
-                  <interp type="milieu" xml:lang="en">{INTERP_EN}</interp>
-                  <interp type="milieu" xml:lang="bg">{INTERP_BG}</interp>
+                  <seg xml:lang="en">Sisinnios</seg>
+                  <seg xml:lang="bg">Сисини</seg>
+                  <interp type="milieu" xml:lang="en">Civil; Military</interp>
+                  <interp type="milieu" xml:lang="bg">Цивилна (сфера на дейност); Военна (сфера на дейност)</interp>
                 </roleName>
               </author>
             </msItem>
@@ -211,10 +211,10 @@
               <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>Monogram</p>
+              <p>―</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
-              <p>Монограм</p>
+              <p>―</p>
             </provenance>
             <provenance type="not-observed" subtype="" xml:lang="en">
               <p>―</p>

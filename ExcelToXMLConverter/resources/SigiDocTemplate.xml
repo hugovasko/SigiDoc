@@ -87,10 +87,10 @@
                                 <msItem>
                                     <author>
                                         <roleName role="issuer" type="">
-                                            <seg xml:lang="en">{ROlENAME_EN}</seg>
-                                            <seg xml:lang="bg">{ROlENAME_BG}</seg>
-                                            <interp type="milieu" xml:lang="en">{INTERP_EN}</interp>
-                                            <interp type="milieu" xml:lang="bg">{INTERP_BG}</interp>
+                                            <seg xml:lang="en">{ISSUER_EN}</seg>
+                                            <seg xml:lang="bg">{ISSUER_BG}</seg>
+                                            <interp type="milieu" xml:lang="en">{ISSUER_MILIEU_EN}</interp>
+                                            <interp type="milieu" xml:lang="bg">{ISSUER_MILIEU_BG}</interp>
                                         </roleName>
                                     </author>
                                 </msItem>
@@ -209,10 +209,10 @@
                                     <rs type="circumstances">{FIND_CIRCUMSTANCES_BG}</rs>
                                 </provenance>
                                 <provenance type="observed" subtype="" xml:lang="en">
-                                    <p>{OBVERSE_LAYOUT_OF_FIELD_EN}</p>
+                                    <p>{MODERN_OBSERVATIONS_EN}</p>
                                 </provenance>
                                 <provenance type="observed" subtype="" xml:lang="bg">
-                                    <p>{OBVERSE_LAYOUT_OF_FIELD_BG}</p>
+                                    <p>{MODERN_OBSERVATIONS_BG}</p>
                                 </provenance>
                                 <provenance type="not-observed" subtype="" xml:lang="en">
                                     <p>{OBVERSE_MATRIX_EN}</p>

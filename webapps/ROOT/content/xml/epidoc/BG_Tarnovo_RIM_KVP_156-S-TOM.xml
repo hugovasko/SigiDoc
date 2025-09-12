@@ -89,10 +89,10 @@
             <msItem>
               <author>
                 <roleName role="issuer" type="">
-                  <seg xml:lang="en">{ROlENAME_EN}</seg>
-                  <seg xml:lang="bg">{ROlENAME_BG}</seg>
-                  <interp type="milieu" xml:lang="en">{INTERP_EN}</interp>
-                  <interp type="milieu" xml:lang="bg">{INTERP_BG}</interp>
+                  <seg xml:lang="en">Henry of Flanders</seg>
+                  <seg xml:lang="bg">Анри Фландърски</seg>
+                  <interp type="milieu" xml:lang="en">Imperial</interp>
+                  <interp type="milieu" xml:lang="bg">―</interp>
                 </roleName>
               </author>
             </msItem>
@@ -211,7 +211,7 @@
               <rs type="circumstances">Разкопки</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>―</p>
+              <p>Discovered during excavations at Tsarevets, in 1966.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
               <p>―</p>

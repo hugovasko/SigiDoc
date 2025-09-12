@@ -89,10 +89,10 @@
             <msItem>
               <author>
                 <roleName role="issuer" type="">
-                  <seg xml:lang="en">{ROlENAME_EN}</seg>
-                  <seg xml:lang="bg">{ROlENAME_BG}</seg>
-                  <interp type="milieu" xml:lang="en">{INTERP_EN}</interp>
-                  <interp type="milieu" xml:lang="bg">{INTERP_BG}</interp>
+                  <seg xml:lang="en">Photeinos</seg>
+                  <seg xml:lang="bg">Фотинос</seg>
+                  <interp type="milieu" xml:lang="en">Secular Church</interp>
+                  <interp type="milieu" xml:lang="bg">Църковна светска (сфера на дейност)</interp>
                 </roleName>
               </author>
             </msItem>
@@ -211,10 +211,10 @@
               <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>Cruciform monogram</p>
+              <p>It is not clear where the seal was found or how it came into possession of the National Archaeological Institute with Museum. The seal shows traces of letters on both the obverse and the reverse, which means that what we see today is a second strike, unrelated to the first, i.e. the disc was reused.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
-              <p>Кръстообразен монограм</p>
+              <p>―</p>
             </provenance>
             <provenance type="not-observed" subtype="" xml:lang="en">
               <p>―</p>
