@@ -17,6 +17,7 @@
     <body>
       <list>
         <item n="BG_Pernik_RIM_929" sortKey="BG_Pernik_RIM_929" />
+        <item n="BG_Plovdiv_AM_6050" sortKey="BG_Plovdiv_AM_6050" />
         <item n="BG_Shumen_RIM_1207" sortKey="BG_Shumen_RIM_1207" />
         <item n="BG_Sofia_NAIM_127" sortKey="BG_Sofia_NAIM_127" />
         <item n="BG_Sofia_NAIM_131" sortKey="BG_Sofia_NAIM_131" />
@@ -44,7 +45,10 @@
         <item n="BG_Sofia_NAIM_90" sortKey="BG_Sofia_NAIM_90" />
         <item n="BG_Sofia_NAIM_91" sortKey="BG_Sofia_NAIM_91" />
         <item n="BG_Sofia_NAIM_97" sortKey="BG_Sofia_NAIM_97" />
+        <item n="BG_Sofia_RIM_M8II_PIN_A11-671" sortKey="BG_Sofia_RIM_M8II_PIN_A11-671" />
+        <item n="BG_Sofia_RIM_MIS-A-6959" sortKey="BG_Sofia_RIM_MIS-A-6959" />
         <item n="BG_Sofia_RIM_MIS-A-7375" sortKey="BG_Sofia_RIM_MIS-A-7375" />
+        <item n="BG_Sofia_RIM_MIS-A-7377" sortKey="BG_Sofia_RIM_MIS-A-7377" />
         <item n="BG_Tarnovo_RIM_4166-M-TOM" sortKey="BG_Tarnovo_RIM_4166-M-TOM" />
         <item n="BG_Tarnovo_RIM_7348-S-TOM" sortKey="BG_Tarnovo_RIM_7348-S-TOM" />
         <item n="BG_Tarnovo_RIM_865-M-TOM" sortKey="BG_Tarnovo_RIM_865-M-TOM" />

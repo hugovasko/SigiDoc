@@ -3,17 +3,17 @@
     <fileDesc>
       <titleStmt>
         <title>
-          <seg xml:lang="en">Seal of Constantine Assen</seg>
+          <seg xml:lang="en">Seal of Constantine Asen</seg>
           <seg xml:lang="bg">Печат на Константин Асен</seg>
         </title>
         <editor>
           <persName xml:lang="en">
-            <forename>Nikolay</forename>
-            <surname>Mushmov</surname>
+            <forename>―</forename>
+            <surname>―</surname>
           </persName>
           <persName xml:lang="bg">
-            <forename>Николай</forename>
-            <surname>Мушмов</surname>
+            <forename>―</forename>
+            <surname>―</surname>
           </persName>
         </editor>
       </titleStmt>
@@ -23,8 +23,8 @@
       </location>
       <editionStmt>
         <edition>
-          <seg xml:lang="en">Jordanov 2011, 19; Jordanov 2001, 159; Gerasimov 1970, 4; Mushmov 1925, 247</seg>
-          <seg xml:lang="bg">Jordanov 2011, 19; Jordanov 2001, 159; Gerasimov 1970, 4; Mushmov 1925, 247</seg>
+          <seg xml:lang="en">Jordanov 2016, 352, p. 221-222</seg>
+          <seg xml:lang="bg">Jordanov 2016, 352, p. 221-222</seg>
         </edition>
         <editor>
           <persName xml:lang="en" xml:id="">
@@ -38,60 +38,54 @@
         </editor>
       </editionStmt>
       <publicationStmt>
-        <authority xml:lang="en">{AUTHORITY_EN}</authority>
-        <authority xml:lang="bg">{AUTHORITY_BG}</authority>
+        <authority xml:lang="en">―</authority>
+        <authority xml:lang="bg">―</authority>
         <idno type="filename">BG_Sofia_NAIM_97</idno>
-        <idno type="SigiDocID">BG_Sofia_NAIM_97</idno>
-        <idno type="sequence">BG_Sofia_NAIM_97</idno>
+        <idno type="SigiDocID">―</idno>
+        <idno type="sequence">000―</idno>
         <date when="1257">1257-1277</date>
         <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-                        Commons Attributions-NonCommercial-ShareAlike 4.0 International
-                        License.</licence>
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License.</licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
         <msDesc>
           <msIdentifier>
             <country>
-              <seg xml:lang="en">―</seg>
-              <seg xml:lang="bg">―</seg>
+              <seg xml:lang="en">Bulgaria</seg>
+              <seg xml:lang="bg">България</seg>
             </country>
             <settlement>
-              <seg xml:lang="en">―</seg>
-              <seg xml:lang="bg">―</seg>
+              <seg xml:lang="en">Sofia</seg>
+              <seg xml:lang="bg">София</seg>
             </settlement>
             <institution xml:lang="en">National Archaeological Institute with Museum – Bulgarian Academy of Sciences</institution>
             <institution xml:lang="bg">Национален Археологически Институт с Музей – Българската Академия на Науките</institution>
-            <repository xml:lang="en">―</repository>
+            <repository xml:lang="en">Numismatic fund</repository>
             <repository xml:lang="bg">Нумизматичен фонд</repository>
             <collection xml:lang="en" ref="URI">―</collection>
             <collection xml:lang="bg" ref="URI">―</collection>
-            <idno>{IDNO}</idno>
-            <!-- <altIdentifier xml:lang="en">
-                                    <repository>{REPOSITORY_EN}</repository>
-                                    <idno>{IDNO_EN}</idno>
-                                </altIdentifier>
-                                <altIdentifier xml:lang="bg">
-                                    <repository>{REPOSITORY_BG}</repository>
-                                    <idno>{IDNO_BG}</idno>
-                                </altIdentifier> -->
+            <idno>97</idno>
           </msIdentifier>
           <msContents>
             <summary n="whole">
-              <seg xml:lang="en">{SUMMARY_EN}</seg>
-              <seg xml:lang="bg">{SUMMARY_BG}</seg>
+              <seg xml:lang="en">―</seg>
+              <seg xml:lang="bg">―</seg>
             </summary>
-            <textLang mainLang="grc-Latn">
-              <seg xml:lang="en">{TEXTLANG_EN}</seg>
-              <seg xml:lang="bg">{TEXTLANG_BG}</seg>
+            <textLang mainLang="grc-Latn" n="r">
+              <seg xml:lang="en">Medieval Bulgarian</seg>
+              <seg xml:lang="bg">Средновековен български</seg>
+            </textLang>
+            <textLang mainLang="grc-Latn" n="v">
+              <seg xml:lang="en">Medieval Bulgarian</seg>
+              <seg xml:lang="bg">Средновековен български</seg>
             </textLang>
             <msItem>
               <author>
                 <roleName role="issuer" type="">
-                  <seg xml:lang="en">―</seg>
-                  <seg xml:lang="bg">―</seg>
-                  <interp type="milieu" xml:lang="en">Imperial</interp>
+                  <seg xml:lang="en">Constantine Asen</seg>
+                  <seg xml:lang="bg">Константин Асен</seg>
+                  <interp type="milieu" xml:lang="en">―</interp>
                   <interp type="milieu" xml:lang="bg">Императорска (сфера на дейност)</interp>
                 </roleName>
               </author>
@@ -114,10 +108,7 @@
                     <seg xml:lang="bg">Злато</seg>
                   </material>
                   <dimensions type="support" unit="mm">
-                    <dim type="diameter">38</dim>
-                    <height>{HEIGHT}</height>
-                    <width>{WIDTH}</width>
-                    <depth>{DEPTH}</depth>
+                    <dim type="diameter">39.7</dim>
                   </dimensions>
                   <measure type="weight" unit="g">7.57</measure>
                   <measure type="axis" unit="clock">―</measure>
@@ -127,8 +118,8 @@
                   <measure type="countermark" unit="clock" xml:lang="bg">―</measure>
                 </support>
                 <condition rend="">
-                  <p xml:lang="en">―</p>
-                  <p xml:lang="bg">―</p>
+                  <p xml:lang="en">Pierced</p>
+                  <p xml:lang="bg">Пробит</p>
                 </condition>
               </supportDesc>
               <layoutDesc>
@@ -138,31 +129,30 @@
                     <seg xml:lang="bg">Иконография и надпис</seg>
                   </rs>
                   <rs type="execution">
-                    <seg xml:lang="en">―</seg>
-                    <seg xml:lang="bg">―</seg>
+                    <seg xml:lang="en">Struck</seg>
+                    <seg xml:lang="bg">Отсечен</seg>
                   </rs>
                   <rs type="shape">
                     <seg xml:lang="en">Round</seg>
                     <seg xml:lang="bg">Кръгъл</seg>
                   </rs>
                   <rs type="matrix" subtype="">
-                    <idno type="SigiDoc">BG_Sofia_NAIM_97</idno>
-                    <idno type="PBW" corresp="URI">{PBW}</idno>
+                    <idno type="SigiDoc">―</idno>
                   </rs>
                 </layout>
               </layoutDesc>
             </objectDesc>
             <handDesc>
               <handNote n="whole">
-                <seg xml:lang="en">{HAND_NOTE_EN}</seg>
-                <seg xml:lang="bg">{HAND_NOTE_BG}</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </handNote>
             </handDesc>
             <decoDesc>
               <decoNote>
                 <figure>
-                  <figDesc n="whole" xml:lang="en">{DECO_NOTE_EN}</figDesc>
-                  <figDesc n="whole" xml:lang="bg">{DECO_NOTE_BG}</figDesc>
+                  <figDesc n="whole" xml:lang="en">―</figDesc>
+                  <figDesc n="whole" xml:lang="bg">―</figDesc>
                 </figure>
               </decoNote>
             </decoDesc>
@@ -177,15 +167,10 @@
                   <placeName ref="URI">―</placeName>
                 </seg>
               </origPlace>
-              <!-- <origDate type="analysis" when="{DATE}" evidence="" cert="" resp="">
-                                        <seg>{DATE}</seg>
-                                        <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                        <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
-                                    </origDate> -->
               <origDate type="analysis" notBefore="1257" notAfter="1277" evidence="" cert="" resp="">
                 <seg>1257-1277</seg>
-                <interp type="datingCriteria" xml:lang="en">Iconography, Onomastics</interp>
-                <interp type="datingCriteria" xml:lang="bg">Иконография, Ономастика</interp>
+                <interp type="datingCriteria" xml:lang="en">Iconography and epigraphy</interp>
+                <interp type="datingCriteria" xml:lang="bg">Иконография, Епиграфика</interp>
               </origDate>
               <origDate type="internal" when="1257" when-custom="" datingMethod="">
                 <seg>―</seg>
@@ -216,12 +201,6 @@
             <provenance type="observed" subtype="" xml:lang="bg">
               <p>―</p>
             </provenance>
-            <provenance type="not-observed" subtype="" xml:lang="en">
-              <p>―</p>
-            </provenance>
-            <provenance type="not-observed" subtype="" xml:lang="bg">
-              <p>―</p>
-            </provenance>
             <provenance type="transferred" subtype="" xml:lang="en">
               <p>―</p>
             </provenance>
@@ -229,18 +208,18 @@
               <p>―</p>
             </provenance>
             <acquisition>
-              <p xml:lang="en">Purchased in Istanbul, through M. Radoslavov, in 1941 (protocol of 05.12.1941)</p>
-              <p xml:lang="bg">Закупен от Истанбул с помощта на М. Радославов, през 1941 г. (протокол на 05.12.1941)</p>
+              <p xml:lang="en">Purchased from Istanbul through M. Radoslavov, in 1941.</p>
+              <p xml:lang="bg">Закупен от Истанбул чрез М. Радославов през 1941 г.</p>
             </acquisition>
           </history>
           <msPart n="r">
             <msIdentifier>
-              <idno>{MS_IDENTIFIER}</idno>
+              <idno />
             </msIdentifier>
             <msContents>
               <summary n="r">
-                <seg xml:lang="en">{MS_CONTENTS_SUMMARY_EN}</seg>
-                <seg xml:lang="bg">{MS_CONTENTS_SUMMARY_BG}</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </summary>
             </msContents>
             <physDesc>
@@ -248,15 +227,15 @@
                 <layoutDesc>
                   <layout n="r">
                     <dimensions type="written" unit="mm">
-                      <dim type="diameter">38</dim>
+                      <dim type="diameter">―</dim>
                     </dimensions>
                     <rs type="matrix" subtype="">
                       <idno type="SigiDoc" xml:lang="en">―</idno>
                       <idno type="SigiDoc" xml:lang="bg">―</idno>
                     </rs>
                     <rs type="layout">
-                      <seg xml:lang="en">{LAYOUT_EN}</seg>
-                      <seg xml:lang="bg">{LAYOUT_BG}</seg>
+                      <seg xml:lang="en">―</seg>
+                      <seg xml:lang="bg">―</seg>
                     </rs>
                     <p />
                   </layout>
@@ -264,17 +243,17 @@
               </objectDesc>
               <handDesc>
                 <handNote n="r">
-                  <seg xml:lang="en">{HAND_NOTE_EN}</seg>
-                  <seg xml:lang="bg">{HAND_NOTE_BG}</seg>
+                  <seg xml:lang="en">―</seg>
+                  <seg xml:lang="bg">―</seg>
                 </handNote>
               </handDesc>
               <decoDesc>
                 <decoNote>
                   <figure>
-                    <figDesc n="r" xml:lang="en">{FIGURE_R_EN}</figDesc>
-                    <figDesc n="r" xml:lang="bg">{FIGURE_R_BG}</figDesc>
-                    <figDesc n="decoR" xml:lang="en">{FIGURE_DECOR_EN}</figDesc>
-                    <figDesc n="decoR" xml:lang="bg">{FIGURE_DECOR_BG}</figDesc>
+                    <figDesc n="r" xml:lang="en">―</figDesc>
+                    <figDesc n="r" xml:lang="bg">―</figDesc>
+                    <figDesc n="decoR" xml:lang="en">―</figDesc>
+                    <figDesc n="decoR" xml:lang="bg">―</figDesc>
                   </figure>
                 </decoNote>
               </decoDesc>
@@ -283,8 +262,6 @@
               <origin>
                 <origDate>
                   <seg>1257-1277</seg>
-                  <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
                 <date />
               </origin>
@@ -296,7 +273,8 @@
             </msIdentifier>
             <msContents>
               <summary n="v">
-                <seg xml:lang="">Reverse</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </summary>
             </msContents>
             <physDesc>
@@ -304,13 +282,15 @@
                 <layoutDesc>
                   <layout n="v">
                     <dimensions type="written" unit="mm">
-                      <dim type="diameter" />
+                      <dim type="diameter">―</dim>
                     </dimensions>
                     <rs type="matrix" subtype="">
-                      <idno type="SigiDoc">{MATRIX}</idno>
+                      <idno type="SigiDoc" xml:lang="en">―</idno>
+                      <idno type="SigiDoc" xml:lang="bg">―</idno>
                     </rs>
                     <rs type="layout">
-                      <seg xml:lang="" />
+                      <seg xml:lang="en">―</seg>
+                      <seg xml:lang="bg">―</seg>
                     </rs>
                     <p />
                   </layout>
@@ -318,14 +298,17 @@
               </objectDesc>
               <handDesc>
                 <handNote n="v">
-                  <seg xml:lang="" />
+                  <seg xml:lang="en">―</seg>
+                  <seg xml:lang="bg">―</seg>
                 </handNote>
               </handDesc>
               <decoDesc>
                 <decoNote>
                   <figure>
-                    <figDesc n="v" />
-                    <figDesc n="decoV" />
+                    <figDesc n="v" xml:lang="en">―</figDesc>
+                    <figDesc n="v" xml:lang="bg">―</figDesc>
+                    <figDesc n="decoV" xml:lang="en">―</figDesc>
+                    <figDesc n="decoV" xml:lang="bg">―</figDesc>
                   </figure>
                 </decoNote>
               </decoDesc>
@@ -334,8 +317,6 @@
               <origin>
                 <origDate>
                   <seg>1257-1277</seg>
-                  <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
                 <date />
               </origin>
@@ -372,13 +353,13 @@
     <surface type="obverse">
       <desc>Obverse</desc>
       <graphic url="Sofia_NAIM_97_O.jpg" scale="1.5">
-        <desc xml:lang="">Seal of Constantine Assen</desc>
+        <desc xml:lang="">Seal of Constantine Asen</desc>
       </graphic>
     </surface>
     <surface type="reverse">
       <desc>Reverse</desc>
       <graphic url="Sofia_NAIM_97_R.jpg" scale="1.5">
-        <desc xml:lang="">Seal of Constantine Assen</desc>
+        <desc xml:lang="">Seal of Constantine Asen</desc>
       </graphic>
     </surface>
   </facsimile>
@@ -386,42 +367,39 @@
     <body>
       <div type="edition" subtype="editorial" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            
-                        
-<ab>Ἀρχ(άγγελος) Μ(ι)χ(αήλ)</ab>
-</div>
+                            <ab>[obv text here]</ab>
+                        </div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            
-                        
-<ab>Кѡ(н)стандін(ь) вь х(рист)а б(ог)а вѣрен(ь) ц(а)р(ь) и самодрьжец(ь) бл(ь)гарѡм(ь) асѣн(ь)</ab>
-</div>
+                            <ab>[rev text here]</ab>
+                        </div>
                     </div>
       <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            
-                        
-<ab>ΡΧ  Χ</ab>
-</div>
+                            <ab>[obv text here]</ab>
+                        </div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            
-                        
-<ab>КѠСТАНДІН ВЬ ХА БА ВѢРЕН ЦР И САМОДРЬЖЕЦ БАРѠМ АСѢН</ab>
-</div>
+                            <ab>[rev text here]</ab>
+                        </div>
                     </div>
       <div type="apparatus">
         <listApp>
-          <app xml:lang="" />
+          <app xml:lang="en">―</app>
+          <app xml:lang="bg">―</app>
         </listApp>
       </div>
       <div type="translation">
-        <p>[plain Greek or Latin... text here]</p>
-        <p xml:lang="">[Modern language text here]</p>
+        <p xml:lang="en">―</p>
+        <p xml:lang="bg">―</p>
+        <p xml:lang="en">―</p>
+        <p xml:lang="bg">―</p>
       </div>
       <div type="commentary" subtype="text">
-        <p xml:lang="" />
+        <p xml:lang="en">―</p>
+        <p xml:lang="bg">―</p>
       </div>
       <div type="commentary" subtype="footnotes">
-        <p xml:lang="" />
+        <p xml:lang="en">―</p>
+        <p xml:lang="bg">―</p>
       </div>
       <div type="bibliography" subtype="">
         <p>

@@ -47,34 +47,14 @@
         </dd>
         <dt width="150" align="left"><i18n:text i18n:key="matrix">Matrix</i18n:text></dt>
         <dd>
-          <xsl:choose xml:space="preserve">
-            <xsl:when test="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='surviving']">
-              <xsl:choose>
-                <xsl:when test="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='SigiDoc'] and //t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='PBW']">
-                  SigiDoc ID: <xsl:apply-templates select="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='SigiDoc']"/>* - PBW ID: <xsl:apply-templates select="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='PBW']"/>*
-                </xsl:when>
-                <xsl:when test="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='SigiDoc']">
-                  SigiDoc ID: <xsl:apply-templates select="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='SigiDoc']"/>*
-                </xsl:when>
-                <xsl:when test="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='PBW']">
-                  PBW ID: <xsl:apply-templates select="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='PBW']"/>*
-                </xsl:when>
-              </xsl:choose>
+          <xsl:choose>
+            <xsl:when test="//t:layout[@n='whole']//t:rs[@type='matrix']//t:idno[@type='SigiDoc'][normalize-space(.) != '' and normalize-space(.) != '―']">
+              SigiDoc ID: <xsl:apply-templates select="//t:layout[@n='whole']//t:rs[@type='matrix']//t:idno[@type='SigiDoc']"/>
             </xsl:when>
-            <xsl:when test="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='notSurviving']">
-              <xsl:choose>
-                <xsl:when test="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='SigiDoc'] and //t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='PBW']">
-                  SigiDoc ID: <xsl:apply-templates select="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='SigiDoc']"/> - PBW ID: <xsl:apply-templates select="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='PBW']"/>
-                </xsl:when>
-                <xsl:when test="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='SigiDoc']">
-                  SigiDoc ID: <xsl:apply-templates select="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='SigiDoc']"/>
-                </xsl:when>
-                <xsl:when test="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='PBW']">
-                  PBW ID: <xsl:apply-templates select="//t:layout[@n='whole']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='PBW']"/>
-                </xsl:when>
-              </xsl:choose>
+            <xsl:when test="//t:layout[@n='whole']//t:rs[@type='matrix']//t:idno[@type='PBW'][normalize-space(.) != '' and normalize-space(.) != '―']">
+              PBW ID: <xsl:apply-templates select="//t:layout[@n='whole']//t:rs[@type='matrix']//t:idno[@type='PBW']"/>
             </xsl:when>
-            <xsl:otherwise/>
+            <xsl:otherwise>―</xsl:otherwise>
           </xsl:choose>
         </dd>
       </dl>
@@ -245,31 +225,21 @@
             </xsl:choose>
           </dd>
           <dt width="150" align="left"><i18n:text i18n:key="dating-criteria">Dating criteria</i18n:text></dt>
-        <dd>
-          <xsl:choose>
-            <xsl:when test="//t:origin//t:origDate//t:interp/text()">
-              <xsl:apply-templates select="//t:origin//t:origDate//t:interp"/>
-            </xsl:when>
-            <xsl:otherwise>―</xsl:otherwise>
-          </xsl:choose>
-          <!-- <xsl:choose>
-            <xsl:when test="//t:origin/t:origDate/@evidence">
-              <xsl:for-each select="tokenize(//t:origin/t:origDate/@evidence,' ')">
-                <xsl:value-of select="translate(.,'-',' ')"/>
-                <xsl:if test="position()!=last()">
-                  <xsl:text>, </xsl:text>
-                </xsl:if>
-              </xsl:for-each>
-            </xsl:when>
-            <xsl:otherwise>
-              <i><i18n:text i18n:key="not-specified"><xsl:text>Not specified</xsl:text></i18n:text></i>
-            </xsl:otherwise>
-            </xsl:choose> --><!-- NOT TO BE CHANGED INTO <xsl:apply-templates/> -->
-        </dd>
+          <dd>
+            <xsl:choose>
+              <xsl:when test="//t:origin//t:origDate[@type='analysis']//t:interp[@type='datingCriteria']/text()[not(normalize-space(.)='―') and not(normalize-space(.)='')]">
+                <xsl:for-each select="//t:origin//t:origDate[@type='analysis']//t:interp[@type='datingCriteria'][not(normalize-space(.)='―') and not(normalize-space(.)='')]">
+                  <xsl:apply-templates select="."/>
+                  <xsl:if test="position() != last()">, </xsl:if>
+                </xsl:for-each>
+              </xsl:when>
+              <xsl:otherwise>―</xsl:otherwise>
+            </xsl:choose>
+          </dd>
           <dt width="150" align="left"><i18n:text i18n:key="alternative-dating">Alternative dating</i18n:text></dt>
           <dd>
             <xsl:choose>
-              <xsl:when test="//t:origin//t:date//t:choice">
+              <xsl:when test="//t:origin//t:date//t:choice//t:corr[text() and normalize-space(.) != '―' and normalize-space(.) != '']">
                 <xsl:apply-templates select="//t:origin//t:date//t:choice//t:corr"/> (<xsl:apply-templates select="//t:origin//t:date//t:choice//t:corr/@resp"/>), <i18n:text i18n:key="alternative-dating-basedon">based on</i18n:text>: <xsl:apply-templates select="//t:origin//t:date//t:interp[@type='datingCriteria']"/>
               </xsl:when>
               <xsl:otherwise>―</xsl:otherwise>
@@ -319,13 +289,13 @@
           <dt width="150" align="left"><i18n:text i18n:key="find-place">Find place</i18n:text></dt>
         <dd>
           <xsl:choose xml:space="preserve">
-            <xsl:when test="//t:history//t:provenance[@type='found']//t:placeName[@type='ancientFindspot']//text() and //t:history//t:provenance[@type='found']//t:placeName[@type='modernFindspot']//text()">
+            <xsl:when test="//t:history//t:provenance[@type='found']//t:placeName[@type='ancientFindspot']/text()[not(normalize-space(.)='―')] and //t:history//t:provenance[@type='found']//t:placeName[@type='modernFindspot']/text()[not(normalize-space(.)='―')]">
               <xsl:apply-templates select="//t:history//t:provenance[@type='found']//t:placeName[@type='ancientFindspot']"/> (<xsl:apply-templates select="//t:history//t:provenance[@type='found']//t:placeName[@type='modernFindspot']"/>)
             </xsl:when>
-            <xsl:when test="//t:history//t:provenance[@type='found']//t:placeName[@type='ancientFindspot']//text()">
+            <xsl:when test="//t:history//t:provenance[@type='found']//t:placeName[@type='ancientFindspot']/text()[not(normalize-space(.)='―')]">
               <xsl:apply-templates select="//t:history//t:provenance[@type='found']//t:placeName[@type='ancientFindspot']"/>
             </xsl:when>
-            <xsl:when test="//t:history//t:provenance[@type='found']//t:placeName[@type='modernFindspot']//text()">
+            <xsl:when test="//t:history//t:provenance[@type='found']//t:placeName[@type='modernFindspot']/text()[not(normalize-space(.)='―')]">
               <xsl:apply-templates select="//t:history//t:provenance[@type='found']//t:placeName[@type='modernFindspot']"/>
             </xsl:when>
             <xsl:otherwise>―</xsl:otherwise>
@@ -387,36 +357,32 @@
           </dd> -->
           <dd>
             <xsl:choose xml:space="preserve">
-              <xsl:when test="//t:sourceDesc//t:msDesc//t:msIdentifier//t:institution//text() and //t:sourceDesc//t:msDesc//t:msIdentifier//t:repository//text()">
+              <xsl:when test="//t:sourceDesc//t:msDesc//t:msIdentifier//t:institution/text()[not(normalize-space(.)='―')] and //t:sourceDesc//t:msDesc//t:msIdentifier//t:repository/text()[not(normalize-space(.)='―')]">
                 <xsl:apply-templates select="//t:sourceDesc//t:msDesc//t:msIdentifier//t:institution"/>,
                 <xsl:apply-templates select="//t:sourceDesc//t:msDesc//t:msIdentifier//t:repository"/>
               </xsl:when>
-              <xsl:when test="//t:sourceDesc//t:msDesc//t:msIdentifier//t:institution//text()">
-              <xsl:apply-templates select="//t:sourceDesc//t:msDesc//t:msIdentifier//t:institution"/>
-              <xsl:text></xsl:text>
-            </xsl:when>
-              <xsl:when test="//t:sourceDesc//t:msDesc//t:msIdentifier//t:repository//text()">
-              <xsl:apply-templates select="//t:sourceDesc//t:msDesc//t:msIdentifier//t:repository"/>
-              <xsl:text></xsl:text>
-            </xsl:when>
+              <xsl:when test="//t:sourceDesc//t:msDesc//t:msIdentifier//t:institution/text()[not(normalize-space(.)='―')]">
+                <xsl:apply-templates select="//t:sourceDesc//t:msDesc//t:msIdentifier//t:institution"/>
+              </xsl:when>
+              <xsl:when test="//t:sourceDesc//t:msDesc//t:msIdentifier//t:repository/text()[not(normalize-space(.)='―')]">
+                <xsl:apply-templates select="//t:sourceDesc//t:msDesc//t:msIdentifier//t:repository"/>
+              </xsl:when>
               <xsl:otherwise>―</xsl:otherwise>
             </xsl:choose>
           </dd>
           <dt width="150" align="left"><i18n:text i18n:key="collection-inventory">Collection and inventory</i18n:text></dt>
           <dd>
             <xsl:choose xml:space="preserve">
-              <xsl:when test="//t:sourceDesc//t:msDesc//t:msIdentifier//t:collection//text() and //t:sourceDesc//t:msDesc//t:msIdentifier//t:idno//text()">
-                <xsl:apply-templates select="//t:sourceDesc//t:msDesc//t:msIdentifier//t:collection"/>
+              <xsl:when test="//t:sourceDesc//t:msDesc//t:msIdentifier//t:collection/text()[not(normalize-space(.)='―')] and //t:sourceDesc//t:msDesc//t:msIdentifier//t:idno/text()[not(normalize-space(.)='―')]">
+                <xsl:apply-templates select="//t:sourceDesc//t:msDesc//t:msIdentifier//t:collection"/>, 
                 <xsl:apply-templates select="//t:sourceDesc//t:msDesc//t:msIdentifier//t:idno"/>
               </xsl:when>
-              <xsl:when test="//t:sourceDesc//t:msDesc//t:msIdentifier//t:collection//text()">
-              <xsl:apply-templates select="//t:sourceDesc//t:msDesc//t:msIdentifier//t:collection"/>
-              <xsl:text>no inv. no.</xsl:text>
-            </xsl:when>
-              <xsl:when test="//t:sourceDesc//t:msDesc//t:msIdentifier//t:idno//text()">
-              <xsl:apply-templates select="//t:sourceDesc//t:msDesc//t:msIdentifier//t:idno"/>
-              <xsl:text></xsl:text>
-            </xsl:when>
+              <xsl:when test="//t:sourceDesc//t:msDesc//t:msIdentifier//t:collection/text()[not(normalize-space(.)='―')]">
+                <xsl:apply-templates select="//t:sourceDesc//t:msDesc//t:msIdentifier//t:collection"/>, no inv. no.
+              </xsl:when>
+              <xsl:when test="//t:sourceDesc//t:msDesc//t:msIdentifier//t:idno/text()[not(normalize-space(.)='―')]">
+                <xsl:apply-templates select="//t:sourceDesc//t:msDesc//t:msIdentifier//t:idno"/>
+              </xsl:when>
               <xsl:otherwise>―</xsl:otherwise>
             </xsl:choose>
           </dd>
@@ -482,79 +448,24 @@
           <dt width="150" align="left"><i18n:text i18n:key="field-dimensions">Field's dimensions (mm)</i18n:text></dt>
           <dd>
             <xsl:choose xml:space="preserve">
-            <xsl:when test="//t:layout[@n='r']/t:dimensions/t:dim[@type='diameter']/text()[not(normalize-space(.)=' ')]">
-              <i18n:text i18n:key="diameter">Diam. </i18n:text>
-              <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:dim[@type='diameter']"/>
-            </xsl:when>
-              <xsl:when test="//t:layout[@n='r']/t:dimensions/t:height/text()[not(normalize-space(.)=' ')] and //t:layout[@n='r']/t:dimensions/t:width/text()[not(normalize-space(.)=' ')] and //t:layout[@n='r']/t:dimensions/t:depth/text()[not(normalize-space(.)=' ')]">
-              <i18n:text i18n:key="height">H. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:height"/>,
-              <i18n:text i18n:key="width">W. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:width"/>,
-              <i18n:text i18n:key="thickness">Th. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:depth"/><!-- not necessary for field's dimensions, but still... -->
-            </xsl:when>
-              <xsl:when test="//t:layout[@n='r']/t:dimensions/t:height/text()[not(normalize-space(.)=' ')] and //t:layout[@n='r']/t:dimensions/t:width/text()[not(normalize-space(.)=' ')]">
+              <xsl:when test="//t:layout[@n='r']/t:dimensions/t:dim[@type='diameter'][text() and normalize-space(.) != '―' and normalize-space(.) != '']">
+                <i18n:text i18n:key="diameter">Diam. </i18n:text>
+                <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:dim[@type='diameter']"/>
+              </xsl:when>
+              <xsl:when test="//t:layout[@n='r']/t:dimensions/t:height[text() and normalize-space(.) != '―' and normalize-space(.) != ''] and //t:layout[@n='r']/t:dimensions/t:width[text() and normalize-space(.) != '―' and normalize-space(.) != '']">
                 <i18n:text i18n:key="height">H. </i18n:text>
                 <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:height"/>,
-              <i18n:text i18n:key="width">W. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:width"/>
-              </xsl:when>
-              <xsl:when test="//t:layout[@n='r']/t:dimensions/t:height/text()[not(normalize-space(.)=' ')] and //t:layout[@n='r']/t:dimensions/t:depth/text()[not(normalize-space(.)=' ')]">
-                <i18n:text i18n:key="height">H. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:height"/>,
-                <i18n:text i18n:key="thickness">Th. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:depth"/>
-              </xsl:when>
-              <xsl:when test="//t:layout[@n='r']/t:dimensions/t:width/text()[not(normalize-space(.)=' ')] and //t:layout[@n='r']/t:dimensions/t:depth/text()[not(normalize-space(.)=' ')]">
-                <i18n:text i18n:key="width">W. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:width"/>,
-                <i18n:text i18n:key="thickness">Th. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:depth"/>
-              </xsl:when>
-              <xsl:when test="//t:layout[@n='r']/t:dimensions/t:height/text()[not(normalize-space(.)=' ')]">
-                <i18n:text i18n:key="height">H. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:height"/>
-              </xsl:when>
-              <xsl:when test="//t:layout[@n='r']/t:dimensions/t:width/text()[not(normalize-space(.)=' ')]">
                 <i18n:text i18n:key="width">W. </i18n:text>
                 <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:width"/>
               </xsl:when>
-              <xsl:when test="//t:layout[@n='r']/t:dimensions/t:depth/text()[not(normalize-space(.)=' ')]">
-                <i18n:text i18n:key="thickness">Th. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:depth"/>
-              </xsl:when>
-            <xsl:otherwise>―</xsl:otherwise>
-          </xsl:choose>
+              <xsl:otherwise>―</xsl:otherwise>
+            </xsl:choose>
           </dd>
           <dt width="150" align="left"><i18n:text i18n:key="matrix">Matrix</i18n:text></dt>
           <dd>
-            <xsl:choose xml:space="preserve">
-              <xsl:when test="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='surviving']">
-                <xsl:choose>
-                  <xsl:when test="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='SigiDoc'] and //t:layout[@n='r']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='PBW']">
-                    SigiDoc ID: <xsl:apply-templates select="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='SigiDoc']//text()"/>* - PBW ID: <xsl:apply-templates select="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='PBW']//text()"/>*
-                  </xsl:when>
-                  <xsl:when test="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='SigiDoc']">
-                SigiDoc ID: <xsl:apply-templates select="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='SigiDoc']//text()"/>*
-                  </xsl:when>
-                  <xsl:when test="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='PBW']">
-                PBW ID: <xsl:apply-templates select="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='PBW']//text()"/>*
-                  </xsl:when>
-                </xsl:choose>
-              </xsl:when>
-              <xsl:when test="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='notSurviving']">
-                <xsl:choose xml:space="preserve">
-                  <xsl:when test="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='SigiDoc'] and //t:layout[@n='r']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='PBW']">
-                    SigiDoc ID: <xsl:apply-templates select="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='SigiDoc']//text()"/> - PBW ID: <xsl:apply-templates select="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='PBW']//text()"/>
-                  </xsl:when>
-                  <xsl:when test="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='SigiDoc']">
-                    SigiDoc ID: <xsl:apply-templates select="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='SigiDoc']//text()"/>
-                  </xsl:when>
-                  <xsl:when test="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='PBW']">
-                    PBW ID: <xsl:apply-templates select="//t:layout[@n='r']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='PBW']//text()"/>
-                  </xsl:when>
-                </xsl:choose>
+            <xsl:choose>
+              <xsl:when test="//t:origin//t:origDate[@type='analysis']//t:interp[@type='datingCriteria'][normalize-space(.) != '' and normalize-space(.) != '―']">
+                <xsl:apply-templates select="//t:origin//t:origDate[@type='analysis']//t:interp[@type='datingCriteria']"/>
               </xsl:when>
               <xsl:otherwise>―</xsl:otherwise>
             </xsl:choose>
@@ -616,82 +527,27 @@
         <dt width="150" align="left"><i18n:text i18n:key="field-dimensions">Field's dimensions (mm)</i18n:text></dt>
         <dd>
           <xsl:choose xml:space="preserve">
-            <xsl:when test="//t:layout[@n='v']/t:dimensions/t:dim[@type='diameter']/text()[not(normalize-space(.)=' ')]">
+            <xsl:when test="//t:layout[@n='r']/t:dimensions/t:dim[@type='diameter'][text() and normalize-space(.) != '―' and normalize-space(.) != '']">
               <i18n:text i18n:key="diameter">Diam. </i18n:text>
-              <xsl:apply-templates select="//t:layout[@n='v']/t:dimensions/t:dim[@type='diameter']"/>
+              <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:dim[@type='diameter']"/>
             </xsl:when>
-              <xsl:when test="//t:layout[@n='v']/t:dimensions/t:height/text()[not(normalize-space(.)=' ')] and //t:layout[@n='v']/t:dimensions/t:width/text()[not(normalize-space(.)=' ')] and //t:layout[@n='v']/t:dimensions/t:depth/text()[not(normalize-space(.)=' ')]">
+            <xsl:when test="//t:layout[@n='r']/t:dimensions/t:height[text() and normalize-space(.) != '―' and normalize-space(.) != ''] and //t:layout[@n='r']/t:dimensions/t:width[text() and normalize-space(.) != '―' and normalize-space(.) != '']">
               <i18n:text i18n:key="height">H. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='v']/t:dimensions/t:height"/>,
+              <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:height"/>,
               <i18n:text i18n:key="width">W. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='v']/t:dimensions/t:width"/>,
-              <i18n:text i18n:key="thickness">Th. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='v']/t:dimensions/t:depth"/><!-- not necessary for field's dimensions, but still... -->
+              <xsl:apply-templates select="//t:layout[@n='r']/t:dimensions/t:width"/>
             </xsl:when>
-              <xsl:when test="//t:layout[@n='v']/t:dimensions/t:height/text()[not(normalize-space(.)=' ')] and //t:layout[@n='v']/t:dimensions/t:width/text()[not(normalize-space(.)=' ')]">
-                <i18n:text i18n:key="height">H. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='v']/t:dimensions/t:height"/>,
-              <i18n:text i18n:key="width">W. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='v']/t:dimensions/t:width"/>
-              </xsl:when>
-              <xsl:when test="//t:layout[@n='v']/t:dimensions/t:height/text()[not(normalize-space(.)=' ')] and //t:layout[@n='v']/t:dimensions/t:depth/text()[not(normalize-space(.)=' ')]">
-                <i18n:text i18n:key="height">H. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='v']/t:dimensions/t:height"/>,
-                <i18n:text i18n:key="thickness">Th. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='v']/t:dimensions/t:depth"/>
-              </xsl:when>
-              <xsl:when test="//t:layout[@n='v']/t:dimensions/t:width/text()[not(normalize-space(.)=' ')] and //t:layout[@n='v']/t:dimensions/t:depth/text()[not(normalize-space(.)=' ')]">
-                <i18n:text i18n:key="width">W. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='v']/t:dimensions/t:width"/>,
-                <i18n:text i18n:key="thickness">Th. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='v']/t:dimensions/t:depth"/>
-              </xsl:when>
-              <xsl:when test="//t:layout[@n='v']/t:dimensions/t:height/text()[not(normalize-space(.)=' ')]">
-                <i18n:text i18n:key="height">H. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='v']/t:dimensions/t:height"/>
-              </xsl:when>
-              <xsl:when test="//t:layout[@n='v']/t:dimensions/t:width/text()[not(normalize-space(.)=' ')]">
-                <i18n:text i18n:key="width">W. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='v']/t:dimensions/t:width"/>
-              </xsl:when>
-              <xsl:when test="//t:layout[@n='v']/t:dimensions/t:depth/text()[not(normalize-space(.)=' ')]">
-                <i18n:text i18n:key="thickness">Th. </i18n:text>
-                <xsl:apply-templates select="//t:layout[@n='v']/t:dimensions/t:depth"/>
-              </xsl:when>
             <xsl:otherwise>―</xsl:otherwise>
           </xsl:choose>
         </dd>
         <dt width="150" align="left"><i18n:text i18n:key="matrix">Matrix</i18n:text></dt>
         <dd>
-          <xsl:choose xml:space="preserve">
-              <xsl:when test="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='surviving']">
-                <xsl:choose>
-                  <xsl:when test="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='SigiDoc'] and //t:layout[@n='v']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='PBW']">
-                    SigiDoc ID: <xsl:apply-templates select="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='SigiDoc']//text()"/>* - PBW ID: <xsl:apply-templates select="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='PBW']//text()"/>*
-                  </xsl:when>
-                  <xsl:when test="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='SigiDoc']">
-                SigiDoc ID: <xsl:apply-templates select="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='SigiDoc']//text()"/>*
-                  </xsl:when>
-                  <xsl:when test="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='PBW']">
-                PBW ID: <xsl:apply-templates select="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='surviving']//t:idno[@type='PBW']//text()"/>*
-                  </xsl:when>
-                </xsl:choose>
-              </xsl:when>
-              <xsl:when test="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='notSurviving']">
-                <xsl:choose xml:space="preserve">
-                  <xsl:when test="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='SigiDoc'] and //t:layout[@n='v']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='PBW']">
-                    SigiDoc ID: <xsl:apply-templates select="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='SigiDoc']//text()"/> - PBW ID: <xsl:apply-templates select="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='PBW']//text()"/>
-                  </xsl:when>
-                  <xsl:when test="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='SigiDoc']">
-                    SigiDoc ID: <xsl:apply-templates select="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='SigiDoc']//text()"/>
-                  </xsl:when>
-                  <xsl:when test="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='PBW']">
-                    PBW ID: <xsl:apply-templates select="//t:layout[@n='v']//t:rs[@type='matrix'][@subtype='notSurviving']//t:idno[@type='PBW']//text()"/>
-                  </xsl:when>
-                </xsl:choose>
-              </xsl:when>
-              <xsl:otherwise>―</xsl:otherwise>
-            </xsl:choose>
+          <xsl:choose>
+            <xsl:when test="//t:origin//t:date//t:choice//t:corr[normalize-space(.) != '' and normalize-space(.) != '―']">
+              <xsl:apply-templates select="//t:origin//t:date//t:choice//t:corr"/> (<xsl:apply-templates select="//t:origin//t:date//t:choice//t:corr/@resp"/>), <i18n:text i18n:key="alternative-dating-basedon">based on</i18n:text>: <xsl:apply-templates select="//t:origin//t:date//t:interp[@type='datingCriteria']"/>
+            </xsl:when>
+            <xsl:otherwise>―</xsl:otherwise>
+          </xsl:choose>
         </dd>
         <dt width="150" align="left"><i18n:text i18n:key="iconography">Iconography</i18n:text></dt>
         <dd>

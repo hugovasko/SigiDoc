@@ -18,7 +18,7 @@
         </editor>
       </titleStmt>
       <location>
-        <geo>43.062264, 25.600029</geo>
+        <geo>43.062060, 25.599851</geo>
         <findspotAccuracy>3</findspotAccuracy>
       </location>
       <editionStmt>
@@ -38,28 +38,26 @@
         </editor>
       </editionStmt>
       <publicationStmt>
-        <authority xml:lang="en">{AUTHORITY_EN}</authority>
-        <authority xml:lang="bg">{AUTHORITY_BG}</authority>
+        <authority xml:lang="en">―</authority>
+        <authority xml:lang="bg">―</authority>
         <idno type="filename">BG_Tarnovo_RIM_4166-M-TOM</idno>
-        <idno type="SigiDocID">BG_Tarnovo_RIM_4166-M-TOM</idno>
-        <idno type="sequence">BG_Tarnovo_RIM_4166-M-TOM</idno>
+        <idno type="SigiDocID">―</idno>
+        <idno type="sequence">000―</idno>
         <date when="1208">1208-1222</date>
         <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-                        Commons Attributions-NonCommercial-ShareAlike 4.0 International
-                        License.</licence>
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License.</licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
         <msDesc>
           <msIdentifier>
             <country>
-              <seg xml:lang="en">Veliko Tarnovo</seg>
-              <seg xml:lang="bg">―</seg>
+              <seg xml:lang="en">Bulgaria</seg>
+              <seg xml:lang="bg">България</seg>
             </country>
             <settlement>
               <seg xml:lang="en">Veliko Tarnovo</seg>
-              <seg xml:lang="bg">―</seg>
+              <seg xml:lang="bg">Велико Търново</seg>
             </settlement>
             <institution xml:lang="en">Regional Historical Museum – Veliko Tarnovo</institution>
             <institution xml:lang="bg">Регионален Исторически Музей – Велико Търново</institution>
@@ -67,32 +65,28 @@
             <repository xml:lang="bg">―</repository>
             <collection xml:lang="en" ref="URI">―</collection>
             <collection xml:lang="bg" ref="URI">―</collection>
-            <idno>{IDNO}</idno>
-            <!-- <altIdentifier xml:lang="en">
-                                    <repository>{REPOSITORY_EN}</repository>
-                                    <idno>{IDNO_EN}</idno>
-                                </altIdentifier>
-                                <altIdentifier xml:lang="bg">
-                                    <repository>{REPOSITORY_BG}</repository>
-                                    <idno>{IDNO_BG}</idno>
-                                </altIdentifier> -->
+            <idno>4166 M/TOM</idno>
           </msIdentifier>
           <msContents>
             <summary n="whole">
-              <seg xml:lang="en">{SUMMARY_EN}</seg>
-              <seg xml:lang="bg">{SUMMARY_BG}</seg>
+              <seg xml:lang="en">―</seg>
+              <seg xml:lang="bg">―</seg>
             </summary>
-            <textLang mainLang="grc-Latn">
-              <seg xml:lang="en">{TEXTLANG_EN}</seg>
-              <seg xml:lang="bg">{TEXTLANG_BG}</seg>
+            <textLang mainLang="grc-Latn" n="r">
+              <seg xml:lang="en">Byzantine Greek</seg>
+              <seg xml:lang="bg">Византийски гръцки</seg>
+            </textLang>
+            <textLang mainLang="grc-Latn" n="v">
+              <seg xml:lang="en">Byzantine Greek</seg>
+              <seg xml:lang="bg">Византийски гръцки</seg>
             </textLang>
             <msItem>
               <author>
                 <roleName role="issuer" type="">
                   <seg xml:lang="en">Theodoros I Laskaris</seg>
-                  <seg xml:lang="bg">―</seg>
-                  <interp type="milieu" xml:lang="en">Imperial</interp>
-                  <interp type="milieu" xml:lang="bg">―</interp>
+                  <seg xml:lang="bg">Теодор I Ласкарид</seg>
+                  <interp type="milieu" xml:lang="en">―</interp>
+                  <interp type="milieu" xml:lang="bg">Императорска (сфера на дейност)</interp>
                 </roleName>
               </author>
             </msItem>
@@ -107,7 +101,7 @@
                       <seg xml:lang="bg">Печат</seg>
                     </term>
                     <interp type="workType" xml:lang="en">Bidimensional representation</interp>
-                    <interp type="workType" xml:lang="bg">―</interp>
+                    <interp type="workType" xml:lang="bg">Двуизмерно изображение</interp>
                   </objectType>
                   <material>
                     <seg xml:lang="en">Lead</seg>
@@ -115,9 +109,6 @@
                   </material>
                   <dimensions type="support" unit="mm">
                     <dim type="diameter">36-33.5</dim>
-                    <height>{HEIGHT}</height>
-                    <width>{WIDTH}</width>
-                    <depth>{DEPTH}</depth>
                   </dimensions>
                   <measure type="weight" unit="g">31.98</measure>
                   <measure type="axis" unit="clock">―</measure>
@@ -138,31 +129,30 @@
                     <seg xml:lang="bg">Иконография и надпис</seg>
                   </rs>
                   <rs type="execution">
-                    <seg xml:lang="en">―</seg>
-                    <seg xml:lang="bg">―</seg>
+                    <seg xml:lang="en">Struck</seg>
+                    <seg xml:lang="bg">Отсечен</seg>
                   </rs>
                   <rs type="shape">
                     <seg xml:lang="en">Round</seg>
                     <seg xml:lang="bg">Кръгъл</seg>
                   </rs>
                   <rs type="matrix" subtype="">
-                    <idno type="SigiDoc">BG_Tarnovo_RIM_4166-M-TOM</idno>
-                    <idno type="PBW" corresp="URI">{PBW}</idno>
+                    <idno type="SigiDoc">―</idno>
                   </rs>
                 </layout>
               </layoutDesc>
             </objectDesc>
             <handDesc>
               <handNote n="whole">
-                <seg xml:lang="en">{HAND_NOTE_EN}</seg>
-                <seg xml:lang="bg">{HAND_NOTE_BG}</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </handNote>
             </handDesc>
             <decoDesc>
               <decoNote>
                 <figure>
-                  <figDesc n="whole" xml:lang="en">{DECO_NOTE_EN}</figDesc>
-                  <figDesc n="whole" xml:lang="bg">{DECO_NOTE_BG}</figDesc>
+                  <figDesc n="whole" xml:lang="en">―</figDesc>
+                  <figDesc n="whole" xml:lang="bg">―</figDesc>
                 </figure>
               </decoNote>
             </decoDesc>
@@ -174,18 +164,13 @@
                   <placeName ref="URI">Veliko Tarnovo</placeName>
                 </seg>
                 <seg xml:lang="bg">
-                  <placeName ref="URI">―</placeName>
+                  <placeName ref="URI">Велико Търново</placeName>
                 </seg>
               </origPlace>
-              <!-- <origDate type="analysis" when="{DATE}" evidence="" cert="" resp="">
-                                        <seg>{DATE}</seg>
-                                        <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                        <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
-                                    </origDate> -->
               <origDate type="analysis" notBefore="1208" notAfter="1222" evidence="" cert="" resp="">
                 <seg>1208-1222</seg>
                 <interp type="datingCriteria" xml:lang="en">Iconography, Onomastics</interp>
-                <interp type="datingCriteria" xml:lang="bg">―</interp>
+                <interp type="datingCriteria" xml:lang="bg">Иконография, Ономастика</interp>
               </origDate>
               <origDate type="internal" when="1208" when-custom="" datingMethod="">
                 <seg>―</seg>
@@ -202,24 +187,18 @@
             </origin>
             <provenance type="found" subtype="" when="" xml:lang="en" source="" cert="">
               <placeName type="ancientFindspot" ref="URI">Veliko Tarnovo</placeName>
-              <placeName type="modernFindspot" ref="URI">Veliko Tarnovo</placeName>
-              <rs type="circumstances">―</rs>
+              <placeName type="modernFindspot" ref="URI">―</placeName>
+              <rs type="circumstances">Stray find</rs>
             </provenance>
             <provenance type="found" subtype="" when="" xml:lang="bg" source="" cert="">
-              <placeName type="ancientFindspot" ref="URI">―</placeName>
-              <placeName type="modernFindspot" ref="URI">―</placeName>
-              <rs type="circumstances">―</rs>
+              <placeName type="ancientFindspot" ref="URI">Велико Търново</placeName>
+              <placeName type="modernFindspot" ref="URI">Велико Търново</placeName>
+              <rs type="circumstances">Случайна находка</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>According to the museum’s inventory book, the seal was found in the area to the west of V. Tarnovo. Jordanov 1999, p. 109, writes that it came from the area of “the present-day Cholakovtsi Housing Estate, to the west of Veliko Turnovo”, an information which cannot be verified. The Cholakovtsi neighbourhood is south-southwest of Tarnovo. The object has been missing from the museum (stolen) since 2006, something not mentioned by Jordanov.</p>
+              <p>According to the museum’s inventory book, the seal was found in the area to the west of V. Tarnovo. Jordanov 1999, p. 109, writes that it came from the area of “the present-day Cholakovtsi Housing Estate, to the west of Veliko Turnovo”, an information which cannot be verified. The Cholakovtsi neighbourhood is south-southwest of Tarnovo. The object has been missing from the museum (stolen) since 2006, something not mentioned by Jordanov in his later publications.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
-              <p>―</p>
-            </provenance>
-            <provenance type="not-observed" subtype="" xml:lang="en">
-              <p>―</p>
-            </provenance>
-            <provenance type="not-observed" subtype="" xml:lang="bg">
               <p>―</p>
             </provenance>
             <provenance type="transferred" subtype="" xml:lang="en">
@@ -235,12 +214,12 @@
           </history>
           <msPart n="r">
             <msIdentifier>
-              <idno>{MS_IDENTIFIER}</idno>
+              <idno />
             </msIdentifier>
             <msContents>
               <summary n="r">
-                <seg xml:lang="en">{MS_CONTENTS_SUMMARY_EN}</seg>
-                <seg xml:lang="bg">{MS_CONTENTS_SUMMARY_BG}</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </summary>
             </msContents>
             <physDesc>
@@ -248,15 +227,15 @@
                 <layoutDesc>
                   <layout n="r">
                     <dimensions type="written" unit="mm">
-                      <dim type="diameter">36-33.5</dim>
+                      <dim type="diameter">―</dim>
                     </dimensions>
                     <rs type="matrix" subtype="">
                       <idno type="SigiDoc" xml:lang="en">―</idno>
                       <idno type="SigiDoc" xml:lang="bg">―</idno>
                     </rs>
                     <rs type="layout">
-                      <seg xml:lang="en">{LAYOUT_EN}</seg>
-                      <seg xml:lang="bg">{LAYOUT_BG}</seg>
+                      <seg xml:lang="en">Iconography and legend</seg>
+                      <seg xml:lang="bg">Иконография и надпис</seg>
                     </rs>
                     <p />
                   </layout>
@@ -264,17 +243,17 @@
               </objectDesc>
               <handDesc>
                 <handNote n="r">
-                  <seg xml:lang="en">{HAND_NOTE_EN}</seg>
-                  <seg xml:lang="bg">{HAND_NOTE_BG}</seg>
+                  <seg xml:lang="en">―</seg>
+                  <seg xml:lang="bg">―</seg>
                 </handNote>
               </handDesc>
               <decoDesc>
                 <decoNote>
                   <figure>
-                    <figDesc n="r" xml:lang="en">{FIGURE_R_EN}</figDesc>
-                    <figDesc n="r" xml:lang="bg">{FIGURE_R_BG}</figDesc>
-                    <figDesc n="decoR" xml:lang="en">{FIGURE_DECOR_EN}</figDesc>
-                    <figDesc n="decoR" xml:lang="bg">{FIGURE_DECOR_BG}</figDesc>
+                    <figDesc n="r" xml:lang="en">Standing figure of Christ, blessing (right hand), holding the Holy Gospel (left hand)</figDesc>
+                    <figDesc n="r" xml:lang="bg">Цяла фигура на Христос, прав, благославящ с дясната ръка, държащ евангелие в лявата.</figDesc>
+                    <figDesc n="decoR" xml:lang="en">―</figDesc>
+                    <figDesc n="decoR" xml:lang="bg">―</figDesc>
                   </figure>
                 </decoNote>
               </decoDesc>
@@ -283,8 +262,6 @@
               <origin>
                 <origDate>
                   <seg>1208-1222</seg>
-                  <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
                 <date />
               </origin>
@@ -296,7 +273,8 @@
             </msIdentifier>
             <msContents>
               <summary n="v">
-                <seg xml:lang="">Reverse</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </summary>
             </msContents>
             <physDesc>
@@ -304,13 +282,15 @@
                 <layoutDesc>
                   <layout n="v">
                     <dimensions type="written" unit="mm">
-                      <dim type="diameter" />
+                      <dim type="diameter">―</dim>
                     </dimensions>
                     <rs type="matrix" subtype="">
-                      <idno type="SigiDoc">{MATRIX}</idno>
+                      <idno type="SigiDoc" xml:lang="en">―</idno>
+                      <idno type="SigiDoc" xml:lang="bg">―</idno>
                     </rs>
                     <rs type="layout">
-                      <seg xml:lang="" />
+                      <seg xml:lang="en">Iconography and legend</seg>
+                      <seg xml:lang="bg">Иконография и надпис</seg>
                     </rs>
                     <p />
                   </layout>
@@ -318,14 +298,17 @@
               </objectDesc>
               <handDesc>
                 <handNote n="v">
-                  <seg xml:lang="" />
+                  <seg xml:lang="en">―</seg>
+                  <seg xml:lang="bg">―</seg>
                 </handNote>
               </handDesc>
               <decoDesc>
                 <decoNote>
                   <figure>
-                    <figDesc n="v" />
-                    <figDesc n="decoV" />
+                    <figDesc n="v" xml:lang="en">The emperor Theodore I Laskaris, standing, crowned, holding labarum (right hand) and globus cruciger (left hand)</figDesc>
+                    <figDesc n="v" xml:lang="bg">Император Теодор I Ласкарид, прав, с корона, държащ лабарум в дясната ръка и кълбо с кръст в лявата.</figDesc>
+                    <figDesc n="decoV" xml:lang="en">―</figDesc>
+                    <figDesc n="decoV" xml:lang="bg">―</figDesc>
                   </figure>
                 </decoNote>
               </decoDesc>
@@ -334,8 +317,6 @@
               <origin>
                 <origDate>
                   <seg>1208-1222</seg>
-                  <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
                 <date />
               </origin>
@@ -402,18 +383,23 @@
                     </div>
       <div type="apparatus">
         <listApp>
-          <app xml:lang="" />
+          <app xml:lang="en">―</app>
+          <app xml:lang="bg">―</app>
         </listApp>
       </div>
       <div type="translation">
-        <p>[plain Greek or Latin... text here]</p>
-        <p xml:lang="">[Modern language text here]</p>
+        <p xml:lang="en">―</p>
+        <p xml:lang="bg">―</p>
+        <p xml:lang="en">―</p>
+        <p xml:lang="bg">―</p>
       </div>
       <div type="commentary" subtype="text">
-        <p xml:lang="" />
+        <p xml:lang="en">―</p>
+        <p xml:lang="bg">―</p>
       </div>
       <div type="commentary" subtype="footnotes">
-        <p xml:lang="" />
+        <p xml:lang="en">―</p>
+        <p xml:lang="bg">―</p>
       </div>
       <div type="bibliography" subtype="">
         <p>

@@ -43,21 +43,19 @@
                         <idno type="sequence">{SEQUENCE}</idno>
                         <date when="{NOT_BEFORE}">{DATE}</date>
                         <availability>
-                            <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-                        Commons Attributions-NonCommercial-ShareAlike 4.0 International
-                        License.</licence>
+                            <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License.</licence>
                         </availability>
                     </publicationStmt>
                     <sourceDesc>
                         <msDesc>
                             <msIdentifier>
                                 <country>
-                                    <seg xml:lang="en">{MODERN_LOCATION_EN}</seg>
-                                    <seg xml:lang="bg">{MODERN_LOCATION_BG}</seg>
+                                    <seg xml:lang="en">{COUNTRY_EN}</seg>
+                                    <seg xml:lang="bg">{COUNTRY_BG}</seg>
                                 </country>
                                 <settlement>
-                                    <seg xml:lang="en">{FIND_PLACE_EN}</seg>
-                                    <seg xml:lang="bg">{FIND_PLACE_BG}</seg>
+                                    <seg xml:lang="en">{SETTLEMENT_EN}</seg>
+                                    <seg xml:lang="bg">{SETTLEMENT_BG}</seg>
                                 </settlement>
                                 <institution xml:lang="en">{INSTITUTION_EN}</institution>
                                 <institution xml:lang="bg">{INSTITUTION_BG}</institution>
@@ -66,23 +64,19 @@
                                 <collection xml:lang="en" ref="URI">{COLLECTION_EN}</collection>
                                 <collection xml:lang="bg" ref="URI">{COLLECTION_BG}</collection>
                                 <idno>{IDNO}</idno>
-                                <!-- <altIdentifier xml:lang="en">
-                                    <repository>{REPOSITORY_EN}</repository>
-                                    <idno>{IDNO_EN}</idno>
-                                </altIdentifier>
-                                <altIdentifier xml:lang="bg">
-                                    <repository>{REPOSITORY_BG}</repository>
-                                    <idno>{IDNO_BG}</idno>
-                                </altIdentifier> -->
                             </msIdentifier>
                             <msContents>
                                 <summary n="whole">
                                     <seg xml:lang="en">{SUMMARY_EN}</seg>
                                     <seg xml:lang="bg">{SUMMARY_BG}</seg>
                                 </summary>
-                                <textLang mainLang="grc-Latn">
-                                    <seg xml:lang="en">{TEXTLANG_EN}</seg>
-                                    <seg xml:lang="bg">{TEXTLANG_BG}</seg>
+                                <textLang mainLang="grc-Latn" n="r">
+                                    <seg xml:lang="en">{TEXTLANG_R_EN}</seg>
+                                    <seg xml:lang="bg">{TEXTLANG_R_BG}</seg>
+                                </textLang>
+                                <textLang mainLang="grc-Latn" n="v">
+                                    <seg xml:lang="en">{TEXTLANG_V_EN}</seg>
+                                    <seg xml:lang="bg">{TEXTLANG_V_BG}</seg>
                                 </textLang>
                                 <msItem>
                                     <author>
@@ -113,9 +107,6 @@
                                             </material>
                                             <dimensions type="support" unit="mm">
                                                 <dim type="diameter">{DIAMETER}</dim>
-                                                <height>{HEIGHT}</height>
-                                                <width>{WIDTH}</width>
-                                                <depth>{DEPTH}</depth>
                                             </dimensions>
                                             <measure type="weight" unit="g">{WEIGHT}</measure>
                                             <measure type="axis" unit="clock">{AXIS}</measure>
@@ -145,7 +136,6 @@
                                             </rs>
                                             <rs type="matrix" subtype="">
                                                 <idno type="SigiDoc">{SEAL_ID}</idno>
-                                                <idno type="PBW" corresp="URI">{PBW}</idno>
                                             </rs>                                     
                                         </layout>
                                     </layoutDesc>
@@ -175,11 +165,6 @@
                                             <placeName ref="URI">{FIND_PLACE_BG}</placeName>
                                         </seg>
                                     </origPlace>
-                                    <!-- <origDate type="analysis" when="{DATE}" evidence="" cert="" resp="">
-                                        <seg>{DATE}</seg>
-                                        <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                        <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
-                                    </origDate> -->
                                     <origDate type="analysis" notBefore="{NOT_BEFORE}" notAfter="{NOT_AFTER}" evidence="" cert="" resp="">
                                         <seg>{DATE}</seg>
                                         <interp type="datingCriteria" xml:lang="en">{ANALYSIS_DATE_CRITERIA_EN}</interp>
@@ -187,8 +172,8 @@
                                     </origDate>
                                     <origDate type="internal" when="{NOT_BEFORE}" when-custom="" datingMethod="">
                                         <seg>{INTERNAL_DATE}</seg>
-                                        <interp type="datingCriteria" xml:lang="en">{}</interp>
-                                        <interp type="datingCriteria" xml:lang="bg">{}</interp>
+                                        <interp type="datingCriteria" xml:lang="en">{INTERNAL_DATE_CRITERIA_EN}</interp>
+                                        <interp type="datingCriteria" xml:lang="bg">{INTERNAL_DATE_CRITERIA_BG}</interp>
                                     </origDate>
                                     <date>
                                         <choice>
@@ -214,17 +199,11 @@
                                 <provenance type="observed" subtype="" xml:lang="bg">
                                     <p>{MODERN_OBSERVATIONS_BG}</p>
                                 </provenance>
-                                <provenance type="not-observed" subtype="" xml:lang="en">
-                                    <p>{OBVERSE_MATRIX_EN}</p>
-                                </provenance>
-                                <provenance type="not-observed" subtype="" xml:lang="bg">
-                                    <p>{OBVERSE_MATRIX_BG}</p>
-                                </provenance>
                                 <provenance type="transferred" subtype="" xml:lang="en">
-                                    <p>{OBVERSE_DECORATION_EN}</p>
+                                    <p>{PREVIOUS_LOCATIONS_EN}</p>
                                 </provenance>
                                 <provenance type="transferred" subtype="" xml:lang="bg">
-                                    <p>{OBVERSE_DECORATION_BG}</p>
+                                    <p>{PREVIOUS_LOCATIONS_BG}</p>
                                 </provenance>
                                 <acquisition>
                                     <p xml:lang="en">{ACQUISITION_EN}</p>
@@ -233,12 +212,12 @@
                             </history>
                             <msPart n="r"> 
                                 <msIdentifier>
-                                    <idno>{MS_IDENTIFIER}</idno>
+                                    <idno/>
                                 </msIdentifier>
                                 <msContents>
                                     <summary n="r">
-                                        <seg xml:lang="en">{MS_CONTENTS_SUMMARY_EN}</seg>
-                                        <seg xml:lang="bg">{MS_CONTENTS_SUMMARY_BG}</seg>
+                                        <seg xml:lang="en">{MS_CONTENTS_SUMMARY_R_EN}</seg>
+                                        <seg xml:lang="bg">{MS_CONTENTS_SUMMARY_R_BG}</seg>
                                     </summary>
                                 </msContents>
                                 <physDesc>
@@ -246,15 +225,15 @@
                                         <layoutDesc>
                                             <layout n="r">
                                                 <dimensions type="written" unit="mm">
-                                                    <dim type="diameter">{DIAMETER}</dim>
+                                                    <dim type="diameter">{DIAMETER_R}</dim>
                                                 </dimensions>
                                                 <rs type="matrix" subtype="">
-                                                    <idno type="SigiDoc" xml:lang="en">{MATRIX_EN}</idno>
-                                                    <idno type="SigiDoc" xml:lang="bg">{MATRIX_BG}</idno>
+                                                    <idno type="SigiDoc" xml:lang="en">{MATRIX_R_EN}</idno>
+                                                    <idno type="SigiDoc" xml:lang="bg">{MATRIX_R_BG}</idno>
                                                 </rs>
                                                 <rs type="layout">
-                                                    <seg xml:lang="en">{LAYOUT_EN}</seg>
-                                                    <seg xml:lang="bg">{LAYOUT_BG}</seg>
+                                                    <seg xml:lang="en">{LAYOUT_R_EN}</seg>
+                                                    <seg xml:lang="bg">{LAYOUT_R_BG}</seg>
                                                 </rs>
                                                 <p/>
                                             </layout>
@@ -262,8 +241,8 @@
                                     </objectDesc>
                                     <handDesc>
                                         <handNote n="r">
-                                            <seg xml:lang="en">{HAND_NOTE_EN}</seg>
-                                            <seg xml:lang="bg">{HAND_NOTE_BG}</seg>
+                                            <seg xml:lang="en">{HAND_NOTE_R_EN}</seg>
+                                            <seg xml:lang="bg">{HAND_NOTE_R_BG}</seg>
                                         </handNote>
                                     </handDesc>
                                     <decoDesc>
@@ -281,8 +260,6 @@
                                     <origin>
                                         <origDate>
                                             <seg>{DATE}</seg>
-                                            <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                                         </origDate>
                                         <date/>
                                     </origin>
@@ -294,7 +271,8 @@
                                 </msIdentifier>
                                 <msContents>
                                     <summary n="v">
-                                        <seg xml:lang="">Reverse</seg>
+                                        <seg xml:lang="en">{MS_CONTENTS_SUMMARY_V_EN}</seg>
+                                        <seg xml:lang="bg">{MS_CONTENTS_SUMMARY_V_BG}</seg>
                                     </summary>
                                 </msContents>
                                 <physDesc>
@@ -302,13 +280,15 @@
                                         <layoutDesc>
                                             <layout n="v">
                                                 <dimensions type="written" unit="mm">
-                                                    <dim type="diameter"/>
+                                                    <dim type="diameter">{DIAMETER_V}</dim>
                                                 </dimensions>
                                                 <rs type="matrix" subtype="">
-                                                    <idno type="SigiDoc">{MATRIX}</idno>
+                                                    <idno type="SigiDoc" xml:lang="en">{MATRIX_V_EN}</idno>
+                                                    <idno type="SigiDoc" xml:lang="bg">{MATRIX_V_BG}</idno>
                                                 </rs>
                                                 <rs type="layout">
-                                                    <seg xml:lang=""/>
+                                                    <seg xml:lang="en">{LAYOUT_V_EN}</seg>
+                                                    <seg xml:lang="bg">{LAYOUT_V_BG}</seg>
                                                 </rs>
                                                 <p/>
                                             </layout>
@@ -316,14 +296,17 @@
                                     </objectDesc>
                                     <handDesc>
                                         <handNote n="v">
-                                            <seg xml:lang=""/>
+                                            <seg xml:lang="en">{HAND_NOTE_V_EN}</seg>
+                                            <seg xml:lang="bg">{HAND_NOTE_V_BG}</seg>
                                         </handNote>
                                     </handDesc>
                                     <decoDesc>
                                         <decoNote>
                                             <figure>
-                                                <figDesc n="v"/>
-                                                <figDesc n="decoV"/>
+                                                <figDesc n="v" xml:lang="en">{FIGURE_V_EN}</figDesc>
+                                                <figDesc n="v" xml:lang="bg">{FIGURE_V_BG}</figDesc>
+                                                <figDesc n="decoV" xml:lang="en">{FIGURE_DECOV_EN}</figDesc>
+                                                <figDesc n="decoV" xml:lang="bg">{FIGURE_DECOV_BG}</figDesc>
                                             </figure>
                                         </decoNote>
                                     </decoDesc>
@@ -332,8 +315,6 @@
                                     <origin>
                                         <origDate>
                                             <seg>{DATE}</seg>
-                                            <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                                         </origDate>
                                         <date/>
                                     </origin>
@@ -398,18 +379,23 @@
                     </div>
                     <div type="apparatus">
                         <listApp>
-                            <app xml:lang=""/>
-                         </listApp>
+                            <app xml:lang="en">{APPARATUS_EN}</app>
+                            <app xml:lang="bg">{APPARATUS_BG}</app>
+                        </listApp>
                     </div>
                     <div type="translation">
-                        <p>[plain Greek or Latin... text here]</p>
-                        <p xml:lang="">[Modern language text here]</p>
-                     </div>
-                     <div type="commentary" subtype="text">
-                        <p xml:lang=""/>
-                     </div>
+                        <p xml:lang="en">{LEGEND_EN}</p>
+                        <p xml:lang="bg">{LEGEND_BG}</p>
+                        <p xml:lang="en">{TRANSLATION_EN}</p>
+                        <p xml:lang="bg">{TRANSLATION_BG}</p>
+                    </div>
+                    <div type="commentary" subtype="text">
+                        <p xml:lang="en">{COMMENTARY_TEXT_EN}</p>
+                        <p xml:lang="bg">{COMMENTARY_TEXT_BG}</p>
+                    </div>
                     <div type="commentary" subtype="footnotes">
-                        <p xml:lang=""/>
+                        <p xml:lang="en">{FOOTNOTES_EN}</p>
+                        <p xml:lang="bg">{FOOTNOTES_BG}</p>
                     </div>
                     <div type="bibliography" subtype="">
                         <p>

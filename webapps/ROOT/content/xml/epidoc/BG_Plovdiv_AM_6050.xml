@@ -3,8 +3,8 @@
     <fileDesc>
       <titleStmt>
         <title>
-          <seg xml:lang="en">Seal of Eleutherios</seg>
-          <seg xml:lang="bg">Печат на Елевтерий</seg>
+          <seg xml:lang="en">Seal of Hadrianos, vicarius of Thrace</seg>
+          <seg xml:lang="bg">Печат на Хадриан, викарий на Тракия</seg>
         </title>
         <editor>
           <persName xml:lang="en">
@@ -18,17 +18,17 @@
         </editor>
       </titleStmt>
       <location>
-        <geo>―</geo>
-        <findspotAccuracy>―</findspotAccuracy>
+        <geo>41.996329, 24.797755</geo>
+        <findspotAccuracy>3</findspotAccuracy>
       </location>
       <editionStmt>
         <edition>
-          <seg xml:lang="en">Jordanov, 2011, 170, p. 84</seg>
-          <seg xml:lang="bg">Jordanov, 2011, 170, p. 84</seg>
+          <seg xml:lang="en">Jordanov 2012, p. 59-60, no. 7; Jordanov 2009, p. 429-430, no. 1224</seg>
+          <seg xml:lang="bg">Jordanov 2012, p. 59-60, no. 7; Jordanov 2009, p. 429-430, no. 1224</seg>
         </edition>
         <editor>
           <persName xml:lang="en" xml:id="">
-            <forename>Pentelis</forename>
+            <forename>Pantelis</forename>
             <surname>Charalampakis</surname>
           </persName>
           <persName xml:lang="bg" xml:id="">
@@ -40,10 +40,10 @@
       <publicationStmt>
         <authority xml:lang="en">―</authority>
         <authority xml:lang="bg">―</authority>
-        <idno type="filename">BG_Sofia_NAIM_312</idno>
+        <idno type="filename">BG_Plovdiv_AM_6050</idno>
         <idno type="SigiDocID">―</idno>
         <idno type="sequence">000―</idno>
-        <date when="1051">1051-1100</date>
+        <date when="0541">0541-0600</date>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License.</licence>
         </availability>
@@ -56,16 +56,16 @@
               <seg xml:lang="bg">България</seg>
             </country>
             <settlement>
-              <seg xml:lang="en">Sofia</seg>
-              <seg xml:lang="bg">София</seg>
+              <seg xml:lang="en">Plovdiv</seg>
+              <seg xml:lang="bg">Пловдив</seg>
             </settlement>
-            <institution xml:lang="en">National Archaeological Institute with Museum – Bulgarian Academy of Sciences</institution>
-            <institution xml:lang="bg">Национален Археологически Институт с Музей – Българската Академия на Науките</institution>
-            <repository xml:lang="en">Numismatic fund</repository>
-            <repository xml:lang="bg">Нумизматичен фонд</repository>
+            <institution xml:lang="en">Archaeological Museum – Plovdiv</institution>
+            <institution xml:lang="bg">Археологически Музей – Пловдив</institution>
+            <repository xml:lang="en">―</repository>
+            <repository xml:lang="bg">―</repository>
             <collection xml:lang="en" ref="URI">―</collection>
             <collection xml:lang="bg" ref="URI">―</collection>
-            <idno>312</idno>
+            <idno>6050</idno>
           </msIdentifier>
           <msContents>
             <summary n="whole">
@@ -73,8 +73,8 @@
               <seg xml:lang="bg">―</seg>
             </summary>
             <textLang mainLang="grc-Latn" n="r">
-              <seg xml:lang="en">―</seg>
-              <seg xml:lang="bg">―</seg>
+              <seg xml:lang="en">Byzantine Greek</seg>
+              <seg xml:lang="bg">Византийски гръцки</seg>
             </textLang>
             <textLang mainLang="grc-Latn" n="v">
               <seg xml:lang="en">Byzantine Greek</seg>
@@ -83,10 +83,10 @@
             <msItem>
               <author>
                 <roleName role="issuer" type="">
-                  <seg xml:lang="en">Eleutherios</seg>
-                  <seg xml:lang="bg">Елевтерий</seg>
+                  <seg xml:lang="en">Hadrianos, vicarius of Thrace</seg>
+                  <seg xml:lang="bg">Хадриан, викарий на Тракия</seg>
                   <interp type="milieu" xml:lang="en">―</interp>
-                  <interp type="milieu" xml:lang="bg">Частна (сфера на дейност)</interp>
+                  <interp type="milieu" xml:lang="bg">Цивилна (сфера на дейност)</interp>
                 </roleName>
               </author>
             </msItem>
@@ -108,9 +108,9 @@
                     <seg xml:lang="bg">Олово</seg>
                   </material>
                   <dimensions type="support" unit="mm">
-                    <dim type="diameter">14</dim>
+                    <dim type="diameter">26.4</dim>
                   </dimensions>
-                  <measure type="weight" unit="g">4.7</measure>
+                  <measure type="weight" unit="g">12.22</measure>
                   <measure type="axis" unit="clock">―</measure>
                   <measure type="overstrikeOrient" unit="clock">―</measure>
                   <measure type="channelOrient" unit="clock">―</measure>
@@ -125,8 +125,8 @@
               <layoutDesc>
                 <layout n="whole">
                   <rs type="layout">
-                    <seg xml:lang="en">Bilateral legend</seg>
-                    <seg xml:lang="bg">Надпис</seg>
+                    <seg xml:lang="en">Monogram and legend</seg>
+                    <seg xml:lang="bg">Монограм и надпис</seg>
                   </rs>
                   <rs type="execution">
                     <seg xml:lang="en">Struck</seg>
@@ -161,20 +161,20 @@
             <origin>
               <origPlace>
                 <seg xml:lang="en">
-                  <placeName ref="URI">―</placeName>
+                  <placeName ref="URI">Abroba</placeName>
                 </seg>
                 <seg xml:lang="bg">
-                  <placeName ref="URI">―</placeName>
+                  <placeName ref="URI">Аброба</placeName>
                 </seg>
               </origPlace>
-              <origDate type="analysis" notBefore="1051" notAfter="1100" evidence="" cert="" resp="">
-                <seg>1051-1100</seg>
-                <interp type="datingCriteria" xml:lang="en">Epigraphy</interp>
-                <interp type="datingCriteria" xml:lang="bg">Епиграфика</interp>
+              <origDate type="analysis" notBefore="0541" notAfter="0600" evidence="" cert="" resp="">
+                <seg>0541-0600</seg>
+                <interp type="datingCriteria" xml:lang="en">Iconography, Epigraphy, Titulature</interp>
+                <interp type="datingCriteria" xml:lang="bg">Иконография, Епиграфика, Титулатура</interp>
               </origDate>
-              <origDate type="internal" when="1051" when-custom="" datingMethod="">
+              <origDate type="internal" when="0541" when-custom="" datingMethod="">
                 <seg>―</seg>
-                <interp type="datingCriteria" xml:lang="en">―</interp>
+                <interp type="datingCriteria" xml:lang="en">Titulature</interp>
                 <interp type="datingCriteria" xml:lang="bg">―</interp>
               </origDate>
               <date>
@@ -186,26 +186,26 @@
               </date>
             </origin>
             <provenance type="found" subtype="" when="" xml:lang="en" source="" cert="">
-              <placeName type="ancientFindspot" ref="URI">―</placeName>
+              <placeName type="ancientFindspot" ref="URI">Abroba</placeName>
               <placeName type="modernFindspot" ref="URI">―</placeName>
               <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="found" subtype="" when="" xml:lang="bg" source="" cert="">
-              <placeName type="ancientFindspot" ref="URI">―</placeName>
-              <placeName type="modernFindspot" ref="URI">―</placeName>
+              <placeName type="ancientFindspot" ref="URI">Аброба</placeName>
+              <placeName type="modernFindspot" ref="URI">Яврово</placeName>
               <rs type="circumstances">―</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>According to Jordanov, it was found in the region of Veliko Tarnovo (without more precise information). There are traces of letters indicating that the disc was struck twice and seemingly the first time by a different boulloterion.</p>
+              <p>Reportedly found in the medieval settlement near the village of Yavrovo, to the west of Asenovgrad.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
               <p>―</p>
             </provenance>
             <provenance type="transferred" subtype="" xml:lang="en">
-              <p>―</p>
+              <p>Private collection of V. Stankov (Batak).</p>
             </provenance>
             <provenance type="transferred" subtype="" xml:lang="bg">
-              <p>―</p>
+              <p>Частна колекция на В. Станков (Батак)</p>
             </provenance>
             <acquisition>
               <p xml:lang="en">―</p>
@@ -234,8 +234,8 @@
                       <idno type="SigiDoc" xml:lang="bg">―</idno>
                     </rs>
                     <rs type="layout">
-                      <seg xml:lang="en">Legend of 3 lines</seg>
-                      <seg xml:lang="bg">Линеен надпис на 3 реда</seg>
+                      <seg xml:lang="en">Cruciform monogram</seg>
+                      <seg xml:lang="bg">Кръстообразен монограм</seg>
                     </rs>
                     <p />
                   </layout>
@@ -261,7 +261,7 @@
             <history>
               <origin>
                 <origDate>
-                  <seg>1051-1100</seg>
+                  <seg>0541-0600</seg>
                 </origDate>
                 <date />
               </origin>
@@ -316,7 +316,7 @@
             <history>
               <origin>
                 <origDate>
-                  <seg>1051-1100</seg>
+                  <seg>0541-0600</seg>
                 </origDate>
                 <date />
               </origin>
@@ -352,14 +352,14 @@
   <facsimile>
     <surface type="obverse">
       <desc>Obverse</desc>
-      <graphic url="Sofia_NAIM_312_O.jpg" scale="1.5">
-        <desc xml:lang="">Seal of Eleutherios</desc>
+      <graphic url="Plovdiv_AM_6050_O.jpg" scale="1.5">
+        <desc xml:lang="">Seal of Hadrianos, vicarius of Thrace</desc>
       </graphic>
     </surface>
     <surface type="reverse">
       <desc>Reverse</desc>
-      <graphic url="Sofia_NAIM_312_R.jpg" scale="1.5">
-        <desc xml:lang="">Seal of Eleutherios</desc>
+      <graphic url="Plovdiv_AM_6050_R.jpg" scale="1.5">
+        <desc xml:lang="">Seal of Hadrianos, vicarius of Thrace</desc>
       </graphic>
     </surface>
   </facsimile>
@@ -369,34 +369,23 @@
                         <div type="textpart" subtype="" n="obv" rend="">
                             
                         
-                <ab>1 Κ(ύρι)ε</ab>
-                <ab>2 [β]οήθει</ab>
-                <ab>3 τῷ σῷ</ab>
+                <ab>1 (Ἁδριανοῦ)</ab>
             </div>
                         <div type="textpart" subtype="" n="rev" rend="">
                             
                         
-                <ab>1 δούλῳ</ab>
-                <ab>2 [Ἐ]λευθε-</ab>
-                <ab>3 ρίῳ</ab>
+                <ab>1 βικα-</ab>
+                <ab>2 ρίου Θρᾴ- 3</ab>
+                <ab>κης</ab>
             </div>
                     </div>
       <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            
-                        
-                <ab>1ΚΕ̅</ab>
-                <ab>2.Ο̣ΗΘΕΙ</ab>
-                <ab>3Τ̣Σ</ab>
-            </div>
+                            <ab>[obv text here]</ab>
+                        </div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            
-                        
-                <ab>1</ab>
-                <ab>2Δ̣Λ</ab>
-                <ab>3.ΛΕΥΘΕ</ab>
-                <ab>4ΡΙ</ab>
-            </div>
+                            <ab>[rev text here]</ab>
+                        </div>
                     </div>
       <div type="apparatus">
         <listApp>
@@ -405,9 +394,9 @@
         </listApp>
       </div>
       <div type="translation">
-        <p xml:lang="en">Κύριε βοήθει τῷ σῷ δούλῳ Ἐλευθερίῳ</p>
-        <p xml:lang="bg">Κύριε βοήθει τῷ σῷ δούλῳ Ἐλευθερίῳ</p>
-        <p xml:lang="en">Lord, aid your servant Eleutherios</p>
+        <p xml:lang="en">Ἁδριανοῦ βικαρίου Θρᾴκης</p>
+        <p xml:lang="bg">Ἁδριανοῦ βικαρίου Θρᾴκης</p>
+        <p xml:lang="en">(Seal of) Hadrianos, vicarius of Thrace</p>
         <p xml:lang="bg">―</p>
       </div>
       <div type="commentary" subtype="text">

@@ -49,7 +49,8 @@
 
   <xsl:template match="tei:fileDesc/tei:titleStmt/tei:title" mode="document-metadata">
     <field name="document_title">
-      <xsl:value-of select="normalize-space(.)" />
+      <!-- <xsl:value-of select="normalize-space(.)" /> -->
+      <xsl:value-of select="string-join(tei:seg, ' * ')" />
     </field>
   </xsl:template>
 
@@ -61,7 +62,8 @@
 
   <xsl:template match="tei:fileDesc/tei:titleStmt/tei:editor" mode="document-metadata">
     <field name="editor">
-      <xsl:value-of select="normalize-space(.)" />
+      <!-- <xsl:value-of select="normalize-space(.)" /> -->
+      <xsl:value-of select="string-join(tei:persName, ' * ')" />
     </field>
   </xsl:template>
 

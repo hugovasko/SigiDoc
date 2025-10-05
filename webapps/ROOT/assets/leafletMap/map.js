@@ -89,6 +89,7 @@ document.head.insertAdjacentHTML("beforeend", customPopupStyle);
   try {
     const response = await fetch("map_points.json");
     const seals = await response.json();
+    console.log(seals);
 
     const markers = [];
     seals.forEach((seal) => {

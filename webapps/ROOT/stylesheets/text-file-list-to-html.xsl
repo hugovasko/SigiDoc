@@ -8,8 +8,6 @@
     <table class="tablesorter">
       <thead>
         <tr>
-          <!-- Let us assume that all texts have a filename, ID, and
-               title. -->
           <th><i18n:text i18n:key="file-name">Filename</i18n:text></th>
           <th><i18n:text i18n:key="id">ID</i18n:text></th>
           <th><i18n:text i18n:key="title">Title</i18n:text></th>
@@ -62,7 +60,20 @@
   </xsl:template>
 
   <xsl:template match="arr[@name='document_title']" mode="text-index">
-    <td><xsl:value-of select="string-join(str, '; ')" /></td>
+    <td>
+      <xsl:variable name="fullTitle" select="str[1]" />
+      <xsl:choose>
+        <xsl:when test="$language = 'en'">
+          <xsl:value-of select="normalize-space(substring-before($fullTitle, ' * '))" />
+        </xsl:when>
+        <xsl:when test="$language = 'bg'">
+          <xsl:value-of select="normalize-space(substring-after($fullTitle, ' * '))" />
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="$fullTitle" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </td>
   </xsl:template>
 
   <xsl:template match="arr[@name='author']" mode="text-index">
@@ -70,7 +81,20 @@
   </xsl:template>
 
   <xsl:template match="arr[@name='editor']" mode="text-index">
-    <td><xsl:value-of select="string-join(str, '; ')" /></td>
+    <td>
+      <xsl:variable name="fullEditor" select="str[1]" />
+      <xsl:choose>
+        <xsl:when test="$language = 'en'">
+          <xsl:value-of select="normalize-space(substring-before($fullEditor, ' * '))" />
+        </xsl:when>
+        <xsl:when test="$language = 'bg'">
+          <xsl:value-of select="normalize-space(substring-after($fullEditor, ' * '))" />
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="$fullEditor" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </td>
   </xsl:template>
 
   <xsl:template match="str[@name='publication_date']">

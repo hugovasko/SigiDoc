@@ -8,23 +8,23 @@
         </title>
         <editor>
           <persName xml:lang="en">
-            <forename>―</forename>
-            <surname>―</surname>
+            <forename>Todor</forename>
+            <surname>Ovcharov</surname>
           </persName>
           <persName xml:lang="bg">
-            <forename>―</forename>
-            <surname>―</surname>
+            <forename>Тодор</forename>
+            <surname>Овчаров</surname>
           </persName>
         </editor>
       </titleStmt>
       <location>
-        <geo>―</geo>
-        <findspotAccuracy>―</findspotAccuracy>
+        <geo>43.083439, 25.651436</geo>
+        <findspotAccuracy>1</findspotAccuracy>
       </location>
       <editionStmt>
         <edition>
-          <seg xml:lang="en">―</seg>
-          <seg xml:lang="bg">―</seg>
+          <seg xml:lang="en">Gjuzelev 2000, p. 40-42; Ovcharov 1979, 5-8</seg>
+          <seg xml:lang="bg">Gjuzelev 2000, p. 40-42; Ovcharov 1979, 5-8</seg>
         </edition>
         <editor>
           <persName xml:lang="en" xml:id="">
@@ -38,28 +38,26 @@
         </editor>
       </editionStmt>
       <publicationStmt>
-        <authority xml:lang="en">{AUTHORITY_EN}</authority>
-        <authority xml:lang="bg">{AUTHORITY_BG}</authority>
+        <authority xml:lang="en">―</authority>
+        <authority xml:lang="bg">―</authority>
         <idno type="filename">BG_Tarnovo_RIM_KVP_157-S-TOM</idno>
-        <idno type="SigiDocID">BG_Tarnovo_RIM_KVP_157-S-TOM</idno>
-        <idno type="sequence">BG_Tarnovo_RIM_KVP_157-S-TOM</idno>
+        <idno type="SigiDocID">―</idno>
+        <idno type="sequence">000―</idno>
         <date when="1208">1208-1222</date>
         <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-                        Commons Attributions-NonCommercial-ShareAlike 4.0 International
-                        License.</licence>
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License.</licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
         <msDesc>
           <msIdentifier>
             <country>
-              <seg xml:lang="en">Veliko Tarnovo</seg>
-              <seg xml:lang="bg">―</seg>
+              <seg xml:lang="en">Bulgaria</seg>
+              <seg xml:lang="bg">България</seg>
             </country>
             <settlement>
               <seg xml:lang="en">Veliko Tarnovo</seg>
-              <seg xml:lang="bg">―</seg>
+              <seg xml:lang="bg">Велико Търново</seg>
             </settlement>
             <institution xml:lang="en">Regional Historical Museum – Veliko Tarnovo</institution>
             <institution xml:lang="bg">Регионален Исторически Музей – Велико Търново</institution>
@@ -67,32 +65,28 @@
             <repository xml:lang="bg">―</repository>
             <collection xml:lang="en" ref="URI">―</collection>
             <collection xml:lang="bg" ref="URI">―</collection>
-            <idno>{IDNO}</idno>
-            <!-- <altIdentifier xml:lang="en">
-                                    <repository>{REPOSITORY_EN}</repository>
-                                    <idno>{IDNO_EN}</idno>
-                                </altIdentifier>
-                                <altIdentifier xml:lang="bg">
-                                    <repository>{REPOSITORY_BG}</repository>
-                                    <idno>{IDNO_BG}</idno>
-                                </altIdentifier> -->
+            <idno>KVP 157 S/TOM</idno>
           </msIdentifier>
           <msContents>
             <summary n="whole">
-              <seg xml:lang="en">{SUMMARY_EN}</seg>
-              <seg xml:lang="bg">{SUMMARY_BG}</seg>
+              <seg xml:lang="en">―</seg>
+              <seg xml:lang="bg">―</seg>
             </summary>
-            <textLang mainLang="grc-Latn">
-              <seg xml:lang="en">{TEXTLANG_EN}</seg>
-              <seg xml:lang="bg">{TEXTLANG_BG}</seg>
+            <textLang mainLang="grc-Latn" n="r">
+              <seg xml:lang="en">Byzantine Greek</seg>
+              <seg xml:lang="bg">Византийски гръцки</seg>
+            </textLang>
+            <textLang mainLang="grc-Latn" n="v">
+              <seg xml:lang="en">Latin</seg>
+              <seg xml:lang="bg">Латински</seg>
             </textLang>
             <msItem>
               <author>
                 <roleName role="issuer" type="">
                   <seg xml:lang="en">Robert I of Courtenay</seg>
-                  <seg xml:lang="bg">―</seg>
-                  <interp type="milieu" xml:lang="en">Imperial</interp>
-                  <interp type="milieu" xml:lang="bg">―</interp>
+                  <seg xml:lang="bg">Робер I Куртене</seg>
+                  <interp type="milieu" xml:lang="en">―</interp>
+                  <interp type="milieu" xml:lang="bg">Императорска (сфера на дейност)</interp>
                 </roleName>
               </author>
             </msItem>
@@ -114,12 +108,9 @@
                     <seg xml:lang="bg">Олово</seg>
                   </material>
                   <dimensions type="support" unit="mm">
-                    <dim type="diameter">―</dim>
-                    <height>{HEIGHT}</height>
-                    <width>{WIDTH}</width>
-                    <depth>{DEPTH}</depth>
+                    <dim type="diameter">43.9x41.4</dim>
                   </dimensions>
-                  <measure type="weight" unit="g">―</measure>
+                  <measure type="weight" unit="g">41.82</measure>
                   <measure type="axis" unit="clock">―</measure>
                   <measure type="overstrikeOrient" unit="clock">―</measure>
                   <measure type="channelOrient" unit="clock">―</measure>
@@ -146,23 +137,22 @@
                     <seg xml:lang="bg">Кръгъл</seg>
                   </rs>
                   <rs type="matrix" subtype="">
-                    <idno type="SigiDoc">BG_Tarnovo_RIM_KVP_157-S-TOM</idno>
-                    <idno type="PBW" corresp="URI">{PBW}</idno>
+                    <idno type="SigiDoc">―</idno>
                   </rs>
                 </layout>
               </layoutDesc>
             </objectDesc>
             <handDesc>
               <handNote n="whole">
-                <seg xml:lang="en">{HAND_NOTE_EN}</seg>
-                <seg xml:lang="bg">{HAND_NOTE_BG}</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </handNote>
             </handDesc>
             <decoDesc>
               <decoNote>
                 <figure>
-                  <figDesc n="whole" xml:lang="en">{DECO_NOTE_EN}</figDesc>
-                  <figDesc n="whole" xml:lang="bg">{DECO_NOTE_BG}</figDesc>
+                  <figDesc n="whole" xml:lang="en">―</figDesc>
+                  <figDesc n="whole" xml:lang="bg">―</figDesc>
                 </figure>
               </decoNote>
             </decoDesc>
@@ -174,18 +164,13 @@
                   <placeName ref="URI">Veliko Tarnovo</placeName>
                 </seg>
                 <seg xml:lang="bg">
-                  <placeName ref="URI">―</placeName>
+                  <placeName ref="URI">Велико Търново</placeName>
                 </seg>
               </origPlace>
-              <!-- <origDate type="analysis" when="{DATE}" evidence="" cert="" resp="">
-                                        <seg>{DATE}</seg>
-                                        <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                        <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
-                                    </origDate> -->
               <origDate type="analysis" notBefore="1208" notAfter="1222" evidence="" cert="" resp="">
                 <seg>1208-1222</seg>
                 <interp type="datingCriteria" xml:lang="en">Onomastics</interp>
-                <interp type="datingCriteria" xml:lang="bg">―</interp>
+                <interp type="datingCriteria" xml:lang="bg">Ономастика</interp>
               </origDate>
               <origDate type="internal" when="1208" when-custom="" datingMethod="">
                 <seg>―</seg>
@@ -202,24 +187,18 @@
             </origin>
             <provenance type="found" subtype="" when="" xml:lang="en" source="" cert="">
               <placeName type="ancientFindspot" ref="URI">Veliko Tarnovo</placeName>
-              <placeName type="modernFindspot" ref="URI">Veliko Tarnovo</placeName>
-              <rs type="circumstances">―</rs>
+              <placeName type="modernFindspot" ref="URI">―</placeName>
+              <rs type="circumstances">Excavations</rs>
             </provenance>
             <provenance type="found" subtype="" when="" xml:lang="bg" source="" cert="">
-              <placeName type="ancientFindspot" ref="URI">―</placeName>
-              <placeName type="modernFindspot" ref="URI">―</placeName>
-              <rs type="circumstances">―</rs>
+              <placeName type="ancientFindspot" ref="URI">Велико Търново</placeName>
+              <placeName type="modernFindspot" ref="URI">Велико Търново</placeName>
+              <rs type="circumstances">Разкопки</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>―</p>
+              <p>Discovered during excavations led by T. Ovcharov, at the dump soil of the building 15 in the site 22 of Tsarevets, in 1978. Ovcharov thought that this building could have been a small church.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
-              <p>―</p>
-            </provenance>
-            <provenance type="not-observed" subtype="" xml:lang="en">
-              <p>―</p>
-            </provenance>
-            <provenance type="not-observed" subtype="" xml:lang="bg">
               <p>―</p>
             </provenance>
             <provenance type="transferred" subtype="" xml:lang="en">
@@ -235,12 +214,12 @@
           </history>
           <msPart n="r">
             <msIdentifier>
-              <idno>{MS_IDENTIFIER}</idno>
+              <idno />
             </msIdentifier>
             <msContents>
               <summary n="r">
-                <seg xml:lang="en">{MS_CONTENTS_SUMMARY_EN}</seg>
-                <seg xml:lang="bg">{MS_CONTENTS_SUMMARY_BG}</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </summary>
             </msContents>
             <physDesc>
@@ -255,8 +234,8 @@
                       <idno type="SigiDoc" xml:lang="bg">―</idno>
                     </rs>
                     <rs type="layout">
-                      <seg xml:lang="en">{LAYOUT_EN}</seg>
-                      <seg xml:lang="bg">{LAYOUT_BG}</seg>
+                      <seg xml:lang="en">Iconography and legend</seg>
+                      <seg xml:lang="bg">Иконография и надпис</seg>
                     </rs>
                     <p />
                   </layout>
@@ -264,17 +243,17 @@
               </objectDesc>
               <handDesc>
                 <handNote n="r">
-                  <seg xml:lang="en">{HAND_NOTE_EN}</seg>
-                  <seg xml:lang="bg">{HAND_NOTE_BG}</seg>
+                  <seg xml:lang="en">―</seg>
+                  <seg xml:lang="bg">―</seg>
                 </handNote>
               </handDesc>
               <decoDesc>
                 <decoNote>
                   <figure>
-                    <figDesc n="r" xml:lang="en">{FIGURE_R_EN}</figDesc>
-                    <figDesc n="r" xml:lang="bg">{FIGURE_R_BG}</figDesc>
-                    <figDesc n="decoR" xml:lang="en">{FIGURE_DECOR_EN}</figDesc>
-                    <figDesc n="decoR" xml:lang="bg">{FIGURE_DECOR_BG}</figDesc>
+                    <figDesc n="r" xml:lang="en">The emperor Robert enthroned, crowned, holding cross-topped scepter (right hand) and globus cruciger (left hand)</figDesc>
+                    <figDesc n="r" xml:lang="bg">Император Робер на трон, с корона, държащ скиптър с кръст в дясната ръка и кълбо с кръст в лявата.</figDesc>
+                    <figDesc n="decoR" xml:lang="en">―</figDesc>
+                    <figDesc n="decoR" xml:lang="bg">―</figDesc>
                   </figure>
                 </decoNote>
               </decoDesc>
@@ -283,8 +262,6 @@
               <origin>
                 <origDate>
                   <seg>1208-1222</seg>
-                  <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
                 <date />
               </origin>
@@ -296,7 +273,8 @@
             </msIdentifier>
             <msContents>
               <summary n="v">
-                <seg xml:lang="">Reverse</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </summary>
             </msContents>
             <physDesc>
@@ -304,13 +282,15 @@
                 <layoutDesc>
                   <layout n="v">
                     <dimensions type="written" unit="mm">
-                      <dim type="diameter" />
+                      <dim type="diameter">―</dim>
                     </dimensions>
                     <rs type="matrix" subtype="">
-                      <idno type="SigiDoc">{MATRIX}</idno>
+                      <idno type="SigiDoc" xml:lang="en">―</idno>
+                      <idno type="SigiDoc" xml:lang="bg">―</idno>
                     </rs>
                     <rs type="layout">
-                      <seg xml:lang="" />
+                      <seg xml:lang="en">Iconography and legend</seg>
+                      <seg xml:lang="bg">Иконография и надпис</seg>
                     </rs>
                     <p />
                   </layout>
@@ -318,14 +298,17 @@
               </objectDesc>
               <handDesc>
                 <handNote n="v">
-                  <seg xml:lang="" />
+                  <seg xml:lang="en">―</seg>
+                  <seg xml:lang="bg">―</seg>
                 </handNote>
               </handDesc>
               <decoDesc>
                 <decoNote>
                   <figure>
-                    <figDesc n="v" />
-                    <figDesc n="decoV" />
+                    <figDesc n="v" xml:lang="en">The emperor Robert on horseback (to the right), armoured, holding sword (right hand) and shield (left hand)</figDesc>
+                    <figDesc n="v" xml:lang="bg">Император Робер на кон в ход надясно, въоръжен, държащ меч в дясната ръка и щит в лявата.</figDesc>
+                    <figDesc n="decoV" xml:lang="en">―</figDesc>
+                    <figDesc n="decoV" xml:lang="bg">―</figDesc>
                   </figure>
                 </decoNote>
               </decoDesc>
@@ -334,8 +317,6 @@
               <origin>
                 <origDate>
                   <seg>1208-1222</seg>
-                  <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
                 <date />
               </origin>
@@ -386,34 +367,47 @@
     <body>
       <div type="edition" subtype="editorial" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+                <ab>1 Ῥοβέρτος δεσπότης</ab>
+            </div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+                <ab>1 Rob(er)t(us) D(e)i gra(tia) imp(er)ator Romani(a)e</ab>
+            </div>
                     </div>
       <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
-                            <ab>[obv text here]</ab>
-                        </div>
+                            
+                        
+                <ab>1 οΤΟΣ:Σποτης</ab>
+            </div>
                         <div type="textpart" subtype="" n="rev" rend="">
-                            <ab>[rev text here]</ab>
-                        </div>
+                            
+                        
+                <ab>1 RΟʹtʹi:̅R̅A̅·ΙΜP͵tΟR·RΟΜi</ab>
+            </div>
                     </div>
       <div type="apparatus">
         <listApp>
-          <app xml:lang="" />
+          <app xml:lang="en">Reverse: in Romani(a)e, the A and N in ligature</app>
+          <app xml:lang="bg">Реверс: в Romani(a)e, A и N са в лигатура.</app>
         </listApp>
       </div>
       <div type="translation">
-        <p>[plain Greek or Latin... text here]</p>
-        <p xml:lang="">[Modern language text here]</p>
+        <p xml:lang="en">Ῥοβέρτος δεσπότης. Robertus Dei gratia imperator Romaniae</p>
+        <p xml:lang="bg">Ῥοβέρτος δεσπότης. Robertus Dei gratia imperator Romaniae</p>
+        <p xml:lang="en">Robert, despotes. Robert, by the Grace of God, emperor of the Roman realm</p>
+        <p xml:lang="bg">Робер, деспот. Робер, по Божия воля, император на Романия.</p>
       </div>
       <div type="commentary" subtype="text">
-        <p xml:lang="" />
+        <p xml:lang="en">―</p>
+        <p xml:lang="bg">―</p>
       </div>
       <div type="commentary" subtype="footnotes">
-        <p xml:lang="" />
+        <p xml:lang="en">On the excavation, see AOR 1978 (1979), p. 154-155</p>
+        <p xml:lang="bg">За разкопките, вж. АОР за 1978 г. (1979), стр. 154-155.</p>
       </div>
       <div type="bibliography" subtype="">
         <p>

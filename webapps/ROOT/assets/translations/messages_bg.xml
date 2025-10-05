@@ -119,7 +119,7 @@
     <message key="indices-type-religious-appellatives">Религиозни термини</message>
     <message key="indices-type-iconography-monograms">Иконопис и монограми</message>
     <message key="indices-type-other-features">Други индекси</message>
-    <message key="search">За изследване</message>
+    <message key="search">Търси</message>
     <message key="search-lemmatised-text">Лематизирано търсене на текст</message>
     <message key="search-greek-keyboard">Гръцка клавиатура</message>
     <message key="search-reset">Нулиране на търсенето</message>
@@ -153,7 +153,9 @@
         Хранилището в GitHub е налично <a href="https://github.com/SigiDoc/SigiDoc" target="_blank">тук</a>.
     </message>
     <message key="base-footer-first-paragraph">
-        Създаден на <a href="https://epidoc.stoa.org/">EpiDoc</a> и доставен от <a href="https://github.com/EpiDoc/EFES">EFES</a>.
+        <a href="https://www.codecrew.io/" target="_blank" rel="noopener">
+            Разгледайте CodeCrew от тук!
+         </a>
     </message>
     <message key="persons">Хора</message>
     <message key="name">Име</message>

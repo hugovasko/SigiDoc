@@ -23,8 +23,8 @@
       </location>
       <editionStmt>
         <edition>
-          <seg xml:lang="en">Stanev 2019, 003/I(2015), p. 20; Marinova et al. 2018, p. 29</seg>
-          <seg xml:lang="bg">Stanev 2019, 003/I(2015), p. 20; Marinova et al. 2018, p. 29</seg>
+          <seg xml:lang="en">Stanev, Stoyanova 2019, 003/I(2015), p. 20; Marinova et al. 2018, p. 29</seg>
+          <seg xml:lang="bg">Stanev, Stoyanova 2019, 003/I(2015), p. 20; Marinova et al. 2018, p. 29</seg>
         </edition>
         <editor>
           <persName xml:lang="en" xml:id="">
@@ -38,28 +38,26 @@
         </editor>
       </editionStmt>
       <publicationStmt>
-        <authority xml:lang="en">{AUTHORITY_EN}</authority>
-        <authority xml:lang="bg">{AUTHORITY_BG}</authority>
+        <authority xml:lang="en">―</authority>
+        <authority xml:lang="bg">―</authority>
         <idno type="filename">BG_Sofia_RIM_MIS-A-7375</idno>
-        <idno type="SigiDocID">BG_Sofia_RIM_MIS-A-7375</idno>
-        <idno type="sequence">BG_Sofia_RIM_MIS-A-7375</idno>
+        <idno type="SigiDocID">―</idno>
+        <idno type="sequence">000―</idno>
         <date when="0384">0384-0395</date>
         <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-                        Commons Attributions-NonCommercial-ShareAlike 4.0 International
-                        License.</licence>
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License.</licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
         <msDesc>
           <msIdentifier>
             <country>
-              <seg xml:lang="en">Sofia</seg>
-              <seg xml:lang="bg">София</seg>
+              <seg xml:lang="en">Bulgaria</seg>
+              <seg xml:lang="bg">България</seg>
             </country>
             <settlement>
-              <seg xml:lang="en">Serdica</seg>
-              <seg xml:lang="bg">Сердика</seg>
+              <seg xml:lang="en">Sofia</seg>
+              <seg xml:lang="bg">София</seg>
             </settlement>
             <institution xml:lang="en">Regional Historical Museum – Sofia</institution>
             <institution xml:lang="bg">Регионален Исторически Музей – София</institution>
@@ -67,31 +65,27 @@
             <repository xml:lang="bg">―</repository>
             <collection xml:lang="en" ref="URI">―</collection>
             <collection xml:lang="bg" ref="URI">―</collection>
-            <idno>{IDNO}</idno>
-            <!-- <altIdentifier xml:lang="en">
-                                    <repository>{REPOSITORY_EN}</repository>
-                                    <idno>{IDNO_EN}</idno>
-                                </altIdentifier>
-                                <altIdentifier xml:lang="bg">
-                                    <repository>{REPOSITORY_BG}</repository>
-                                    <idno>{IDNO_BG}</idno>
-                                </altIdentifier> -->
+            <idno>MIS A 7375</idno>
           </msIdentifier>
           <msContents>
             <summary n="whole">
-              <seg xml:lang="en">{SUMMARY_EN}</seg>
-              <seg xml:lang="bg">{SUMMARY_BG}</seg>
+              <seg xml:lang="en">―</seg>
+              <seg xml:lang="bg">―</seg>
             </summary>
-            <textLang mainLang="grc-Latn">
-              <seg xml:lang="en">{TEXTLANG_EN}</seg>
-              <seg xml:lang="bg">{TEXTLANG_BG}</seg>
+            <textLang mainLang="grc-Latn" n="r">
+              <seg xml:lang="en">―</seg>
+              <seg xml:lang="bg">―</seg>
+            </textLang>
+            <textLang mainLang="grc-Latn" n="v">
+              <seg xml:lang="en">―</seg>
+              <seg xml:lang="bg">―</seg>
             </textLang>
             <msItem>
               <author>
                 <roleName role="issuer" type="">
                   <seg xml:lang="en">Theodosius I</seg>
                   <seg xml:lang="bg">Теодосий I</seg>
-                  <interp type="milieu" xml:lang="en">Imperial</interp>
+                  <interp type="milieu" xml:lang="en">―</interp>
                   <interp type="milieu" xml:lang="bg">Императорска (сфера на дейност)</interp>
                 </roleName>
               </author>
@@ -115,9 +109,6 @@
                   </material>
                   <dimensions type="support" unit="mm">
                     <dim type="diameter">18.6x12.6</dim>
-                    <height>{HEIGHT}</height>
-                    <width>{WIDTH}</width>
-                    <depth>{DEPTH}</depth>
                   </dimensions>
                   <measure type="weight" unit="g">2.3</measure>
                   <measure type="axis" unit="clock">―</measure>
@@ -146,23 +137,22 @@
                     <seg xml:lang="bg">Правоъгълен</seg>
                   </rs>
                   <rs type="matrix" subtype="">
-                    <idno type="SigiDoc">BG_Sofia_RIM_MIS-A-7375</idno>
-                    <idno type="PBW" corresp="URI">{PBW}</idno>
+                    <idno type="SigiDoc">―</idno>
                   </rs>
                 </layout>
               </layoutDesc>
             </objectDesc>
             <handDesc>
               <handNote n="whole">
-                <seg xml:lang="en">{HAND_NOTE_EN}</seg>
-                <seg xml:lang="bg">{HAND_NOTE_BG}</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </handNote>
             </handDesc>
             <decoDesc>
               <decoNote>
                 <figure>
-                  <figDesc n="whole" xml:lang="en">{DECO_NOTE_EN}</figDesc>
-                  <figDesc n="whole" xml:lang="bg">{DECO_NOTE_BG}</figDesc>
+                  <figDesc n="whole" xml:lang="en">―</figDesc>
+                  <figDesc n="whole" xml:lang="bg">―</figDesc>
                 </figure>
               </decoNote>
             </decoDesc>
@@ -177,11 +167,6 @@
                   <placeName ref="URI">Сердика</placeName>
                 </seg>
               </origPlace>
-              <!-- <origDate type="analysis" when="{DATE}" evidence="" cert="" resp="">
-                                        <seg>{DATE}</seg>
-                                        <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                        <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
-                                    </origDate> -->
               <origDate type="analysis" notBefore="0384" notAfter="0395" evidence="" cert="" resp="">
                 <seg>0384-0395</seg>
                 <interp type="datingCriteria" xml:lang="en">Iconography</interp>
@@ -189,7 +174,7 @@
               </origDate>
               <origDate type="internal" when="0384" when-custom="" datingMethod="">
                 <seg>―</seg>
-                <interp type="datingCriteria" xml:lang="en">―</interp>
+                <interp type="datingCriteria" xml:lang="en">Iconography</interp>
                 <interp type="datingCriteria" xml:lang="bg">―</interp>
               </origDate>
               <date>
@@ -202,7 +187,7 @@
             </origin>
             <provenance type="found" subtype="" when="" xml:lang="en" source="" cert="">
               <placeName type="ancientFindspot" ref="URI">Serdica</placeName>
-              <placeName type="modernFindspot" ref="URI">Sofia</placeName>
+              <placeName type="modernFindspot" ref="URI">―</placeName>
               <rs type="circumstances">Excavations</rs>
             </provenance>
             <provenance type="found" subtype="" when="" xml:lang="bg" source="" cert="">
@@ -211,15 +196,9 @@
               <rs type="circumstances">Разкопки</rs>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="en">
-              <p>Discovered during excavations led by A. Stanev and P. Stoyanova at the site Lion’s Bridge Interchange (north part, east section), at the center of Sofia, on 19.05.2014.</p>
+              <p>Discovered during excavations led by A. Stanev and P. Stoyanova at the site Lion’s Bridge Interchange – Metro Station 7-II (north part, east section), at the center of Sofia, on 19.05.2014.</p>
             </provenance>
             <provenance type="observed" subtype="" xml:lang="bg">
-              <p>―</p>
-            </provenance>
-            <provenance type="not-observed" subtype="" xml:lang="en">
-              <p>―</p>
-            </provenance>
-            <provenance type="not-observed" subtype="" xml:lang="bg">
               <p>―</p>
             </provenance>
             <provenance type="transferred" subtype="" xml:lang="en">
@@ -235,12 +214,12 @@
           </history>
           <msPart n="r">
             <msIdentifier>
-              <idno>{MS_IDENTIFIER}</idno>
+              <idno />
             </msIdentifier>
             <msContents>
               <summary n="r">
-                <seg xml:lang="en">{MS_CONTENTS_SUMMARY_EN}</seg>
-                <seg xml:lang="bg">{MS_CONTENTS_SUMMARY_BG}</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </summary>
             </msContents>
             <physDesc>
@@ -248,15 +227,15 @@
                 <layoutDesc>
                   <layout n="r">
                     <dimensions type="written" unit="mm">
-                      <dim type="diameter">18.6x12.6</dim>
+                      <dim type="diameter">―</dim>
                     </dimensions>
                     <rs type="matrix" subtype="">
                       <idno type="SigiDoc" xml:lang="en">―</idno>
                       <idno type="SigiDoc" xml:lang="bg">―</idno>
                     </rs>
                     <rs type="layout">
-                      <seg xml:lang="en">{LAYOUT_EN}</seg>
-                      <seg xml:lang="bg">{LAYOUT_BG}</seg>
+                      <seg xml:lang="en">Iconography</seg>
+                      <seg xml:lang="bg">Иконография</seg>
                     </rs>
                     <p />
                   </layout>
@@ -264,17 +243,17 @@
               </objectDesc>
               <handDesc>
                 <handNote n="r">
-                  <seg xml:lang="en">{HAND_NOTE_EN}</seg>
-                  <seg xml:lang="bg">{HAND_NOTE_BG}</seg>
+                  <seg xml:lang="en">―</seg>
+                  <seg xml:lang="bg">―</seg>
                 </handNote>
               </handDesc>
               <decoDesc>
                 <decoNote>
                   <figure>
-                    <figDesc n="r" xml:lang="en">{FIGURE_R_EN}</figDesc>
-                    <figDesc n="r" xml:lang="bg">{FIGURE_R_BG}</figDesc>
-                    <figDesc n="decoR" xml:lang="en">{FIGURE_DECOR_EN}</figDesc>
-                    <figDesc n="decoR" xml:lang="bg">{FIGURE_DECOR_BG}</figDesc>
+                    <figDesc n="r" xml:lang="en">Busts of emperor Theodosius I and his sons Arcadius and Honorius</figDesc>
+                    <figDesc n="r" xml:lang="bg">Бюстове на император Теодосий I и синовете му Аркадий и Хонорий</figDesc>
+                    <figDesc n="decoR" xml:lang="en">―</figDesc>
+                    <figDesc n="decoR" xml:lang="bg">―</figDesc>
                   </figure>
                 </decoNote>
               </decoDesc>
@@ -283,8 +262,6 @@
               <origin>
                 <origDate>
                   <seg>0384-0395</seg>
-                  <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
                 <date />
               </origin>
@@ -296,7 +273,8 @@
             </msIdentifier>
             <msContents>
               <summary n="v">
-                <seg xml:lang="">Reverse</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </summary>
             </msContents>
             <physDesc>
@@ -304,13 +282,15 @@
                 <layoutDesc>
                   <layout n="v">
                     <dimensions type="written" unit="mm">
-                      <dim type="diameter" />
+                      <dim type="diameter">―</dim>
                     </dimensions>
                     <rs type="matrix" subtype="">
-                      <idno type="SigiDoc">{MATRIX}</idno>
+                      <idno type="SigiDoc" xml:lang="en">―</idno>
+                      <idno type="SigiDoc" xml:lang="bg">―</idno>
                     </rs>
                     <rs type="layout">
-                      <seg xml:lang="" />
+                      <seg xml:lang="en">―</seg>
+                      <seg xml:lang="bg">―</seg>
                     </rs>
                     <p />
                   </layout>
@@ -318,14 +298,17 @@
               </objectDesc>
               <handDesc>
                 <handNote n="v">
-                  <seg xml:lang="" />
+                  <seg xml:lang="en">―</seg>
+                  <seg xml:lang="bg">―</seg>
                 </handNote>
               </handDesc>
               <decoDesc>
                 <decoNote>
                   <figure>
-                    <figDesc n="v" />
-                    <figDesc n="decoV" />
+                    <figDesc n="v" xml:lang="en">―</figDesc>
+                    <figDesc n="v" xml:lang="bg">―</figDesc>
+                    <figDesc n="decoV" xml:lang="en">―</figDesc>
+                    <figDesc n="decoV" xml:lang="bg">―</figDesc>
                   </figure>
                 </decoNote>
               </decoDesc>
@@ -334,8 +317,6 @@
               <origin>
                 <origDate>
                   <seg>0384-0395</seg>
-                  <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
                 <date />
               </origin>
@@ -402,18 +383,23 @@
                     </div>
       <div type="apparatus">
         <listApp>
-          <app xml:lang="" />
+          <app xml:lang="en">―</app>
+          <app xml:lang="bg">―</app>
         </listApp>
       </div>
       <div type="translation">
-        <p>[plain Greek or Latin... text here]</p>
-        <p xml:lang="">[Modern language text here]</p>
+        <p xml:lang="en">―</p>
+        <p xml:lang="bg">―</p>
+        <p xml:lang="en">―</p>
+        <p xml:lang="bg">―</p>
       </div>
       <div type="commentary" subtype="text">
-        <p xml:lang="" />
+        <p xml:lang="en">―</p>
+        <p xml:lang="bg">―</p>
       </div>
       <div type="commentary" subtype="footnotes">
-        <p xml:lang="" />
+        <p xml:lang="en">On the excavation, see Stanev, Stoyanova 2015, p. 511-514; Boyadzhiev, Tranteev, 2012, p. 311-313</p>
+        <p xml:lang="bg">За разкопките, вж. Stanev, Stoyanova 2015, стр. 511-514; Boyadzhiev, Tranteev, 2012, стр. 311-313</p>
       </div>
       <div type="bibliography" subtype="">
         <p>

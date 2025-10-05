@@ -38,60 +38,54 @@
         </editor>
       </editionStmt>
       <publicationStmt>
-        <authority xml:lang="en">{AUTHORITY_EN}</authority>
-        <authority xml:lang="bg">{AUTHORITY_BG}</authority>
+        <authority xml:lang="en">―</authority>
+        <authority xml:lang="bg">―</authority>
         <idno type="filename">BG_Sofia_NAIM_133</idno>
-        <idno type="SigiDocID">BG_Sofia_NAIM_133</idno>
-        <idno type="sequence">BG_Sofia_NAIM_133</idno>
+        <idno type="SigiDocID">―</idno>
+        <idno type="sequence">000―</idno>
         <date when="1076">1076-1150</date>
         <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-                        Commons Attributions-NonCommercial-ShareAlike 4.0 International
-                        License.</licence>
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attributions-NonCommercial-ShareAlike 4.0 International License.</licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
         <msDesc>
           <msIdentifier>
             <country>
-              <seg xml:lang="en">―</seg>
-              <seg xml:lang="bg">―</seg>
+              <seg xml:lang="en">Bulgaria</seg>
+              <seg xml:lang="bg">България</seg>
             </country>
             <settlement>
-              <seg xml:lang="en">―</seg>
-              <seg xml:lang="bg">―</seg>
+              <seg xml:lang="en">Sofia</seg>
+              <seg xml:lang="bg">София</seg>
             </settlement>
             <institution xml:lang="en">National Archaeological Institute with Museum – Bulgarian Academy of Sciences</institution>
             <institution xml:lang="bg">Национален Археологически Институт с Музей – Българската Академия на Науките</institution>
-            <repository xml:lang="en">―</repository>
+            <repository xml:lang="en">Numismatic fund</repository>
             <repository xml:lang="bg">Нумизматичен фонд</repository>
             <collection xml:lang="en" ref="URI">―</collection>
             <collection xml:lang="bg" ref="URI">―</collection>
-            <idno>{IDNO}</idno>
-            <!-- <altIdentifier xml:lang="en">
-                                    <repository>{REPOSITORY_EN}</repository>
-                                    <idno>{IDNO_EN}</idno>
-                                </altIdentifier>
-                                <altIdentifier xml:lang="bg">
-                                    <repository>{REPOSITORY_BG}</repository>
-                                    <idno>{IDNO_BG}</idno>
-                                </altIdentifier> -->
+            <idno>133</idno>
           </msIdentifier>
           <msContents>
             <summary n="whole">
-              <seg xml:lang="en">{SUMMARY_EN}</seg>
-              <seg xml:lang="bg">{SUMMARY_BG}</seg>
+              <seg xml:lang="en">―</seg>
+              <seg xml:lang="bg">―</seg>
             </summary>
-            <textLang mainLang="grc-Latn">
-              <seg xml:lang="en">{TEXTLANG_EN}</seg>
-              <seg xml:lang="bg">{TEXTLANG_BG}</seg>
+            <textLang mainLang="grc-Latn" n="r">
+              <seg xml:lang="en">―</seg>
+              <seg xml:lang="bg">―</seg>
+            </textLang>
+            <textLang mainLang="grc-Latn" n="v">
+              <seg xml:lang="en">Byzantine Greek</seg>
+              <seg xml:lang="bg">Византийски гръцки</seg>
             </textLang>
             <msItem>
               <author>
                 <roleName role="issuer" type="">
                   <seg xml:lang="en">Kanaboutzes</seg>
                   <seg xml:lang="bg">Канавуцис</seg>
-                  <interp type="milieu" xml:lang="en">Private</interp>
+                  <interp type="milieu" xml:lang="en">―</interp>
                   <interp type="milieu" xml:lang="bg">Частна (сфера на дейност)</interp>
                 </roleName>
               </author>
@@ -115,9 +109,6 @@
                   </material>
                   <dimensions type="support" unit="mm">
                     <dim type="diameter">32</dim>
-                    <height>{HEIGHT}</height>
-                    <width>{WIDTH}</width>
-                    <depth>{DEPTH}</depth>
                   </dimensions>
                   <measure type="weight" unit="g">24.76</measure>
                   <measure type="axis" unit="clock">―</measure>
@@ -146,23 +137,22 @@
                     <seg xml:lang="bg">Кръгъл</seg>
                   </rs>
                   <rs type="matrix" subtype="">
-                    <idno type="SigiDoc">BG_Sofia_NAIM_133</idno>
-                    <idno type="PBW" corresp="URI">{PBW}</idno>
+                    <idno type="SigiDoc">―</idno>
                   </rs>
                 </layout>
               </layoutDesc>
             </objectDesc>
             <handDesc>
               <handNote n="whole">
-                <seg xml:lang="en">{HAND_NOTE_EN}</seg>
-                <seg xml:lang="bg">{HAND_NOTE_BG}</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </handNote>
             </handDesc>
             <decoDesc>
               <decoNote>
                 <figure>
-                  <figDesc n="whole" xml:lang="en">{DECO_NOTE_EN}</figDesc>
-                  <figDesc n="whole" xml:lang="bg">{DECO_NOTE_BG}</figDesc>
+                  <figDesc n="whole" xml:lang="en">―</figDesc>
+                  <figDesc n="whole" xml:lang="bg">―</figDesc>
                 </figure>
               </decoNote>
             </decoDesc>
@@ -177,11 +167,6 @@
                   <placeName ref="URI">―</placeName>
                 </seg>
               </origPlace>
-              <!-- <origDate type="analysis" when="{DATE}" evidence="" cert="" resp="">
-                                        <seg>{DATE}</seg>
-                                        <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                        <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp>
-                                    </origDate> -->
               <origDate type="analysis" notBefore="1076" notAfter="1150" evidence="" cert="" resp="">
                 <seg>1076-1150</seg>
                 <interp type="datingCriteria" xml:lang="en">Epigraphy</interp>
@@ -216,12 +201,6 @@
             <provenance type="observed" subtype="" xml:lang="bg">
               <p>―</p>
             </provenance>
-            <provenance type="not-observed" subtype="" xml:lang="en">
-              <p>―</p>
-            </provenance>
-            <provenance type="not-observed" subtype="" xml:lang="bg">
-              <p>―</p>
-            </provenance>
             <provenance type="transferred" subtype="" xml:lang="en">
               <p>―</p>
             </provenance>
@@ -235,12 +214,12 @@
           </history>
           <msPart n="r">
             <msIdentifier>
-              <idno>{MS_IDENTIFIER}</idno>
+              <idno />
             </msIdentifier>
             <msContents>
               <summary n="r">
-                <seg xml:lang="en">{MS_CONTENTS_SUMMARY_EN}</seg>
-                <seg xml:lang="bg">{MS_CONTENTS_SUMMARY_BG}</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </summary>
             </msContents>
             <physDesc>
@@ -248,15 +227,15 @@
                 <layoutDesc>
                   <layout n="r">
                     <dimensions type="written" unit="mm">
-                      <dim type="diameter">32</dim>
+                      <dim type="diameter">―</dim>
                     </dimensions>
                     <rs type="matrix" subtype="">
                       <idno type="SigiDoc" xml:lang="en">―</idno>
                       <idno type="SigiDoc" xml:lang="bg">―</idno>
                     </rs>
                     <rs type="layout">
-                      <seg xml:lang="en">{LAYOUT_EN}</seg>
-                      <seg xml:lang="bg">{LAYOUT_BG}</seg>
+                      <seg xml:lang="en">Iconography</seg>
+                      <seg xml:lang="bg">Иконография</seg>
                     </rs>
                     <p />
                   </layout>
@@ -264,17 +243,17 @@
               </objectDesc>
               <handDesc>
                 <handNote n="r">
-                  <seg xml:lang="en">{HAND_NOTE_EN}</seg>
-                  <seg xml:lang="bg">{HAND_NOTE_BG}</seg>
+                  <seg xml:lang="en">―</seg>
+                  <seg xml:lang="bg">―</seg>
                 </handNote>
               </handDesc>
               <decoDesc>
                 <decoNote>
                   <figure>
-                    <figDesc n="r" xml:lang="en">{FIGURE_R_EN}</figDesc>
-                    <figDesc n="r" xml:lang="bg">{FIGURE_R_BG}</figDesc>
-                    <figDesc n="decoR" xml:lang="en">{FIGURE_DECOR_EN}</figDesc>
-                    <figDesc n="decoR" xml:lang="bg">{FIGURE_DECOR_BG}</figDesc>
+                    <figDesc n="r" xml:lang="en">Bust of Mother of God, type Nikopoios; sigla</figDesc>
+                    <figDesc n="r" xml:lang="bg">Бюст на Богородица Никопея; сигла</figDesc>
+                    <figDesc n="decoR" xml:lang="en">―</figDesc>
+                    <figDesc n="decoR" xml:lang="bg">―</figDesc>
                   </figure>
                 </decoNote>
               </decoDesc>
@@ -283,8 +262,6 @@
               <origin>
                 <origDate>
                   <seg>1076-1150</seg>
-                  <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
                 <date />
               </origin>
@@ -296,7 +273,8 @@
             </msIdentifier>
             <msContents>
               <summary n="v">
-                <seg xml:lang="">Reverse</seg>
+                <seg xml:lang="en">―</seg>
+                <seg xml:lang="bg">―</seg>
               </summary>
             </msContents>
             <physDesc>
@@ -304,13 +282,15 @@
                 <layoutDesc>
                   <layout n="v">
                     <dimensions type="written" unit="mm">
-                      <dim type="diameter" />
+                      <dim type="diameter">―</dim>
                     </dimensions>
                     <rs type="matrix" subtype="">
-                      <idno type="SigiDoc">{MATRIX}</idno>
+                      <idno type="SigiDoc" xml:lang="en">―</idno>
+                      <idno type="SigiDoc" xml:lang="bg">―</idno>
                     </rs>
                     <rs type="layout">
-                      <seg xml:lang="" />
+                      <seg xml:lang="en">Legend of 5 lines</seg>
+                      <seg xml:lang="bg">Линеен надпис на 5 реда</seg>
                     </rs>
                     <p />
                   </layout>
@@ -318,14 +298,17 @@
               </objectDesc>
               <handDesc>
                 <handNote n="v">
-                  <seg xml:lang="" />
+                  <seg xml:lang="en">―</seg>
+                  <seg xml:lang="bg">―</seg>
                 </handNote>
               </handDesc>
               <decoDesc>
                 <decoNote>
                   <figure>
-                    <figDesc n="v" />
-                    <figDesc n="decoV" />
+                    <figDesc n="v" xml:lang="en">―</figDesc>
+                    <figDesc n="v" xml:lang="bg">―</figDesc>
+                    <figDesc n="decoV" xml:lang="en">―</figDesc>
+                    <figDesc n="decoV" xml:lang="bg">―</figDesc>
                   </figure>
                 </decoNote>
               </decoDesc>
@@ -334,8 +317,6 @@
               <origin>
                 <origDate>
                   <seg>1076-1150</seg>
-                  <!-- <interp type="datingCriteria" xml:lang="en">{DATING_CRITERIA_EN}</interp>
-                                            <interp type="datingCriteria" xml:lang="bg">{DATING_CRITERIA_BG}</interp> -->
                 </origDate>
                 <date />
               </origin>
@@ -388,48 +369,53 @@
                         <div type="textpart" subtype="" n="obv" rend="">
                             
                         
-<ab>Μή(τη)ρ Θ(εο)ῦ</ab>
-</div>
+                <ab>Μή(τη)ρ Θ(εο)ῦ</ab>
+            </div>
                         <div type="textpart" subtype="" n="rev" rend="">
                             
                         
-<ab>1 Σφρα-</ab>
-<ab>2 γὶς γραφὰς</ab>
-<ab>3 πιστοῦσα</ab>
-<ab>4 τοῦ Καννα-</ab>
-<ab>5 βο[ύ]τζι</ab>
-</div>
+                <ab>1 Σφρα-</ab>
+                <ab>2 γὶς γραφὰς</ab>
+                <ab>3 πιστοῦσα</ab>
+                <ab>4 τοῦ Καννα-</ab>
+                <ab>5 βο[ύ]τζι</ab>
+            </div>
                     </div>
       <div type="edition" subtype="diplomatic" xml:space="preserve" xml:lang="">
                         <div type="textpart" subtype="" n="obv" rend="">
                             
                         
-<ab>̅ Θ̅Υ</ab>
-</div>
+                <ab>̅ Θ̅Υ</ab>
+            </div>
                         <div type="textpart" subtype="" n="rev" rend="">
                             
                         
-<ab>1̣ΣΦ̣ΡΑ</ab>
-<ab>2ΓΙΣΓΡΑΦΑΣ</ab>
-<ab>3ΠΙΣΤΟΥΣΑ</ab>
-<ab>4ΤΟΥΚΑΝΝΑ</ab>
-<ab>5Ο.Ι</ab>
-</div>
+                <ab>1̣ΣΦ̣ΡΑ</ab>
+                <ab>2ΓΙΣΓΡΑΦΑΣ</ab>
+                <ab>3ΠΙΣΤΟΥΣΑ</ab>
+                <ab>4ΤΟΥΚΑΝΝΑ</ab>
+                <ab>5Ο.Ι</ab>
+            </div>
                     </div>
       <div type="apparatus">
         <listApp>
-          <app xml:lang="" />
+          <app xml:lang="en">―</app>
+          <app xml:lang="bg">―</app>
         </listApp>
       </div>
       <div type="translation">
-        <p>[plain Greek or Latin... text here]</p>
-        <p xml:lang="">[Modern language text here]</p>
+        <p xml:lang="en">Μήτηρ Θεοῦ. Σφραγὶς γραφὰς πιστοῦσα τοῦ Κανναβούτζη</p>
+        <p xml:lang="bg">Μήτηρ Θεοῦ. Σφραγὶς γραφὰς πιστοῦσα τοῦ Κανναβούτζη</p>
+        <p xml:lang="en">Mother of God. Seal authenticating the writings of Kanaboutzes</p>
+        <p xml:lang="bg">―</p>
       </div>
       <div type="commentary" subtype="text">
-        <p xml:lang="" />
+        <p xml:lang="en">―</p>
+        <p xml:lang="bg">―</p>
       </div>
       <div type="commentary" subtype="footnotes">
-        <p xml:lang="" />
+        <p xml:lang="en">―</p>
+        <p xml:lang="bg">―</p>
       </div>
       <div type="bibliography" subtype="">
         <p>

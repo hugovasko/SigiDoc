@@ -39,7 +39,7 @@ namespace ExcelToXMLConverter
                 {
                     var newListItem = new XElement(ns + "item");
                     newListItem.SetAttributeValue("n", filename);
-                    newListItem.SetAttributeValue("sortKey", filename);
+                    newListItem.SetAttributeValue("sortKey", sequence);
                     listElement.Add(newListItem);
 
                     var sortedListItems = listElement.Descendants(ns + "item").OrderBy(i => i.Attribute("sortKey")?.Value).ToList();
@@ -57,18 +57,34 @@ namespace ExcelToXMLConverter
         {
             var text = allValues.GetValueOrDefault(header);
 
-            if (string.IsNullOrEmpty(text))
+            if (string.IsNullOrEmpty(text) || text == "―")
             {
-                Console.WriteLine($"{type} text is missing or empty.");
+                Console.WriteLine($"{type} text is missing or empty for this seal.");
                 return;
             }
 
-            var separator = "@";
+            // Support both separators: – (en dash) and -- (double hyphen)
+            string separator = null;
+            if (text.Contains(" – "))
+                separator = " – ";
+            else if (text.Contains(" -- "))
+                separator = " -- ";
+            else if (text.Contains("–"))
+                separator = "–";
+            else if (text.Contains("--"))
+                separator = "--";
+            
+            if (separator == null)
+            {
+                Console.WriteLine($"Invalid {type} text format. Could not find separator '–' or '--'.");
+                return;
+            }
+
             var splitParts = text.Split(new[] { separator }, StringSplitOptions.None);
 
             if (splitParts.Length != 2)
             {
-                Console.WriteLine($"Invalid {type} text format. Could not find separator '@'.");
+                Console.WriteLine($"Invalid {type} text format. Expected 2 parts (obverse and reverse) separated by '{separator}'.");
                 return;
             }
 
@@ -87,18 +103,11 @@ namespace ExcelToXMLConverter
             }
 
             var obvElement = editionElement.Descendants().FirstOrDefault(e => e.Name == ns + "div" && (string)e.Attribute("type") == "textpart" && (string)e.Attribute("n") == partN);
-
-            if (obvElement == null)
-            {
-                Console.WriteLine($"Could not find the expected 'textpart' div with n='{partN}' in the XML template.");
-                return;
-            }
-
             var revElement = editionElement.Descendants().FirstOrDefault(e => e.Name == ns + "div" && (string)e.Attribute("type") == "textpart" && (string)e.Attribute("n") == "rev");
 
-            if (revElement == null)
+            if (obvElement == null || revElement == null)
             {
-                Console.WriteLine($"Could not find the expected 'textpart' div with n='rev' in the XML template.");
+                Console.WriteLine($"Could not find the expected textpart divs.");
                 return;
             }
 
@@ -108,21 +117,19 @@ namespace ExcelToXMLConverter
             foreach (var line in obvLines)
             {
                 var abElement = new XElement(ns + "ab", line.Trim());
-                obvElement.Add("\n");
+                obvElement.Add("\n                ");
                 obvElement.Add(abElement);
             }
 
             foreach (var line in revLines)
             {
                 var abElement = new XElement(ns + "ab", line.Trim());
-                revElement.Add("\n");
+                revElement.Add("\n                ");
                 revElement.Add(abElement);
             }
 
-            obvElement.Add("\n");
-            revElement.Add("\n");
+            obvElement.Add("\n            ");
+            revElement.Add("\n            ");
         }
     }
-
-
 }
