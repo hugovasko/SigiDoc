@@ -2,6 +2,7 @@
 <?oxygen RNGSchema="../schema/menu/menu.rng" type="xml"?>
 <root xmlns="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
   xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+  <menu label="About" match="local-about" i18n:key="about"/>
   <menu label="Seals" match="local-epidoc-index-display" i18n:key="menu-seals"/>
   <menu label="Search" match="local-search" i18n:key="menu-search"/>
   <menu label="Indices" match="local-indices-type-display" params="epidoc" i18n:key="menu-indices">

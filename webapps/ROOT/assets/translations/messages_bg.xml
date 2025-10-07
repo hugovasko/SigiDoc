@@ -86,6 +86,8 @@
     <message key="menu-language">Езици</message>
     <message key="language-code">Езиков код</message>
     <message key="map">Карта</message>
+    <message key="about">За нас</message>
+    <message key="about-title">Нашите партньори</message>
     <message key="grc">Византийски гръцки</message>
     <message key="en">Английски</message>
     <message key="fr">Френски</message>
@@ -111,7 +113,7 @@
     <message key="menu-index-legendsCases">Случаи с легенди</message>
     <message key="menu-index-metrical">Метрични легенди</message>
     <message key="menu-index-invocation">Призиви</message>
-    <message key="home-title">Цифров сигметографски корпус на България</message>
+    <message key="home-title">Дигитален сфрагистичен корпус на България</message>
     <message key="bibliographic-concordance">Библиография</message>
     <message key="inscription-index-zip">XML файловете на SigiDoc на изданията на печат, представени в следния списък, са налични в </message>
     <message key="indices-type-prosopography-geography">Хора и места</message>

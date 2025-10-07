@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:xi="http://www.w3.org/2001/XInclude"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <kiln:parent>
+    <xi:include href="base.xml" />
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title">
+      <i18n:text>About us</i18n:text>
+    </kiln:block>
+
+    <kiln:block name="page-heading">
+      <i18n:text i18n:key="about-title">Our partners</i18n:text>
+    </kiln:block>
+
+    <kiln:block name="content">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="museums-grid">
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo Asenovgrad.jpg" alt="Asenovgrad Museum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo Burgas.jpg" alt="Burgas Museum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo Debelt.jpg" alt="Debelt Museum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo Kyustendil.jpg" alt="Kyustendil Museum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo NIM Sofia.jpg" alt="NIM Sofia Museum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo Pernik.jpg" alt="Pernik Museum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo RAM Plovdiv.jpg" alt="RAM Plovdiv Museum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo RIM Sofia.jpg" alt="RIM Sofia Museum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo Starinen Nesebar.jpg" alt="Starinen Nesebar Museum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo Vidin.jpg" alt="Vidin Museum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo VT.jpg" alt="VT Museum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo_NAIM.jpg" alt="NAIM Museum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/project DigiDeultum.jpg" alt="DigiDeultum Museum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/project DigiThrace.png" alt="DigiThrace Museum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/project Nehrizov-Cvetkova.jpg" alt="Nehrizov-Cvetkova Museum"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </kiln:block>
+
+    <kiln:block name="head-extra">
+      <style>
+        .museums-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 2rem;
+          padding: 2rem 0;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .museum-logo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1.5rem;
+          background: #fff;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .museum-logo:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .museum-logo img {
+          max-width: 100%;
+          max-height: 150px;
+          height: auto;
+          width: auto;
+          object-fit: contain;
+        }
+
+        @media (max-width: 768px) {
+          .museums-grid {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            padding: 1rem 0;
+          }
+
+          .museum-logo {
+            padding: 1rem;
+          }
+
+          .museum-logo img {
+            max-height: 120px;
+          }
+        }
+      </style>
+    </kiln:block>
+
+  </kiln:child>
+</kiln:root>
