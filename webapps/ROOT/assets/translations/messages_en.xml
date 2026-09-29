@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Example format for catalogue files. -->
 <catalogue xml:lang="en">
+  <message key="about">About</message>
+  <message key="about-project">About the project</message>
+  <message key="about-sigillography">What is sigillography?</message>
+  <message key="about-how-to-use">How to use the database</message>
+  <message key="about-partners">Partners</message>
+  <message key="about-team">Team</message>
+  <message key="about-contact">Contact</message>
+  <message key="about-museum-collections">Museum Collections</message>
+  <message key="about-partner-projects">Partner Projects</message>
+  <message key="map">Map</message>
+  <message key="map-date-filter">Date</message>
+  <message key="map-date-reset">Reset</message>
   <message key="menu-seals">Seals</message>
   <message key="menu-indices">Indices</message>
   <message key="menu-index-abbreviation">Abbreviations</message>

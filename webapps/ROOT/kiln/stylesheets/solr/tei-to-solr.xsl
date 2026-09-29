@@ -54,6 +54,16 @@
     </field>
   </xsl:template>
 
+  <!-- Standard SigiDoc files have one title per language instead of
+       a single title with a seg per language. -->
+  <xsl:template match="tei:fileDesc/tei:titleStmt/tei:title[not(tei:seg)]" mode="document-metadata" priority="2">
+    <xsl:if test="not(preceding-sibling::tei:title)">
+      <field name="document_title">
+        <xsl:value-of select="string-join((normalize-space(../tei:title[@xml:lang='en'][1]), normalize-space(../tei:title[@xml:lang='bg'][1])), ' * ')" />
+      </field>
+    </xsl:if>
+  </xsl:template>
+
   <xsl:template match="tei:fileDesc/tei:titleStmt/tei:author" mode="document-metadata">
     <field name="author">
       <xsl:value-of select="normalize-space(.)" />
@@ -64,6 +74,13 @@
     <field name="editor">
       <!-- <xsl:value-of select="normalize-space(.)" /> -->
       <xsl:value-of select="string-join(tei:persName, ' * ')" />
+    </field>
+  </xsl:template>
+
+  <!-- Standard SigiDoc files give the editor's name as plain text. -->
+  <xsl:template match="tei:fileDesc/tei:titleStmt/tei:editor[not(tei:persName)]" mode="document-metadata" priority="2">
+    <field name="editor">
+      <xsl:value-of select="string-join((normalize-space(.), normalize-space(.)), ' * ')" />
     </field>
   </xsl:template>
 

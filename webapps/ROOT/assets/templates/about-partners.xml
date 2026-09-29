@@ -10,16 +10,18 @@
 
   <kiln:child>
     <kiln:block name="title">
-      <i18n:text>About us</i18n:text>
+      <kiln:super/>
+      <i18n:text i18n:key="about-partners">Partners</i18n:text>
     </kiln:block>
 
     <kiln:block name="page-heading">
-      <i18n:text i18n:key="about-title">Our partners</i18n:text>
+      <i18n:text i18n:key="about-partners">Partners</i18n:text>
     </kiln:block>
 
     <kiln:block name="content">
       <div class="row">
         <div class="large-12 columns">
+          <h2><i18n:text i18n:key="about-museum-collections">Museum Collections</i18n:text></h2>
           <div class="museums-grid">
             <div class="museum-logo">
               <img src="{$kiln:assets-path}/images/museums/Logo Asenovgrad.jpg" alt="Asenovgrad Museum"/>
@@ -52,19 +54,35 @@
               <img src="{$kiln:assets-path}/images/museums/Logo Vidin.jpg" alt="Vidin Museum"/>
             </div>
             <div class="museum-logo">
-              <img src="{$kiln:assets-path}/images/museums/Logo VT.jpg" alt="VT Museum"/>
+              <img src="{$kiln:assets-path}/images/museums/Logo VT.jpg" alt="Veliko Tarnovo Museum"/>
             </div>
             <div class="museum-logo">
               <img src="{$kiln:assets-path}/images/museums/Logo_NAIM.jpg" alt="NAIM Museum"/>
             </div>
             <div class="museum-logo">
-              <img src="{$kiln:assets-path}/images/museums/project DigiDeultum.jpg" alt="DigiDeultum Museum"/>
+              <img src="{$kiln:assets-path}/images/museums/Logo Silistra.jpg" alt="Silistra Museum"/>
             </div>
             <div class="museum-logo">
-              <img src="{$kiln:assets-path}/images/museums/project DigiThrace.png" alt="DigiThrace Museum"/>
+              <img src="{$kiln:assets-path}/images/museums/Logo Varna.png" alt="Varna Museum"/>
             </div>
             <div class="museum-logo">
-              <img src="{$kiln:assets-path}/images/museums/project Nehrizov-Cvetkova.jpg" alt="Nehrizov-Cvetkova Museum"/>
+              <img src="{$kiln:assets-path}/images/museums/Logo Razlog.png" alt="Razlog Museum"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <h2><i18n:text i18n:key="about-partner-projects">Partner Projects</i18n:text></h2>
+          <div class="museums-grid">
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/project DigiDeultum.jpg" alt="DigiDeultum"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/project DigiThrace.png" alt="DigiThrace"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/project Nehrizov-Cvetkova.jpg" alt="Nehrizov-Cvetkova"/>
             </div>
           </div>
         </div>
@@ -75,7 +93,7 @@
       <style>
         .museums-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
           gap: 2rem;
           padding: 2rem 0;
           max-width: 1200px;
@@ -108,7 +126,7 @@
 
         @media (max-width: 768px) {
           .museums-grid {
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 1.5rem;
             padding: 1rem 0;
           }

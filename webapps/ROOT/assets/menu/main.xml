@@ -2,7 +2,18 @@
 <?oxygen RNGSchema="../schema/menu/menu.rng" type="xml"?>
 <root xmlns="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
   xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
-  <menu label="About" match="local-about" i18n:key="about"/>
+  <menu label="About" match="local-about" i18n:key="about">
+    <item label="About the project" match="local-about-page" params="project"
+      i18n:key="about-project"/>
+    <item label="What is sigillography?" match="local-about-page" params="sigillography"
+      i18n:key="about-sigillography"/>
+    <item label="How to use the database" match="local-about-page" params="how-to-use"
+      i18n:key="about-how-to-use"/>
+    <item label="Partners" match="local-about-page" params="partners"
+      i18n:key="about-partners"/>
+    <item label="Team" match="local-about-page" params="team" i18n:key="about-team"/>
+    <item label="Contact" match="local-about-page" params="contact" i18n:key="about-contact"/>
+  </menu>
   <menu label="Seals" match="local-epidoc-index-display" i18n:key="menu-seals"/>
   <menu label="Search" match="local-search" i18n:key="menu-search"/>
   <menu label="Indices" match="local-indices-type-display" params="epidoc" i18n:key="menu-indices">
@@ -65,7 +76,7 @@
           i18n:key="menu-concordance-bibliography" />-->
   </menu>
   
-  <!-- <menu label="Admin" language="" match="local-admin-home-page" i18n:key="menu-admin"/> -->
+  <menu label="Map" match="local-map" i18n:key="map"/>
 
   <menu label="Language" i18n:key="menu-language">
     <!--<item label="Byzantine Greek" language_switch="grc" i18n:key="grc"/>-->
@@ -76,5 +87,5 @@
     <item label="Български" i18n:key="bg" language_switch="bg"/>
   </menu>
 
-  <menu label="Map" match="local-map" i18n:key="map"/>
+  <menu label="Admin" language="" match="local-admin-home-page" i18n:key="menu-admin"/>
 </root>

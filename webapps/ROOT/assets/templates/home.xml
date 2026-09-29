@@ -13,18 +13,23 @@
       <i18n:text>SigiDoc: Home</i18n:text>
     </kiln:block>
 
-    <kiln:block name="page-header">
-      <div class="row">
-        <div class="large-12 columns text-center">
-          <h1>
-            <i18n:text i18n:key="home-title">Digital Sigillographic Corpus of Bulgaria</i18n:text>
-          </h1>
-        </div>
-      </div>
-    </kiln:block>
+    <kiln:block name="page-header"/>
 
     <kiln:block name="content-section">
       <main>
+        <div class="row">
+          <div class="large-12 columns">
+            <div id="map" style="width: 100%; height: 600px; margin-bottom: 2rem;">
+              <iframe src="{$kiln:assets-path}/leafletMap/map.html?lang={$language}" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns text-center">
+            <h1>Digital Sigillographic Corpus of Bulgaria</h1>
+            <h2>Дигитален сфрагистичен корпус на България</h2>
+          </div>
+        </div>
         <div class="row">
           <div class="large-12 columns">
             <div class="panel radius">

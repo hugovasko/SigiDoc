@@ -585,23 +585,23 @@
       <div id="images"><!-- ************************* IMAGES ************************************ -->
         <h4 class="iospe"><i><i18n:text i18n:key="images">Images</i18n:text></i></h4>
         <dl class="box">
-          <xsl:for-each select="//t:facsimile//t:surface[@type='obverse']//t:graphic">
+          <xsl:for-each select="//t:facsimile//t:surface[@type='obverse' or @n='r']//t:graphic">
             <dd>
               <xsl:apply-templates select="." />
             </dd>
           </xsl:for-each>
           <dt width="150">
-            <xsl:value-of select="//t:facsimile//t:surface[@type='obverse']//t:graphic//t:desc"/>
+            <xsl:value-of select="//t:facsimile//t:surface[@type='obverse' or @n='r']//t:graphic//t:desc"/>
           </dt>
         </dl>
         <dl class="box">
-          <xsl:for-each select="//t:facsimile//t:surface[@type='reverse']//t:graphic">
+          <xsl:for-each select="//t:facsimile//t:surface[@type='reverse' or @n='v']//t:graphic">
             <dd>
               <xsl:apply-templates select="." />
             </dd>
           </xsl:for-each>
           <dt width="150">
-            <xsl:value-of select="//t:facsimile//t:surface[@type='reverse']//t:graphic//t:desc"/>
+            <xsl:value-of select="//t:facsimile//t:surface[@type='reverse' or @n='v']//t:graphic//t:desc"/>
           </dt>
         </dl>
         

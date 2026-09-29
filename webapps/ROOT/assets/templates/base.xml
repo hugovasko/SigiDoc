@@ -107,34 +107,19 @@
           </kiln:block>
           <kiln:block name="footer">
             <footer>
-              <div class="row">
-                <div class="large-8 medium-7 small-12 columns">
-                  <p id="licence" style="margin-bottom: 0; display: flex; align-items: center; flex-wrap: wrap;">
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-right: 1rem; margin-bottom: 0.5rem;">
-                      <img alt="CC BY NC SA"
-                        style="display: block; max-width: 88px; height: auto;"
-                        src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
-                    </a>
-                    <span style="flex: 1; min-width: 200px;">ANR/DFG DigiByzSeal - Unlocking the Hidden Value of Seals: New Methodologies
-                      for Historical Research in Byzantine Studies</span>
-                  </p>
+              <div id="footer-content">
+                <div class="footer-left">
+                  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">
+                    <img alt="CC BY NC SA" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                  </a>
                 </div>
-                <div class="large-4 medium-5 small-12 columns text-right">
-                  <div style="display: flex; flex-direction: column; align-items: flex-end; height: 100%;">
-                    <p id="logos" style="margin-bottom: 0;">
-                      <a href="https://www.codecrew.io/" target="_blank" rel="noopener">
-                        <img style="max-height: 6.0em; max-width: 100%; height: auto; width: auto; object-fit: contain;" alt="CodeCrewLogo"
-                          src="{$kiln:assets-path}/images/CodeCrewLogo.png"/>
-                      </a>
-                    </p>
-                    <p id="efes" style="margin-bottom: 0.5rem;">
-                      <i18n:text i18n:key="base-footer-first-paragraph">
-                        <a href="https://www.codecrew.io/" target="_blank" rel="noopener">
-                          Check out CodeCrew from here!
-                        </a>
-                      </i18n:text>
-                    </p>
-                  </div>
+                <div class="footer-center">
+                  <a href="https://github.com/SigiDoc" target="_blank" rel="noopener">SigiDoc</a>
+                </div>
+                <div class="footer-right">
+                  <a href="https://www.codecrew.io/" target="_blank" rel="noopener">
+                    <img alt="CodeCrew" src="{$kiln:assets-path}/images/CodeCrewLogo.png"/>
+                  </a>
                 </div>
               </div>
             </footer>

@@ -1,3 +1,132 @@
 html, body { height: 100%; margin: 0; }
 
-#map { height: 100%; }
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+#map { flex: 1; min-height: 0; }
+
+#date-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  padding: 10px 14px;
+  background: #f2f2f2;
+  border: 1px solid #d8d8d8;
+  border-bottom: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+#date-filter-label { min-width: 170px; }
+
+#date-filter-slider {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+  height: 24px;
+}
+
+#date-filter-track {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: #ccc;
+}
+
+/* Two range inputs are stacked to form one slider with two handles. */
+#date-filter-slider input[type="range"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  margin: 0;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#date-filter-slider input[type="range"]::-webkit-slider-runnable-track {
+  background: none;
+}
+
+#date-filter-slider input[type="range"]::-moz-range-track {
+  background: none;
+}
+
+#date-filter-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #2c3b56;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+#date-filter-slider input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #2c3b56;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+#date-filter-count { color: #666; white-space: nowrap; }
+
+#date-filter-reset {
+  padding: 4px 12px;
+  border: 0;
+  border-radius: 3px;
+  background: #2c3b56;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#date-filter-reset:hover { background: #1f2a3e; }
+
+.custom-popup { line-height: 1.4; }
+
+.popup-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.popup-date { color: #666; margin-bottom: 5px; }
+
+.popup-findspot { color: #666; margin-bottom: 8px; }
+
+.leaflet-popup-content .popup-button,
+.leaflet-container a.popup-button {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #2c6eb2;
+  color: white !important;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.leaflet-popup-content .popup-button:hover,
+.leaflet-container a.popup-button:hover {
+  background-color: #1c5293;
+  color: white !important;
+}

@@ -195,3 +195,43 @@ body {
   border: 1px solid #efefef;
   padding: 3px 1px 3px 3px;
 }
+
+#footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+#footer-content > div {
+  flex: 1;
+  display: flex;
+}
+
+#footer-content .footer-left {
+  justify-content: flex-start;
+}
+
+#footer-content .footer-center {
+  justify-content: center;
+}
+
+#footer-content .footer-right {
+  justify-content: flex-end;
+}
+
+#footer-content .footer-right img {
+  max-height: 5em;
+  width: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #footer-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #footer-content > div {
+    justify-content: center !important;
+  }
+}
