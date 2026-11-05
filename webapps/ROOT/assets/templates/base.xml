@@ -45,23 +45,20 @@
       <kiln:block name="body">
         <body>
           <kiln:block name="navigation">
-            <div id="header-logos" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: rgb(210, 94, 55); min-height: 120px;">
-              <div class="text-left" style="flex: 1; display: flex; justify-content: flex-start;">
+            <div id="header-logos">
+              <div class="header-logo header-logo-left">
                 <a href="/">
-                  <img src="{$kiln:assets-path}/images/DigiSigiCorpLogoTransparent.png" 
-                      alt="SigiDoc" 
-                      style="max-height: 5em; height: auto; width: auto;"/>
+                  <img src="{$kiln:assets-path}/images/DigiSigiCorpLogoWhite.png"
+                      alt="Digital Sigillographic Corpus of Bulgaria"/>
                 </a>
               </div>
-              <div class="text-center" style="flex: 1; display: flex; justify-content: center;">
-                <img src="{$kiln:assets-path}/images/Logo_NAIM_transparent.png" 
-                    alt="NAIM" 
-                    style="max-height: 5em; height: auto; width: auto;"/>
+              <div class="header-logo header-logo-center">
+                <img src="{$kiln:assets-path}/images/Logo_NAIM_white.png"
+                    alt="NAIM"/>
               </div>
-              <div class="text-right" style="flex: 1; display: flex; justify-content: flex-end;">
-                <img src="{$kiln:assets-path}/images/logo_Balgaristika_transparent.png" 
-                    alt="Balgaristika" 
-                    style="max-height: 5em; height: auto; width: auto;"/>
+              <div class="header-logo header-logo-right">
+                <img src="{$kiln:assets-path}/images/logo_Balgaristika_white.png"
+                    alt="Balgaristika"/>
               </div>
             </div>
             <nav class="top-bar">
