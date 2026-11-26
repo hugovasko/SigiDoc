@@ -11,7 +11,8 @@
        <xsl:param name="parm-edition-type" tunnel="yes" required="no"></xsl:param>
        <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
        <!-- function EDF:f-wwrap declared in htm-teilb.xsl; tests if lb break=no immediately follows space -->
-      <xsl:if test="EDF:f-wwrap(.) = true()">
+      <!-- Same test as EDF:f-wwrap (teig.xsl), written inline: on the production server Saxon could not resolve the function from this module (added by SigiDoc) -->
+      <xsl:if test="following-sibling::node()[1][(local-name()='lb' and (@break='no' or @type='inWord')) or normalize-space(.)='' and following-sibling::node()[1][local-name()='lb' and (@break='no' or @type='inWord')]]">
          <xsl:text>- </xsl:text>
       </xsl:if>
       <xsl:choose>

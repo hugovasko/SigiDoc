@@ -88,7 +88,8 @@
             <!-- Found in tpl-cert-low.xsl -->
             <xsl:call-template name="cert-low"/>
             <!-- function EDF:f-wwrap declared in htm-teilb.xsl; tests if lb break=no immediately follows supplied -->
-            <xsl:if test="EDF:f-wwrap(.) = true()">
+            <!-- Same test as EDF:f-wwrap (teig.xsl), written inline: on the production server Saxon could not resolve the function from this module (added by SigiDoc) -->
+            <xsl:if test="following-sibling::node()[1][(local-name()='lb' and (@break='no' or @type='inWord')) or normalize-space(.)='' and following-sibling::node()[1][local-name()='lb' and (@break='no' or @type='inWord')]]">
                <!-- unless this is in the app part of a choice/subst/app in ddbdp
                       or an EDH leiden style, which doesn't use hyphens-->
                 <xsl:if test="(not($parm-leiden-style='ddbdp' and (ancestor::t:*[local-name()=('reg','corr','rdg') 
