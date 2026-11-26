@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://sigidoc.github.io/Schema/schema/latest/sigidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://sigidoc.github.io/Schema/schema/latest/sigidoc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="en">Seal of Christopher Madarites Dalassenos</title>
+                <title xml:lang="bg">Печат на Христофор Мадарит Даласин</title>
+                <editor role="seal-editor" xml:id="YM">Yavor Mitov</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <seg xml:lang="en">Born digital</seg>
+                    <seg xml:lang="bg">Първично дигитален</seg>
+                </edition>
+                <editor role="digital-editor" ref="#YM" when="2026-10-29"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority/>
+                <idno type="filename">Plovdiv_RAM_3389</idno>
+                <idno type="SigiDocID">s-HiKUov</idno>
+                <date when="2026-10-29"/>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                        >Attribution-NonCommercial-ShareAlike 4.0 International - CC BY-NC-SA
+                        4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <!-- alternative between listOrg and listPerson -->
+                <!-- listOrg commented out because it is alternative to listPerson -->
+                <!--<listOrg type="issuer">
+                    <org role="corporate" type="">
+                        <orgName xml:lang="grc"></orgName>
+                        <orgName xml:lang="fr"></orgName>
+                        <idno type="URI"></idno>
+                    </org>
+                </listOrg>-->
+                <listPerson type="issuer">
+                    <person gender="M" role="private">
+                        <persName xml:lang="grc">
+                            <forename>Χριστοφόρος</forename>
+                            <surname type="patronymic">Μαδαρίτης</surname>
+                            <surname type="matronymic">Δαλασσηνός</surname>
+                        </persName>
+                        <persName xml:lang="en">
+                            <forename>Christopher</forename>
+                            <surname type="patronymic">Madarites</surname>
+                            <surname type="matronymic">Dalassenos</surname>
+                        </persName>
+                        <persName xml:lang="bg">
+                            <forename>Христофор</forename>
+                            <surname type="patronymic">Мадарит</surname>
+                            <surname type="matronymic">Даласин</surname>
+                        </persName>
+                        <!--<idno type="PBW" ana="http://pbw2016.kdl.kcl.ac.uk/person/Alexios/103/"
+                            >Alexios 103</idno>-->
+                    </person>
+                </listPerson>
+                <msDesc>
+                    <msIdentifier>
+                        <country>
+                            <seg xml:lang="en">Bulgaria</seg>
+                            <seg xml:lang="bg">България</seg>
+                        </country>
+                        <settlement>
+                            <seg xml:lang="en">City of Plovdiv<placeName
+                                    ref="https://www.geonames.org/728193/plovdiv.html"/></seg>
+                            <seg xml:lang="bg">Град Пловдив<placeName
+                                    ref="https://www.geonames.org/728193/plovdiv.html"/></seg>
+                        </settlement>
+                        <institution><placeName
+                                ref="42.151596282852, 24.744976606198843"/>Regional Archaeological
+                            Museum - Plovdiv</institution>
+                        <repository/>
+                        <collection type="public">
+                            <rs type="collection-name" xml:lang="en">Numismatics</rs>
+                            <rs type="collection-name" xml:lang="bg">Нумизматика</rs>
+                        </collection>
+                        <!--<institution>Regional Archaeological Museum - Plovdiv</institution>-->
+                        <!--<repository>Numismatics</repository>-->
+                        <idno type="inv-nr-current">3389</idno>
+                        <!--<altIdentifier>
+                            <repository/>
+                            <collection type="">
+                                <rs type="collection-name" xml:lang="de"/>
+                                <rs type="collection-name" xml:lang="en"/>
+                            </collection>
+                            <idno type="inv-nr-former"/>
+                        </altIdentifier>-->
+                    </msIdentifier>
+                    <msContents>
+                        <summary n="whole">
+                            <seg xml:lang="en">Private seals</seg>
+                            <seg xml:lang="bg">Личен</seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType>
+                                        <term>
+                                            <seg xml:lang="en">Seal</seg>
+                                            <seg xml:lang="bg">Печат</seg>
+                                        </term>
+                                        <interp type="workType" xml:lang="en">Original
+                                            impression</interp>
+                                        <interp type="workType" xml:lang="bg">Оригинален отпечатък
+                                        </interp>
+                                    </objectType>
+                                    <material>
+                                        <seg xml:lang="en">Lead</seg>
+                                        <seg xml:lang="bg">Олово</seg>
+                                    </material>
+                                    <dimensions type="support" unit="mm">
+                                        <dim type="diameter">31.1</dim>
+                                    </dimensions>
+                                    <measure type="weight" unit="g">15.59</measure>
+                                    <measure type="axis" unit="clock">12</measure>
+                                    <!--<measure type="overstrikeOrient" unit="clock"/>-->
+                                    <measure type="channelOrient" unit="clock">12-6</measure>
+                                    <!--<measure type="countermark" unit="clock"/>-->
+                                </support>
+                                <condition rend="corroded chipped deformed-blank not-centered ">
+                                    <p xml:lang="en">Damaged imprint by corrosion. Not centered.
+                                        Single struck. Linear border is visible.</p>
+                                    <p xml:lang="bg">Повреден от корозията отпечатък. Недобре
+                                        центриран. Единично ударен. Ограждаща линия се забелязва на
+                                        места.</p>
+                                </condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout n="whole">
+                                    <rs type="execution">
+                                        <seg xml:lang="en">Struck</seg>
+                                        <seg xml:lang="bg">Ударен</seg>
+                                    </rs>
+                                    <rs type="shape">
+                                        <seg xml:lang="en">Round</seg>
+                                        <seg xml:lang="bg">Кръгла</seg>
+                                    </rs>
+                                    <rs type="matrix" subtype="not-surviving">
+                                        <idno type="SigiDoc">m-wCyGCl</idno>
+                                        <!--<idno type="PBW"
+                                            corresp="http://pbw2016.kdl.kcl.ac.uk/boulloterion/3494/"
+                                            >3494</idno>-->
+                                    </rs>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <!--<origPlace>
+                                <seg xml:lang="en">
+                                    <placeName ref=""></placeName>
+                                </seg>
+                                <seg xml:lang="bg">
+                                    <placeName ref=""></placeName>
+                                </seg>
+                            </origPlace>-->
+                            <!-- possible alternatives for dates:
+                            for a precise year:
+                            -->
+                            <!--<origDate type="analysis" when="1192" evidence=""
+                                cert="high" resp="">
+                                <seg xml:lang="en">1192 CE</seg>
+                            </origDate>-->
+                            <!-- for a date range or centuries-->
+                            <origDate type="analysis" notBefore="1200" notAfter="1399"
+                                evidence="iconography" cert="high" resp="#YM">
+                                <seg xml:lang="en">13th - 14th century</seg>
+                                <seg xml:lang="bg">XIII - XIV в.</seg>
+                            </origDate>
+                            <!-- for an internal date -->
+                            <!--<origDate type="internal" notBefore="0692" notAfter="0693"
+                                when-custom="0006"
+                                datingMethod="https://www.wikidata.org/wiki/Q1339127"
+                                evidence="internal-date">
+                                <seg xml:lang="en">Indiction 6, corresponding to the year 692-693
+                                    CE</seg>
+                            </origDate>-->
+                        </origin>
+                        <provenance type="found" subtype="discovered">
+                           <!-- <placeName type="ancientFindspot"
+                                ref="42.14481247415843, 24.758634179456127" xml:lang="en"/>
+                            <placeName type="ancientFindspot"
+                                ref="42.14481247415843, 24.758634179456127" xml:lang="bg"/>-->
+                            <placeName type="modernFindspot"
+                                ref="42.14481247415843, 24.758634179456127" xml:lang="en">Mali
+                                Bogdan Str.</placeName>
+                            <placeName type="modernFindspot"
+                                ref="42.14481247415843, 24.758634179456127" xml:lang="bg">ул. „Мали
+                                Богдан“</placeName>
+                            <rs type="circumstances" xml:lang="en">Stray find</rs>
+                            <rs type="circumstances" xml:lang="bg">Случайна находка</rs>
+                            <rs type="findspotAccuracy" xml:lang="en">2</rs>
+                        </provenance>
+                        <location>
+                            <geo>42.14481247415843, 24.758634179456127</geo>
+                            <findspotAccuracy>2</findspotAccuracy>
+                        </location>
+                        
+                        <acquisition>
+                            <p xml:lang="en">Found in Mali Bogdan Str. on 28th May 1951.</p>
+                            <p xml:lang="bg">Намерен на ул. „Мали Богдан“ на 28 май 1951 г.</p>
+                        </acquisition>
+                    </history>
+                    <msPart n="r">
+                        <msIdentifier/>
+                        <msContents>
+                            <summary n="r">
+                                <seg xml:lang="en">Obverse</seg>
+                            </summary>
+                        </msContents>
+                        <physDesc>
+                            <objectDesc>
+                                <layoutDesc>
+                                    <layout n="r">
+                                        <!--<dimensions type="written" unit="mm">
+                                            <dim type="diameter"/>
+                                        </dimensions>-->
+                                        <p xml:lang="en">Linear legend of 6 lines</p>
+                                        <p xml:lang="bg">Линеен надпис в 6 редове</p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote n="r">
+                                    <seg xml:lang="en">The surface of the bulla is well preserved.
+                                        The characters are disproportionate, sometimes going into
+                                        the lower line, inscribed with cryptograms and ligatures,
+                                        reminding of shorthand. All that renders the overall reading
+                                        difficult and insecure.</seg>
+                                    <seg xml:lang="bg">Повърхността на печата е добре запазена.
+                                        Буквите са непропорционални, на места преминават в долния
+                                        ред, изписани с криптограми и лигатури, напомнящи
+                                        стенография. Всичко това прави цялостното разчитане трудно и
+                                        несигурно.</seg>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote>
+                                    <!--<figure>
+                                        <figDesc n="r" xml:lang="en"
+                                            ana="none"/>
+                                        <figDesc n="decoR" xml:lang="en"></figDesc>
+                                        <figDesc n="decoR" xml:lang="bg"></figDesc>
+                                    </figure>-->
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+                    </msPart>
+                    <msPart n="v">
+                        <msIdentifier/>
+                        <msContents>
+                            <summary n="v">
+                                <seg xml:lang="en">Reverse</seg>
+                            </summary>
+                        </msContents>
+                        <physDesc>
+                            <objectDesc>
+                                <layoutDesc>
+                                    <layout n="v">
+                                        <!--<dimensions type="written" unit="mm">
+                                            <dim type="diameter"/>
+                                        </dimensions>-->
+                                        <p xml:lang="en">Linear legend of 5 lines</p>
+                                        <p xml:lang="bg">Линеен надпис в 5 редове</p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote n="v">
+                                    <seg xml:lang="en">The surface of the seal is not well
+                                        preserved. The characters are disproportionate.</seg>
+                                    <seg xml:lang="bg">Повърхността на печата не е добре запазена.
+                                        Буквите са непропорционални</seg>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote>
+                                    <!--<figure>
+                                        <figDesc n="r" xml:lang="en" ana="none"/>
+                                        <figDesc n="decoV" xml:lang="en"/>
+                                        <figDesc n="decoV" xml:lang="bg"/>
+                                    </figure>-->
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+                    </msPart>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="Grek">Greek script</language>
+                <language ident="Latn">Latin script</language>
+                <language ident="grc">Ancient Greek language (to 1453; assumed to be in its standard
+                    script: Grek)</language>
+                <language ident="la">Latin language (assumed to be in its standard script:
+                    Latn)</language>
+                <language ident="grc-Latn">Ancient Greek Language (to 1453), rendered in Latin
+                    script</language>
+                <language ident="la-Grek">Latin written in Greek script</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-10-29" who="#YM"/>
+            <change when="2026-10-29" who="#YM">Created the file for the edition of
+                Plovdiv_RAM_3389</change>
+            <change when="2026-10-29" who="#YM">Completed the edition of Plovdiv_RAM_3389</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <surfaceGrp>
+            <surface n="r">
+                <desc>Obverse</desc>
+                <graphic url="Plovdiv_RAM_3389_O.jpg" type="photo">
+                    <desc/>
+                </graphic>
+                <!--<graphic url="" type="">
+                    <desc>[Caption here]</desc>
+                </graphic>-->
+            </surface>
+            <surface n="v">
+                <desc>Reverse</desc>
+                <graphic url="Plovdiv_RAM_3389_R.jpg" type="photo">
+                    <desc/>
+                </graphic>
+                <!--<graphic url="" type="">
+                    <desc>[Caption here]</desc>
+                </graphic>-->
+            </surface>
+        </surfaceGrp>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" subtype="editorial" xml:space="preserve">
+                  <div type="textpart" n="obv" subtype="face" rend="linear" xml:lang="grc">
+                      <lg>
+                          <l met="dodecasyllable" n="1">
+                          <lb n="1"/><supplied reason="lost">Ἐπικύρ</supplied>ωσ<supplied reason="lost">ις</supplied> πραγ                          
+                          <lb n="2" break="no"/>μάτων Χρισ
+                          <lb n="3" break="no"/>τοφόρου
+                          </l>
+                          <l met="dodecasyllable" n="2" part="I">
+                               <supplied reason="lost">ἐκ</supplied> πα
+                               <lb n="4" break="no"/>τρόθεν Μαδ
+                               <lb n="5" break="no"/>αρίτου
+                              <lb n="6"/>μὲν
+                              </l>
+                      </lg>
+                  </div>
+                  <div type="textpart" n="rev" subtype="face" rend="linear" xml:lang="grc">
+                     <lg>
+                          <l met="dodecasyllable" n="2" part="F">
+                          <lb n="7"/><supplied reason="lost">ἐκ μ</supplied>ητρό<supplied reason="lost">θεν</supplied>
+                              </l>
+                          <l met="dodecasyllable" n="3">
+                              <lb n="8"/><supplied reason="lost">τ</supplied>οῦ Δαλασ<supplied reason="lost">η</supplied>
+                               <lb n="9" break="no"/>νῶν ἐκ γένο<supplied reason="lost">υ</supplied>
+                               <lb n="10" break="no"/>σ κατηγμ
+                              <lb n="11" break="no"/>ένου
+                              </l>
+                      </lg>
+                  </div>
+              </div>
+            <div type="edition" subtype="diplomatic" xml:space="preserve">
+                  <div type="textpart" subtype="face" n="obv" rend="linear" xml:lang="grc">
+                      <ab>
+                         <lb n="1"/>.  . . φργ.
+                          <lb n="2"/>τνχρις
+                          <lb n="3"/>τοφοροv . . π
+                          <lb n="4"/>τροθε
+                          <lb n="5"/>ριτοv
+                          <lb n="6"/>εν
+                      </ab>
+                  </div>
+                  <div type="textpart" subtype="face" n="rev" rend="linear" xml:lang="grc">
+                      <ab>
+                           <lb n="1"/>ητρο . . .                          
+                           <lb n="2"/>. οvλση
+                          <lb n="3"/>ν . εκγενο
+                          <lb n="4"/>σκτηγ
+                          <lb n="5"/>ενοv
+                      </ab>
+                  </div>
+              </div>
+            <div type="apparatus">
+                <listApp>
+                    <app xml:lang="en">
+                        <note>One may accept the reading of A.-K. Wassiliou-Seibt that the
+                            preposition ἐκ has been effaced on line 3 and at the beginning of line
+                            7.</note>
+                    </app>
+                    <app xml:lang="bg">
+                        <note>Може да се приеме четенето на А. К. Василиу-Зайбт, че на 3 ред и в
+                            началото на 7 ред е изличен предлогът ἐκ.</note>
+                    </app>
+                </listApp>
+            </div>
+            <div type="translation">
+                <p xml:lang="en">Confirmation of the affairs of Christophoros, on the father's side
+                    indeed a Madarites, and on the mother's side descended from the family of the
+                    Dalassenoi.</p>
+                <p xml:lang="bg">Потвърждение (скрепяване) на делата (грамотите) на Христофор, по
+                    баща от една страна Мадарит, а по майка – произхождащ от рода на Даласините.</p>
+            </div>
+            <div type="commentary" subtype="text">
+                <p xml:lang="en">The seal is generally dated to the period of the 13th–14th c. Its
+                owner, Christophoros Madarites Dalassenos, is unknown from narrative sources. The
+                legend consists of three dodecasyllabic verses. As correctly noted by A.-K.
+                Wassiliou-Seibt, the second verse is irregular, containing 13 syllables and lacking
+                a caesura[1]. Even if the twofold occurrence of the preposition ἐκ is considered
+                uncertain and omitted, thereby normalizing the syllable count to twelve, this still
+                does not resolve the absence of a regular caesura.</p>
+                <p xml:lang="bg"> Печатът се
+                    датира най-общо към периода XIII–XIV в. Притежателят му Христофор Мадарит
+                    Даласин е неизвестен от наративните извори. Текстът на печата е съставен от три
+                    дванадесетосрични стиха. Както правилно отбелязва А. К. Василиу-Зайбт, вторият
+                    стих се нарушава от 13 срички и липсва цезура[1]. Ако се приеме, че двукратното
+                    споменаване на предлога ἐκ е несигурно и той отпадне, което би нормализирало
+                    броя на сричките на дванадесет, това не решава проблема с отсъствието на
+                    регулярен разрез (цезура).</p>
+            </div>
+            <div type="commentary" subtype="footnotes">
+                <p xml:lang="en" xml:id="footnote-1">[1]. Wassiliou-Seibt, 2016<bibl>
+                        <ptr target="Wassiliou-Seibt2016"/>,<citedRange unit="page"
+                            >552</citedRange>
+                    </bibl>.</p>
+            </div>
+            <div type="bibliography" subtype="edition">
+                <p xml:lang="en">Jordanov, 2006</p>
+                <p><bibl><ptr target="JordanovCorpus2"/>,<citedRange unit="page"
+                            >264-265</citedRange></bibl>.</p>
+            </div>
+            <!--<div type="bibliography" subtype="parallels">
+                <p xml:lang="en"/>
+                <p><bibl><ptr target="Jordanov, 2016"/><citedRange unit="entry"
+                        >79c</citedRange></bibl>.</p>
+            </div>-->
+            <div type="bibliography" subtype="discussion">
+                <p xml:lang="en">Jordanov, 2006</p>
+                <p><bibl><ptr target="JordanovCorpus2"/>, <citedRange unit="entry">407;
+                        </citedRange></bibl></p>
+            </div>
+            <div type="bibliography" subtype="discussion">
+                <p xml:lang="en">Jordanov, 2009</p>
+                <p><bibl><ptr target="JordanovCorpus3"/>, <citedRange unit="entry">1972;
+                </citedRange></bibl></p>
+            </div>
+            <div type="bibliography" subtype="discussion">
+                <p xml:lang="en">Seibt, 1995</p>
+                <p><bibl><ptr target="Seibt, 1995"/>, <citedRange unit="page">137;
+                </citedRange></bibl></p>
+            </div>
+            <div type="bibliography" subtype="discussion">
+                <p xml:lang="en">Seibt, 2008</p>
+                <p><bibl><ptr target="Seibt, 2008"/>, <citedRange unit="page">823;
+                </citedRange></bibl></p>
+            </div>
+            <div type="bibliography" subtype="discussion">
+                <p xml:lang="en">Feind, 2013</p>
+                <p><bibl><ptr target="Feind2013"/>, <citedRange unit="entry">2250;
+                </citedRange></bibl></p>
+            </div>
+            <div type="bibliography" subtype="discussion">
+                <p xml:lang="en">Feind, 2013</p>
+                <p><bibl><ptr target="Feind2013"/>, <citedRange unit="entry">2505;
+                </citedRange></bibl></p>
+            </div>
+        </body>
+    </text>
+</TEI>

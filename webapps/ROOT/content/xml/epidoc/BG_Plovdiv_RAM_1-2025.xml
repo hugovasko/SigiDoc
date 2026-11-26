@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://sigidoc.github.io/Schema/schema/latest/sigidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://sigidoc.github.io/Schema/schema/latest/sigidoc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="en">Anonymous Seal</title>
+                <title xml:lang="bg">Анонимен печат</title>
+                <editor role="seal-editor" xml:id="YM">Yavor Mitov</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <seg xml:lang="en">Born digital</seg>
+                    <seg xml:lang="bg">Първично дигитален</seg>
+                </edition>
+                <editor role="digital-editor" ref="#YM" when="2026-10-25"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority/>
+                <idno type="filename">Plovdiv_RAM_1-2025</idno>
+                <idno type="SigiDocID">s-MPinzc</idno>
+                <date when="2026-10-25"/>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                        >Attribution-NonCommercial-ShareAlike 4.0 International - CC BY-NC-SA
+                        4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <!-- alternative between listOrg and listPerson -->
+                <!-- listOrg commented out because it is alternative to listPerson -->
+                <!--<listOrg type="issuer">
+                    <org role="corporate" type="">
+                        <orgName xml:lang="grc"></orgName>
+                        <orgName xml:lang="fr"></orgName>
+                        <idno type="URI"></idno>
+                    </org>
+                </listOrg>-->
+                <listPerson type="issuer">
+                    <person gender="M" role="imperial">
+                        <!--<persName xml:lang="grc">
+                            <forename/>
+                        </persName>-->
+                        <!--<persName xml:lang="en">
+                            <forename/>
+                        </persName>-->
+                        <!--<persName xml:lang="bg">
+                            <forename/>
+                        </persName>-->
+                        <!--idno type="" ana=""></idno>-->
+                    </person>
+                </listPerson>
+                <msDesc>
+                    <msIdentifier>
+                        <country>
+                            <seg xml:lang="en">Bulgaria</seg>
+                            <seg xml:lang="bg">България</seg>
+                        </country>
+                        <settlement>
+                            <seg xml:lang="en">City of Plovdiv<placeName
+                                    ref="https://www.geonames.org/728193/plovdiv.html"/></seg>
+                            <seg xml:lang="bg">Град Пловдив<placeName
+                                    ref="https://www.geonames.org/728193/plovdiv.html"/></seg>
+                        </settlement>
+                        <institution>Regional Archaeological Museum - Plovdiv<placeName
+                                ref="42.151596282852, 24.744976606198843"/></institution>
+                        <repository/>
+                        <collection type="public">
+                            <rs type="collection-name" xml:lang="en">Numismatics</rs>
+                            <rs type="collection-name" xml:lang="bg">Нумизматика</rs>
+                        </collection>
+                     <!--   <institution>Regional Archaeological Museum - Plovdiv</institution>
+                        <repository>Numismatics</repository>-->
+                        <idno type="inv-nr-current">1-2025</idno>
+                        <!--<altIdentifier>
+                            <repository/>
+                            <collection type="">
+                                <rs type="collection-name" xml:lang="de"/>
+                                <rs type="collection-name" xml:lang="en"/>
+                            </collection>
+                            <idno type="inv-nr-former"/>
+                        </altIdentifier>-->
+                    </msIdentifier>
+                    <msContents>
+                        <summary n="whole">
+                            <seg xml:lang="en">Imperial</seg>
+                            <seg xml:lang="bg">Императорски</seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType>
+                                        <term>
+                                            <seg xml:lang="en">Seal</seg>
+                                            <seg xml:lang="bg">Печат</seg>
+                                        </term>
+                                        <interp type="workType" xml:lang="en">Original
+                                            impression</interp>
+                                        <interp type="workType" xml:lang="bg">Оригинален отпечатък
+                                        </interp>
+                                    </objectType>
+                                    <material>
+                                        <seg xml:lang="en">Lead</seg>
+                                        <seg xml:lang="bg">Олово</seg>
+                                    </material>
+                                    <dimensions type="support" unit="mm">
+                                        <dim type="diameter">26.5-30</dim>
+                                    </dimensions>
+                                    <measure type="weight" unit="g">22.44</measure>
+                                    <!--<measure type="axis" unit="clock"/>-->
+                                    <!--<measure type="overstrikeOrient" unit="clock"/>-->
+                                    <measure type="channelOrient" unit="clock">11-5</measure>
+                                    <!--<measure type="countermark" unit="clock"/>-->
+                                </support>
+                                <condition rend="blank-too-large well-preserved well-struck">
+                                    <p xml:lang="en">Good imprint. Well centered. Single struck.
+                                        Border of dots is clearly visible. Good condition.</p>
+                                    <p xml:lang="bg">Добър отпечатък. Добре центриран. Еднократно
+                                        ударен. Зрънчест кръг се вижда ясно. Добро състояние.</p>
+                                </condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout n="whole">
+                                    <rs type="execution">
+                                        <seg xml:lang="en">Struck</seg>
+                                        <seg xml:lang="bg">Ударен</seg>
+                                    </rs>
+                                    <rs type="shape">
+                                        <seg xml:lang="en">Round</seg>
+                                        <seg xml:lang="bg">Кръгла</seg>
+                                    </rs>
+                                    <rs type="matrix" subtype="not-surviving">
+                                        <idno type="SigiDoc">m-lTdj53</idno>
+                                        <!--<idno type="PBW"
+                                            corresp="http://pbw2016.kdl.kcl.ac.uk/boulloterion/3494/"
+                                            >3494</idno>-->
+                                    </rs>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <!--<origPlace>
+                                <seg xml:lang="en">
+                                    <placeName ref=""></placeName>
+                                </seg>
+                                <seg xml:lang="bg">
+                                    <placeName ref=""></placeName>
+                                </seg>
+                            </origPlace>-->
+                            <!-- possible alternatives for dates:
+                            for a precise year:
+                            -->
+                            <!--<origDate type="analysis" when="1192" evidence=""
+                                cert="high" resp="">
+                                <seg xml:lang="en">1192 CE</seg>
+                            </origDate>-->
+                            <!-- for a date range or centuries-->
+                            <origDate type="analysis" notBefore="0801" notAfter="1000"
+                                evidence="reign iconography historical-context" cert="medium"
+                                resp="#YM">
+                                <seg xml:lang="en">9th - 10th century</seg>
+                                <seg xml:lang="bg">IX - X в.</seg>
+                            </origDate>
+                            <!-- for an internal date -->
+                            <!--<origDate type="internal" notBefore="0692" notAfter="0693"
+                                when-custom="0006"
+                                datingMethod="https://www.wikidata.org/wiki/Q1339127"
+                                evidence="internal-date">
+                                <seg xml:lang="en">Indiction 6, corresponding to the year 692-693
+                                    CE</seg>
+                            </origDate>-->
+                        </origin>
+                        <provenance type="found" subtype="discovered">
+                           <!-- <placeName type="ancientFindspot" ref="unknown" xml:lang="en"/>
+                            <placeName type="ancientFindspot" ref="unknown" xml:lang="bg"/>
+                            <placeName type="modernFindspot" ref="unknown" xml:lang="en"/>
+                            <placeName type="modernFindspot" ref="unknown" xml:lang="bg"/>-->
+                            <rs type="circumstances" xml:lang="en">Stray find</rs>
+                            <rs type="circumstances" xml:lang="bg">Случайна находка</rs>
+                        </provenance>
+                        <location>
+                            <geo>-</geo>
+                            <findspotAccuracy>-</findspotAccuracy>
+                        </location>
+                        <acquisition>
+                            <p xml:lang="en">Donated to Regional Archaeological Museum - Plovdiv in 2008 by the
+                                political party VMRO</p>
+                            <p xml:lang="bg">Дарен на Регионален археологически музей - Пловдив през 2008 г. от
+                                политическата партия ВМРО</p>
+                        </acquisition>
+                    </history>
+                    <msPart n="r">
+                        <msIdentifier/>
+                        <msContents>
+                            <summary n="r">
+                                <seg xml:lang="en">Obverse</seg>
+                            </summary>
+                        </msContents>
+                        <physDesc>
+                            <objectDesc>
+                                <layoutDesc>
+                                    <layout n="r">
+                                        <!--<dimensions type="written" unit="mm">
+                                            <dim type="diameter"/>
+                                        </dimensions>-->
+                                        <p xml:lang="en">Iconography</p>
+                                        <p xml:lang="bg">Иконография</p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote n="r">
+                                    <seg xml:lang="en">Inscriptions and titles are missing.</seg>
+                                    <seg xml:lang="bg">Липсват надписи и титули.</seg>
+
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote>
+                                    <figure>
+                                        <figDesc n="r" xml:lang="en"
+                                            ana="male Christ blessing bust gospel"/>
+                                        <figDesc n="decoR" xml:lang="en">Bust of Christ with a
+                                            cruciform halo. He is depicted with a beard and is
+                                            dressed in a chiton and a himation. He blesses with his
+                                            right hand and holds a Gospel book with his left
+                                            hand.</figDesc>
+                                        <figDesc n="decoR" xml:lang="bg">Бюст на Христос с кръстат
+                                            нимб. Изобразен е с брада. Облечен е в хитон и химатион.
+                                            С дясната ръка благославя, а с лявата държи
+                                            евангелие.</figDesc>
+                                    </figure>
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+                    </msPart>
+                    <msPart n="v">
+                        <msIdentifier/>
+                        <msContents>
+                            <summary n="v">
+                                <seg xml:lang="en">Reverse</seg>
+                            </summary>
+                        </msContents>
+                        <physDesc>
+                            <objectDesc>
+                                <layoutDesc>
+                                    <layout n="v">
+                                        <!--<dimensions type="written" unit="mm">
+                                            <dim type="diameter"/>
+                                        </dimensions>-->
+                                        <p xml:lang="en">Iconography</p>
+                                        <p xml:lang="bg">Иконография</p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote n="v">
+                                    <seg xml:lang="en">Inscriptions and titles are missing.</seg>
+                                    <seg xml:lang="bg">Липсват надписи и титули.</seg>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote>
+                                    <figure>
+                                        <figDesc n="decoV" xml:lang="en">A dotted border is visible</figDesc>
+                                        <figDesc n="decoV" xml:lang="bg">Вижда се зрънчест кръг</figDesc>
+                                    </figure>
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+                    </msPart>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="Grek">Greek script</language>
+                <language ident="Latn">Latin script</language>
+                <language ident="grc">Ancient Greek language (to 1453; assumed to be in its standard
+                    script: Grek)</language>
+                <language ident="la">Latin language (assumed to be in its standard script:
+                    Latn)</language>
+                <language ident="grc-Latn">Ancient Greek Language (to 1453), rendered in Latin
+                    script</language>
+                <language ident="la-Grek">Latin written in Greek script</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-10-25" who="#YM"/>
+            <change when="2026-10-25" who="#YM">Created the file for the edition of Plovdiv_RAM_1-2025</change>
+            <change when="2026-10-25" who="#YM">Completed the edition of Plovdiv_RAM_1-2025</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <surfaceGrp>
+            <surface n="r">
+                <desc>Obverse</desc>
+                <graphic url="Plovdiv_RAM_1-2025_O.jpg" type="photo">
+                    <desc/>
+                </graphic>
+                <!--<graphic url="" type="">
+                    <desc>[Caption here]</desc>
+                </graphic>-->
+            </surface>
+            <surface n="v">
+                <desc>Reverse</desc>
+                <graphic url="Plovdiv_RAM_1-2025_R.jpg" type="photo">
+                    <desc/>
+                </graphic>
+                <!--<graphic url="" type="">
+                    <desc>[Caption here]</desc>
+                </graphic>-->
+            </surface>
+        </surfaceGrp>
+    </facsimile>
+    <text>
+        <body>
+            <!--<div type="edition" subtype="editorial" xml:space="preserve">
+                <div type="textpart" subtype="label" n="obv" rend="columns" xml:lang="grc">
+                </div>
+                  <div type="textpart" n="obv" subtype="face" rend="columns" xml:lang="grc">
+                      <ab>
+                          <cb n="1"/><supplied reason="lost"> ἅγιος</supplied>
+                           <cb n="2"/><supplied reason="lost">Γε</supplied>ώρ<supplied reason="lost">γιος</supplied>
+                      </ab>
+                  </div>
+                  <div type="textpart" n="rev" subtype="face" rend="linear" xml:lang="grc">
+                      <ab ana="dat">
+                          <lb n="1"/>† <expan><abbr>Κ</abbr><ex>ύρι</ex><abbr>ε</abbr></expan> <expan><abbr>β</abbr><ex>οή</ex><abbr>θ</abbr><ex>ει</ex></expan>
+                          <lb n="2" break="no"/>Γρηγορί<supplied reason="lost">ῳ</supplied>                   
+                          <lb n="3" break="no"/><rs type="dignity" ref="d0038">μαγίστρ<supplied reason="lost">ῳ</supplied></rs>                          
+                      </ab>
+                  </div>
+              </div>-->
+            <!--<div type="edition" subtype="diplomatic" xml:space="preserve">
+                  <div type="textpart" subtype="face" n="obv" rend="columns" xml:lang="grc">
+                      <ab ana="dat">
+                          <cb n="1"/>…
+                           <cb n="2"/>… ωΡ…
+                            </ab>
+                  </div>
+                  <div type="textpart" subtype="face" n="rev" rend="linear" xml:lang="grc">
+                      <ab ana="dat">
+                           <lb n="1"/>ΚΕR,Θ
+                    <lb n="2"/>ΓΡΙΓΟΡΙ
+                    <lb n="3"/>MΑΓΙΡ̣
+                      </ab>
+                  </div>
+              </div>-->
+            <!--<div type="apparatus">
+                <listApp>
+                    <app xml:lang=""/>
+                </listApp>
+            </div>-->
+            <!--<div type="translation">
+                <p xml:lang="en">† Lord, help Gregory magistros</p>
+                <p xml:lang="bg">† Господи помагай на магистър Григорий</p>
+            </div>-->
+            <div type="commentary" subtype="text">
+                <p xml:lang="en">Molybdobulla of an anonymous monarch (9th – 10th c.). In the
+                    sigillography it has been associated with the name of the Bulgarian Tsar Simeon
+                    (893-927)[1].</p>
+                <p xml:lang="bg">Моливдовул на анонимен владетел (IX – X в.). В сфрагистиката той се
+                    свързва с името на българския цар Симеон (893-927). На неговия аверс е
+                    изобразено бюстово изображение на Христос с кръстовиден ореол[1].</p>
+            </div>
+            <div type="commentary" subtype="footnotes">
+                <p xml:lang="en" xml:id="footnote-1">[1]. See Jordanov, 2016<bibl>
+                        <ptr target="Jordanov, 2016"/>,<citedRange unit="page">132-134</citedRange>
+                    </bibl>.</p>
+            </div>
+            <div type="bibliography" subtype="edition">
+                <p xml:lang="en">Mitov, 2018</p>
+                <p><bibl><ptr target="Mitov, 2018"/>, <citedRange unit="page"
+                >221-222</citedRange></bibl>.</p>
+            </div>
+            <div type="bibliography" subtype="parallels">
+                <p xml:lang="en">Jordanov, 2016</p>
+                <p><bibl><ptr target="Jordanov, 2016"/>, <citedRange unit="entry">268-276</citedRange></bibl>.</p>
+            </div>
+            <!--<div type="bibliography" subtype="discussion">
+                <p xml:lang="en">Toptanov, Margos, 1986</p>
+                <p><bibl><ptr target="Toptanov, Margos, 1986"/>, <citedRange unit="pages">34-37;
+                        </citedRange></bibl></p>
+            </div>-->
+        </body>
+    </text>
+</TEI>
