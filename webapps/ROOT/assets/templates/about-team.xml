@@ -21,13 +21,89 @@
     <kiln:block name="content">
       <div class="row">
         <div class="large-12 columns">
-          <div class="panel radius">
-            <p>
-              <i18n:text i18n:key="about-team-text">Content coming soon.</i18n:text>
-            </p>
+          <div class="panel radius team">
+            <!-- English text for every language except Bulgarian. -->
+            <xsl:choose>
+              <xsl:when test="$language = 'bg'">
+            <h3>Ръководител на проекта</h3>
+            <ul class="team-list">
+                <li><a href="https://naim.bg/bg/content/person/700/0/263/" target="_blank" rel="noopener">Пантелис Харалампакис</a><span class="team-org"> (НАИМ-БАН)</span></li>
+            </ul>
+            <h3>Членове на проекта</h3>
+            <ul class="team-list">
+                <li>Димитър Димитров<span class="team-org"> (АМ Велики Преслав)</span></li>
+                <li><a href="https://naim.bg/bg/content/person/700/0/306/" target="_blank" rel="noopener">Николай Димитров</a><span class="team-org"> (НАИМ-БАН)</span></li>
+                <li>Женя Жекова<span class="team-org"> (РИМ-Шумен)</span></li>
+                <li><a href="https://naim.bg/bg/content/person/700/0/198/" target="_blank" rel="noopener">Методи Златков</a><span class="team-org"> (НАИМ-БАН)</span></li>
+                <li><a href="https://clio.uni-sofia.bg/teacher/gl-as-d-r-yavor-mitov/" target="_blank" rel="noopener">Явор Митов</a><span class="team-org"> (РИМ-Кюстендил / Софийски Университет „Св. Климент Охридски“)</span></li>
+                <li><a href="https://naim.bg/bg/content/person/700/0/230/" target="_blank" rel="noopener">Милена Райчева</a><span class="team-org"> (НАИМ-БАН)</span></li>
+                <li><a href="https://naim.bg/bg/content/person/700/0/290/" target="_blank" rel="noopener">Георги Сенгалевич</a><span class="team-org"> (НАИМ-БАН)</span></li>
+            </ul>
+            <h3>Други участници</h3>
+            <ul class="team-list">
+                <li><a href="https://hauniv.academia.edu/HeshamMHassan/CurriculumVitae" target="_blank" rel="noopener">Хешам М. Хасан</a><span class="team-org"> (Hellenic American University)</span></li>
+            </ul>
+            <h3>IT поддръжка</h3>
+            <ul class="team-list">
+                <li><a href="https://www.codecrew.io/" target="_blank" rel="noopener">КодКрю</a><span class="team-org"> (Лъчезар Георгиев, Васко Николов)</span></li>
+            </ul>
+              </xsl:when>
+              <xsl:otherwise>
+            <h3>Project coordinator</h3>
+            <ul class="team-list">
+                <li><a href="https://naim.bg/en/content/person/700/0/263/" target="_blank" rel="noopener">Pantelis Charalampakis</a><span class="team-org"> (NAIM-BAS)</span></li>
+            </ul>
+            <h3>Team members</h3>
+            <ul class="team-list">
+                <li>Dimitar Dimitrov<span class="team-org"> (AM Veliki Preslav)</span></li>
+                <li><a href="https://naim.bg/en/content/person/700/0/306/" target="_blank" rel="noopener">Nikolay Dimitrov</a><span class="team-org"> (NAIM-BAS)</span></li>
+                <li><a href="https://clio.uni-sofia.bg/teacher/gl-as-d-r-yavor-mitov/" target="_blank" rel="noopener">Yavor Mitov</a><span class="team-org"> (RHM-Kyustendil / Sofia University)</span></li>
+                <li><a href="https://naim.bg/en/content/person/700/0/230/" target="_blank" rel="noopener">Milena Raycheva</a><span class="team-org"> (NAIM-BAS)</span></li>
+                <li><a href="https://naim.bg/en/content/person/700/0/290/" target="_blank" rel="noopener">Georgi Sengalevich</a><span class="team-org"> (NAIM-BAS)</span></li>
+                <li>Zhenya Zhekova<span class="team-org"> (RHM-Shumen)</span></li>
+                <li><a href="https://naim.bg/en/content/person/700/0/198/" target="_blank" rel="noopener">Metodi Zlatkov</a><span class="team-org"> (NAIM-BAS)</span></li>
+            </ul>
+            <h3>Other contributors</h3>
+            <ul class="team-list">
+                <li><a href="https://hauniv.academia.edu/HeshamMHassan/CurriculumVitae" target="_blank" rel="noopener">Hesham M. Hassan</a><span class="team-org"> (Hellenic American University)</span></li>
+            </ul>
+            <h3>IT support</h3>
+            <ul class="team-list">
+                <li><a href="https://www.codecrew.io/" target="_blank" rel="noopener">CodeCrew</a><span class="team-org"> (Lachezar Georgiev, Vasko Nikolov)</span></li>
+            </ul>
+              </xsl:otherwise>
+            </xsl:choose>
           </div>
         </div>
       </div>
+    </kiln:block>
+
+    <kiln:block name="head-extra">
+      <style>
+        .team h3 {
+          margin-top: 1.5rem;
+          font-size: 1.1rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        .team h3:first-child {
+          margin-top: 0;
+        }
+
+        .team-list {
+          list-style: none;
+          margin-left: 0;
+        }
+
+        .team-list li {
+          margin-bottom: 0.4rem;
+        }
+
+        .team-org {
+          color: #555;
+        }
+      </style>
     </kiln:block>
   </kiln:child>
 </kiln:root>

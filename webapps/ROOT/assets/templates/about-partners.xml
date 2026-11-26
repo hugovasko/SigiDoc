@@ -68,6 +68,15 @@
             <div class="museum-logo">
               <img src="{$kiln:assets-path}/images/museums/Logo Razlog.png" alt="Razlog Museum"/>
             </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo Veliki Preslav.jpg" alt="Archaeological Museum Veliki Preslav"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo Ruse.jpg" alt="Regional Historical Museum Ruse"/>
+            </div>
+            <div class="museum-logo">
+              <img src="{$kiln:assets-path}/images/museums/Logo Shumen.png" alt="Regional Historical Museum Shumen"/>
+            </div>
           </div>
         </div>
       </div>
