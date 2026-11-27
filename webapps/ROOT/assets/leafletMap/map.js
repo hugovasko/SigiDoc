@@ -105,7 +105,8 @@ function isInRange(seal, from, to) {
 
 (async function () {
   try {
-    const response = await fetch("map_points.json");
+    // no-cache: always check for a newer file after re-indexing.
+    const response = await fetch("map_points.json", { cache: "no-cache" });
     const points = await response.json();
 
     const seals = points.map((point) => {
